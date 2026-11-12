@@ -296,7 +296,6 @@ const languageOptions = [
 ];
 
 const filters = reactive({
-  movie: null,
   province: null,
   chain: null,
   language: null,
@@ -309,14 +308,9 @@ const selectedFormatSingle = computed({
   set: (val) => { filters.formats = val ? [val] : []; }
 });
 
-const movieFilterOptions = computed(() =>
-  movies.value.map(m => ({ id: m.id, title: m.title }))
-);
-
 const filteredMovies = computed(() => {
   return movies.value
     .filter(m => {
-      if (filters.movie && m.id !== filters.movie) return false;
       if (filters.ageRating) {
         if (filters.ageRating === 'TP' && m.ageTier !== 'TP') return false;
         if (filters.ageRating === '12' && m.ageTier !== '12') return false;
@@ -435,7 +429,7 @@ const activeComplexCount = computed(() => {
 });
 
 const hasActiveFilters = computed(() => Boolean(
-  filters.movie || filters.province || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating || onlyPremium.value
+  filters.province || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating || onlyPremium.value
 ));
 
 const toggleQuickLanguage = (lang) => {
@@ -443,7 +437,6 @@ const toggleQuickLanguage = (lang) => {
 };
 
 const resetFilters = () => {
-  filters.movie = null;
   filters.province = null;
   filters.chain = null;
   filters.language = null;
@@ -645,18 +638,6 @@ const formatStatusDate = (isoStr) => {
         <!-- Filter Card -->
         <div class="filter-card">
           <div class="filter-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
-            <div class="md-field">
-              <label class="md-field-label">
-                <span class="material-symbols-outlined sm">movie</span> Película
-              </label>
-              <select v-model="filters.movie" class="md-select">
-                <option :value="null">Todas las películas ({{ movies.length }})</option>
-                <option v-for="m in movieFilterOptions" :key="m.id" :value="m.id">
-                  {{ m.title }}
-                </option>
-              </select>
-            </div>
-
             <div class="md-field">
               <label class="md-field-label">
                 <span class="material-symbols-outlined sm">theater_comedy</span> Cadena
