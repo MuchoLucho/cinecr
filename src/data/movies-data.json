@@ -958,7 +958,7 @@
     "id": "113609",
     "title": "Clayface",
     "originalTitle": "Clayface",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Studio Cinemas / CitiCinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -1448,6 +1448,152 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "clayface"
@@ -1456,7 +1602,7 @@
     "id": "113516",
     "title": "Como robar un banco",
     "originalTitle": "Como robar un banco",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -3038,6 +3184,232 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "comorobarbanco"
@@ -3157,7 +3529,7 @@
     "id": "113989",
     "title": "Ebenezer fantasmas de Navidad",
     "originalTitle": "Ebenezer fantasmas de Navidad ",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -6135,6 +6507,658 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
@@ -6180,7 +7204,7 @@
     "id": "112951",
     "title": "El Corazon de la Bestia",
     "originalTitle": "El Corazon de la Bestia",
-    "studio": "Cinemark / Cinépolis / Nova Cinemas / Cinema San Pedro",
+    "studio": "Cinemark / Cinépolis / Nova Cinemas / Cinema San Pedro / CitiCinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -6510,6 +7534,47 @@
               {
                 "time": "20:00",
                 "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-11"
               }
             ]
           }
@@ -6896,7 +7961,7 @@
     "id": "113899",
     "title": "El Gato con Sombrero",
     "originalTitle": "El Gato con Sombrero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -8863,6 +9928,738 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "3D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "12:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "14:35",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "14:35",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:35",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:35",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:35",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:35",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "gatosombrero"
@@ -9355,10 +11152,294 @@
     "normalizedKey": "vientrediablo"
   },
   {
+    "id": "citicinemas-entregaallimite",
+    "title": "Entrega al Limite",
+    "originalTitle": "Entrega al Limite",
+    "synopsis": "Tras los devastadores acontecimientos de *Avengers: Infinity War* (2018), el universo ha quedado en ruinas. Con la ayuda de los aliados restantes, los Vengadores se reúnen una vez más para revertir las acciones de Thanos y restaurar el equilibrio en el universo.",
+    "poster": "https://image.tmdb.org/t/p/w500/gxrGVQdFmc3xxVn6UyY31ZjqM0s.jpg",
+    "rating": "TP",
+    "duration": "1h 37m",
+    "genres": [
+      "Cine"
+    ],
+    "theaters": [
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedKey": "entregaallimite"
+  },
+  {
     "id": "113646",
     "title": "Godzilla Minus Zero",
     "originalTitle": "Godzilla Minus Zero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -11348,6 +13429,460 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "godzillaminuszero"
@@ -11405,7 +13940,7 @@
     "id": "113840",
     "title": "Hunger Games 6 Amanecer",
     "originalTitle": "Hunger Games 6 Amanecer ",
-    "studio": "Cinemark / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
+    "studio": "Cinemark / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -11856,6 +14391,27 @@
               {
                 "time": "20:20",
                 "date": "2026-11-19"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -13107,7 +15663,7 @@
     "id": "113816",
     "title": "Wildwood El Bosque Salvaje",
     "originalTitle": "Wildwood El Bosque Salvaje",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Studio Cinemas / CitiCinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -14149,6 +16705,318 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "12:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "wildwoodbosquesalvaje"
@@ -14157,7 +17025,7 @@
     "id": "114001",
     "title": "Yo soy Rocky",
     "originalTitle": "Yo soy Rocky",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -15463,6 +18331,264 @@
               },
               {
                 "time": "16:10",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "studio",
+        "chainName": "Studio Cinemas",
+        "complexId": "studio-santa-ana",
+        "complexName": "Studio Cinemas (City Place)",
+        "province": "San José",
+        "city": "Santa Ana",
+        "address": "City Place Santa Ana, Radial Santa Ana - San Antonio de Belén, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:15",
                 "date": "2026-11-17"
               }
             ]
