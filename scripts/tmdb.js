@@ -44,7 +44,7 @@ function normalizeText(str) {
 /**
  * Score a TMDb candidate based on title similarity, recency, and popularity.
  */
-function scoreCandidate(candidate, query) {
+function scoreCandidate(candidate, query, isCurated = false) {
   const normQ = normalizeText(query);
   const normTitle = normalizeText(candidate.title);
   const normOrig = normalizeText(candidate.original_title);
@@ -65,6 +65,17 @@ function scoreCandidate(candidate, query) {
     if (qWords.length > 0) {
       score += (matched.length / qWords.length) * 60;
     }
+  }
+
+  // Bonus when query comes from an explicit alias or translation map
+  if (isCurated) {
+    score += 50;
+  }
+
+  // Native non-Latin title (CJK, Cyrillic) matched via alternative titles by TMDb search engine
+  const isNonLatin = /[\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af\u0400-\u04ff]/.test(candidate.title);
+  if (isNonLatin) {
+    score += 40;
   }
 
   // Recency bonus: Movies in active theaters are contemporary (current year ± 2 years)
@@ -147,6 +158,7 @@ export async function fetchTmdbDetails(title, originalTitle) {
   const queries = getSearchQueries(title, originalTitle);
 
   for (const q of queries) {
+    const isCurated = q !== title && !title.toLowerCase().includes(q.toLowerCase());
     try {
       const searchUrl = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(q)}&language=es-MX`;
       const res = await fetch(searchUrl, {
@@ -163,7 +175,7 @@ export async function fetchTmdbDetails(title, originalTitle) {
       // Score and rank candidates
       const ranked = results.map(r => ({
         candidate: r,
-        score: scoreCandidate(r, q)
+        score: scoreCandidate(r, q, isCurated)
       })).sort((a, b) => b.score - a.score);
 
       const top = ranked[0];
