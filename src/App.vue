@@ -784,7 +784,14 @@ const formatStatusDate = (isoStr) => {
           <div class="movie-card-grid">
             <div class="movie-sidebar">
               <div class="poster-wrapper">
-                <img :src="movie.poster" :alt="movie.title" class="poster-img" />
+                <img
+                  :src="movie.poster"
+                  :alt="movie.title"
+                  class="poster-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  @error="(e) => e.target.src = generatePosterSvg(movie.title, movie.genres[0] || 'Película', '#f43f5e')"
+                />
                 <div class="poster-overlay">
                   <div style="display: flex; justify-content: space-between; align-items: center;">
                     <span class="md-badge" :class="movie.ratingBadgeClass">

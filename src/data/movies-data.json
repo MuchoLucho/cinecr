@@ -14582,11 +14582,12 @@
     "id": "magaly-pingpongtriunfo",
     "title": "Ping Pong: El Triunfo",
     "originalTitle": "Ping Pong: El Triunfo",
-    "synopsis": "Funciones de Ping Pong: El Triunfo en Cine Magaly.",
-    "poster": "https://www.cinemagaly.com/files/movies/images/detail/6ad941cfd5d49-MV5BOGQ4NjgwN2EtMGYwYi00ZTk4LTk2MTctYjBjZTVkZmEyZmQ3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "synopsis": "A principios de la década de 1990, cuando el equipo masculino de tenis de mesa chino está en su punto más bajo, el entrenador en jefe Cai Zhenhua tiene la tarea de formar un nuevo equipo para finalmente luchar hasta la cima en el Campeonato Mundial de Ping Pong de 1995 en Tianjin, China.",
+    "poster": "https://image.tmdb.org/t/p/w500/mSZMWfXipCQIosy0pryLSdus8d9.jpg",
     "rating": "TP+12",
     "duration": "2h 20m",
     "genres": [
+      "Drama",
       "Independiente"
     ],
     "theaters": [
@@ -14612,6 +14613,8 @@
         ]
       }
     ],
+    "score": "7.2",
+    "director": "Deng Chao, Yu Baimei",
     "ratingBadgeClass": "badge-amber",
     "normalizedKey": "pingpongtriunfo"
   },

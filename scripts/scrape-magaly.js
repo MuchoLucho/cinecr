@@ -36,13 +36,19 @@ function normalizeTitleKey(str) {
     .replace(/[^a-z0-9]/g, '');
 }
 
+const TITLE_MAP = {
+  'ping pong: el triunfo': 'Ping Pong: The Triumph',
+  'ping pong el triunfo': 'Ping Pong: The Triumph'
+};
+
 /**
  * Query TMDb Search & Movie Details API for poster, synopsis, and runtime
  */
 async function fetchTmdbDetails(title) {
   if (!TMDB_TOKEN) return null;
   try {
-    const cleanTitle = title
+    const lookupTitle = TITLE_MAP[title.toLowerCase().trim()] || title;
+    const cleanTitle = lookupTitle
       .replace(/\b(2D|3D|XD|VIP|DOB|SUB|PRE|IMAX|Gratuito)\b/gi, '')
       .replace(/[-:]/g, ' ')
       .trim();
@@ -58,9 +64,11 @@ async function fetchTmdbDetails(title) {
     const result = (data.results || []).find(m => m.poster_path || m.overview);
     if (result) {
       let duration = null;
+      let score = null;
+      let director = null;
       if (result.id) {
         try {
-          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
+          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX&append_to_response=credits`, {
             headers: {
               'Authorization': `Bearer ${TMDB_TOKEN}`,
               'Accept': 'application/json'
@@ -71,6 +79,11 @@ async function fetchTmdbDetails(title) {
             if (detail.runtime && detail.runtime > 0) {
               duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
             }
+            if (detail.vote_average && detail.vote_average > 0) {
+              score = detail.vote_average.toFixed(1);
+            }
+            const dir = (detail.credits?.crew || []).find(c => c.job === 'Director');
+            if (dir?.name) director = dir.name;
           }
         } catch {
           // ignore detail error
@@ -80,7 +93,9 @@ async function fetchTmdbDetails(title) {
         tmdbId: result.id,
         poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
         synopsis: result.overview ? result.overview.trim() : null,
-        duration
+        duration,
+        score,
+        director
       };
     }
   } catch {
@@ -275,6 +290,8 @@ export async function scrapeMagaly() {
         movie.synopsis = tmdbData.synopsis;
       }
       if (tmdbData.duration) movie.duration = tmdbData.duration;
+      if (tmdbData.score) movie.score = tmdbData.score;
+      if (tmdbData.director) movie.director = tmdbData.director;
       console.log(`  ✓ TMDb: ${movie.title} (${movie.duration})`);
     } else {
       console.log(`  - Local Magaly data: ${movie.title} (${movie.duration})`);
