@@ -245,10 +245,54 @@ export function mergeDatasets(...datasets) {
   return merged;
 }
 
-async function safeScrape(name, scraperFn, cacheFileName) {
+const STATUS_FILE = path.resolve(__dirname, '../src/data/scraping-status.json');
+
+function loadStatus() {
+  if (fs.existsSync(STATUS_FILE)) {
+    try {
+      return JSON.parse(fs.readFileSync(STATUS_FILE, 'utf8'));
+    } catch {
+      // ignore
+    }
+  }
+  return { lastRun: new Date().toISOString(), chains: {} };
+}
+
+function countShowtimes(moviesList) {
+  if (!Array.isArray(moviesList)) return 0;
+  return moviesList.reduce((acc, m) =>
+    acc + (m.theaters || []).reduce((tAcc, t) =>
+      tAcc + (t.groups || []).reduce((gAcc, g) =>
+        gAcc + (g.times || []).length, 0), 0), 0);
+}
+
+function getCacheFileMtimeIso(cacheFileName) {
+  try {
+    const p = path.resolve(__dirname, `../src/data/${cacheFileName}`);
+    if (fs.existsSync(p)) {
+      return fs.statSync(p).mtime.toISOString();
+    }
+  } catch {
+    // ignore
+  }
+  return new Date().toISOString();
+}
+
+async function safeScrape(chainId, name, scraperFn, cacheFileName, statusData) {
+  const existing = statusData.chains[chainId] || {};
+  let fallbackMovies = [];
+
   try {
     const results = await scraperFn();
     if (Array.isArray(results) && results.length > 0) {
+      statusData.chains[chainId] = {
+        id: chainId,
+        name,
+        status: 'healthy',
+        lastSuccess: new Date().toISOString(),
+        moviesCount: results.length,
+        showtimesCount: countShowtimes(results)
+      };
       return results;
     }
   } catch (err) {
@@ -262,18 +306,32 @@ async function safeScrape(name, scraperFn, cacheFileName) {
       const cached = JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
       if (Array.isArray(cached) && cached.length > 0) {
         console.log(`ℹ️ [Fallback] Loaded ${cached.length} cached movies for ${name} from ${cacheFileName}`);
-        return cached;
+        fallbackMovies = cached;
       }
     }
   } catch (cacheErr) {
     console.warn(`Could not load cache for ${name}: ${cacheErr.message}`);
   }
 
-  return [];
+  // Mark chain as warning with fallback data, retaining previous lastSuccess timestamp
+  statusData.chains[chainId] = {
+    ...existing,
+    id: chainId,
+    name,
+    status: 'warning',
+    note: 'Respaldo en uso (reintento pendiente)',
+    lastSuccess: existing.lastSuccess || getCacheFileMtimeIso(cacheFileName),
+    moviesCount: fallbackMovies.length,
+    showtimesCount: countShowtimes(fallbackMovies)
+  };
+
+  return fallbackMovies;
 }
 
 export async function scrapeAll() {
   console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova + Magaly + San Pedro + Studio + CitiCinemas) ===');
+  const statusData = loadStatus();
+
   const [
     cinemarkMovies,
     cinepolisMovies,
@@ -284,14 +342,14 @@ export async function scrapeAll() {
     studioMovies,
     citiMovies
   ] = await Promise.all([
-    safeScrape('Cinemark', scrapeCinemark, 'cinemark-data.json'),
-    safeScrape('Cinépolis', scrapeCinepolis, 'cinepolis-data.json'),
-    safeScrape('CCM Cinemas', scrapeCcm, 'ccm-data.json'),
-    safeScrape('Nova Cinemas', scrapeNova, 'nova-data.json'),
-    safeScrape('Cine Magaly', scrapeMagaly, 'magaly-data.json'),
-    safeScrape('Cinema San Pedro', scrapeSanPedro, 'sanpedro-data.json'),
-    safeScrape('Studio Cinemas', scrapeStudio, 'studio-data.json'),
-    safeScrape('CitiCinemas', scrapeCitiCinemas, 'citicinemas-data.json')
+    safeScrape('cinemark', 'Cinemark', scrapeCinemark, 'cinemark-data.json', statusData),
+    safeScrape('cinepolis', 'Cinépolis', scrapeCinepolis, 'cinepolis-data.json', statusData),
+    safeScrape('ccm', 'CCM Cinemas', scrapeCcm, 'ccm-data.json', statusData),
+    safeScrape('nova', 'Nova Cinemas', scrapeNova, 'nova-data.json', statusData),
+    safeScrape('magaly', 'Cine Magaly', scrapeMagaly, 'magaly-data.json', statusData),
+    safeScrape('sanpedro', 'Cinema San Pedro', scrapeSanPedro, 'sanpedro-data.json', statusData),
+    safeScrape('studio', 'Studio Cinemas', scrapeStudio, 'studio-data.json', statusData),
+    safeScrape('citicinemas', 'CitiCinemas', scrapeCitiCinemas, 'citicinemas-data.json', statusData)
   ]);
 
   const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies, sanPedroMovies, studioMovies, citiMovies);
@@ -299,6 +357,11 @@ export async function scrapeAll() {
   const outFile = path.join(outDir, 'movies-data.json');
   fs.writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf-8');
   console.log(`=== Successfully merged ${merged.length} total movies saved to ${outFile} ===`);
+
+  statusData.lastRun = new Date().toISOString();
+  fs.writeFileSync(STATUS_FILE, JSON.stringify(statusData, null, 2), 'utf-8');
+  console.log(`=== Scraping health status updated to ${STATUS_FILE} ===`);
+
   return merged;
 }
 
@@ -316,6 +379,32 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
     const merged = mergeDatasets(cm, cp, ccm, nova, magaly, sanpedro, studio, citicinemas);
     fs.writeFileSync(path.join(dataDir, 'movies-data.json'), JSON.stringify(merged, null, 2), 'utf8');
     console.log(`Merged ${merged.length} movies to movies-data.json`);
+
+    const statusData = loadStatus();
+    const chainDatasets = [
+      { id: 'cinemark', name: 'Cinemark', file: 'cinemark-data.json', data: cm },
+      { id: 'cinepolis', name: 'Cinépolis', file: 'cinepolis-data.json', data: cp },
+      { id: 'ccm', name: 'CCM Cinemas', file: 'ccm-data.json', data: ccm },
+      { id: 'nova', name: 'Nova Cinemas', file: 'nova-data.json', data: nova },
+      { id: 'magaly', name: 'Cine Magaly', file: 'magaly-data.json', data: magaly },
+      { id: 'sanpedro', name: 'Cinema San Pedro', file: 'sanpedro-data.json', data: sanpedro },
+      { id: 'studio', name: 'Studio Cinemas', file: 'studio-data.json', data: studio },
+      { id: 'citicinemas', name: 'CitiCinemas', file: 'citicinemas-data.json', data: citicinemas }
+    ];
+    for (const c of chainDatasets) {
+      const existing = statusData.chains[c.id] || {};
+      statusData.chains[c.id] = {
+        id: c.id,
+        name: c.name,
+        status: existing.status || 'healthy',
+        lastSuccess: existing.lastSuccess || getCacheFileMtimeIso(c.file),
+        moviesCount: c.data.length,
+        showtimesCount: countShowtimes(c.data)
+      };
+    }
+    statusData.lastRun = new Date().toISOString();
+    fs.writeFileSync(STATUS_FILE, JSON.stringify(statusData, null, 2), 'utf8');
+    console.log(`Scraping status updated to ${STATUS_FILE}`);
   } else {
     scrapeAll();
   }

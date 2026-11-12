@@ -1,0 +1,69 @@
+{
+  "lastRun": "2026-11-12T05:00:34.268Z",
+  "chains": {
+    "cinemark": {
+      "id": "cinemark",
+      "name": "Cinemark",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T03:34:49.409Z",
+      "moviesCount": 14,
+      "showtimesCount": 777
+    },
+    "cinepolis": {
+      "id": "cinepolis",
+      "name": "Cinépolis",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T04:04:28.780Z",
+      "moviesCount": 19,
+      "showtimesCount": 876
+    },
+    "ccm": {
+      "id": "ccm",
+      "name": "CCM Cinemas",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T03:34:41.965Z",
+      "moviesCount": 12,
+      "showtimesCount": 177
+    },
+    "nova": {
+      "id": "nova",
+      "name": "Nova Cinemas",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T03:34:29.553Z",
+      "moviesCount": 12,
+      "showtimesCount": 522
+    },
+    "magaly": {
+      "id": "magaly",
+      "name": "Cine Magaly",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T04:42:42.204Z",
+      "moviesCount": 8,
+      "showtimesCount": 37
+    },
+    "sanpedro": {
+      "id": "sanpedro",
+      "name": "Cinema San Pedro",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T03:48:35.440Z",
+      "moviesCount": 10,
+      "showtimesCount": 214
+    },
+    "studio": {
+      "id": "studio",
+      "name": "Studio Cinemas",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T03:57:10.176Z",
+      "moviesCount": 9,
+      "showtimesCount": 108
+    },
+    "citicinemas": {
+      "id": "citicinemas",
+      "name": "CitiCinemas",
+      "status": "healthy",
+      "lastSuccess": "2026-11-12T03:57:17.900Z",
+      "moviesCount": 9,
+      "showtimesCount": 594
+    }
+  }
+}

@@ -1,8 +1,10 @@
 <script setup>
 import { ref, computed, reactive, onMounted, onUnmounted } from 'vue';
 import moviesData from './data/movies-data.json';
+import scrapingStatusData from './data/scraping-status.json';
 
 const isDark = ref(true);
+const statusDialog = ref(false);
 const toggleTheme = () => {
   isDark.value = !isDark.value;
   document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light');
@@ -424,6 +426,44 @@ const formatSessionDate = (dateStr) => {
   const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
   return `${dayNames[d.getDay()]} ${d.getDate()}`;
 };
+
+const statusChainsList = computed(() => {
+  const chainsMap = scrapingStatusData?.chains || {};
+  return chains.map(c => {
+    const data = chainsMap[c.id] || {};
+    return {
+      id: c.id,
+      name: c.name,
+      status: data.status || 'healthy',
+      lastSuccess: data.lastSuccess || null,
+      moviesCount: data.moviesCount || 0,
+      showtimesCount: data.showtimesCount || 0,
+      note: data.note || null
+    };
+  });
+});
+
+const hasScrapeWarnings = computed(() =>
+  statusChainsList.value.some(c => c.status === 'warning')
+);
+
+const formatStatusDate = (isoStr) => {
+  if (!isoStr) return 'Sin datos';
+  try {
+    const d = new Date(isoStr);
+    const formatter = new Intl.DateTimeFormat('es-CR', {
+      timeZone: 'America/Costa_Rica',
+      day: 'numeric',
+      month: 'short',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
+    return formatter.format(d);
+  } catch {
+    return isoStr;
+  }
+};
 </script>
 
 <template>
@@ -465,6 +505,17 @@ const formatSessionDate = (dateStr) => {
               Cronograma
             </button>
           </div>
+
+          <button
+            type="button"
+            class="md-btn md-btn-tonal md-btn-sm status-btn"
+            @click="statusDialog = true"
+            title="Ver estado de sincronización de cines"
+          >
+            <span class="status-pulse-dot" :class="hasScrapeWarnings ? 'warning' : 'healthy'"></span>
+            <span class="material-symbols-outlined sm">monitor_heart</span>
+            <span class="hide-mobile">Estado</span>
+          </button>
 
           <button
             type="button"
@@ -895,6 +946,83 @@ const formatSessionDate = (dateStr) => {
         </div>
       </div>
     </main>
+
+    <!-- HEALTH / STATUS MODAL -->
+    <div v-if="statusDialog" class="md-scrim" @click.self="statusDialog = false">
+      <div class="md-dialog" role="dialog" aria-modal="true" style="max-width: 580px;">
+        <div class="md-dialog-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="material-symbols-outlined" style="color: var(--md-sys-color-primary);">monitor_heart</span>
+            <div>
+              <div style="font-weight: 700; font-size: 1.05rem; line-height: 1.2;">
+                Estado de Carteleras
+              </div>
+              <div style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant);">
+                Última sincronización exitosa de cada cine
+              </div>
+            </div>
+          </div>
+          <button type="button" class="md-icon-btn" @click="statusDialog = false" title="Cerrar">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+
+        <div class="md-dialog-body" style="padding: 16px 20px;">
+          <div class="status-list">
+            <div
+              v-for="chain in statusChainsList"
+              :key="chain.id"
+              class="status-item-row"
+            >
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span :class="['md-badge', getChainBadgeClass(chain.id)]" style="min-width: 82px; text-align: center;">
+                  {{ chain.name }}
+                </span>
+                <div>
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <span style="font-weight: 600; font-size: 0.92rem;">{{ chain.name }}</span>
+                    <span
+                      class="md-badge xs"
+                      :class="chain.status === 'healthy' ? 'badge-green' : 'badge-amber'"
+                    >
+                      <span class="material-symbols-outlined" style="font-size: 11px;">
+                        {{ chain.status === 'healthy' ? 'check_circle' : 'history' }}
+                      </span>
+                      {{ chain.status === 'healthy' ? 'Actualizado' : 'Respaldo' }}
+                    </span>
+                  </div>
+                  <div style="font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); margin-top: 2px;">
+                    {{ chain.moviesCount }} películas • {{ chain.showtimesCount }} tandas
+                    <span v-if="chain.note" style="color: #f59e0b; margin-left: 4px;">
+                      — {{ chain.note }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="text-align: right;">
+                <div style="font-size: 0.72rem; text-transform: uppercase; font-weight: 600; color: var(--md-sys-color-on-surface-variant);">
+                  Último éxito
+                </div>
+                <div style="font-size: 0.82rem; font-weight: 600; color: var(--md-sys-color-on-surface); white-space: nowrap;">
+                  {{ formatStatusDate(chain.lastSuccess) }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md-dialog-actions" style="justify-content: space-between; align-items: center;">
+          <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant); display: flex; align-items: center; gap: 4px;">
+            <span class="material-symbols-outlined sm">schedule</span>
+            Actualización automática diaria vía GitHub Actions
+          </div>
+          <button type="button" class="md-btn md-btn-filled md-btn-sm" @click="statusDialog = false">
+            Entendido
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="md-footer">
