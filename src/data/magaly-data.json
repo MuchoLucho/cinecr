@@ -1,0 +1,406 @@
+[
+  {
+    "id": "magaly-hombresperdidos",
+    "title": "Hombres perdidos",
+    "originalTitle": "Hombres perdidos",
+    "synopsis": "Mi abuelo, casado durante 57 años en Costa Rica conservadora, murió en un incendio en 2019. Mi papá me reveló que, igual que yo, mi abuelo era gay. Tras este suceso, juntos revisitamos la vida de mi abuelo, mientras nos descubrimos a nosotros mismos.",
+    "poster": "https://image.tmdb.org/t/p/w500/rpRNKLV9NC9NnxjLjgWhvXJ2emW.jpg",
+    "rating": "M15",
+    "duration": "1h 24m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-caballosalvajenueve",
+    "title": "Caballo Salvaje Nueve",
+    "originalTitle": "Caballo Salvaje Nueve",
+    "synopsis": "Poco antes del golpe de Estado chileno de 1973, los agentes de la CIA Chris (John Malkovich) y Lee (Sam Rockwell) son enviados desde Santiago a la Isla de Pascua por su jefe de oficina, MJ (Steve Buscemi). Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros se enfrentan a sus oscuros pasados y a las conspiraciones del presente, el nuevo vínculo de Chris con dos estudiantes rebeldes (Mariana di Girolamo y Ailín Salas) amenaza con dar un giro inesperado al viaje de todos a este remoto paraíso.",
+    "poster": "https://image.tmdb.org/t/p/w500/ulvGcZer26aBaNG0s4IEJGyyLIq.jpg",
+    "rating": "M15",
+    "duration": "1h 57m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:55",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-ebenezerfantasmasnavidad",
+    "title": "Ebenezer: los fantasmas de Navidad",
+    "originalTitle": "Ebenezer: los fantasmas de Navidad",
+    "synopsis": "Reimaginación del clásico literario, una historia de fantasmas ambientada en el Londres de Dickens que sigue el viaje sobrenatural de un hombre para enfrentarse a su pasado, presente y futuro y luchar por una segunda oportunidad.",
+    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
+    "rating": "M12",
+    "duration": "1h 55m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:35",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-pingpongtriunfo",
+    "title": "Ping Pong: El Triunfo",
+    "originalTitle": "Ping Pong: El Triunfo",
+    "synopsis": "Funciones de Ping Pong: El Triunfo en Cine Magaly.",
+    "poster": "https://www.cinemagaly.com/files/movies/images/detail/6ad941cfd5d49-MV5BOGQ4NjgwN2EtMGYwYi00ZTk4LTk2MTctYjBjZTVkZmEyZmQ3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "rating": "TP+12",
+    "duration": "2h 20m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-yosoyrocky",
+    "title": "Yo soy Rocky",
+    "originalTitle": "Yo soy Rocky",
+    "synopsis": "Sylvester Stallone (Ippolito) sueña con ser actor, pero creció en la pobreza, yendo de una casa a otra, e incluso llegó a vivir en la calle. Ahora, con veintitantos años, lo más cerca que ha estado de la gran pantalla es actuando en una película porno y trabajando como acomodador. Un día, viendo a Muhammad Ali pelear contra Chuck Wepner, le llega la inspiración: en unos días de frenética actividad, escribe un guion sobre un boxeador desvalido que llega hasta el final. A los ejecutivos del estudio les encanta, pero se resisten a la condición de Sylvester de interpretar al héroe. La producción de esta ambiciosa película independiente resultará mucho más ardua de lo que nadie podría haber imaginado.",
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
+    "rating": "M15",
+    "duration": "2h 8m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:55",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:35",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-capitan",
+    "title": "El capitán",
+    "originalTitle": "El capitán",
+    "synopsis": "Mientras Steve Rogers lucha por asumir su papel en el mundo moderno, se une a un compañero Vengador y agente de S.H.I.E.L.D., Viuda Negra, para luchar contra una nueva amenaza de la historia: un asesino conocido como el Soldado de Invierno.",
+    "poster": "https://image.tmdb.org/t/p/w500/3Zv12uAqBxj4xAdeHeVySEQzY1o.jpg",
+    "rating": "TP+12",
+    "duration": "2h 16m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-wildwoodbosquesalvaje",
+    "title": "Wildwood: El bosque salvaje",
+    "originalTitle": "Wildwood: El bosque salvaje",
+    "synopsis": "Cuando el hermanito de Prue McKeel es raptado por una bandada de cuervos, se verá obligada a emprender una desesperada misión de rescate. Acompañada por su torpe pero leal compañero de clase Curtis Mehlberg, Prue se adentra en un mundo de animales parlantes, bandidos y poderosos personajes movidos por el dolor y la ambición. A medida que ambos se ven arrastrados a un conflicto que amenaza el equilibrio del bosque, Prue deberá descubrir una fortaleza y una determinación que nunca supo que poseía. Si quiere salvar a su hermano y proteger el frágil futuro de Wildwood, tendrá que arriesgarlo todo.",
+    "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
+    "rating": "M12",
+    "duration": "2h 12m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-inmortales",
+    "title": "Los inmortales",
+    "originalTitle": "Los inmortales",
+    "synopsis": "Jin Feng, un joven divino, desciende al mundo mortal para redimir los pecados de su familia capturandoa 28 espíritus estelares. Allí conoce a Xiao Fan, una joven mortal que busca alcanzar el reino celestialpara encontrar a su madre desaparecida. Aunque inicialmente se enfrentan como rivales, ambosterminan formando una alianza. Mientras atraviesan desafíos, criaturas y fuerzas legendarias,descubren una verdad que permanecía oculta y que cambiará para siempre su destino.",
+    "poster": "https://image.tmdb.org/t/p/w500/9mKXsmDDYpnKKuviOxMTQxr2q86.jpg",
+    "rating": "TP+12",
+    "duration": "1h 26m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

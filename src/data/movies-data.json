@@ -870,6 +870,51 @@
     ]
   },
   {
+    "id": "magaly-caballosalvajenueve",
+    "title": "Caballo Salvaje Nueve",
+    "originalTitle": "Caballo Salvaje Nueve",
+    "synopsis": "Poco antes del golpe de Estado chileno de 1973, los agentes de la CIA Chris (John Malkovich) y Lee (Sam Rockwell) son enviados desde Santiago a la Isla de Pascua por su jefe de oficina, MJ (Steve Buscemi). Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros se enfrentan a sus oscuros pasados y a las conspiraciones del presente, el nuevo vínculo de Chris con dos estudiantes rebeldes (Mariana di Girolamo y Ailín Salas) amenaza con dar un giro inesperado al viaje de todos a este remoto paraíso.",
+    "poster": "https://image.tmdb.org/t/p/w500/ulvGcZer26aBaNG0s4IEJGyyLIq.jpg",
+    "rating": "M15",
+    "duration": "1h 57m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:55",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedKey": "caballosalvajenueve"
+  },
+  {
     "id": "ccm-95",
     "normalizedKey": "cineentrelineas",
     "title": "Cine entre lineas",
@@ -3015,7 +3060,7 @@
     "id": "113989",
     "title": "Ebenezer fantasmas de Navidad",
     "originalTitle": "Ebenezer fantasmas de Navidad ",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -3026,7 +3071,8 @@
       "Drama",
       "Ciencia ficción",
       "Comedia",
-      "Cine"
+      "Cine",
+      "Independiente"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
@@ -5767,9 +5813,103 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:35",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
+  },
+  {
+    "id": "magaly-capitan",
+    "title": "El capitán",
+    "originalTitle": "El capitán",
+    "synopsis": "Mientras Steve Rogers lucha por asumir su papel en el mundo moderno, se une a un compañero Vengador y agente de S.H.I.E.L.D., Viuda Negra, para luchar contra una nueva amenaza de la historia: un asesino conocido como el Soldado de Invierno.",
+    "poster": "https://image.tmdb.org/t/p/w500/3Zv12uAqBxj4xAdeHeVySEQzY1o.jpg",
+    "rating": "TP+12",
+    "duration": "2h 16m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedKey": "capitan"
   },
   {
     "id": "112951",
@@ -10474,6 +10614,55 @@
     "normalizedKey": "godzillaminuszero"
   },
   {
+    "id": "magaly-hombresperdidos",
+    "title": "Hombres perdidos",
+    "originalTitle": "Hombres perdidos",
+    "synopsis": "Mi abuelo, casado durante 57 años en Costa Rica conservadora, murió en un incendio en 2019. Mi papá me reveló que, igual que yo, mi abuelo era gay. Tras este suceso, juntos revisitamos la vida de mi abuelo, mientras nos descubrimos a nosotros mismos.",
+    "poster": "https://image.tmdb.org/t/p/w500/rpRNKLV9NC9NnxjLjgWhvXJ2emW.jpg",
+    "rating": "M15",
+    "duration": "1h 24m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedKey": "hombresperdidos"
+  },
+  {
     "id": "113840",
     "title": "Hunger Games 6 Amanecer",
     "originalTitle": "Hunger Games 6 Amanecer ",
@@ -10960,6 +11149,43 @@
     ]
   },
   {
+    "id": "magaly-inmortales",
+    "title": "Los inmortales",
+    "originalTitle": "Los inmortales",
+    "synopsis": "Jin Feng, un joven divino, desciende al mundo mortal para redimir los pecados de su familia capturandoa 28 espíritus estelares. Allí conoce a Xiao Fan, una joven mortal que busca alcanzar el reino celestialpara encontrar a su madre desaparecida. Aunque inicialmente se enfrentan como rivales, ambosterminan formando una alianza. Mientras atraviesan desafíos, criaturas y fuerzas legendarias,descubren una verdad que permanecía oculta y que cambiará para siempre su destino.",
+    "poster": "https://image.tmdb.org/t/p/w500/9mKXsmDDYpnKKuviOxMTQxr2q86.jpg",
+    "rating": "TP+12",
+    "duration": "1h 26m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedKey": "inmortales"
+  },
+  {
     "id": "112854",
     "title": "Madre Siniestra",
     "originalTitle": "Madre Siniestra",
@@ -11067,6 +11293,43 @@
       }
     ],
     "normalizedKey": "madresiniestra"
+  },
+  {
+    "id": "magaly-pingpongtriunfo",
+    "title": "Ping Pong: El Triunfo",
+    "originalTitle": "Ping Pong: El Triunfo",
+    "synopsis": "Funciones de Ping Pong: El Triunfo en Cine Magaly.",
+    "poster": "https://www.cinemagaly.com/files/movies/images/detail/6ad941cfd5d49-MV5BOGQ4NjgwN2EtMGYwYi00ZTk4LTk2MTctYjBjZTVkZmEyZmQ3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "rating": "TP+12",
+    "duration": "2h 20m",
+    "genres": [
+      "Cine",
+      "Independiente"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedKey": "pingpongtriunfo"
   },
   {
     "id": "112657",
@@ -11873,7 +12136,7 @@
     "id": "113816",
     "title": "Wildwood El Bosque Salvaje",
     "originalTitle": "Wildwood El Bosque Salvaje",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -11884,7 +12147,8 @@
       "Animado",
       "Aventura",
       "Acción",
-      "Cine"
+      "Cine",
+      "Independiente"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
     "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
@@ -12885,6 +13149,35 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "wildwoodbosquesalvaje"
@@ -12893,7 +13186,7 @@
     "id": "114001",
     "title": "Yo soy Rocky",
     "originalTitle": "Yo soy Rocky",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -12901,7 +13194,8 @@
     "director": "Peter  Farrelly",
     "genres": [
       "Drama",
-      "Cine"
+      "Cine",
+      "Independiente"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
     "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
@@ -14061,6 +14355,79 @@
               {
                 "time": "21:00",
                 "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:55",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:35",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
               }
             ]
           }

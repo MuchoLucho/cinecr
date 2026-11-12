@@ -12,6 +12,7 @@
     "scrape:cinepolis": "node scripts/scrape-cinepolis.js",
     "scrape:ccm": "node scripts/scrape-ccm.js",
     "scrape:nova": "node scripts/scrape-nova.js",
+    "scrape:magaly": "node scripts/scrape-magaly.js",
     "scrape:all": "node scripts/scrape.js"
   },
   "dependencies": {

@@ -5,6 +5,7 @@ import { scrapeCinemark } from './scrape-cinemark.js';
 import { scrapeCinepolis } from './scrape-cinepolis.js';
 import { scrapeCcm } from './scrape-ccm.js';
 import { scrapeNova } from './scrape-nova.js';
+import { scrapeMagaly } from './scrape-magaly.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -97,15 +98,16 @@ export function mergeDatasets(...datasets) {
 }
 
 export async function scrapeAll() {
-  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova) ===');
-  const [cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies] = await Promise.all([
+  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova + Magaly) ===');
+  const [cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies] = await Promise.all([
     scrapeCinemark(),
     scrapeCinepolis(),
     scrapeCcm(),
-    scrapeNova()
+    scrapeNova(),
+    scrapeMagaly()
   ]);
 
-  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies);
+  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies);
   const outDir = path.resolve(__dirname, '../src/data');
   const outFile = path.join(outDir, 'movies-data.json');
   fs.writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf-8');
@@ -120,7 +122,8 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
     const cp = JSON.parse(fs.readFileSync(path.join(dataDir, 'cinepolis-data.json'), 'utf8'));
     const ccm = JSON.parse(fs.readFileSync(path.join(dataDir, 'ccm-data.json'), 'utf8'));
     const nova = JSON.parse(fs.readFileSync(path.join(dataDir, 'nova-data.json'), 'utf8'));
-    const merged = mergeDatasets(cm, cp, ccm, nova);
+    const magaly = JSON.parse(fs.readFileSync(path.join(dataDir, 'magaly-data.json'), 'utf8'));
+    const merged = mergeDatasets(cm, cp, ccm, nova, magaly);
     fs.writeFileSync(path.join(dataDir, 'movies-data.json'), JSON.stringify(merged, null, 2), 'utf8');
     console.log(`Merged ${merged.length} movies to movies-data.json`);
   } else {

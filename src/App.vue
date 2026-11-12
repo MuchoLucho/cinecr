@@ -80,6 +80,14 @@ const chains = [
     complexes: 'Avenida Escazú, Ciudad del Este Curridabat, Plaza Real Alajuela, Plaza Moín Limón, Tamarindo Guanacaste',
     integrationMethod: 'API Vista Central Live Scraping (JSON)',
     status: 'Activo'
+  },
+  {
+    id: 'magaly',
+    name: 'Cine Magaly',
+    url: 'https://www.cinemagaly.com',
+    complexes: 'Barrio La California, San José (Sala Magaly & La Salita)',
+    integrationMethod: 'Programación Web API Scraping (JSON)',
+    status: 'Activo'
   }
 ];
 
@@ -298,6 +306,7 @@ const getChainBadgeClass = (chainId) => {
   if (chainId === 'cinepolis') return 'badge-blue';
   if (chainId === 'ccm') return 'badge-cyan';
   if (chainId === 'nova') return 'badge-green';
+  if (chainId === 'magaly') return 'badge-amber';
   return 'badge-red';
 };
 
@@ -434,7 +443,7 @@ const openSessionModal = (movie, complex, group, session) => {
             </div>
             <h1 class="hero-title">Cartelera en Tiempo Real</h1>
             <p class="hero-desc">
-              Tandas, formatos de sala (VIP, IMAX, LASERMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark, Cinépolis, CCM Cinemas y Nova Cinemas Costa Rica.
+              Tandas, formatos de sala (VIP, IMAX, LASERMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark, Cinépolis, CCM Cinemas, Nova Cinemas y Cine Magaly Costa Rica.
             </p>
           </div>
 
@@ -777,7 +786,7 @@ const openSessionModal = (movie, complex, group, session) => {
             <div>
               <h2 style="font-size: 1.25rem; font-weight: 700;">Cronograma de Tandas</h2>
               <div style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant);">
-                Horarios cronológicos reales de Cinemark, Cinépolis, CCM Cinemas y Nova Cinemas
+                Horarios cronológicos reales de Cinemark, Cinépolis, CCM Cinemas, Nova Cinemas y Cine Magaly
               </div>
             </div>
             <div style="min-width: 260px;">
@@ -984,7 +993,7 @@ const openSessionModal = (movie, complex, group, session) => {
     <footer class="md-footer">
       <div class="md-container">
         <div style="margin-bottom: 8px;">
-          <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark, Cinépolis, CCM Cinemas y Nova Cinemas Costa Rica.
+          <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark, Cinépolis, CCM Cinemas, Nova Cinemas y Cine Magaly Costa Rica.
         </div>
         <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); opacity: 0.85;">
           <img
