@@ -785,19 +785,48 @@ const formatSessionDate = (dateStr) => {
       </div>
     </main>
 
-    <!-- FOOTER WITH TMDB ATTRIBUTION -->
+    <!-- FOOTER -->
     <footer class="md-footer">
       <div class="md-container">
-        <div style="margin-bottom: 8px;">
-          <strong>CineCR</strong> — Cartelera de cine en Costa Rica.
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px;">
+          <span><strong>CineCR</strong> — Cartelera de cine en Costa Rica</span>
+          <span>•</span>
+          <a
+            href="https://github.com/MuchoLucho/cinecr/blob/main/LICENSE"
+            target="_blank"
+            rel="noopener"
+            style="color: inherit; text-decoration: underline;"
+          >
+            Licencia Apache 2.0
+          </a>
+          <span>•</span>
+          <a
+            href="https://github.com/MuchoLucho/cinecr"
+            target="_blank"
+            rel="noopener"
+            class="md-btn md-btn-tonal md-btn-sm"
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 5px;"
+          >
+            <span class="material-symbols-outlined sm">code</span>
+            Colaborar
+          </a>
         </div>
-        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); opacity: 0.85;">
+
+        <div style="font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); max-width: 720px; margin: 0 auto 12px; line-height: 1.4; opacity: 0.85;">
+          Descargo de responsabilidad: CineCR es un proyecto independiente y de código abierto. No está vinculado, afiliado ni respaldado por ninguna de las salas o cadenas de cine mencionadas ni por los estudios cinematográficos.
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 0.74rem; color: var(--md-sys-color-on-surface-variant); margin-bottom: 12px; opacity: 0.85;">
           <img
             src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
             alt="TMDb Logo"
             style="height: 12px; width: auto;"
           />
           <span>This product uses the TMDB API but is not endorsed or certified by TMDB.</span>
+        </div>
+
+        <div style="font-size: 0.85rem; color: var(--md-sys-color-on-surface); font-weight: 500;">
+          Hecho con ❤️ por <a href="https://github.com/MuchoLucho" target="_blank" rel="noopener" style="color: var(--md-sys-color-primary); text-decoration: none; font-weight: 600;">Lucho</a>
         </div>
       </div>
     </footer>
