@@ -12,7 +12,7 @@
     "genres": [
       "Terror"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/7NpaoOzGDRKJ53znEucFpF2IszT.jpg",
     "synopsis": "Una reinvencion oscura de Pinocho, este inquietante relato explora la naturaleza siniestra de la iconica marioneta, desdibujando la linea entre realidad y fantasia.",
     "theaters": [
       {
@@ -58,28 +58,6 @@
             ]
           }
         ]
-      },
-      {
-        "complexId": "cmk-2210",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Playground Oxígeno",
-        "province": "Heredia",
-        "locationDetail": "San Francisco de Heredia",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "VIP",
-            "language": "DOB",
-            "auditorium": "HO00068178",
-            "times": [
-              {
-                "time": "19:05",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -96,7 +74,7 @@
     "genres": [
       "Terror"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/5yUwsjgWlYCIF5ck1NaUr5zEGg7.jpg",
     "synopsis": "Bela, una ninia de 8 anios que vive en un hogar con problemas matrimoniales, enfrenta a una entidad siniestra que sale de su closet. La presencia, a quien llama Otra Mama, se vuelve cada vez mas amenazante para ella y su familia.",
     "theaters": [
       {
@@ -113,10 +91,6 @@
             "language": "DOB",
             "auditorium": "HO00071587",
             "times": [
-              {
-                "time": "18:55",
-                "date": "2026-11-11"
-              },
               {
                 "time": "20:30",
                 "date": "2026-11-11"
@@ -371,7 +345,7 @@
     "genres": [
       "Accion"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
     "synopsis": "Tras sobrevivir a un brutal accidente aereo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate Odín intentan regresar a la civilizacion desde un remoto lugar en medio de los parajes salvajes de Alaska.",
     "theaters": [
       {
@@ -595,7 +569,7 @@
     "genres": [
       "Terror"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
     "synopsis": "La historia sigue a Matt Hagen, un actor que sufre una transformacion aterradora que lo convierte en Clayface.",
     "theaters": [
       {
@@ -1021,7 +995,7 @@
     "genres": [
       "Accion"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "synopsis": "En 1949, la familia Shikishima se enfrenta a una nueva catastrofe dos anos despues de haber sobrevivido a su anterior encuentro con el legendario monstruo.",
     "theaters": [
       {
@@ -1484,10 +1458,6 @@
             "auditorium": "HO00072097",
             "times": [
               {
-                "time": "18:50",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "20:30",
                 "date": "2026-11-11"
               },
@@ -1759,17 +1729,6 @@
           },
           {
             "format": "XD",
-            "language": "DOB",
-            "auditorium": "HO00072107",
-            "times": [
-              {
-                "time": "19:00",
-                "date": "2026-11-11"
-              }
-            ]
-          },
-          {
-            "format": "XD",
             "language": "SUB",
             "auditorium": "HO00072106",
             "times": [
@@ -2018,7 +1977,7 @@
     "genres": [
       "Animada"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "synopsis": "El Gato con Sombrero llega a la pantalla grande en su debut en pelicula animada, una aventura epica y completamente nueva, con un toque rebelde, donde la travesura, la magia y el caos gobiernan por completo. ",
     "theaters": [
       {
@@ -2880,7 +2839,7 @@
     "genres": [
       "Accion"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/ulvGcZer26aBaNG0s4IEJGyyLIq.jpg",
     "synopsis": "En 1973, durante un periodo de tension politica en Chile, dos agentes de la CIA emprenden una mision que los lleva desde Santiago hasta la Isla de Pascua. El viaje pondra a prueba su confianza y lealtad. ",
     "theaters": [
       {
@@ -2986,7 +2945,7 @@
     "genres": [
       "Accion"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
     "synopsis": "Un grupo de ladrones de bancos comienza a compartir sus atracos en redes sociales, convirtiendo sus delitos en un espectaculo. Mientras ganan popularidad, las autoridades inician una intensa persecucion para detenerlos.",
     "theaters": [
       {
@@ -3679,7 +3638,7 @@
     "genres": [
       "Drama"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/24NaFGEgoQ6W9OgXMaDHyg7Rfwq.jpg",
     "synopsis": "En un bosque de Finlandia, Saga y su esposo comienzan una nueva etapa como padres. Sin embargo, la felicidad se transforma en inquietud cuando Saga sospecha que algo perturbador sucede con su bebe, provocando una creciente tension en su matrimonio.",
     "theaters": [
       {
@@ -3950,7 +3909,7 @@
     "genres": [
       "Animada"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
     "synopsis": "Mientras la pareja se ve arrastrada a un conflicto que amenaza el equilibrio del bosque, Prue debe descubrir la fuerza y la fe que nunca supo que poseia. Si quiere salvar a su hermano y proteger el futuro de Wildwood, tendra que arriesgarlo todo.",
     "theaters": [
       {
@@ -4369,7 +4328,7 @@
     "genres": [
       "Fantasia"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "synopsis": "Ebenezer, un hombre egoista y avaro, recibe la visita de tres espiritus que lo llevan a recorrer su pasado, presente y futuro. Durante esta experiencia sobrenatural debera enfrentarse a sus errores y descubrir el verdadero significado de la Navidad.",
     "theaters": [
       {
@@ -5920,7 +5879,7 @@
     "genres": [
       "Drama"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/hKKX2PxzynUxs8JXVjApuiW89Yo.jpg",
     "synopsis": "Austin es un vendedor de automoviles usados que utiliza metodos deshonestos para obtener ganancias. Cuando sus decisiones comienzan a perjudicar a su familia y su negocio, descubre que necesita cambiar su forma de vivir y recuperar la confianza.",
     "theaters": [
       {
@@ -6290,7 +6249,7 @@
     "genres": [
       "Drama"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
     "synopsis": "Sylvester Stallone, un joven que lucha por abrirse camino en Hollywood, encuentra inspiracion para escribir la historia de un boxeador. Convencido que debe interpretar al protagonista, enfrenta obstaculos para llevar su proyecto a la pantalla grande.",
     "theaters": [
       {
@@ -6976,7 +6935,7 @@
     "genres": [
       "Terror"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/ms6V9gUMcw6T6ENgUCU7SL5x7dl.jpg",
     "synopsis": "Una mujer desesperada por convertirse en madre realiza un pacto con fuerzas sobrenaturales. Cuando finalmente queda embarazada, comienza a experimentar acontecimientos aterradores que ponen en peligro su vida y la de su familia.",
     "theaters": [
       {
@@ -7321,7 +7280,7 @@
     "genres": [
       "Drama"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
     "synopsis": "Esta historia nos transporta al pasado de Panem, 24 anios antes de los eventos originales, durante el 50 Juego del Hambre, una edicion historica conocida como el Segundo Vasallaje de los Veinticinco, donde el numero de tributos se duplica.",
     "theaters": [
       {
@@ -9342,7 +9301,7 @@
     "genres": [
       "Concierto Musical"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/kbwAR849GqMmZs01Uwm5MXL6CWd.jpg",
     "synopsis": "El viaje que bate records sigue adelante, ya que la gira de BTS por Asia, que esta haciendo historia, llega a la pantalla grande. Unete al rugido de la multitud en Kaohsiung este noviembre.",
     "theaters": [
       {
@@ -9491,7 +9450,7 @@
     "genres": [
       "Accion"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/5myJqI5SeZckhC8B2vMz7Nbl46z.jpg",
     "synopsis": "Duna 3 se ambienta casi dos decadas despues de que Paul Atreides tomo el control del Imperio. Convertido en un despiadado Emperador, debera enfrentar las consecuencias de su reinado a medida que regresan viejos aliados, surgen aterradoras amenazas.",
     "theaters": [
       {
@@ -10156,7 +10115,7 @@
     "genres": [
       "Suspenso"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/3A4IzhQHCzX5nuQParZp07F5rCT.jpg",
     "synopsis": "En AVENGERS: DOOMSDAY, queridos heroes de tres universos distintos se veran arrastrados hacia una colision mortal y enfrentaran una amenaza existencial como ninguna otra que hayan encontrado.",
     "theaters": [
       {
@@ -15738,7 +15697,7 @@
     "genres": [
       "Concierto Musical"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/gEMCs6RPDJFSAFkc9JXxhaL0AGV.jpg",
     "synopsis": "El viaje que bate records sigue adelante, ya que la gira de BTS por Asia, que esta haciendo historia, llega a la pantalla grande. Unete a BTS en la gran final de fin de anio en Yakarta en diciembre.",
     "theaters": [
       {
@@ -15867,7 +15826,7 @@
     "genres": [
       "Terror"
     ],
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
     "synopsis": "Sigue a un desafortunado mensajero encargado de entregar un paquete a un hospital remoto. Pronto se encuentra atrapado en medio de una epidemia y debe luchar contra hordas de criaturas mutantes para sobrevivir.",
     "theaters": [
       {

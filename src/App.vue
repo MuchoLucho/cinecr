@@ -859,10 +859,20 @@ const openSessionModal = (movie, complex, group, session) => {
       </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- FOOTER WITH TMDB ATTRIBUTION -->
     <footer class="md-footer">
       <div class="md-container">
-        <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark Costa Rica (City Mall, Multiplaza Escazú, Multiplaza Curridabat, Oxígeno).
+        <div style="margin-bottom: 8px;">
+          <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark Costa Rica (City Mall, Multiplaza Escazú, Multiplaza Curridabat, Oxígeno).
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); opacity: 0.85;">
+          <img
+            src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+            alt="TMDb Logo"
+            style="height: 12px; width: auto;"
+          />
+          <span>This product uses the TMDB API but is not endorsed or certified by TMDB.</span>
+        </div>
       </div>
     </footer>
   </div>

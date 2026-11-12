@@ -1,6 +1,7 @@
 /**
  * Cinemark Costa Rica Scraper
  * Uses Cinemark Central America's official Vista REST API
+ * Enriched with TMDb movie posters (with Wikipedia fallback)
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -8,7 +9,23 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Cinemark theaters in Costa Rica (from https://cinemarkmedia.modyocdn.com/ca/api/theatres.json)
+// Load .env if present
+const envPath = path.resolve(__dirname, '../.env');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf-8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
+      const [key, ...vals] = trimmed.split('=');
+      const val = vals.join('=').replace(/^["']|["']$/g, '');
+      process.env[key.trim()] = val.trim();
+    }
+  }
+}
+
+const TMDB_TOKEN = process.env.TMDB_READ_ACCESS_TOKEN;
+
+// Cinemark theaters in Costa Rica
 const THEATERS = [
   { id: '2204', name: 'City Mall Alajuela', province: 'Alajuela', locationDetail: 'Alajuela, Radial' },
   { id: '773', name: 'Multiplaza Curridabat', province: 'San José', locationDetail: 'Curridabat, Multiplaza del Este' },
@@ -50,6 +67,54 @@ async function fetchBillboard(theaterId) {
   return await res.json();
 }
 
+/**
+ * Query TMDb Search API
+ */
+async function fetchTmdbPoster(title) {
+  if (!TMDB_TOKEN) return null;
+  try {
+    const cleanTitle = title.replace(/\b(2D|3D|XD|DOB|SUB|PRE|IV|-CR)\b/gi, '').trim();
+    const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
+    const res = await fetch(url, {
+      headers: {
+        'Authorization': `Bearer ${TMDB_TOKEN}`,
+        'Accept': 'application/json'
+      }
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const result = (data.results || []).find(m => m.poster_path);
+    if (result && result.poster_path) {
+      return `https://image.tmdb.org/t/p/w500${result.poster_path}`;
+    }
+  } catch (err) {
+    // shortcut: silent fallback on network/rate limit
+  }
+  return null;
+}
+
+/**
+ * Wikipedia API Fallback
+ */
+async function fetchWikipediaPoster(title) {
+  try {
+    const cleanTitle = title.replace(/\b(2D|3D|XD|DOB|SUB|PRE|IV|-CR)\b/gi, '').trim();
+    const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent(cleanTitle + ' film')}&gsrlimit=1&prop=pageimages&pithumbsize=500`;
+    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const pages = data?.query?.pages || {};
+    for (const pageId in pages) {
+      if (pages[pageId]?.thumbnail?.source) {
+        return pages[pageId].thumbnail.source;
+      }
+    }
+  } catch (err) {
+    // shortcut: silent fallback
+  }
+  return null;
+}
+
 export async function scrapeCinemark() {
   console.log('Scraping Cinemark Costa Rica showtimes...');
   const movieMap = new Map();
@@ -65,7 +130,7 @@ export async function scrapeCinemark() {
         const rawMovies = dayEntry.movies || [];
 
         for (const rawMovie of rawMovies) {
-          // Group by corporate_film_id (same movie across regular/VIP complexes) or fallback to normalized title
+          // Group by corporate_film_id (same movie across regular/VIP complexes)
           const movieId = rawMovie.corporate_film_id || rawMovie.title.toLowerCase().replace(/[^a-z0-9]/g, '-');
           
           if (!movieMap.has(movieId)) {
@@ -130,6 +195,27 @@ export async function scrapeCinemark() {
   }
 
   const movies = Array.from(movieMap.values()).filter(m => m.theaters.length > 0);
+
+  // Enrich with TMDb posters (Wikipedia fallback)
+  console.log(`Enriching ${movies.length} movies with posters...`);
+  for (const movie of movies) {
+    if (!movie.poster) {
+      const tmdbPoster = await fetchTmdbPoster(movie.originalTitle || movie.title);
+      if (tmdbPoster) {
+        movie.poster = tmdbPoster;
+        console.log(`  ✓ TMDb: ${movie.title}`);
+      } else {
+        const wikiPoster = await fetchWikipediaPoster(movie.originalTitle || movie.title);
+        if (wikiPoster) {
+          movie.poster = wikiPoster;
+          console.log(`  ✓ Wikipedia: ${movie.title}`);
+        } else {
+          console.log(`  - Fallback SVG: ${movie.title}`);
+        }
+      }
+    }
+  }
+
   const outDir = path.resolve(__dirname, '../src/data');
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -139,7 +225,6 @@ export async function scrapeCinemark() {
   return movies;
 }
 
-// shortcut: self-executing if run directly via node, upgrade to CLI commander if options needed
 if (process.argv[1] && process.argv[1].endsWith('scrape-cinemark.js')) {
   scrapeCinemark();
 }
