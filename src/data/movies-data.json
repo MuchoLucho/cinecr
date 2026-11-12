@@ -7967,7 +7967,7 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
-    "score": "7.2",
+    "score": "7.4",
     "duration": "1h 48m",
     "director": "Erica Rivinoja, Alessandro Carloni",
     "genres": [
@@ -17044,14 +17044,15 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
-    "duration": "1h 30m",
-    "director": "Linus O'Brien",
+    "score": "8.8",
+    "duration": "2h 8m",
+    "director": "Peter Farrelly",
     "genres": [
-      "Documental"
+      "Drama",
+      "Historia"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/dsmzcTYLKrHLeZZZXiLPN0uUuYH.jpg",
-    "synopsis": "Una obra de teatro londinense se convierte en un innovador fenómeno de culto, con canciones icónicas e interpretaciones que celebran la individualidad. Su legado perdura a través de proyecciones a medianoche y un público devoto que abarca generaciones.",
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
     "theaters": [
       {
         "complexId": "cmk-2204",

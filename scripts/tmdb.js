@@ -28,7 +28,7 @@ export const TITLE_ALIASES = {
   'ping pong: el triunfo': 'Ping Pong: The Triumph',
   'ping pong el triunfo': 'Ping Pong: The Triumph',
   'shrek 25 aniversario': 'Shrek',
-  'yo soy rocky': 'The Rocky Story'
+  'yo soy rocky': 'I Play Rocky'
 };
 
 export function getCleanSearchTitle(rawTitle) {
