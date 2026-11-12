@@ -305,7 +305,7 @@
     "director": "N/A",
     "genres": [
       "Comedia",
-      "Thriller"
+      "Suspenso"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/tCWAhDOglkW7ChhYvpRnMlLURTJ.jpg",
     "synopsis": "El novelista misántropo François escribe apasionantes historias de crímenes -una mezcla de Agatha Christie y La Pimpinela Escarlata-, pero fuera del mundo imaginario de capa y espada de sus novelas, la vida dista mucho de ser emocionante. Su mujer, Colette, profesora de la Sorbona y experta mundialmente conocida en Alfred Hitchcock, está harta de ver a François sentado en su apartamento en pijama y añora la emoción de las películas clásicas que ve con sus alumnos. Cuando Colette empieza a sospechar que su extravagante vecino ha asesinado a su esposa, la tranquila vida de la pareja da un vuelco y su relación, que estaba estancada, resurge de golpe.",
@@ -878,7 +878,6 @@
     "rating": "M15",
     "duration": "1h 57m",
     "genres": [
-      "Cine",
       "Independiente"
     ],
     "theaters": [
@@ -966,8 +965,7 @@
     "director": "James  Watkins",
     "genres": [
       "Terror",
-      "Suspenso",
-      "Cine"
+      "Suspenso"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
     "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
@@ -1599,11 +1597,9 @@
     "duration": "2h 2m",
     "director": "David  Leitch",
     "genres": [
-      "Accion",
       "Acción",
       "Comedia",
-      "Thriller",
-      "Cine"
+      "Suspenso"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
     "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
@@ -3415,9 +3411,7 @@
     "score": "8.0",
     "duration": "2h 0m",
     "director": "N/A",
-    "genres": [
-      "Cine"
-    ],
+    "genres": [],
     "poster": "https://www.ccmcinemas.com/images/posters/400_94.jpg",
     "synopsis": "Concierto de Plancha y despecho en el Cine\n\nVen a disfrutar de un evento especial y único,en el que podrás disfrutar los mejores éxitos de Plancha y Despecho,en la voz de Yecson Carvajal,en vivo en el Cine.",
     "theaters": [
@@ -3457,7 +3451,7 @@
     "director": "N/A",
     "genres": [
       "Acción",
-      "Animado",
+      "Animación",
       "Aventura"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/e4P8CIoffzsyjTm9e6U87Mng2CU.jpg",
@@ -3526,13 +3520,11 @@
     "duration": "1h 55m",
     "director": "Ti  West",
     "genres": [
-      "Fantasia",
+      "Fantasía",
       "Drama",
-      "Ciencia ficción",
+      "Ciencia Ficción",
       "Comedia",
-      "Cine",
-      "Independiente",
-      "Fantasía"
+      "Independiente"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
@@ -7162,7 +7154,6 @@
     "rating": "TP+12",
     "duration": "2h 16m",
     "genres": [
-      "Cine",
       "Independiente"
     ],
     "theaters": [
@@ -7201,10 +7192,8 @@
     "duration": "1h 41m",
     "director": "David  Ayer",
     "genres": [
-      "Accion",
-      "Drama",
       "Acción",
-      "Cine",
+      "Drama",
       "Aventura"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
@@ -7958,11 +7947,7 @@
     "duration": "1h 48m",
     "director": "Alessandro  Carloni",
     "genres": [
-      "Animada",
-      "Animado",
-      "Animación",
-      "Cine",
-      "Animadas"
+      "Animación"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
@@ -11150,7 +11135,9 @@
     "rating": "TP",
     "duration": "1h 37m",
     "genres": [
-      "Cine"
+      "Acción",
+      "Comedia",
+      "Suspenso"
     ],
     "theaters": [
       {
@@ -11436,12 +11423,9 @@
     "duration": "2h 15m",
     "director": "Takashi  Yamazaki",
     "genres": [
-      "Accion",
-      "Drama",
       "Acción",
-      "Ciencia ficción",
-      "Ciencia Ficción",
-      "Cine"
+      "Drama",
+      "Ciencia Ficción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
@@ -13864,7 +13848,6 @@
     "rating": "M15",
     "duration": "1h 24m",
     "genres": [
-      "Cine",
       "Independiente"
     ],
     "theaters": [
@@ -13916,8 +13899,7 @@
     "director": "Francis  Lawrence",
     "genres": [
       "Drama",
-      "Ciencia Ficción",
-      "Cine"
+      "Ciencia Ficción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
     "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
@@ -14400,7 +14382,9 @@
     "duration": "2h 53m",
     "director": "N/A",
     "genres": [
-      "Cine"
+      "Aventura",
+      "Acción",
+      "Fantasía"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/sRxbUe5FB25Gde0e2FnwwSckpXb.jpg",
     "synopsis": "El legendario Odiseo enfrenta peligros épicos en su viaje de regreso a casa tras la Guerra de Troya. A lo largo de su travesía se encuentra con criaturas míticas y dioses caprichosos, superando múltiples desafíos antes de reunirse con Penélope.",
@@ -14453,7 +14437,6 @@
     "rating": "TP+12",
     "duration": "1h 26m",
     "genres": [
-      "Cine",
       "Independiente"
     ],
     "theaters": [
@@ -14599,7 +14582,6 @@
     "rating": "TP+12",
     "duration": "2h 20m",
     "genres": [
-      "Cine",
       "Independiente"
     ],
     "theaters": [
@@ -14840,7 +14822,8 @@
     "duration": "2h 16m",
     "director": "N/A",
     "genres": [
-      "Cine"
+      "Drama",
+      "Romance"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/m9uBQtgUcFdY5hBWdTlgEypkcDq.jpg",
     "synopsis": "La señora Dashwood, Elinor, Marianne y Margaret, son tres hermanas del segundo matrimonio del señor Dashwood. Cuando este muere, deja toda la herencia al hijo de su primer matrimonio. Las Dashwood, se quedan un corto tiempo en la que era su casa, donde conocen a Edward Ferrars, cuñado de su hermanastro del cual Elinor se enamora. Cuando se trasladan a una casa en el campo, Marianne se enamora de John Willoughby, que vive cerca de su nueva casa. Durante su estancia allí ella aprenderá a madurar acerca de los conceptos del amor.",
@@ -14894,8 +14877,8 @@
     "duration": "1h 31m",
     "director": "N/A",
     "genres": [
-      "Niños",
-      "Animado"
+      "Familiar",
+      "Animación"
     ],
     "poster": "https://assets.biggerpicture.ai/assets/HO-1620/eventmaster/2677_4.png",
     "synopsis": "Sin sinopsis disponible.",
@@ -14988,7 +14971,6 @@
     "duration": "2h 0m",
     "director": "N/A",
     "genres": [
-      "Cine",
       "Acción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
@@ -15143,8 +15125,7 @@
     "duration": "2h 5m",
     "director": "Alex  Kendrick",
     "genres": [
-      "Drama",
-      "Cine"
+      "Drama"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/hKKX2PxzynUxs8JXVjApuiW89Yo.jpg",
     "synopsis": "Sigue la historia de Noah Silva, un vendedor de autos usados cuya manera poco ética de hacer negocios comienza a afectar tanto su vida familiar como profesional. Después de enfrentar varias llamadas de atención que lo confrontan con sus errores, emprende un difícil camino de transformación para recuperar su integridad y reconquistar el amor y la confianza de su esposa y su hijo.",
@@ -15638,11 +15619,9 @@
     "duration": "2h 12m",
     "director": "Travis  Knight",
     "genres": [
-      "Animada",
-      "Animado",
+      "Animación",
       "Aventura",
       "Acción",
-      "Cine",
       "Independiente"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
@@ -17001,7 +16980,6 @@
     "director": "Peter  Farrelly",
     "genres": [
       "Drama",
-      "Cine",
       "Independiente"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",

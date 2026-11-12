@@ -19,6 +19,11 @@ for (const m of movies) {
   assert.ok(m.rating, `Movie missing rating: ${m.title}`);
   assert.ok(Array.isArray(m.theaters), `Movie missing theaters: ${m.title}`);
 
+  if (Array.isArray(m.genres)) {
+    assert.ok(!m.genres.includes('Cine'), `Movie ${m.title} should not have useless "Cine" tag`);
+    assert.equal(new Set(m.genres).size, m.genres.length, `Movie ${m.title} has duplicate genres: ${JSON.stringify(m.genres)}`);
+  }
+
   for (const t of m.theaters) {
     assert.ok(['cinemark', 'cinepolis', 'ccm', 'nova', 'magaly', 'sanpedro', 'studio', 'citicinemas'].includes(t.chainId), `Invalid chainId ${t.chainId} in ${t.complexName}`);
     chainsFound.add(t.chainId);

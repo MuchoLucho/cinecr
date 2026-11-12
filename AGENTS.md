@@ -48,6 +48,18 @@ This document defines the architecture, design principles, conventions, and oper
 - For festival or non-standard titles (e.g., *Tour de Cine Francés / 24TCF*), maintain translation maps (like `TCF_MAP`) to resolve the original French/international title.
 - If the Spanish overview (`language=es-MX`) is empty, query `/movie/{id}/translations` to find any Spanish overview (`iso_639_1: 'es'`) or English fallback.
 
+### Rule 3.4: Genre Normalization & Deduplication
+- Genres/tags must always be cleaned via `cleanGenres()`.
+- Filter out useless/redundant tags like `"Cine"`, `"Película"`, `"General"`, `"Todos"`.
+- Canonicalize variations to their standard accented Spanish title:
+  - `animada`, `animado`, `animadas`, `animación` → `Animación`
+  - `accion`, `acción` → `Acción`
+  - `fantasia`, `fantasía` → `Fantasía`
+  - `ciencia ficcion`, `ciencia ficción` → `Ciencia Ficción`
+  - `thriller`, `suspenso` → `Suspenso`
+  - `niños`, `infantil`, `familiar` → `Familiar`
+- Ensure all tags are unique and deduplicated.
+
 ---
 
 ## 4. GitHub Actions & Deployment Rules

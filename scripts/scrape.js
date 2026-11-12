@@ -12,6 +12,150 @@ import { scrapeCitiCinemas } from './scrape-citicinemas.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const GENRE_CANONICAL_MAP = {
+  // Animación
+  'animacion': 'Animación',
+  'animada': 'Animación',
+  'animadas': 'Animación',
+  'animado': 'Animación',
+  'animados': 'Animación',
+  'animation': 'Animación',
+  'animated': 'Animación',
+
+  // Acción
+  'accion': 'Acción',
+  'action': 'Acción',
+
+  // Ciencia Ficción
+  'ciencia ficcion': 'Ciencia Ficción',
+  'scifi': 'Ciencia Ficción',
+  'sci fi': 'Ciencia Ficción',
+
+  // Fantasía
+  'fantasia': 'Fantasía',
+  'fantasy': 'Fantasía',
+
+  // Suspenso / Thriller
+  'suspenso': 'Suspenso',
+  'suspense': 'Suspenso',
+  'thriller': 'Suspenso',
+
+  // Comedia
+  'comedia': 'Comedia',
+  'comedy': 'Comedia',
+
+  // Drama
+  'drama': 'Drama',
+
+  // Terror
+  'terror': 'Terror',
+  'horror': 'Terror',
+
+  // Aventura
+  'aventura': 'Aventura',
+  'aventuras': 'Aventura',
+  'adventure': 'Aventura',
+
+  // Familiar / Niños
+  'ninos': 'Familiar',
+  'niños': 'Familiar',
+  'kids': 'Familiar',
+  'infantil': 'Familiar',
+  'familiar': 'Familiar',
+  'family': 'Familiar',
+
+  // Romance
+  'romance': 'Romance',
+  'romantica': 'Romance',
+  'romantico': 'Romance',
+
+  // Música
+  'musical': 'Música',
+  'musica': 'Música',
+  'concierto': 'Música',
+
+  // Documental
+  'documental': 'Documental',
+  'documentary': 'Documental',
+
+  // Independiente
+  'independiente': 'Independiente',
+  'indie': 'Independiente',
+
+  // Crimen / Policial
+  'crimen': 'Crimen',
+  'crime': 'Crimen',
+  'policiaco': 'Crimen',
+  'policial': 'Crimen',
+
+  // Misterio
+  'misterio': 'Misterio',
+  'mystery': 'Misterio',
+
+  // Bélica / Guerra
+  'belica': 'Bélica',
+  'guerra': 'Bélica',
+  'war': 'Bélica',
+
+  // Historia
+  'historia': 'Historia',
+  'historico': 'Historia',
+  'history': 'Historia',
+
+  // Western
+  'western': 'Western'
+};
+
+const USELESS_GENRES = new Set([
+  'cine',
+  'pelicula',
+  'película',
+  'general',
+  'todos',
+  'n/a',
+  'otro',
+  'otros'
+]);
+
+const KNOWN_TITLE_GENRES = {
+  'planchadespecho': ['Música'],
+  'conciertoplanchadespecho': ['Música'],
+  'odisea': ['Aventura', 'Acción', 'Fantasía'],
+  'sensatezysentimientos': ['Drama', 'Romance'],
+  'entregaallimite': ['Acción', 'Comedia', 'Suspenso']
+};
+
+function normalizeGenreKey(str) {
+  return (str || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
+export function cleanGenres(genresList, titleKey = '') {
+  if (!Array.isArray(genresList)) genresList = [];
+  const normalized = [];
+
+  for (const raw of genresList) {
+    if (!raw || typeof raw !== 'string') continue;
+    const key = normalizeGenreKey(raw);
+    if (!key || USELESS_GENRES.has(key)) continue;
+
+    if (GENRE_CANONICAL_MAP[key]) {
+      normalized.push(GENRE_CANONICAL_MAP[key]);
+    } else {
+      normalized.push(raw.trim().charAt(0).toUpperCase() + raw.trim().slice(1));
+    }
+  }
+
+  const unique = Array.from(new Set(normalized));
+  if (unique.length === 0 && titleKey && KNOWN_TITLE_GENRES[titleKey]) {
+    return [...KNOWN_TITLE_GENRES[titleKey]];
+  }
+  return unique;
+}
+
 function normalizeTitleKey(str) {
   return (str || '')
     .normalize('NFD')
@@ -81,12 +225,13 @@ export function mergeDatasets(...datasets) {
         }
 
         // Union genres and chains
-        existing.genres = Array.from(new Set([...(existing.genres || []), ...(incoming.genres || [])])).filter(Boolean);
+        existing.genres = cleanGenres([...(existing.genres || []), ...(incoming.genres || [])], existingKey);
         const chainNames = Array.from(new Set(existing.theaters.map(t => t.chainName)));
         existing.studio = chainNames.join(' / ');
       } else {
         mergedMap.set(key, {
           ...incoming,
+          genres: cleanGenres(incoming.genres, key),
           normalizedKey: key,
           theaters: [...incoming.theaters]
         });

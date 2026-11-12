@@ -82,22 +82,55 @@ function generatePosterSvg(title, genre, color) {
 }
 
 const genreColors = {
-  'Accion': '#ef4444',
+  'Acción': '#ef4444',
   'Terror': '#dc2626',
   'Comedia': '#f59e0b',
-  'Animacion': '#10b981',
+  'Animación': '#10b981',
   'Drama': '#8b5cf6',
   'Suspenso': '#06b6d4',
   'Aventura': '#3b82f6',
-  'Ciencia Ficcion': '#0ea5e9'
+  'Ciencia Ficción': '#0ea5e9',
+  'Fantasía': '#a855f7',
+  'Familiar': '#ec4899',
+  'Independiente': '#6366f1'
 };
 
-// Real scraped movies from Cinemark and Cinépolis
+const cleanGenres = (genresList) => {
+  if (!Array.isArray(genresList)) return [];
+  const map = {
+    'animacion': 'Animación', 'animada': 'Animación', 'animadas': 'Animación', 'animado': 'Animación', 'animados': 'Animación', 'animation': 'Animación',
+    'accion': 'Acción', 'action': 'Acción',
+    'ciencia ficcion': 'Ciencia Ficción', 'scifi': 'Ciencia Ficción', 'sci fi': 'Ciencia Ficción',
+    'fantasia': 'Fantasía', 'fantasy': 'Fantasía',
+    'suspenso': 'Suspenso', 'suspense': 'Suspenso', 'thriller': 'Suspenso',
+    'comedia': 'Comedia', 'comedy': 'Comedia',
+    'drama': 'Drama',
+    'terror': 'Terror', 'horror': 'Terror',
+    'aventura': 'Aventura', 'aventuras': 'Aventura', 'adventure': 'Aventura',
+    'ninos': 'Familiar', 'niños': 'Familiar', 'infantil': 'Familiar', 'familiar': 'Familiar',
+    'romance': 'Romance',
+    'musical': 'Música', 'musica': 'Música',
+    'documental': 'Documental',
+    'independiente': 'Independiente', 'indie': 'Independiente'
+  };
+  const useless = new Set(['cine', 'pelicula', 'película', 'general', 'todos', 'n/a']);
+  const res = [];
+  for (const g of genresList) {
+    if (!g || typeof g !== 'string') continue;
+    const key = g.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+    if (!key || useless.has(key)) continue;
+    res.push(map[key] || (g.trim().charAt(0).toUpperCase() + g.trim().slice(1)));
+  }
+  return Array.from(new Set(res));
+};
+
 const movies = ref(moviesData.map(m => {
-  const genre = (m.genres && m.genres[0]) || 'Cine';
+  const genres = cleanGenres(m.genres);
+  const genre = genres[0] || 'Película';
   const color = genreColors[genre] || '#f43f5e';
   return {
     ...m,
+    genres,
     poster: m.poster || generatePosterSvg(m.title, genre, color)
   };
 }));
