@@ -13,7 +13,7 @@ onMounted(() => {
 });
 
 const viewMode = ref('movies');
-const selectedDate = ref('all');
+const selectedDate = ref('today');
 const onlyPremium = ref(false);
 const scheduleSearch = ref('');
 const sessionDialog = ref(false);
@@ -27,7 +27,7 @@ const availableDates = computed(() => {
   }))));
 
   const sorted = Array.from(dates).sort();
-  const options = [{ label: 'Toda la semana', value: 'all' }];
+  const options = [];
 
   const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
   const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
@@ -35,9 +35,14 @@ const availableDates = computed(() => {
   sorted.forEach((dStr, idx) => {
     const parts = dStr.split('-');
     const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+    // First date is 'today'
+    const value = idx === 0 ? 'today' : dStr;
     const dayLabel = idx === 0 ? 'Hoy' : idx === 1 ? 'Mañana' : `${dayNames[d.getDay()]} ${d.getDate()} ${monthNames[d.getMonth()]}`;
-    options.push({ label: dayLabel, value: dStr });
+    options.push({ label: dayLabel, value, rawDate: dStr });
   });
+
+  // Add 'Toda la semana' as an option
+  options.push({ label: 'Toda la semana', value: 'all' });
 
   return options;
 });
@@ -153,8 +158,12 @@ const filteredMovies = computed(() => {
               if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX'].includes(g.format)) return null;
 
               const times = g.times.filter(s => {
-                if (selectedDate.value !== 'all' && s.date !== selectedDate.value) return false;
-                return true;
+                if (selectedDate.value === 'all') return true;
+                if (selectedDate.value === 'today') {
+                  const todayOption = availableDates.value.find(o => o.value === 'today');
+                  return s.date === todayOption?.rawDate;
+                }
+                return s.date === selectedDate.value;
               });
 
               if (times.length === 0) return null;
