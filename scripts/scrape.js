@@ -245,17 +245,53 @@ export function mergeDatasets(...datasets) {
   return merged;
 }
 
+async function safeScrape(name, scraperFn, cacheFileName) {
+  try {
+    const results = await scraperFn();
+    if (Array.isArray(results) && results.length > 0) {
+      return results;
+    }
+  } catch (err) {
+    console.warn(`⚠️ Warning: Scraping failed for ${name}: ${err.message}`);
+  }
+
+  // Graceful fallback to cached data file
+  try {
+    const cacheFile = path.resolve(__dirname, `../src/data/${cacheFileName}`);
+    if (fs.existsSync(cacheFile)) {
+      const cached = JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+      if (Array.isArray(cached) && cached.length > 0) {
+        console.log(`ℹ️ [Fallback] Loaded ${cached.length} cached movies for ${name} from ${cacheFileName}`);
+        return cached;
+      }
+    }
+  } catch (cacheErr) {
+    console.warn(`Could not load cache for ${name}: ${cacheErr.message}`);
+  }
+
+  return [];
+}
+
 export async function scrapeAll() {
   console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova + Magaly + San Pedro + Studio + CitiCinemas) ===');
-  const [cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies, sanPedroMovies, studioMovies, citiMovies] = await Promise.all([
-    scrapeCinemark(),
-    scrapeCinepolis(),
-    scrapeCcm(),
-    scrapeNova(),
-    scrapeMagaly(),
-    scrapeSanPedro(),
-    scrapeStudio(),
-    scrapeCitiCinemas()
+  const [
+    cinemarkMovies,
+    cinepolisMovies,
+    ccmMovies,
+    novaMovies,
+    magalyMovies,
+    sanPedroMovies,
+    studioMovies,
+    citiMovies
+  ] = await Promise.all([
+    safeScrape('Cinemark', scrapeCinemark, 'cinemark-data.json'),
+    safeScrape('Cinépolis', scrapeCinepolis, 'cinepolis-data.json'),
+    safeScrape('CCM Cinemas', scrapeCcm, 'ccm-data.json'),
+    safeScrape('Nova Cinemas', scrapeNova, 'nova-data.json'),
+    safeScrape('Cine Magaly', scrapeMagaly, 'magaly-data.json'),
+    safeScrape('Cinema San Pedro', scrapeSanPedro, 'sanpedro-data.json'),
+    safeScrape('Studio Cinemas', scrapeStudio, 'studio-data.json'),
+    safeScrape('CitiCinemas', scrapeCitiCinemas, 'citicinemas-data.json')
   ]);
 
   const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies, sanPedroMovies, studioMovies, citiMovies);

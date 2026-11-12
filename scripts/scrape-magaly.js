@@ -94,15 +94,26 @@ async function fetchTmdbDetails(title) {
  */
 export async function scrapeMagaly() {
   console.log('Scraping Cine Magaly Costa Rica showtimes...');
+  const cacheFile = path.resolve(__dirname, '../src/data/magaly-data.json');
 
-  // 1. Fetch main programming page to get available dates
-  const progRes = await fetch('https://www.cinemagaly.com/programacion', {
-    headers: { 'User-Agent': USER_AGENT }
-  });
-  if (!progRes.ok) {
-    throw new Error(`Failed to load Cine Magaly programacion: ${progRes.statusText}`);
-  }
-  const progHtml = await progRes.text();
+  try {
+    // 1. Fetch main programming page to get available dates
+    const progRes = await fetch('https://www.cinemagaly.com/programacion', {
+      headers: {
+        'User-Agent': USER_AGENT,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8'
+      }
+    });
+    if (!progRes.ok) {
+      console.warn(`⚠️ Cine Magaly responded with HTTP ${progRes.status} (${progRes.statusText}).`);
+      if (fs.existsSync(cacheFile)) {
+        console.log('Falling back to cached magaly-data.json');
+        return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+      }
+      return [];
+    }
+    const progHtml = await progRes.text();
 
   const dateMatches = [...progHtml.matchAll(/<option\s+value="(\d{4}-\d{2}-\d{2})"/g)];
   const allDates = [...new Set(dateMatches.map(m => m[1]))];
@@ -270,13 +281,22 @@ export async function scrapeMagaly() {
     }
   }
 
-  const outDir = path.resolve(__dirname, '../src/data');
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-  const outFile = path.join(outDir, 'magaly-data.json');
-  fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
-  console.log(`Saved ${movies.length} Cine Magaly movies to ${outFile}`);
+    const outDir = path.resolve(__dirname, '../src/data');
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    const outFile = path.join(outDir, 'magaly-data.json');
+    if (movies.length > 0) {
+      fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
+      console.log(`Saved ${movies.length} Cine Magaly movies to ${outFile}`);
+    }
 
-  return movies;
+    return movies;
+  } catch (err) {
+    console.warn(`⚠️ Warning: Cine Magaly scraping error: ${err.message}. Falling back to cached data.`);
+    if (fs.existsSync(cacheFile)) {
+      return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+    }
+    return [];
+  }
 }
 
 // Standalone execution
