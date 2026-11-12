@@ -8,7 +8,7 @@
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 40m",
+    "duration": "1h 21m",
     "director": "N/A",
     "genres": [
       "Drama"
@@ -152,7 +152,7 @@
     "rating": "TP12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "1h 53m",
+    "duration": "2h 2m",
     "director": "N/A",
     "genres": [
       "Drama",
@@ -870,109 +870,6 @@
     ]
   },
   {
-    "id": "113978",
-    "title": "Caballo salvaje nueve",
-    "originalTitle": "Caballo salvaje nueve",
-    "studio": "Cinemark",
-    "rating": "M-12",
-    "ratingBadgeClass": "badge-green",
-    "score": "8.0",
-    "duration": "2h 0m",
-    "director": "Martin  McDonagh",
-    "genres": [
-      "Accion"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/ulvGcZer26aBaNG0s4IEJGyyLIq.jpg",
-    "synopsis": "Poco antes del golpe de estado chileno de 1973, los agentes de la CIA Chris y Lee son enviados desde Santiago a la Isla de Pascua por su jefa de la oficina, MJ. Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros lidian con sus oscuros pasados ​​y conspiraciones actuales, el nuevo vínculo que Chris establece con un par de estudiantes rebeldes amenaza con desbaratar el viaje de todos a este remoto paraíso.",
-    "theaters": [
-      {
-        "complexId": "cmk-2204",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "City Mall Alajuela",
-        "province": "Alajuela",
-        "locationDetail": "Alajuela, Radial",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "20:55",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-773",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Multiplaza Curridabat",
-        "province": "San José",
-        "locationDetail": "Curridabat, Multiplaza del Este",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "20:20",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-770",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Multiplaza Escazú",
-        "province": "San José",
-        "locationDetail": "Escazú, Multiplaza",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:20",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-2210",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Playground Oxígeno",
-        "province": "Heredia",
-        "locationDetail": "San Francisco de Heredia",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "VIP",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:00",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "normalizedKey": "caballosalvajenueve"
-  },
-  {
     "id": "ccm-95",
     "normalizedKey": "cineentrelineas",
     "title": "Cine entre lineas",
@@ -1020,7 +917,7 @@
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 50m",
+    "duration": "1h 49m",
     "director": "James  Watkins",
     "genres": [
       "Terror",
@@ -1043,10 +940,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "20:25",
-                "date": "2026-11-11"
-              },
               {
                 "time": "18:25",
                 "date": "2026-11-12"
@@ -1110,10 +1003,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "21:05",
-                "date": "2026-11-11"
-              },
               {
                 "time": "14:30",
                 "date": "2026-11-12"
@@ -1187,10 +1076,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "20:50",
-                "date": "2026-11-11"
-              },
               {
                 "time": "21:15",
                 "date": "2026-11-12"
@@ -1274,16 +1159,6 @@
         "locationDetail": "Moravia, Plaza Lincoln",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:00",
-                "date": "2026-11-11"
-              }
-            ]
-          },
           {
             "format": "VIP",
             "language": "SUB",
@@ -1424,16 +1299,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:50",
-                "date": "2026-11-11"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
               {
@@ -1498,27 +1363,6 @@
         ]
       },
       {
-        "complexId": "ccm-san-ramon",
-        "chainId": "ccm",
-        "chainName": "CCM Cinemas",
-        "complexName": "CCM San Ramón",
-        "province": "Alajuela",
-        "locationDetail": "San Ramón, Alajuela",
-        "website": "https://www.ccmcinemas.com",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "complexId": "ccm-san-carlos",
         "chainId": "ccm",
         "chainName": "CCM Cinemas",
@@ -1571,7 +1415,7 @@
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "2h 5m",
+    "duration": "2h 2m",
     "director": "David  Leitch",
     "genres": [
       "Accion",
@@ -3175,7 +3019,7 @@
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 0m",
+    "duration": "1h 55m",
     "director": "Ti  West",
     "genres": [
       "Fantasia",
@@ -5935,7 +5779,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "1h 45m",
+    "duration": "1h 41m",
     "director": "David  Ayer",
     "genres": [
       "Accion",
@@ -5959,10 +5803,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "21:10",
-                "date": "2026-11-11"
-              },
               {
                 "time": "18:30",
                 "date": "2026-11-12"
@@ -6008,10 +5848,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "20:20",
-                "date": "2026-11-11"
-              },
               {
                 "time": "20:05",
                 "date": "2026-11-12"
@@ -6175,7 +6011,7 @@
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 35m",
+    "duration": "1h 49m",
     "director": "Hanna  Bergholm",
     "genres": [
       "Drama",
@@ -6549,7 +6385,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "1h 55m",
+    "duration": "1h 48m",
     "director": "Alessandro  Carloni",
     "genres": [
       "Animada",
@@ -6573,10 +6409,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "21:15",
-                "date": "2026-11-11"
-              },
               {
                 "time": "15:00",
                 "date": "2026-11-12"
@@ -6999,10 +6831,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "21:10",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "14:00",
                 "date": "2026-11-12"
               },
@@ -7417,10 +7245,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "20:45",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "14:45",
                 "date": "2026-11-12"
               },
@@ -7791,56 +7615,6 @@
         "website": "https://www.ccmcinemas.com",
         "groups": [
           {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:00",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "19:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "19:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "17:30",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
             "format": "3D",
             "language": "DOB",
             "times": [
@@ -7883,6 +7657,52 @@
               {
                 "time": "17:30",
                 "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -8342,7 +8162,7 @@
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 20m",
+    "duration": "1h 30m",
     "director": "Doğukan  Mısır",
     "genres": [
       "Terror"
@@ -8787,16 +8607,6 @@
         "website": "https://www.cinemarkca.com/costa-rica",
         "groups": [
           {
-            "format": "D-BOX",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-11"
-              }
-            ]
-          },
-          {
             "format": "XD",
             "language": "DOB",
             "times": [
@@ -8902,12 +8712,64 @@
         "website": "https://www.cinemarkca.com/costa-rica",
         "groups": [
           {
-            "format": "D-BOX",
+            "format": "2D",
             "language": "DOB",
             "times": [
               {
-                "time": "20:10",
-                "date": "2026-11-11"
+                "time": "15:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "19:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "19:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:55",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "19:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:05",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -8915,10 +8777,6 @@
             "format": "XD",
             "language": "DOB",
             "times": [
-              {
-                "time": "21:10",
-                "date": "2026-11-11"
-              },
               {
                 "time": "14:50",
                 "date": "2026-11-12"
@@ -9008,68 +8866,6 @@
                 "date": "2026-11-18"
               }
             ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "15:25",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "19:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:25",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "19:20",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "16:55",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:20",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:25",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "19:20",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:25",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "19:20",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "15:05",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "18:40",
-                "date": "2026-11-18"
-              }
-            ]
           }
         ]
       },
@@ -9083,17 +8879,71 @@
         "website": "https://www.cinemarkca.com/costa-rica",
         "groups": [
           {
-            "format": "D-BOX",
+            "format": "2D",
             "language": "DOB",
             "times": [
               {
-                "time": "20:30",
-                "date": "2026-11-11"
+                "time": "14:25",
+                "date": "2026-11-12"
               },
               {
-                "time": "21:30",
-                "date": "2026-11-11"
+                "time": "17:15",
+                "date": "2026-11-12"
               },
+              {
+                "time": "14:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:25",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:25",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "D-BOX",
+            "language": "DOB",
+            "times": [
               {
                 "time": "15:30",
                 "date": "2026-11-12"
@@ -9176,68 +9026,6 @@
               },
               {
                 "time": "16:10",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "14:25",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:25",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:20",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "14:25",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "14:25",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "14:25",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "17:15",
                 "date": "2026-11-18"
               }
             ]
@@ -9831,10 +9619,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "21:15",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "17:15",
                 "date": "2026-11-12"
               },
@@ -9902,10 +9686,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "21:15",
-                "date": "2026-11-11"
-              },
               {
                 "time": "17:00",
                 "date": "2026-11-12"
@@ -10093,44 +9873,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:20",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:50",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "14:50",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
               {
@@ -10171,6 +9913,40 @@
               },
               {
                 "time": "17:25",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "17:55",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:50",
                 "date": "2026-11-18"
               }
             ]
@@ -10705,7 +10481,7 @@
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 40m",
+    "duration": "2h 39m",
     "director": "Francis  Lawrence",
     "genres": [
       "Drama",
@@ -11136,7 +10912,7 @@
     "rating": "+12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "2h 52m",
+    "duration": "2h 53m",
     "director": "N/A",
     "genres": [
       "Cine"
@@ -11191,7 +10967,7 @@
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 35m",
+    "duration": "1h 33m",
     "director": "Rob  Savage",
     "genres": [
       "Terror"
@@ -11212,10 +10988,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "20:30",
-                "date": "2026-11-11"
-              },
               {
                 "time": "21:05",
                 "date": "2026-11-12"
@@ -11249,27 +11021,6 @@
         ]
       },
       {
-        "complexId": "cmk-773",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Multiplaza Curridabat",
-        "province": "San José",
-        "locationDetail": "Curridabat, Multiplaza del Este",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:00",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "complexId": "cmk-770",
         "chainId": "cinemark",
         "chainName": "Cinemark",
@@ -11282,10 +11033,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-11"
-              },
               {
                 "time": "20:05",
                 "date": "2026-11-12"
@@ -11317,91 +11064,9 @@
             ]
           }
         ]
-      },
-      {
-        "complexId": "cmk-2210",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Playground Oxígeno",
-        "province": "Heredia",
-        "locationDetail": "San Francisco de Heredia",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "VIP",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:30",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
       }
     ],
     "normalizedKey": "madresiniestra"
-  },
-  {
-    "id": "109773",
-    "title": "Pinocho Sin Cuerdas",
-    "originalTitle": "Pinocho Sin Cuerdas",
-    "studio": "Cinemark",
-    "rating": "M-15",
-    "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
-    "duration": "1h 25m",
-    "director": "Rhys  Frake Waterfield",
-    "genres": [
-      "Terror"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/7NpaoOzGDRKJ53znEucFpF2IszT.jpg",
-    "synopsis": "Un niño llamado James visita a su abuelo, Geppetto, quien le presenta a Pinocho, una marioneta de madera aparentemente mágica, para convertirse en su mejor amigo. Sin embargo, ignorando la ingenuidad de Pinocho, James lo presenta al mundo, lo que lleva al títere a emprender una cruzada para eliminar todo lo \"malo\" junto con su amigo y compañero Pepe el Grillo.",
-    "theaters": [
-      {
-        "complexId": "cmk-2204",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "City Mall Alajuela",
-        "province": "Alajuela",
-        "locationDetail": "Alajuela, Radial",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:05",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-770",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Multiplaza Escazú",
-        "province": "San José",
-        "locationDetail": "Escazú, Multiplaza",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:05",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "normalizedKey": "pinochosincuerdas"
   },
   {
     "id": "112657",
@@ -11411,7 +11076,7 @@
     "rating": "M-18",
     "ratingBadgeClass": "badge-red",
     "score": "8.0",
-    "duration": "1h 30m",
+    "duration": "1h 34m",
     "director": "Zach  Cregger",
     "genres": [
       "Terror"
@@ -11432,10 +11097,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "20:30",
-                "date": "2026-11-11"
-              },
               {
                 "time": "20:50",
                 "date": "2026-11-12"
@@ -11475,27 +11136,6 @@
             ]
           }
         ]
-      },
-      {
-        "complexId": "cmk-2210",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Playground Oxígeno",
-        "province": "Heredia",
-        "locationDetail": "San Francisco de Heredia",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:20",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
       }
     ],
     "normalizedKey": "residentevilnochecero"
@@ -11509,7 +11149,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 15m",
+    "duration": "2h 16m",
     "director": "N/A",
     "genres": [
       "Cine"
@@ -11679,10 +11319,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "20:30",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "12:35",
                 "date": "2026-11-14"
               },
@@ -11746,7 +11382,7 @@
     "rating": "TPA",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 0m",
+    "duration": "2h 5m",
     "director": "Alex  Kendrick",
     "genres": [
       "Drama",
@@ -12241,7 +11877,7 @@
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 15m",
+    "duration": "2h 12m",
     "director": "Travis  Knight",
     "genres": [
       "Animada",
@@ -12320,10 +11956,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "20:25",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "14:35",
                 "date": "2026-11-12"
               },
@@ -12368,10 +12000,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "21:00",
-                "date": "2026-11-11"
-              },
               {
                 "time": "15:20",
                 "date": "2026-11-12"
@@ -12421,16 +12049,6 @@
         "locationDetail": "San Francisco de Heredia",
         "website": "https://www.cinemarkca.com/costa-rica",
         "groups": [
-          {
-            "format": "VIP",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:10",
-                "date": "2026-11-11"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "DOB",
@@ -12633,10 +12251,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "21:10",
-                "date": "2026-11-11"
-              },
               {
                 "time": "15:55",
                 "date": "2026-11-12"
@@ -13283,7 +12897,7 @@
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "2h 10m",
+    "duration": "2h 8m",
     "director": "Peter  Farrelly",
     "genres": [
       "Drama",

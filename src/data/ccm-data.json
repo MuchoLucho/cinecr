@@ -8,7 +8,7 @@
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "2h 5m",
+    "duration": "2h 15m",
     "director": "N/A",
     "genres": [
       "Ciencia Ficción"
@@ -86,44 +86,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:20",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:50",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "14:50",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
               {
@@ -164,6 +126,40 @@
               },
               {
                 "time": "17:25",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "17:55",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:50",
                 "date": "2026-11-18"
               }
             ]
@@ -320,7 +316,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "1h 50m",
+    "duration": "1h 48m",
     "director": "N/A",
     "genres": [
       "Animación"
@@ -407,56 +403,6 @@
         "website": "https://www.ccmcinemas.com",
         "groups": [
           {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:00",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "19:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "19:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "17:30",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
             "format": "3D",
             "language": "DOB",
             "times": [
@@ -499,6 +445,52 @@
               {
                 "time": "17:30",
                 "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -614,7 +606,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 40m",
+    "duration": "2h 39m",
     "director": "N/A",
     "genres": [
       "Ciencia Ficción"
@@ -716,7 +708,7 @@
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "2h 10m",
+    "duration": "2h 12m",
     "director": "N/A",
     "genres": [
       "Acción"
@@ -756,7 +748,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 0m",
+    "duration": "1h 55m",
     "director": "N/A",
     "genres": [
       "Comedia"
@@ -996,7 +988,7 @@
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "2h 10m",
+    "duration": "2h 8m",
     "director": "N/A",
     "genres": [
       "Drama"
@@ -1103,77 +1095,12 @@
             "language": "DOB",
             "times": [
               {
-                "time": "20:30",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "12:35",
                 "date": "2026-11-14"
               },
               {
                 "time": "12:30",
                 "date": "2026-11-15"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ccm-91",
-    "normalizedKey": "clayface",
-    "title": "Clayface",
-    "originalTitle": "Clayface",
-    "studio": "CCM Cinemas",
-    "rating": "M18",
-    "ratingBadgeClass": "badge-red",
-    "score": "8.0",
-    "duration": "1h 30m",
-    "director": "N/A",
-    "genres": [
-      "Cine"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
-    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
-    "theaters": [
-      {
-        "complexId": "ccm-san-ramon",
-        "chainId": "ccm",
-        "chainName": "CCM Cinemas",
-        "complexName": "CCM San Ramón",
-        "province": "Alajuela",
-        "locationDetail": "San Ramón, Alajuela",
-        "website": "https://www.ccmcinemas.com",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "ccm-san-carlos",
-        "chainId": "ccm",
-        "chainName": "CCM Cinemas",
-        "complexName": "CCM San Carlos",
-        "province": "Alajuela",
-        "locationDetail": "Ciudad Quesada, San Carlos",
-        "website": "https://www.ccmcinemas.com",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-11"
               }
             ]
           }
@@ -1230,7 +1157,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "2h 15m",
+    "duration": "2h 16m",
     "director": "N/A",
     "genres": [
       "Cine"
@@ -1284,7 +1211,7 @@
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "2h 0m",
+    "duration": "2h 2m",
     "director": "N/A",
     "genres": [
       "Cine"
@@ -1401,6 +1328,46 @@
               {
                 "time": "20:00",
                 "date": "2026-11-13"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ccm-91",
+    "normalizedKey": "clayface",
+    "title": "Clayface",
+    "originalTitle": "Clayface",
+    "studio": "CCM Cinemas",
+    "rating": "M18",
+    "ratingBadgeClass": "badge-red",
+    "score": "8.0",
+    "duration": "1h 49m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
+    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
+    "theaters": [
+      {
+        "complexId": "ccm-san-carlos",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Carlos",
+        "province": "Alajuela",
+        "locationDetail": "Ciudad Quesada, San Carlos",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-11"
               }
             ]
           }

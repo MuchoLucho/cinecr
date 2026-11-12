@@ -85,9 +85,30 @@ async function fetchTmdbDetails(title) {
     const data = await res.json();
     const result = (data.results || []).find(m => m.poster_path || m.overview);
     if (result) {
+      let duration = null;
+      if (result.id) {
+        try {
+          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
+            headers: {
+              'Authorization': `Bearer ${TMDB_TOKEN}`,
+              'Accept': 'application/json'
+            }
+          });
+          if (detailRes.ok) {
+            const detail = await detailRes.json();
+            if (detail.runtime && detail.runtime > 0) {
+              duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
+            }
+          }
+        } catch {
+          // ignore detail error
+        }
+      }
       return {
+        tmdbId: result.id,
         poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-        synopsis: result.overview ? result.overview.trim() : null
+        synopsis: result.overview ? result.overview.trim() : null,
+        duration
       };
     }
   } catch (err) {
@@ -237,6 +258,7 @@ export async function scrapeCinemark() {
     if (tmdbData) {
       if (tmdbData.poster && !movie.poster) movie.poster = tmdbData.poster;
       if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
+      if (tmdbData.duration) movie.duration = tmdbData.duration;
       console.log(`  ✓ TMDb (poster & synopsis): ${movie.title}`);
     } else {
       if (!movie.poster) {

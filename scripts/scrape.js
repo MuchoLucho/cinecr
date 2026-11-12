@@ -68,6 +68,10 @@ export function mergeDatasets(...datasets) {
           existing.synopsis = incoming.synopsis;
         }
 
+        if ((existing.duration === 'N/A' || !existing.duration) && incoming.duration && incoming.duration !== 'N/A') {
+          existing.duration = incoming.duration;
+        }
+
         if ((existing.director === 'N/A' || !existing.director) && incoming.director && incoming.director !== 'N/A') {
           existing.director = incoming.director;
         }

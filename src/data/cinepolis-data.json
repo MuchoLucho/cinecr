@@ -1,257 +1,5 @@
 [
   {
-    "id": "cpl-clayface",
-    "normalizedKey": "clayface",
-    "title": "Clayface",
-    "originalTitle": "Clayface",
-    "studio": "Cinépolis",
-    "rating": "M18",
-    "ratingBadgeClass": "badge-red",
-    "score": "8.0",
-    "duration": "1h 48m",
-    "director": "N/A",
-    "genres": [
-      "Terror",
-      "Suspenso"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
-    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
-    "theaters": [
-      {
-        "complexId": "cpl-lincoln",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Lincoln",
-        "province": "San José",
-        "locationDetail": "Moravia, Plaza Lincoln",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:00",
-                "date": "2026-11-11"
-              }
-            ]
-          },
-          {
-            "format": "VIP",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:45",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-multicentro",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Multicentro",
-        "province": "San José",
-        "locationDetail": "Desamparados, Multicentro",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:45",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-paseo-flores",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Paseo De Las Flores",
-        "province": "Heredia",
-        "locationDetail": "Heredia, Paseo de las Flores",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:40",
-                "date": "2026-11-11"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-paseo-metropoli",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Paseo Metrópoli",
-        "province": "Cartago",
-        "locationDetail": "Cartago, Paseo Metrópoli",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:45",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-terramall",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis TerraMall",
-        "province": "Cartago",
-        "locationDetail": "Tres Ríos, TerraMall",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:50",
-                "date": "2026-11-11"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:35",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:35",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:35",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:35",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:35",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-terrazas-lindora",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Terrazas Lindora VIP",
-        "province": "San José",
-        "locationDetail": "Santa Ana, Terrazas Lindora",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "VIP",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "22:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "22:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "22:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "22:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "22:00",
-                "date": "2026-11-16"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "cpl-godzillaminuszero",
     "normalizedKey": "godzillaminuszero",
     "title": "Godzilla Minus Zero",
@@ -260,7 +8,7 @@
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "2h 16m",
+    "duration": "2h 15m",
     "director": "N/A",
     "genres": [
       "Drama",
@@ -694,10 +442,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "21:15",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "17:15",
                 "date": "2026-11-12"
               },
@@ -765,10 +509,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "21:15",
-                "date": "2026-11-11"
-              },
               {
                 "time": "17:00",
                 "date": "2026-11-12"
@@ -897,7 +637,7 @@
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "2h 11m",
+    "duration": "2h 12m",
     "director": "N/A",
     "genres": [
       "Animado",
@@ -1073,10 +813,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "21:10",
-                "date": "2026-11-11"
-              },
-              {
                 "time": "15:55",
                 "date": "2026-11-12"
               },
@@ -1251,7 +987,7 @@
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
-    "duration": "1h 55m",
+    "duration": "1h 48m",
     "director": "N/A",
     "genres": [
       "Animado"
@@ -1523,10 +1259,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "20:45",
-                "date": "2026-11-11"
-              },
               {
                 "time": "14:45",
                 "date": "2026-11-12"
@@ -1830,7 +1562,7 @@
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "1h 56m",
+    "duration": "1h 55m",
     "director": "N/A",
     "genres": [
       "Drama",
@@ -4130,7 +3862,7 @@
     "rating": "M18",
     "ratingBadgeClass": "badge-red",
     "score": "8.0",
-    "duration": "1h 20m",
+    "duration": "1h 30m",
     "director": "N/A",
     "genres": [
       "Terror"
@@ -4659,7 +4391,7 @@
     "rating": "TP12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "1h 53m",
+    "duration": "2h 2m",
     "director": "N/A",
     "genres": [
       "Drama",
@@ -4952,7 +4684,7 @@
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 40m",
+    "duration": "1h 21m",
     "director": "N/A",
     "genres": [
       "Drama"
@@ -5080,6 +4812,238 @@
               {
                 "time": "19:00",
                 "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpl-clayface",
+    "normalizedKey": "clayface",
+    "title": "Clayface",
+    "originalTitle": "Clayface",
+    "studio": "Cinépolis",
+    "rating": "M18",
+    "ratingBadgeClass": "badge-red",
+    "score": "8.0",
+    "duration": "1h 49m",
+    "director": "N/A",
+    "genres": [
+      "Terror",
+      "Suspenso"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
+    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
+    "theaters": [
+      {
+        "complexId": "cpl-lincoln",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Lincoln",
+        "province": "San José",
+        "locationDetail": "Moravia, Plaza Lincoln",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:45",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-multicentro",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Multicentro",
+        "province": "San José",
+        "locationDetail": "Desamparados, Multicentro",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:45",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-flores",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo De Las Flores",
+        "province": "Heredia",
+        "locationDetail": "Heredia, Paseo de las Flores",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:40",
+                "date": "2026-11-11"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-metropoli",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo Metrópoli",
+        "province": "Cartago",
+        "locationDetail": "Cartago, Paseo Metrópoli",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:45",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terramall",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis TerraMall",
+        "province": "Cartago",
+        "locationDetail": "Tres Ríos, TerraMall",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:35",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terrazas-lindora",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Terrazas Lindora VIP",
+        "province": "San José",
+        "locationDetail": "Santa Ana, Terrazas Lindora",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "22:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-16"
               }
             ]
           }
@@ -5325,7 +5289,7 @@
     "rating": "TP12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "2h 4m",
+    "duration": "2h 5m",
     "director": "N/A",
     "genres": [
       "Drama"
