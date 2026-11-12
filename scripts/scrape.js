@@ -165,6 +165,15 @@ function normalizeTitleKey(str) {
     .replace(/[^a-z0-9]/g, '');
 }
 
+function getRatingBadgeClass(ratingStr) {
+  if (!ratingStr) return 'badge-green';
+  const r = (ratingStr || '').toUpperCase();
+  if (r.includes('18')) return 'badge-red';
+  if (r.includes('15')) return 'badge-orange';
+  if (r.includes('12')) return 'badge-amber';
+  return 'badge-green';
+}
+
 export function mergeDatasets(...datasets) {
   const mergedMap = new Map();
 
@@ -224,6 +233,11 @@ export function mergeDatasets(...datasets) {
           existing.director = incoming.director;
         }
 
+        if ((!existing.rating || existing.rating === 'TP') && incoming.rating && incoming.rating !== 'TP') {
+          existing.rating = incoming.rating;
+        }
+        existing.ratingBadgeClass = existing.ratingBadgeClass || getRatingBadgeClass(existing.rating);
+
         // Union genres and chains
         existing.genres = cleanGenres([...(existing.genres || []), ...(incoming.genres || [])], existingKey);
         const chainNames = Array.from(new Set(existing.theaters.map(t => t.chainName)));
@@ -231,6 +245,7 @@ export function mergeDatasets(...datasets) {
       } else {
         mergedMap.set(key, {
           ...incoming,
+          ratingBadgeClass: incoming.ratingBadgeClass || getRatingBadgeClass(incoming.rating),
           genres: cleanGenres(incoming.genres, key),
           normalizedKey: key,
           theaters: [...incoming.theaters]

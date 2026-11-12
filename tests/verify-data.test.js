@@ -17,6 +17,9 @@ let totalShowtimes = 0;
 for (const m of movies) {
   assert.ok(m.title, `Movie missing title: ${JSON.stringify(m)}`);
   assert.ok(m.rating, `Movie missing rating: ${m.title}`);
+  const r = (m.rating || '').toUpperCase();
+  const validRating = r.includes('18') || r.includes('15') || r.includes('12') || r.includes('TP') || r.includes('TODO');
+  assert.ok(validRating, `Invalid or unrecognized rating "${m.rating}" in ${m.title}`);
   assert.ok(Array.isArray(m.theaters), `Movie missing theaters: ${m.title}`);
 
   if (Array.isArray(m.genres)) {

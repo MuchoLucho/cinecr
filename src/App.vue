@@ -192,13 +192,35 @@ const cleanGenres = (genresList) => {
   return Array.from(new Set(res));
 };
 
+const getRatingBadgeClass = (ratingStr) => {
+  if (!ratingStr) return 'badge-green';
+  const r = ratingStr.toUpperCase();
+  if (r.includes('18')) return 'badge-red';
+  if (r.includes('15')) return 'badge-orange';
+  if (r.includes('12')) return 'badge-amber';
+  return 'badge-green';
+};
+
+const getMovieAgeRating = (ratingStr) => {
+  if (!ratingStr) return { tier: 'TP', minAge: 0, label: 'Todo Público (TP)' };
+  const r = ratingStr.toUpperCase().trim();
+  if (r.includes('18')) return { tier: '18', minAge: 18, label: 'Mayores de 18 (+18)' };
+  if (r.includes('15')) return { tier: '15', minAge: 15, label: 'Mayores de 15 (+15)' };
+  if (r.includes('12')) return { tier: '12', minAge: 12, label: 'Mayores de 12 (+12)' };
+  return { tier: 'TP', minAge: 0, label: 'Todo Público (TP)' };
+};
+
 const movies = ref(moviesData.map(m => {
   const genres = cleanGenres(m.genres);
   const genre = genres[0] || 'Película';
   const color = genreColors[genre] || '#f43f5e';
+  const ageInfo = getMovieAgeRating(m.rating);
   return {
     ...m,
     genres,
+    ratingBadgeClass: m.ratingBadgeClass || getRatingBadgeClass(m.rating),
+    ageTier: ageInfo.tier,
+    minAge: ageInfo.minAge,
     poster: m.poster || generatePosterSvg(m.title, genre, color)
   };
 }));
@@ -227,7 +249,8 @@ const filters = reactive({
   province: null,
   chain: null,
   language: null,
-  formats: []
+  formats: [],
+  ageRating: null
 });
 
 const selectedFormatSingle = computed({
@@ -241,7 +264,18 @@ const movieFilterOptions = computed(() =>
 
 const filteredMovies = computed(() => {
   return movies.value
-    .filter(m => !filters.movie || m.id === filters.movie)
+    .filter(m => {
+      if (filters.movie && m.id !== filters.movie) return false;
+      if (filters.ageRating) {
+        if (filters.ageRating === 'TP' && m.ageTier !== 'TP') return false;
+        if (filters.ageRating === '12' && m.ageTier !== '12') return false;
+        if (filters.ageRating === '15' && m.ageTier !== '15') return false;
+        if (filters.ageRating === '18' && m.ageTier !== '18') return false;
+        if (filters.ageRating === 'max-12' && m.minAge > 12) return false;
+        if (filters.ageRating === 'max-15' && m.minAge > 15) return false;
+      }
+      return true;
+    })
     .map(movie => {
       const groupedTheaters = movie.theaters
         .filter(complex => {
@@ -352,7 +386,7 @@ const activeComplexCount = computed(() => {
 });
 
 const hasActiveFilters = computed(() => Boolean(
-  filters.movie || filters.province || filters.chain || filters.language || filters.formats.length > 0 || onlyPremium.value
+  filters.movie || filters.province || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating || onlyPremium.value
 ));
 
 const toggleQuickLanguage = (lang) => {
@@ -365,6 +399,7 @@ const resetFilters = () => {
   filters.chain = null;
   filters.language = null;
   filters.formats = [];
+  filters.ageRating = null;
   onlyPremium.value = false;
 };
 
@@ -595,6 +630,21 @@ const formatStatusDate = (isoStr) => {
 
             <div class="md-field">
               <label class="md-field-label">
+                <span class="material-symbols-outlined sm">family_restroom</span> Clasificación / Edad
+              </label>
+              <select v-model="filters.ageRating" class="md-select">
+                <option :value="null">Todas las edades</option>
+                <option value="TP">Todo Público (TP)</option>
+                <option value="12">Mayores de 12 (+12)</option>
+                <option value="15">Mayores de 15 (+15)</option>
+                <option value="18">Mayores de 18 (+18)</option>
+                <option value="max-12">Apto hasta 12 años (TP y +12)</option>
+                <option value="max-15">Apto hasta 15 años (TP, +12, +15)</option>
+              </select>
+            </div>
+
+            <div class="md-field">
+              <label class="md-field-label">
                 <span class="material-symbols-outlined sm">translate</span> Idioma
               </label>
               <select v-model="filters.language" class="md-select">
@@ -635,6 +685,15 @@ const formatStatusDate = (isoStr) => {
             </div>
 
             <div class="chip-row">
+              <button
+                type="button"
+                class="md-chip"
+                :class="{ selected: filters.ageRating === 'TP' }"
+                @click="filters.ageRating = filters.ageRating === 'TP' ? null : 'TP'"
+              >
+                <span v-if="filters.ageRating === 'TP'" class="material-symbols-outlined sm">check</span>
+                Todo Público (TP)
+              </button>
               <button
                 type="button"
                 class="md-chip"

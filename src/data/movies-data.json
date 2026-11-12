@@ -911,6 +911,7 @@
         ]
       }
     ],
+    "ratingBadgeClass": "badge-orange",
     "normalizedKey": "caballosalvajenueve"
   },
   {
@@ -7179,6 +7180,7 @@
         ]
       }
     ],
+    "ratingBadgeClass": "badge-amber",
     "normalizedKey": "capitan"
   },
   {
@@ -7186,7 +7188,7 @@
     "title": "El Corazon de la Bestia",
     "originalTitle": "El Corazon de la Bestia",
     "studio": "Cinemark / Cinépolis / Nova Cinemas / Cinema San Pedro / CitiCinemas",
-    "rating": "TP",
+    "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
     "duration": "1h 41m",
@@ -7941,7 +7943,7 @@
     "title": "El Gato con Sombrero",
     "originalTitle": "El Gato con Sombrero",
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
-    "rating": "TP",
+    "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
     "duration": "1h 48m",
@@ -11410,6 +11412,7 @@
         ]
       }
     ],
+    "ratingBadgeClass": "badge-green",
     "normalizedKey": "entregaallimite"
   },
   {
@@ -13885,6 +13888,7 @@
         ]
       }
     ],
+    "ratingBadgeClass": "badge-orange",
     "normalizedKey": "hombresperdidos"
   },
   {
@@ -14462,6 +14466,7 @@
         ]
       }
     ],
+    "ratingBadgeClass": "badge-amber",
     "normalizedKey": "inmortales"
   },
   {
@@ -14607,6 +14612,7 @@
         ]
       }
     ],
+    "ratingBadgeClass": "badge-amber",
     "normalizedKey": "pingpongtriunfo"
   },
   {
