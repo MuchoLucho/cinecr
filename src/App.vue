@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, reactive, onMounted, onUnmounted } from 'vue';
+import { ref, computed, reactive, watch, onMounted, onUnmounted } from 'vue';
 import moviesData from './data/movies-data.json';
 import scrapingStatusData from './data/scraping-status.json';
 
@@ -79,9 +79,16 @@ const scrollToPrevMovie = () => {
   }
 };
 
+const handleKeyDown = (e) => {
+  if (e.key === 'Escape' && isMobileFilterOpen.value) {
+    closeMobileFilter();
+  }
+};
+
 onMounted(() => {
   document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light');
   window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('keydown', handleKeyDown);
   handleScroll();
   timerInterval = setInterval(() => {
     currentTimeTrigger.value = Date.now();
@@ -90,6 +97,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('keydown', handleKeyDown);
   if (timerInterval) clearInterval(timerInterval);
 });
 
@@ -452,6 +460,31 @@ const hasActiveFilters = computed(() => Boolean(
   filters.province || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating || onlyPremium.value
 ));
 
+const activeFilterCount = computed(() => {
+  let count = 0;
+  if (filters.province) count++;
+  if (filters.chain) count++;
+  if (filters.language) count++;
+  if (filters.formats.length > 0) count++;
+  if (filters.ageRating) count++;
+  if (onlyPremium.value) count++;
+  return count;
+});
+
+const isMobileFilterOpen = ref(false);
+const toggleMobileFilter = () => {
+  isMobileFilterOpen.value = !isMobileFilterOpen.value;
+};
+const closeMobileFilter = () => {
+  isMobileFilterOpen.value = false;
+};
+
+watch(isMobileFilterOpen, (open) => {
+  if (typeof document !== 'undefined') {
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+});
+
 const toggleQuickLanguage = (lang) => {
   filters.language = filters.language === lang ? null : lang;
 };
@@ -628,7 +661,7 @@ const formatStatusDate = (isoStr) => {
       </div>
     </header>
 
-    <!-- HERO & FILTER BAR -->
+    <!-- HERO SECTION -->
     <section class="hero-section">
       <div class="md-container">
         <div class="hero-grid">
@@ -654,10 +687,44 @@ const formatStatusDate = (isoStr) => {
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Filter Card -->
-        <div class="filter-card">
-          <div class="filter-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+    <!-- MAIN CONTENT -->
+    <main class="md-container app-layout-container">
+      <div class="app-layout">
+        <!-- SIDEBAR / DRAWER -->
+        <aside
+          class="filter-sidebar"
+          :class="{ 'mobile-open': isMobileFilterOpen }"
+          aria-label="Filtros de cartelera"
+        >
+          <div class="sidebar-header">
+            <div class="sidebar-title">
+              <span class="material-symbols-outlined">tune</span>
+              <span>Filtros</span>
+              <span v-if="activeFilterCount > 0" class="filter-count-badge">{{ activeFilterCount }}</span>
+            </div>
+            <button
+              v-if="hasActiveFilters"
+              type="button"
+              class="md-btn md-btn-text md-btn-sm hide-mobile"
+              @click="resetFilters"
+              title="Restablecer todos los filtros"
+            >
+              Limpiar
+            </button>
+            <button
+              type="button"
+              class="md-icon-btn show-mobile-only"
+              @click="closeMobileFilter"
+              aria-label="Cerrar filtros"
+            >
+              <span class="material-symbols-outlined">close</span>
+            </button>
+          </div>
+
+          <div class="sidebar-content">
             <div class="md-field">
               <label class="md-field-label">
                 <span class="material-symbols-outlined sm">theater_comedy</span> Cadena
@@ -710,29 +777,11 @@ const formatStatusDate = (isoStr) => {
                 <option v-for="f in formatOptions" :key="f" :value="f">{{ f }}</option>
               </select>
             </div>
-          </div>
 
-          <hr class="md-divider" />
+            <hr class="md-divider" />
 
-          <div class="quick-bar">
-            <div class="chip-row">
-              <span style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant); margin-right: 4px; font-weight: 500;">
-                Fecha:
-              </span>
-              <button
-                v-for="d in availableDates"
-                :key="d.value"
-                type="button"
-                class="md-chip"
-                :class="{ selected: selectedDate === d.value }"
-                @click="selectedDate = d.value"
-              >
-                <span v-if="selectedDate === d.value" class="material-symbols-outlined sm">check</span>
-                {{ d.label }}
-              </button>
-            </div>
-
-            <div class="chip-row">
+            <div class="sidebar-section-title">Opciones rápidas</div>
+            <div class="sidebar-quick-chips">
               <button
                 type="button"
                 class="md-chip"
@@ -767,25 +816,74 @@ const formatStatusDate = (isoStr) => {
                 @click="onlyPremium = !onlyPremium"
               >
                 <span class="material-symbols-outlined sm">auto_awesome</span>
-                Formatos Especiales (VIP, XD, XE, 4DX)
-              </button>
-              <button
-                v-if="hasActiveFilters"
-                type="button"
-                class="md-btn md-btn-text md-btn-sm"
-                @click="resetFilters"
-              >
-                <span class="material-symbols-outlined sm">filter_alt_off</span>
-                Limpiar filtros
+                Especiales (VIP, XD, 4DX)
               </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="md-container" style="padding-top: 28px;">
+          <div class="sidebar-footer show-mobile-only">
+            <button
+              v-if="hasActiveFilters"
+              type="button"
+              class="md-btn md-btn-tonal md-btn-sm"
+              style="flex: 1;"
+              @click="resetFilters"
+            >
+              Limpiar
+            </button>
+            <button
+              type="button"
+              class="md-btn md-btn-filled md-btn-sm"
+              style="flex: 2;"
+              @click="closeMobileFilter"
+            >
+              Ver tandas
+            </button>
+          </div>
+        </aside>
+
+        <!-- BACKDROP FOR MOBILE DRAWER -->
+        <Transition name="fade">
+          <div
+            v-if="isMobileFilterOpen"
+            class="sidebar-backdrop"
+            @click="closeMobileFilter"
+            aria-hidden="true"
+          ></div>
+        </Transition>
+
+        <!-- MAIN CONTENT COLUMN -->
+        <div class="main-content-column">
+          <!-- TOP TOOLBAR: Date chips + Mobile Filters button -->
+          <div class="content-toolbar">
+            <button
+              type="button"
+              class="md-btn md-btn-tonal md-btn-sm mobile-filter-trigger"
+              @click="toggleMobileFilter"
+              aria-label="Abrir filtros"
+            >
+              <span class="material-symbols-outlined sm">tune</span>
+              <span>Filtros</span>
+              <span v-if="activeFilterCount > 0" class="filter-count-badge">{{ activeFilterCount }}</span>
+            </button>
+
+            <div class="date-chips-scroll">
+              <span class="hide-mobile" style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant); font-weight: 500; margin-right: 2px;">
+                Fecha:
+              </span>
+              <button
+                v-for="d in availableDates"
+                :key="d.value"
+                type="button"
+                class="md-chip"
+                :class="{ selected: selectedDate === d.value }"
+                @click="selectedDate = d.value"
+              >
+                <span v-if="selectedDate === d.value" class="material-symbols-outlined sm">check</span>
+                {{ d.label }}
+              </button>
+            </div>
+          </div>
       <div class="show-mobile-only" style="margin-bottom: 20px; display: flex;">
         <div class="md-segmented-group" style="width: 100%;">
           <button
@@ -1057,6 +1155,8 @@ const formatStatusDate = (isoStr) => {
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
         </div>
       </div>
     </main>
