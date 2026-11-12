@@ -196,12 +196,17 @@ export async function scrapeCinemark() {
             });
 
             if (sessions.length > 0) {
-              complex.groups.push({
-                format,
-                language,
-                auditorium: version.film_HOPK || '1',
-                times: sessions
-              });
+              // Group into existing section if same format and language already exists for this complex
+              let group = complex.groups.find(g => g.format === format && g.language === language);
+              if (!group) {
+                group = {
+                  format,
+                  language,
+                  times: []
+                };
+                complex.groups.push(group);
+              }
+              group.times.push(...sessions);
             }
           }
         }
@@ -212,6 +217,18 @@ export async function scrapeCinemark() {
   }
 
   const movies = Array.from(movieMap.values()).filter(m => m.theaters.length > 0);
+
+  // Sort showtimes chronologically within each format/language group
+  for (const movie of movies) {
+    for (const theater of movie.theaters) {
+      for (const group of theater.groups) {
+        group.times.sort((a, b) => {
+          const cmp = (a.date || '').localeCompare(b.date || '');
+          return cmp !== 0 ? cmp : a.time.localeCompare(b.time);
+        });
+      }
+    }
+  }
 
   // Enrich with TMDb posters and synopsis (Wikipedia fallback for poster)
   console.log(`Enriching ${movies.length} movies with TMDb details...`);
