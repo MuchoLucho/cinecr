@@ -13,12 +13,34 @@ onMounted(() => {
 });
 
 const viewMode = ref('movies');
-const selectedDate = ref('today');
+const selectedDate = ref('all');
 const onlyPremium = ref(false);
 const scheduleSearch = ref('');
 const sessionDialog = ref(false);
 const sourcesDialog = ref(false);
 const activeSession = ref(null);
+
+const availableDates = computed(() => {
+  const dates = new Set();
+  movies.value.forEach(m => m.theaters.forEach(t => t.groups.forEach(g => g.times.forEach(s => {
+    if (s.date) dates.add(s.date);
+  }))));
+
+  const sorted = Array.from(dates).sort();
+  const options = [{ label: 'Toda la semana', value: 'all' }];
+
+  const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
+
+  sorted.forEach((dStr, idx) => {
+    const parts = dStr.split('-');
+    const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+    const dayLabel = idx === 0 ? 'Hoy' : idx === 1 ? 'Mañana' : `${dayNames[d.getDay()]} ${d.getDate()} ${monthNames[d.getMonth()]}`;
+    options.push({ label: dayLabel, value: dStr });
+  });
+
+  return options;
+});
 
 // Real chains active in CineCR right now
 const chains = [
@@ -124,12 +146,21 @@ const filteredMovies = computed(() => {
           return true;
         })
         .map(complex => {
-          const matchingGroups = complex.groups.filter(g => {
-            if (filters.language && g.language !== filters.language) return false;
-            if (filters.formats.length > 0 && !filters.formats.includes(g.format)) return false;
-            if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX'].includes(g.format)) return false;
-            return true;
-          });
+          const matchingGroups = complex.groups
+            .map(g => {
+              if (filters.language && g.language !== filters.language) return null;
+              if (filters.formats.length > 0 && !filters.formats.includes(g.format)) return null;
+              if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX'].includes(g.format)) return null;
+
+              const times = g.times.filter(s => {
+                if (selectedDate.value !== 'all' && s.date !== selectedDate.value) return false;
+                return true;
+              });
+
+              if (times.length === 0) return null;
+              return { ...g, times };
+            })
+            .filter(Boolean);
 
           const uniqueFormats = [...new Set(matchingGroups.map(g => g.format))];
           const flatSessions = matchingGroups.flatMap(g => g.times);
@@ -412,6 +443,23 @@ const openSessionModal = (movie, complex, group, session) => {
           <hr class="md-divider" />
 
           <div class="quick-bar">
+            <div class="chip-row">
+              <span style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant); margin-right: 4px; font-weight: 500;">
+                Fecha:
+              </span>
+              <button
+                v-for="d in availableDates"
+                :key="d.value"
+                type="button"
+                class="md-chip"
+                :class="{ selected: selectedDate === d.value }"
+                @click="selectedDate = d.value"
+              >
+                <span v-if="selectedDate === d.value" class="material-symbols-outlined sm">check</span>
+                {{ d.label }}
+              </button>
+            </div>
+
             <div class="chip-row">
               <button
                 type="button"

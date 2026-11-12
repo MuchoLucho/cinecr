@@ -122,6 +122,13 @@ export async function scrapeCinemark() {
   console.log('Scraping Cinemark Costa Rica showtimes...');
   const movieMap = new Map();
 
+  // Filter window: today through next 7 days (current cinema week)
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const maxDate = new Date(today);
+  maxDate.setDate(maxDate.getDate() + 7);
+  maxDate.setHours(23, 59, 59, 999);
+
   for (const theater of THEATERS) {
     console.log(`Fetching ${theater.name} (ID: ${theater.id})...`);
     try {
@@ -129,7 +136,11 @@ export async function scrapeCinemark() {
       if (!Array.isArray(datesData)) continue;
 
       for (const dayEntry of datesData) {
-        const date = dayEntry.date;
+        const dateStr = dayEntry.date;
+        const entryDate = new Date(`${dateStr}T00:00:00`);
+        // Skip dates beyond 7 days (presales, next month releases)
+        if (entryDate < today || entryDate > maxDate) continue;
+
         const rawMovies = dayEntry.movies || [];
 
         for (const rawMovie of rawMovies) {
@@ -177,8 +188,11 @@ export async function scrapeCinemark() {
               const timeParts = s.hour ? s.hour.split(':') : (s.showtime ? s.showtime.split('T')[1].split(':') : ['00', '00']);
               return {
                 time: `${timeParts[0]}:${timeParts[1]}`,
-                date: s.day || date
+                date: s.day || dateStr
               };
+            }).filter(s => {
+              const sDate = new Date(`${s.date}T00:00:00`);
+              return sDate >= today && sDate <= maxDate;
             });
 
             if (sessions.length > 0) {
