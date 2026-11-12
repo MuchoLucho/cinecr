@@ -35,6 +35,9 @@ This document defines the architecture, design principles, conventions, and oper
 ### Rule 2.5: Hide Past Showtimes
 - Showtimes whose starting time has already passed (relative to Costa Rica time `America/Costa_Rica`) are filtered out of all views. Users should only see actionable, upcoming shows.
 
+### Rule 2.6: 100% Spanish for the End User
+- All user-facing UI elements, labels, buttons, filters, tooltips, dialogs, dates, and copy **must always be in Spanish** (`es-CR`). Never use English labels or abbreviations for final users (e.g. use *"Última sincronización"* instead of *"Last sync"*).
+
 ---
 
 ## 3. Scraper & Data Rules

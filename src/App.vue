@@ -1055,7 +1055,7 @@ const formatStatusDate = (isoStr) => {
 
               <div style="text-align: right;">
                 <div style="font-size: 0.72rem; text-transform: uppercase; font-weight: 600; color: var(--md-sys-color-on-surface-variant);">
-                  Last sync
+                  Última sincronización
                 </div>
                 <div style="font-size: 0.84rem; font-weight: 600; color: var(--md-sys-color-on-surface); white-space: nowrap;">
                   {{ formatStatusDate(chain.lastSuccess) }}
