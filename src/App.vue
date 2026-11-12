@@ -16,9 +16,6 @@ const viewMode = ref('movies');
 const selectedDate = ref('today');
 const onlyPremium = ref(false);
 const scheduleSearch = ref('');
-const sessionDialog = ref(false);
-const sourcesDialog = ref(false);
-const activeSession = ref(null);
 
 const availableDates = computed(() => {
   const dates = new Set();
@@ -47,72 +44,15 @@ const availableDates = computed(() => {
   return options;
 });
 
-// Real chains active in CineCR right now
 const chains = [
-  {
-    id: 'cinemark',
-    name: 'Cinemark',
-    url: 'https://www.cinemarkca.com/costa-rica',
-    complexes: 'City Mall Alajuela, Multiplaza Curridabat, Multiplaza Escazú, Playground Oxígeno Heredia',
-    integrationMethod: 'API Vista Live Feed Scraping (JSON)',
-    status: 'Activo'
-  },
-  {
-    id: 'cinepolis',
-    name: 'Cinépolis',
-    url: 'https://cinepolis.co.cr',
-    complexes: 'Lincoln, Multicentro, Paseo De Las Flores, Paseo Metrópoli, TerraMall, Terrazas Lindora VIP',
-    integrationMethod: 'CinemaWorld REST API Scraping',
-    status: 'Activo'
-  },
-  {
-    id: 'ccm',
-    name: 'CCM Cinemas',
-    url: 'https://www.ccmcinemas.com',
-    complexes: 'Plaza Mayor Rohrmoser, San Ramón, San Carlos (Ciudad Quesada)',
-    integrationMethod: 'CCM Funciones JSON API Scraping',
-    status: 'Activo'
-  },
-  {
-    id: 'nova',
-    name: 'Nova Cinemas',
-    url: 'https://www.novacinemas.cr',
-    complexes: 'Avenida Escazú, Ciudad del Este Curridabat, Plaza Real Alajuela, Plaza Moín Limón, Tamarindo Guanacaste',
-    integrationMethod: 'API Vista Central Live Scraping (JSON)',
-    status: 'Activo'
-  },
-  {
-    id: 'magaly',
-    name: 'Cine Magaly',
-    url: 'https://www.cinemagaly.com',
-    complexes: 'Barrio La California, San José (Sala Magaly & La Salita)',
-    integrationMethod: 'Programación Web API Scraping (JSON)',
-    status: 'Activo'
-  },
-  {
-    id: 'sanpedro',
-    name: 'Cinema San Pedro',
-    url: 'https://cinemasanpedro.com',
-    complexes: 'Mall San Pedro (Pisos 3 y 5, San Pedro de Montes de Oca)',
-    integrationMethod: 'Schema.org JSON-LD Web Scraping',
-    status: 'Activo'
-  },
-  {
-    id: 'studio',
-    name: 'Studio Cinemas',
-    url: 'https://www.studiocinemascr.com',
-    complexes: 'City Place Santa Ana (Radial Santa Ana - Belén)',
-    integrationMethod: 'API Cineverse REST Live Scraping (JSON)',
-    status: 'Activo'
-  },
-  {
-    id: 'citicinemas',
-    name: 'CitiCinemas',
-    url: 'https://www.citicinemascr.com',
-    complexes: 'Plaza El Ingenio (Plaza Grecia, Alajuela)',
-    integrationMethod: 'HTML Web Scraping & Multi-day Tabs',
-    status: 'Activo'
-  }
+  { id: 'cinemark', name: 'Cinemark' },
+  { id: 'cinepolis', name: 'Cinépolis' },
+  { id: 'ccm', name: 'CCM Cinemas' },
+  { id: 'nova', name: 'Nova Cinemas' },
+  { id: 'magaly', name: 'Cine Magaly' },
+  { id: 'sanpedro', name: 'Cinema San Pedro' },
+  { id: 'studio', name: 'Studio Cinemas' },
+  { id: 'citicinemas', name: 'CitiCinemas' }
 ];
 
 // Helper to generate dynamic poster artworks
@@ -368,31 +308,12 @@ const getFormatIcon = (format) => {
   return map[format] || 'movie';
 };
 
-const getFormatDescription = (format) => {
-  const descriptions = {
-    'XD': 'Extreme Digital Cinema de Cinemark con pantalla gigante de pared a pared.',
-    'D-BOX': 'Asientos con movimiento háptico sincronizado directamente con la película.',
-    'VIP': 'Butacas reclinables de alta comodidad.',
-    'IMAX': 'Pantalla envolvente IMAX de gran formato y sonido inmersivo.',
-    'LASERMAX': 'Proyección láser de ultra alta definición exclusiva de Nova Cinemas.',
-    'ONE': 'Sala premium con sonido envolvente y experiencia inmersiva Nova ONE.',
-    '3D': 'Proyección tridimensional digital.',
-    '2D': 'Proyección digital tradicional en alta definición.'
-  };
-  return descriptions[format] || 'Proyección digital estándar.';
-};
-
 const formatSessionDate = (dateStr) => {
   if (!dateStr) return '';
   const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
   const parts = dateStr.split('-');
   const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
   return `${dayNames[d.getDay()]} ${d.getDate()}`;
-};
-
-const openSessionModal = (movie, complex, group, session) => {
-  activeSession.value = { movie, complex, group, session };
-  sessionDialog.value = true;
 };
 </script>
 
@@ -406,13 +327,7 @@ const openSessionModal = (movie, complex, group, session) => {
             <span class="material-symbols-outlined lg">theaters</span>
           </div>
           <div>
-            <div class="brand-title">
-              CineCR
-              <span class="md-badge xs badge-red">COSTA RICA</span>
-            </div>
-            <div class="brand-subtitle">
-              Cartelera en tiempo real • Datos 100% reales
-            </div>
+            <div class="brand-title">CineCR</div>
           </div>
         </div>
 
@@ -440,11 +355,6 @@ const openSessionModal = (movie, complex, group, session) => {
             </button>
           </div>
 
-          <button type="button" class="md-btn md-btn-tonal md-btn-sm" @click="sourcesDialog = true">
-            <span class="material-symbols-outlined sm">hub</span>
-            Cines ({{ chains.length }})
-          </button>
-
           <button
             type="button"
             class="md-icon-btn"
@@ -464,13 +374,9 @@ const openSessionModal = (movie, complex, group, session) => {
       <div class="md-container">
         <div class="hero-grid">
           <div>
-            <div class="hero-overline">
-              <span class="material-symbols-outlined sm">location_on</span>
-              COSTA RICA • CARTELERA REAL EN VIVO
-            </div>
-            <h1 class="hero-title">Cartelera en Tiempo Real</h1>
+            <h1 class="hero-title">Cartelera de Cine</h1>
             <p class="hero-desc">
-              Tandas, formatos de sala (VIP, IMAX, LASERMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark, Cinépolis, CCM Cinemas, Nova Cinemas, Cine Magaly, Cinema San Pedro, Studio Cinemas y CitiCinemas Costa Rica.
+              Horarios y tandas actualizadas de todos los cines de Costa Rica.
             </p>
           </div>
 
@@ -485,7 +391,7 @@ const openSessionModal = (movie, complex, group, session) => {
             </div>
             <div class="stat-card">
               <div class="stat-value" style="color: #34d399;">{{ activeComplexCount }}</div>
-              <div class="stat-label">Complejos</div>
+              <div class="stat-label">Cines</div>
             </div>
           </div>
         </div>
@@ -669,9 +575,6 @@ const openSessionModal = (movie, complex, group, session) => {
                     </span>
                   </div>
                   <div>
-                    <div style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #fca5a5;">
-                      {{ movie.studio }}
-                    </div>
                     <div style="font-family: 'Google Sans', sans-serif; font-size: 1.35rem; font-weight: 700; color: #fff; line-height: 1.15;">
                       {{ movie.title }}
                     </div>
@@ -693,28 +596,15 @@ const openSessionModal = (movie, complex, group, session) => {
                 {{ movie.synopsis }}
               </p>
 
-              <div style="margin-top: auto; padding-top: 12px; border-top: 1px solid var(--md-sys-color-outline-variant); font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant);">
-                <div><strong>Director:</strong> {{ movie.director }}</div>
-                <div style="margin-top: 4px;">
-                  <strong>Formatos en CR:</strong> {{ getAvailableFormatsForMovie(movie).join(' • ') }}
-                </div>
+              <div v-if="movie.director && movie.director !== 'N/A'" style="margin-top: auto; padding-top: 12px; border-top: 1px solid var(--md-sys-color-outline-variant); font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant);">
+                <strong>Director:</strong> {{ movie.director }}
               </div>
             </div>
 
             <div class="movie-content">
-              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px;">
-                <div>
-                  <h2 style="font-size: 1.35rem; font-weight: 700;">
-                    Cartelera disponible — {{ movie.title }}
-                  </h2>
-                  <div style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant);">
-                    Mostrando {{ countMovieShowtimes(movie) }} tandas en {{ movie.groupedTheaters.length }} complejos
-                  </div>
-                </div>
-
-                <div class="chip-row">
-                  <span class="md-badge badge-indigo-tonal"><strong>SUB</strong> = Subtitulada</span>
-                  <span class="md-badge badge-teal-tonal"><strong>DOB</strong> = Doblada</span>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                <div style="font-size: 0.88rem; font-weight: 600; color: var(--md-sys-color-on-surface-variant);">
+                  {{ countMovieShowtimes(movie) }} tandas en {{ movie.groupedTheaters.length }} cines
                 </div>
               </div>
 
@@ -784,19 +674,21 @@ const openSessionModal = (movie, complex, group, session) => {
                     </div>
 
                     <div class="chip-row">
-                      <button
+                      <a
                         v-for="session in group.times"
                         :key="session.time + session.date"
-                        type="button"
+                        :href="complex.website"
+                        target="_blank"
+                        rel="noopener"
                         class="showtime-btn"
-                        @click="openSessionModal(movie, complex, group, session)"
+                        :title="`Ir a ${complex.chainName}`"
                       >
                         <span class="material-symbols-outlined sm">calendar_today</span>
                         <span v-if="session.date" style="opacity: 0.75; font-size: 0.78rem; font-weight: 500;">
                           {{ formatSessionDate(session.date) }}
                         </span>
                         <span>{{ session.time }}</span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -813,7 +705,7 @@ const openSessionModal = (movie, complex, group, session) => {
             <div>
               <h2 style="font-size: 1.25rem; font-weight: 700;">Cronograma de Tandas</h2>
               <div style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant);">
-                Horarios cronológicos reales de Cinemark, Cinépolis, CCM, Nova, Magaly, San Pedro, Studio Cinemas y CitiCinemas
+                Todas las funciones ordenadas por hora
               </div>
             </div>
             <div style="min-width: 260px;">
@@ -874,14 +766,16 @@ const openSessionModal = (movie, complex, group, session) => {
                     </span>
                   </td>
                   <td style="text-align: center;">
-                    <button
-                      type="button"
+                    <a
+                      :href="item.complex.website"
+                      target="_blank"
+                      rel="noopener"
                       class="md-btn md-btn-tonal md-btn-sm"
-                      @click="openSessionModal(item.movie, item.complex, item.group, { time: item.time, occupancy: item.occupancy })"
+                      style="text-decoration: none;"
                     >
-                      Ver Tanda
+                      Ir al cine
                       <span class="material-symbols-outlined sm">open_in_new</span>
-                    </button>
+                    </a>
                   </td>
                 </tr>
               </tbody>
@@ -891,136 +785,11 @@ const openSessionModal = (movie, complex, group, session) => {
       </div>
     </main>
 
-    <!-- SHOWTIME MODAL -->
-    <div v-if="sessionDialog && activeSession" class="md-scrim" @click.self="sessionDialog = false">
-      <div class="md-dialog" role="dialog" aria-modal="true">
-        <div class="md-dialog-header">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span :class="['md-badge', getChainBadgeClass(activeSession.complex.chainId)]">
-              {{ activeSession.complex.chainName }}
-            </span>
-            <span style="font-weight: 700; font-size: 1rem;">
-              {{ activeSession.complex.complexName }}
-            </span>
-          </div>
-          <button type="button" class="md-icon-btn" @click="sessionDialog = false">
-            <span class="material-symbols-outlined">close</span>
-          </button>
-        </div>
-
-        <div class="md-dialog-body">
-          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-            <img
-              :src="activeSession.movie.poster"
-              :alt="activeSession.movie.title"
-              style="width: 68px; height: 96px; object-fit: cover; border-radius: 12px;"
-            />
-            <div>
-              <h3 style="font-size: 1.25rem; font-weight: 700;">{{ activeSession.movie.title }}</h3>
-              <div style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant); margin-bottom: 6px;">
-                {{ activeSession.movie.rating }} • {{ activeSession.movie.duration }}
-              </div>
-              <div class="chip-row">
-                <span class="md-badge" :class="getFormatBadgeClass(activeSession.group.format)">
-                  {{ activeSession.group.format }}
-                </span>
-                <span
-                  class="md-badge"
-                  :class="activeSession.group.language === 'SUB' ? 'badge-indigo-tonal' : 'badge-teal-tonal'"
-                >
-                  {{ activeSession.group.language === 'SUB' ? 'Subtitulada' : 'Doblada' }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div style="background-color: var(--md-sys-color-surface-container); border: 1px solid var(--md-sys-color-outline-variant); border-radius: 16px; padding: 16px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between;">
-            <div>
-              <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Hora de función</div>
-              <div style="font-size: 1.35rem; font-weight: 700; color: var(--md-sys-color-primary);">
-                {{ activeSession.session.time }}
-              </div>
-            </div>
-            <div style="text-align: right;">
-              <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Formato</div>
-              <span class="md-badge" :class="getFormatBadgeClass(activeSession.group.format)">
-                {{ activeSession.group.format }}
-              </span>
-            </div>
-          </div>
-
-          <div style="font-weight: 700; font-size: 0.875rem; margin-bottom: 4px;">
-            Sala ({{ activeSession.group.format }}):
-          </div>
-          <p style="font-size: 0.875rem; color: var(--md-sys-color-on-surface-variant); margin: 0;">
-            {{ getFormatDescription(activeSession.group.format) }}
-          </p>
-        </div>
-
-        <div class="md-dialog-actions">
-          <button type="button" class="md-btn md-btn-text" @click="sessionDialog = false">
-            Cerrar
-          </button>
-          <a
-            class="md-btn md-btn-filled"
-            :href="activeSession.complex.website"
-            target="_blank"
-            rel="noopener"
-          >
-            Ir a {{ activeSession.complex.chainName }}
-            <span class="material-symbols-outlined sm">open_in_new</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SOURCES MODAL -->
-    <div v-if="sourcesDialog" class="md-scrim" @click.self="sourcesDialog = false">
-      <div class="md-dialog lg" role="dialog" aria-modal="true">
-        <div class="md-dialog-header">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span class="material-symbols-outlined" style="color: var(--md-sys-color-primary);">hub</span>
-            <span style="font-weight: 700; font-size: 1.05rem;">Fuentes de Cartelera</span>
-          </div>
-          <button type="button" class="md-icon-btn" @click="sourcesDialog = false">
-            <span class="material-symbols-outlined">close</span>
-          </button>
-        </div>
-
-        <div class="md-dialog-body">
-          <div class="md-list">
-            <div v-for="chain in chains" :key="chain.id" class="md-list-item">
-              <div style="display: flex; align-items: flex-start; gap: 12px;">
-                <span :class="['md-badge', getChainBadgeClass(chain.id)]" style="margin-top: 2px;">
-                  {{ chain.name }}
-                </span>
-                <div>
-                  <div style="font-weight: 700; font-size: 0.9rem;">{{ chain.complexes }}</div>
-                  <div style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant); margin-top: 2px;">
-                    <strong>Estado:</strong> {{ chain.integrationMethod }}
-                  </div>
-                </div>
-              </div>
-              <a class="md-icon-btn" :href="chain.url" target="_blank" rel="noopener">
-                <span class="material-symbols-outlined sm">open_in_new</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="md-dialog-actions">
-          <button type="button" class="md-btn md-btn-filled" @click="sourcesDialog = false">
-            Entendido
-          </button>
-        </div>
-      </div>
-    </div>
-
     <!-- FOOTER WITH TMDB ATTRIBUTION -->
     <footer class="md-footer">
       <div class="md-container">
         <div style="margin-bottom: 8px;">
-          <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark, Cinépolis, CCM, Nova, Magaly, San Pedro, Studio Cinemas y CitiCinemas Costa Rica.
+          <strong>CineCR</strong> — Cartelera de cine en Costa Rica.
         </div>
         <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); opacity: 0.85;">
           <img
