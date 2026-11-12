@@ -32,6 +32,7 @@ for (const m of movies) {
     chainsFound.add(t.chainId);
     assert.ok(t.complexName, `Missing complexName in ${m.title}`);
     assert.ok(t.province, `Missing province in ${t.complexName}`);
+    assert.ok(t.website && t.website.startsWith('http'), `Missing or invalid website in ${t.complexName} for ${m.title}`);
     assert.ok(Array.isArray(t.groups), `Missing groups in ${t.complexName}`);
 
     for (const g of t.groups) {

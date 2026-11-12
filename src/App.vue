@@ -174,6 +174,21 @@ const chains = [
   { id: 'citicinemas', name: 'CitiCinemas' }
 ];
 
+const CHAIN_WEBSITES = {
+  cinemark: 'https://www.cinemarkca.com/costa-rica',
+  cinepolis: 'https://cinepolis.co.cr',
+  ccm: 'https://www.ccmcinemas.com',
+  nova: 'https://www.novacinemas.cr',
+  magaly: 'https://www.cinemagaly.com',
+  sanpedro: 'https://cinemasanpedro.com',
+  studio: 'https://www.studiocinemascr.com',
+  citicinemas: 'https://www.citicinemascr.com'
+};
+
+const getCinemaWebsite = (complex) => {
+  return complex?.website || CHAIN_WEBSITES[complex?.chainId] || 'https://cinecr.pages.dev';
+};
+
 // Helper to generate dynamic poster artworks
 function generatePosterSvg(title, genre, color) {
   const safeTitle = (title || 'CineCR').substring(0, 32);
@@ -266,9 +281,14 @@ const movies = ref(moviesData.map(m => {
   const genre = genres[0] || 'Película';
   const color = genreColors[genre] || '#f43f5e';
   const ageInfo = getMovieAgeRating(m.rating);
+  const theaters = (m.theaters || []).map(t => ({
+    ...t,
+    website: t.website || CHAIN_WEBSITES[t.chainId] || 'https://cinecr.pages.dev'
+  }));
   return {
     ...m,
     genres,
+    theaters,
     ratingBadgeClass: m.ratingBadgeClass || getRatingBadgeClass(m.rating),
     ageTier: ageInfo.tier,
     minAge: ageInfo.minAge,
@@ -615,7 +635,7 @@ const formatStatusDate = (isoStr) => {
           <div>
             <h1 class="hero-title">Cartelera de Cine</h1>
             <p class="hero-desc">
-              Horarios y tandas actualizadas de todos los cines de Costa Rica.
+              Horarios y tandas unificadas de todos los cines de Costa Rica
             </p>
           </div>
 
@@ -933,7 +953,7 @@ const formatStatusDate = (isoStr) => {
                       <a
                         v-for="session in group.times"
                         :key="session.time + session.date"
-                        :href="complex.website"
+                        :href="getCinemaWebsite(complex)"
                         target="_blank"
                         rel="noopener"
                         class="showtime-btn"
@@ -1023,7 +1043,7 @@ const formatStatusDate = (isoStr) => {
                   </td>
                   <td style="text-align: center;">
                     <a
-                      :href="item.complex.website"
+                      :href="getCinemaWebsite(item.complex)"
                       target="_blank"
                       rel="noopener"
                       class="md-btn md-btn-tonal md-btn-sm"

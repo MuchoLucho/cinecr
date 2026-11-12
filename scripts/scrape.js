@@ -165,6 +165,17 @@ function normalizeTitleKey(str) {
     .replace(/[^a-z0-9]/g, '');
 }
 
+const CHAIN_WEBSITES = {
+  cinemark: 'https://www.cinemarkca.com/costa-rica',
+  cinepolis: 'https://cinepolis.co.cr',
+  ccm: 'https://www.ccmcinemas.com',
+  nova: 'https://www.novacinemas.cr',
+  magaly: 'https://www.cinemagaly.com',
+  sanpedro: 'https://cinemasanpedro.com',
+  studio: 'https://www.studiocinemascr.com',
+  citicinemas: 'https://www.citicinemascr.com'
+};
+
 function getRatingBadgeClass(ratingStr) {
   if (!ratingStr) return 'badge-green';
   const r = (ratingStr || '').toUpperCase();
@@ -256,6 +267,14 @@ export function mergeDatasets(...datasets) {
 
   const merged = Array.from(mergedMap.values());
   merged.sort((a, b) => a.title.localeCompare(b.title));
+
+  for (const movie of merged) {
+    for (const t of movie.theaters || []) {
+      if (!t.website) {
+        t.website = CHAIN_WEBSITES[t.chainId] || 'https://cinecr.pages.dev';
+      }
+    }
+  }
 
   return merged;
 }
