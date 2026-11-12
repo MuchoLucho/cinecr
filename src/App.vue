@@ -182,11 +182,8 @@ const filteredMovies = computed(() => {
     .filter(movie => movie.groupedTheaters.length > 0);
 });
 
-// Open first few panels by default
+// Closed by default
 const expandedPanels = reactive({});
-movies.value.slice(0, 6).forEach(m => {
-  expandedPanels[m.id] = m.theaters.map(t => t.complexId);
-});
 
 const isPanelOpen = (movieId, complexId) => {
   return expandedPanels[movieId] && expandedPanels[movieId].includes(complexId);
