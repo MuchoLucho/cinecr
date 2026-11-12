@@ -1456,7 +1456,7 @@
     "id": "113516",
     "title": "Como robar un banco",
     "originalTitle": "Como robar un banco",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -2941,6 +2941,103 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "comorobarbanco"
@@ -3060,7 +3157,7 @@
     "id": "113989",
     "title": "Ebenezer fantasmas de Navidad",
     "originalTitle": "Ebenezer fantasmas de Navidad ",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -3072,7 +3169,8 @@
       "Ciencia ficción",
       "Comedia",
       "Cine",
-      "Independiente"
+      "Independiente",
+      "Fantasía"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
@@ -5870,6 +5968,173 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:55",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:55",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
@@ -5915,7 +6180,7 @@
     "id": "112951",
     "title": "El Corazon de la Bestia",
     "originalTitle": "El Corazon de la Bestia",
-    "studio": "Cinemark / Cinépolis / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / Nova Cinemas / Cinema San Pedro",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -5925,7 +6190,8 @@
       "Accion",
       "Drama",
       "Acción",
-      "Cine"
+      "Cine",
+      "Aventura"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
     "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
@@ -6135,6 +6401,115 @@
               {
                 "time": "21:30",
                 "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -6521,7 +6896,7 @@
     "id": "113899",
     "title": "El Gato con Sombrero",
     "originalTitle": "El Gato con Sombrero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -6531,7 +6906,8 @@
       "Animada",
       "Animado",
       "Animación",
-      "Cine"
+      "Cine",
+      "Animadas"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
@@ -8290,6 +8666,203 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "gatosombrero"
@@ -8298,7 +8871,7 @@
     "id": "114100",
     "title": "El vientre del diablo",
     "originalTitle": "El vientre del diablo",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / Cinema San Pedro",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -8712,6 +9285,71 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "vientrediablo"
@@ -8720,7 +9358,7 @@
     "id": "113646",
     "title": "Godzilla Minus Zero",
     "originalTitle": "Godzilla Minus Zero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -10609,6 +11247,107 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "godzillaminuszero"
@@ -10666,7 +11405,7 @@
     "id": "113840",
     "title": "Hunger Games 6 Amanecer",
     "originalTitle": "Hunger Games 6 Amanecer ",
-    "studio": "Cinemark / CCM Cinemas / Nova Cinemas",
+    "studio": "Cinemark / CCM Cinemas / Nova Cinemas / Cinema San Pedro",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -11088,6 +11827,39 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-19"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-19"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-19"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "hungergames6amanecer"
@@ -11335,7 +12107,7 @@
     "id": "112657",
     "title": "Resident Evil noche cero",
     "originalTitle": "Resident Evil noche cero",
-    "studio": "Cinemark",
+    "studio": "Cinemark / Cinema San Pedro",
     "rating": "M-18",
     "ratingBadgeClass": "badge-red",
     "score": "8.0",
@@ -11391,6 +12163,135 @@
               {
                 "time": "20:50",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
               },
               {
                 "time": "20:30",
@@ -11556,14 +12457,15 @@
     "normalizedKey": "streetfighter",
     "title": "STREET FIGHTER",
     "originalTitle": "STREET FIGHTER",
-    "studio": "CCM Cinemas / Nova Cinemas",
+    "studio": "CCM Cinemas / Nova Cinemas / Cinema San Pedro",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
     "duration": "2h 0m",
     "director": "N/A",
     "genres": [
-      "Cine"
+      "Cine",
+      "Acción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
     "synopsis": "En 1993, los distanciados luchadores Ryu y Ken Masters se ven obligados a volver a la acción cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros.",
@@ -11630,6 +12532,75 @@
               {
                 "time": "21:30",
                 "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -13186,7 +14157,7 @@
     "id": "114001",
     "title": "Yo soy Rocky",
     "originalTitle": "Yo soy Rocky",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -14428,6 +15399,71 @@
               {
                 "time": "18:00",
                 "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-17"
               }
             ]
           }

@@ -6,6 +6,7 @@ import { scrapeCinepolis } from './scrape-cinepolis.js';
 import { scrapeCcm } from './scrape-ccm.js';
 import { scrapeNova } from './scrape-nova.js';
 import { scrapeMagaly } from './scrape-magaly.js';
+import { scrapeSanPedro } from './scrape-sanpedro.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -98,16 +99,17 @@ export function mergeDatasets(...datasets) {
 }
 
 export async function scrapeAll() {
-  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova + Magaly) ===');
-  const [cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies] = await Promise.all([
+  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova + Magaly + San Pedro) ===');
+  const [cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies, sanPedroMovies] = await Promise.all([
     scrapeCinemark(),
     scrapeCinepolis(),
     scrapeCcm(),
     scrapeNova(),
-    scrapeMagaly()
+    scrapeMagaly(),
+    scrapeSanPedro()
   ]);
 
-  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies);
+  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies, sanPedroMovies);
   const outDir = path.resolve(__dirname, '../src/data');
   const outFile = path.join(outDir, 'movies-data.json');
   fs.writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf-8');
@@ -123,7 +125,8 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
     const ccm = JSON.parse(fs.readFileSync(path.join(dataDir, 'ccm-data.json'), 'utf8'));
     const nova = JSON.parse(fs.readFileSync(path.join(dataDir, 'nova-data.json'), 'utf8'));
     const magaly = JSON.parse(fs.readFileSync(path.join(dataDir, 'magaly-data.json'), 'utf8'));
-    const merged = mergeDatasets(cm, cp, ccm, nova, magaly);
+    const sanpedro = JSON.parse(fs.readFileSync(path.join(dataDir, 'sanpedro-data.json'), 'utf8'));
+    const merged = mergeDatasets(cm, cp, ccm, nova, magaly, sanpedro);
     fs.writeFileSync(path.join(dataDir, 'movies-data.json'), JSON.stringify(merged, null, 2), 'utf8');
     console.log(`Merged ${merged.length} movies to movies-data.json`);
   } else {

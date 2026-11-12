@@ -1,0 +1,1174 @@
+[
+  {
+    "id": "sanpedro-residentevilnochecero",
+    "title": "Resident Evil: Noche Cero",
+    "originalTitle": "Resident Evil: Noche Cero",
+    "synopsis": "Resident Evil sigue a Bryan (Austin Abrams), un mensajero médico que, sin saberlo, se ve envuelto en una carrera por la supervivencia llena de acción y sin tregua cuando una noche fatídica y espantosa se convierte en un caos a su alrededor.",
+    "poster": "https://image.tmdb.org/t/p/w500/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
+    "rating": "Mayores de 18",
+    "duration": "1h 34m",
+    "genres": [
+      "Terror"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-corazonbestia",
+    "title": "EL CORAZÓN DE LA BESTIA",
+    "originalTitle": "EL CORAZÓN DE LA BESTIA",
+    "synopsis": "Tras sobrevivir a un brutal accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate Odín intentan regresar a la civilización desde un remoto lugar en medio de los parajes salvajes de Alaska.",
+    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
+    "rating": "Todo publico",
+    "duration": "1h 41m",
+    "genres": [
+      "Aventura"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-streetfighter",
+    "title": "STREET FIGHTER",
+    "originalTitle": "STREET FIGHTER",
+    "synopsis": "Ambientada en 1993, la historia sigue a Ryu y Ken Masters, dos luchadores de Street Fighter distanciados, quienes se ven obligados a volver al combate cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros: un brutal choque de puños, destino y furia. Pero detrás de esta batalla se esconde una conspiración mortal que los obliga a enfrentarse entre ellos y a los demonios de sus pasados.",
+    "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
+    "rating": "Mayores de 12",
+    "duration": "2h 0m",
+    "genres": [
+      "Acción"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-gatosombrero",
+    "title": "EL GATO CON SOMBRERO",
+    "originalTitle": "EL GATO CON SOMBRERO",
+    "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
+    "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
+    "rating": "Todo publico",
+    "duration": "1h 48m",
+    "genres": [
+      "Animadas"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:25",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-godzillaminuszero",
+    "title": "GODZILLA MINUS ZERO",
+    "originalTitle": "GODZILLA MINUS ZERO",
+    "synopsis": "Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
+    "rating": "Mayores de 12",
+    "duration": "2h 15m",
+    "genres": [
+      "Ciencia Ficción"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-ebenezer",
+    "title": "EBENEZER",
+    "originalTitle": "EBENEZER",
+    "synopsis": "Una historia de fantasmas ambientada en el Londres de Dickens que sigue el viaje sobrenatural de un hombre para enfrentarse a su pasado, presente y futuro y luchar por una segunda oportunidad.",
+    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
+    "rating": "Mayores de 12",
+    "duration": "1h 55m",
+    "genres": [
+      "Fantasía"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:55",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:55",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "17:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-vientrediablo",
+    "title": "EN EL VIENTRE DEL DIABLO",
+    "originalTitle": "EN EL VIENTRE DEL DIABLO",
+    "synopsis": "Una pareja de recién casados sufre un evento inesperado en una casa a la que acaban de mudarse, la cual esconde secretos que ellos ignoran. Repentinamente, ella se conecta con un ente demoniaco, el mismo que reclamó la vida de su hijo.",
+    "poster": "https://image.tmdb.org/t/p/w500/ms6V9gUMcw6T6ENgUCU7SL5x7dl.jpg",
+    "rating": "Mayores de 18",
+    "duration": "1h 30m",
+    "genres": [
+      "Terror"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-comorobarbanco",
+    "title": "COMO ROBAR UN BANCO",
+    "originalTitle": "COMO ROBAR UN BANCO",
+    "synopsis": "Un hombre desesperado planea un elaborado atraco contra el corrupto sistema financiero que arruinó su vida, con un grupo que documenta sus actos en redes sociales.",
+    "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
+    "rating": "Mayores de 15",
+    "duration": "2h 2m",
+    "genres": [
+      "Acción"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-yosoyrocky",
+    "title": "YO SOY ROCKY",
+    "originalTitle": "YO SOY ROCKY",
+    "synopsis": "Una inspiradora historia de perseverancia que dio origen a una de las mayores leyendas de la historia del cine.",
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
+    "rating": "Mayores de 15",
+    "duration": "2h 8m",
+    "genres": [
+      "Drama"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-juegoshambreamanecercosecha",
+    "title": "LOS JUEGOS DEL HAMBRE: AMANECER EN LA COSECHA",
+    "originalTitle": "LOS JUEGOS DEL HAMBRE: AMANECER EN LA COSECHA",
+    "synopsis": "Explora Panem 24 años antes de la saga de Katniss, comenzando en la mañana de la siega de los 50º Juegos del Hambre, donde participa un joven Haymitch Abernathy.",
+    "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
+    "rating": "TP",
+    "duration": "2h 39m",
+    "genres": [
+      "Ciencia Ficción"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-19"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-19"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-19"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

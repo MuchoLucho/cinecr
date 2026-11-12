@@ -13,6 +13,7 @@
     "scrape:ccm": "node scripts/scrape-ccm.js",
     "scrape:nova": "node scripts/scrape-nova.js",
     "scrape:magaly": "node scripts/scrape-magaly.js",
+    "scrape:sanpedro": "node scripts/scrape-sanpedro.js",
     "scrape:all": "node scripts/scrape.js"
   },
   "dependencies": {
