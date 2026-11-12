@@ -11,6 +11,7 @@
     "scrape:cinemark": "node scripts/scrape-cinemark.js",
     "scrape:cinepolis": "node scripts/scrape-cinepolis.js",
     "scrape:ccm": "node scripts/scrape-ccm.js",
+    "scrape:nova": "node scripts/scrape-nova.js",
     "scrape:all": "node scripts/scrape.js"
   },
   "dependencies": {

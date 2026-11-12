@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { scrapeCinemark } from './scrape-cinemark.js';
 import { scrapeCinepolis } from './scrape-cinepolis.js';
 import { scrapeCcm } from './scrape-ccm.js';
+import { scrapeNova } from './scrape-nova.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -27,7 +28,7 @@ export function mergeDatasets(...datasets) {
 
       let existingKey = mergedMap.has(key) ? key : null;
 
-      // Match by identical TMDb poster or substring title key
+      // Match by identical TMDb poster, substring title key, or prefix
       if (!existingKey) {
         const incomingTmdbPoster = incoming.poster && incoming.poster.includes('image.tmdb.org') ? incoming.poster : null;
         for (const [k, existingMovie] of mergedMap.entries()) {
@@ -36,6 +37,10 @@ export function mergeDatasets(...datasets) {
             break;
           }
           if (k.length > 5 && key.length > 5 && (k.includes(key) || key.includes(k))) {
+            existingKey = k;
+            break;
+          }
+          if (k.length >= 8 && key.length >= 8 && k.slice(0, 8) === key.slice(0, 8)) {
             existingKey = k;
             break;
           }
@@ -88,14 +93,15 @@ export function mergeDatasets(...datasets) {
 }
 
 export async function scrapeAll() {
-  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM Cinemas) ===');
-  const [cinemarkMovies, cinepolisMovies, ccmMovies] = await Promise.all([
+  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova) ===');
+  const [cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies] = await Promise.all([
     scrapeCinemark(),
     scrapeCinepolis(),
-    scrapeCcm()
+    scrapeCcm(),
+    scrapeNova()
   ]);
 
-  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies);
+  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies);
   const outDir = path.resolve(__dirname, '../src/data');
   const outFile = path.join(outDir, 'movies-data.json');
   fs.writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf-8');
@@ -109,7 +115,8 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
     const cm = JSON.parse(fs.readFileSync(path.join(dataDir, 'cinemark-data.json'), 'utf8'));
     const cp = JSON.parse(fs.readFileSync(path.join(dataDir, 'cinepolis-data.json'), 'utf8'));
     const ccm = JSON.parse(fs.readFileSync(path.join(dataDir, 'ccm-data.json'), 'utf8'));
-    const merged = mergeDatasets(cm, cp, ccm);
+    const nova = JSON.parse(fs.readFileSync(path.join(dataDir, 'nova-data.json'), 'utf8'));
+    const merged = mergeDatasets(cm, cp, ccm, nova);
     fs.writeFileSync(path.join(dataDir, 'movies-data.json'), JSON.stringify(merged, null, 2), 'utf8');
     console.log(`Merged ${merged.length} movies to movies-data.json`);
   } else {

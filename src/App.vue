@@ -72,6 +72,14 @@ const chains = [
     complexes: 'Plaza Mayor Rohrmoser, San Ramón, San Carlos (Ciudad Quesada)',
     integrationMethod: 'CCM Funciones JSON API Scraping',
     status: 'Activo'
+  },
+  {
+    id: 'nova',
+    name: 'Nova Cinemas',
+    url: 'https://www.novacinemas.cr',
+    complexes: 'Avenida Escazú, Ciudad del Este Curridabat, Plaza Real Alajuela, Plaza Moín Limón, Tamarindo Guanacaste',
+    integrationMethod: 'API Vista Central Live Scraping (JSON)',
+    status: 'Activo'
   }
 ];
 
@@ -173,7 +181,7 @@ const filteredMovies = computed(() => {
             .map(g => {
               if (filters.language && g.language !== filters.language) return null;
               if (filters.formats.length > 0 && !filters.formats.includes(g.format)) return null;
-              if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX', 'MACRO XE'].includes(g.format)) return null;
+              if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX', 'MACRO XE', 'LASERMAX', 'ONE'].includes(g.format)) return null;
 
               const times = g.times.filter(s => {
                 if (selectedDate.value === 'all') return true;
@@ -289,6 +297,7 @@ const getAvailableFormatsForMovie = (movie) => {
 const getChainBadgeClass = (chainId) => {
   if (chainId === 'cinepolis') return 'badge-blue';
   if (chainId === 'ccm') return 'badge-cyan';
+  if (chainId === 'nova') return 'badge-green';
   return 'badge-red';
 };
 
@@ -298,6 +307,8 @@ const getFormatBadgeClass = (format) => {
     'MACRO XE': 'badge-red',
     '4DX': 'badge-purple',
     'IMAX': 'badge-cyan',
+    'LASERMAX': 'badge-purple',
+    'ONE': 'badge-teal',
     'D-BOX': 'badge-orange',
     'VIP': 'badge-amber',
     '3D': 'badge-teal',
@@ -312,6 +323,9 @@ const getFormatIcon = (format) => {
     'XD': 'speaker',
     'D-BOX': 'vibration',
     'VIP': 'chair',
+    'IMAX': 'theaters',
+    'LASERMAX': 'auto_awesome',
+    'ONE': 'movie',
     '3D': '3d_rotation',
     '2D': 'theaters'
   };
@@ -323,6 +337,9 @@ const getFormatDescription = (format) => {
     'XD': 'Extreme Digital Cinema de Cinemark con pantalla gigante de pared a pared.',
     'D-BOX': 'Asientos con movimiento háptico sincronizado directamente con la película.',
     'VIP': 'Butacas reclinables de alta comodidad.',
+    'IMAX': 'Pantalla envolvente IMAX de gran formato y sonido inmersivo.',
+    'LASERMAX': 'Proyección láser de ultra alta definición exclusiva de Nova Cinemas.',
+    'ONE': 'Sala premium con sonido envolvente y experiencia inmersiva Nova ONE.',
     '3D': 'Proyección tridimensional digital.',
     '2D': 'Proyección digital tradicional en alta definición.'
   };
@@ -355,7 +372,7 @@ const openSessionModal = (movie, complex, group, session) => {
           <div>
             <div class="brand-title">
               CineCR
-              <span class="md-badge xs badge-red">CINEMARK CR</span>
+              <span class="md-badge xs badge-red">COSTA RICA</span>
             </div>
             <div class="brand-subtitle">
               Cartelera en tiempo real • Datos 100% reales
@@ -417,7 +434,7 @@ const openSessionModal = (movie, complex, group, session) => {
             </div>
             <h1 class="hero-title">Cartelera en Tiempo Real</h1>
             <p class="hero-desc">
-              Tandas, formatos de sala (VIP, IMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark, Cinépolis y CCM Cinemas Costa Rica.
+              Tandas, formatos de sala (VIP, IMAX, LASERMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark, Cinépolis, CCM Cinemas y Nova Cinemas Costa Rica.
             </p>
           </div>
 
@@ -760,7 +777,7 @@ const openSessionModal = (movie, complex, group, session) => {
             <div>
               <h2 style="font-size: 1.25rem; font-weight: 700;">Cronograma de Tandas</h2>
               <div style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant);">
-                Horarios cronológicos reales de Cinemark, Cinépolis y CCM Cinemas
+                Horarios cronológicos reales de Cinemark, Cinépolis, CCM Cinemas y Nova Cinemas
               </div>
             </div>
             <div style="min-width: 260px;">
@@ -967,7 +984,7 @@ const openSessionModal = (movie, complex, group, session) => {
     <footer class="md-footer">
       <div class="md-container">
         <div style="margin-bottom: 8px;">
-          <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark Costa Rica (City Mall, Multiplaza Escazú, Multiplaza Curridabat, Oxígeno).
+          <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark, Cinépolis, CCM Cinemas y Nova Cinemas Costa Rica.
         </div>
         <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); opacity: 0.85;">
           <img

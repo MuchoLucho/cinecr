@@ -20,7 +20,7 @@ for (const m of movies) {
   assert.ok(Array.isArray(m.theaters), `Movie missing theaters: ${m.title}`);
 
   for (const t of m.theaters) {
-    assert.ok(['cinemark', 'cinepolis', 'ccm'].includes(t.chainId), `Invalid chainId ${t.chainId} in ${t.complexName}`);
+    assert.ok(['cinemark', 'cinepolis', 'ccm', 'nova'].includes(t.chainId), `Invalid chainId ${t.chainId} in ${t.complexName}`);
     chainsFound.add(t.chainId);
     assert.ok(t.complexName, `Missing complexName in ${m.title}`);
     assert.ok(t.province, `Missing province in ${t.complexName}`);
@@ -48,6 +48,7 @@ for (const m of movies) {
 assert.ok(chainsFound.has('cinemark'), 'Cinemark showtimes must be present');
 assert.ok(chainsFound.has('cinepolis'), 'Cinépolis showtimes must be present');
 assert.ok(chainsFound.has('ccm'), 'CCM Cinemas showtimes must be present');
+assert.ok(chainsFound.has('nova'), 'Nova Cinemas showtimes must be present');
 assert.ok(totalShowtimes > 100, `Expected > 100 showtimes, got ${totalShowtimes}`);
 
 console.log(`✓ Verification passed: ${movies.length} movies, ${chainsFound.size} chains (${[...chainsFound].join(', ')}), ${totalShowtimes} showtimes verified.`);

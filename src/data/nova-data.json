@@ -1,0 +1,3099 @@
+[
+  {
+    "id": "nova-ho00002028",
+    "normalizedKey": "gatosombrero",
+    "title": "EL GATO CON SOMBRERO",
+    "originalTitle": "EL GATO CON SOMBRERO",
+    "studio": "Nova Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "1h 54m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
+    "synopsis": "¡Conoce al Gato con Sombrero que no conocías! En la maravillosa y fantástica tradición de Dr. Seuss, El Gato con Sombrero llega a la pantalla grande en su debut en película animada, una aventura épica y completamente nueva, con un toque rebelde, donde la travesura, la magia y el caos gobiernan por completo.\r\n\r\nHaciendo lo que mejor sabe hacer, el Gato difunde alegría a los niños de una manera divertida, icónica y singularmente irreverente, llevándolos a ellos y a la audiencia en un viaje fantástico por un mundo que nunca han visto antes.\r\n\r\nEn la película, nuestro héroe enfrenta su tarea más difícil hasta ahora para el I.I.I.I. (Instituto para la Institución de Imaginación e Inspiración, LLC): animar a Gabby y Sebastian, una pareja de hermanos que están luchando con su mudanza a un nuevo pueblo. Conocido por llevar las cosas demasiado lejos, esta podría ser la última oportunidad de este agente del caos para demostrar su valía... ¡o perder su sombrero mágico!",
+    "theaters": [
+      {
+        "complexId": "nova-tamarindo",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Tamarindo",
+        "province": "Guanacaste",
+        "locationDetail": "Tamarindo, Plaza Garden",
+        "website": "https://www.novacinemas.cr/cartelera/nova-tamarindo-plaza-garden/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:20",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:25",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-limon",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Moín",
+        "province": "Limón",
+        "locationDetail": "Limón, Plaza Moín",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-moin-limon/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:15",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:35",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:35",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:05",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:35",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002022",
+    "normalizedKey": "godzillaminuszero",
+    "title": "GODZILLA MINUS ZERO",
+    "originalTitle": "GODZILLA MINUS ZERO",
+    "studio": "Nova Cinemas",
+    "rating": "+12",
+    "ratingBadgeClass": "badge-amber",
+    "score": "8.0",
+    "duration": "2h 15m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
+    "synopsis": "GODZILLA MINUS ZERO retoma la historia en 1949, dos años después de los turbulentos acontecimientos de Godzilla Minus One, y continúa la historia de la familia Shikishima mientras enfrentan una nueva catástrofe. Como proyecto filmado para IMAX, GODZILLA MINUS ZERO fue filmada con cámaras digitales de alta definición certificadas por IMAX y optimizada en sonido e imagen de manera única para pantallas IMAX. Los fans podrán ver a Godzilla llevado a nuevas y terroríficas alturas, haciendo de GODZILLA MINUS ZERO un verdadero evento cinematográfico imperdible.",
+    "theaters": [
+      {
+        "complexId": "nova-tamarindo",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Tamarindo",
+        "province": "Guanacaste",
+        "locationDetail": "Tamarindo, Plaza Garden",
+        "website": "https://www.novacinemas.cr/cartelera/nova-tamarindo-plaza-garden/",
+        "groups": [
+          {
+            "format": "LASERMAX",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-11"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-limon",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Moín",
+        "province": "Limón",
+        "locationDetail": "Limón, Plaza Moín",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-moin-limon/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "ONE",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-11"
+              }
+            ]
+          },
+          {
+            "format": "ONE",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "IMAX",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:20",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002044",
+    "normalizedKey": "comorobarbanco",
+    "title": "COMO ROBAR UN BANCO",
+    "originalTitle": "COMO ROBAR UN BANCO",
+    "studio": "Nova Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "2h 1m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
+    "synopsis": "Un hombre desesperado planea un elaborado atraco contra el corrupto sistema financiero que arruinó su vida, con un grupo que documenta sus actos en redes sociales.",
+    "theaters": [
+      {
+        "complexId": "nova-tamarindo",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Tamarindo",
+        "province": "Guanacaste",
+        "locationDetail": "Tamarindo, Plaza Garden",
+        "website": "https://www.novacinemas.cr/cartelera/nova-tamarindo-plaza-garden/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:35",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "LASERMAX",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-limon",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Moín",
+        "province": "Limón",
+        "locationDetail": "Limón, Plaza Moín",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-moin-limon/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "16:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:10",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:25",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:25",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002040",
+    "normalizedKey": "ebenezerchristmascarol",
+    "title": "EBENEZER: A CHRISTMAS CAROL",
+    "originalTitle": "EBENEZER: A CHRISTMAS CAROL",
+    "studio": "Nova Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "1h 56m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/AgmA793SvgZidRwYJvba5MjK3m1.jpg",
+    "synopsis": "Reimaginación del clásico literario, una historia de fantasmas ambientada en el Londres de Dickens que sigue el viaje sobrenatural de un hombre para enfrentarse a su pasado, presente y futuro y luchar por una segunda oportunidad.",
+    "theaters": [
+      {
+        "complexId": "nova-tamarindo",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Tamarindo",
+        "province": "Guanacaste",
+        "locationDetail": "Tamarindo, Plaza Garden",
+        "website": "https://www.novacinemas.cr/cartelera/nova-tamarindo-plaza-garden/",
+        "groups": [
+          {
+            "format": "LASERMAX",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "LASERMAX",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "11:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-limon",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Moín",
+        "province": "Limón",
+        "locationDetail": "Limón, Plaza Moín",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-moin-limon/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "VIP",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:40",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:25",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "ONE",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "16:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "13:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:40",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "VIP",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "16:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:50",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002029",
+    "normalizedKey": "bosquesalvaje",
+    "title": "EL BOSQUE SALVAJE",
+    "originalTitle": "EL BOSQUE SALVAJE",
+    "studio": "Nova Cinemas",
+    "rating": "+12",
+    "ratingBadgeClass": "badge-amber",
+    "score": "8.0",
+    "duration": "2h 12m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
+    "synopsis": "Después de que su hermano bebé, Mac, es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel (Peyton Elizabeth Lee) inicia una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón. Acompañada por su torpe pero leal compañero de clase, Curtis Mehlberg (Jacob Tremblay), Prue navega un mundo de animales parlantes, bandidos y poderosas figuras impulsadas por el duelo y la ambición. Mientras la pareja se ve arrastrada a un conflicto que amenaza el equilibrio del bosque mismo, Prue debe descubrir la fuerza y la fe que nunca supo que poseía. Si quiere salvar a su hermano y proteger el frágil futuro de Wildwood, tendrá que arriesgarlo todo. De LAIKA, el estudio nominado al Óscar® y ganador del BAFTA®, Wildwood es una aventura arrolladora sobre el amor, el sacrificio y la magia que se revela cuando nos atrevemos a mirar más allá de lo familiar.",
+    "theaters": [
+      {
+        "complexId": "nova-tamarindo",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Tamarindo",
+        "province": "Guanacaste",
+        "locationDetail": "Tamarindo, Plaza Garden",
+        "website": "https://www.novacinemas.cr/cartelera/nova-tamarindo-plaza-garden/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-limon",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Moín",
+        "province": "Limón",
+        "locationDetail": "Limón, Plaza Moín",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-moin-limon/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:35",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "VIP",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "VIP",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:55",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002035",
+    "normalizedKey": "juegoshambreamanecercosecha",
+    "title": "LOS JUEGOS DEL HAMBRE: AMANECER EN LA COSECHA",
+    "originalTitle": "LOS JUEGOS DEL HAMBRE: AMANECER EN LA COSECHA",
+    "studio": "Nova Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "2h 38m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
+    "synopsis": "Vuelve al mundo de Panem 24 años antes de los acontecimientos de la primera película, comenzando en la mañana de la cosecha de los 50º Juegos del Hambre, también denominados como el Segundo Vasallaje de los Veinticinco. Allí participa un joven Haymitch Abernathy.",
+    "theaters": [
+      {
+        "complexId": "nova-tamarindo",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Tamarindo",
+        "province": "Guanacaste",
+        "locationDetail": "Tamarindo, Plaza Garden",
+        "website": "https://www.novacinemas.cr/cartelera/nova-tamarindo-plaza-garden/",
+        "groups": [
+          {
+            "format": "LASERMAX",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-limon",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Moín",
+        "province": "Limón",
+        "locationDetail": "Limón, Plaza Moín",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-moin-limon/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "ONE",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "IMAX",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002041",
+    "normalizedKey": "vidaproposito",
+    "title": "VIDA CON PROPOSITO",
+    "originalTitle": "VIDA CON PROPOSITO",
+    "studio": "Nova Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "2h 4m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/hKKX2PxzynUxs8JXVjApuiW89Yo.jpg",
+    "synopsis": "Sigue la historia de Noah Silva, un vendedor de autos usados cuya manera poco ética de hacer negocios comienza a afectar tanto su vida familiar como profesional. Después de enfrentar varias llamadas de atención que lo confrontan con sus errores, emprende un difícil camino de transformación para recuperar su integridad y reconquistar el amor y la confi anza de su esposa y su hijo.",
+    "theaters": [
+      {
+        "complexId": "nova-limon",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Moín",
+        "province": "Limón",
+        "locationDetail": "Limón, Plaza Moín",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-moin-limon/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002004",
+    "normalizedKey": "corazonbestia",
+    "title": "EL CORAZÓN DE LA BESTIA",
+    "originalTitle": "EL CORAZÓN DE LA BESTIA",
+    "studio": "Nova Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "1h 41m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
+    "synopsis": "Tras sobrevivir a un brutal accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate Odín intentan regresar a la civilización desde un remoto lugar en medio de los parajes salvajes de Alaska.",
+    "theaters": [
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:10",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002017",
+    "normalizedKey": "streetfighter",
+    "title": "STREET FIGHTER",
+    "originalTitle": "STREET FIGHTER",
+    "studio": "Nova Cinemas",
+    "rating": "+15",
+    "ratingBadgeClass": "badge-orange",
+    "score": "8.0",
+    "duration": "1h 59m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
+    "synopsis": "Ambientada en 1993, la historia sigue a Ryu y Ken Masters, dos luchadores de Street Fighter distanciados, quienes se ven obligados a volver al combate cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros: un brutal choque de puños, destino y furia. Pero detrás de esta batalla se esconde una conspiración mortal que los obliga a enfrentarse entre ellos y a los demonios de sus pasados.",
+    "theaters": [
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:35",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002042",
+    "normalizedKey": "yosoyrocky",
+    "title": "YO SOY ROCKY",
+    "originalTitle": "YO SOY ROCKY",
+    "studio": "Nova Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "2h 8m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
+    "synopsis": "Sylvester Stallone (Ippolito) sueña con ser actor, pero creció en la pobreza, yendo de una casa a otra, e incluso llegó a vivir en la calle. Ahora, con veintitantos años, lo más cerca que ha estado de la gran pantalla es actuando en una película porno y trabajando como acomodador. Un día, viendo a Muhammad Ali pelear contra Chuck Wepner, le llega la inspiración: en unos días de frenética actividad, escribe un guion sobre un boxeador desvalido que llega hasta el final. A los ejecutivos del estudio les encanta, pero se resisten a la condición de Sylvester de interpretar al héroe. La producción de esta ambiciosa película independiente resultará mucho más ardua de lo que nadie podría haber imaginado.",
+    "theaters": [
+      {
+        "complexId": "nova-alajuela",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Plaza Real",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Plaza Real",
+        "website": "https://www.novacinemas.cr/cartelera/plaza-real-alajuela/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "ONE",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "17:10",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00002023",
+    "normalizedKey": "clayface",
+    "title": "CLAYFACE",
+    "originalTitle": "CLAYFACE",
+    "studio": "Nova Cinemas",
+    "rating": "+18",
+    "ratingBadgeClass": "badge-red",
+    "score": "8.0",
+    "duration": "1h 48m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
+    "synopsis": "El meteórico ascenso de Matt Hagen, desde chico de la calle en Gotham hasta protagonista de Hollywood, se ve trágicamente truncado cuando las acciones de un jefe del crimen local lo dejan horriblemente desfigurado. Abandonado por su equipo y sin nada que perder, Matt busca un tratamiento de vanguardia que, milagrosamente, le devuelve su aspecto anterior… pero que también afecta inesperadamente su percepción de la realidad, sumiéndolo en una espiral destructiva de venganza que lo consume por completo. Película basada en el personaje de DC Comics.",
+    "theaters": [
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:40",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nova-ho00001963",
+    "normalizedKey": "odisea",
+    "title": "LA ODISEA",
+    "originalTitle": "LA ODISEA",
+    "studio": "Nova Cinemas",
+    "rating": "+12",
+    "ratingBadgeClass": "badge-amber",
+    "score": "8.0",
+    "duration": "2h 52m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/sRxbUe5FB25Gde0e2FnwwSckpXb.jpg",
+    "synopsis": "El legendario Odiseo enfrenta peligros épicos en su viaje de regreso a casa tras la Guerra de Troya. A lo largo de su travesía se encuentra con criaturas míticas y dioses caprichosos, superando múltiples desafíos antes de reunirse con Penélope.",
+    "theaters": [
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "IMAX",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
