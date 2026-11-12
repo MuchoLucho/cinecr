@@ -1,4 +1,8 @@
-# 🎬 CineCR
+<p align="center">
+  <img src="public/logo.svg" alt="CineCR Logo" width="220" />
+</p>
+
+# CineCR
 
 **CineCR** es una plataforma web limpia, rápida y unificada para consultar la cartelera y horarios de cine en **Costa Rica**. 
 

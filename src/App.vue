@@ -356,11 +356,13 @@ const formatSessionDate = (dateStr) => {
     <header class="md-top-app-bar">
       <div class="md-container md-top-app-bar-inner">
         <div class="brand-group">
-          <div class="brand-avatar">
-            <span class="material-symbols-outlined lg">theaters</span>
+          <div class="brand-avatar" style="background: none; padding: 0;">
+            <img src="/favicon.svg" alt="CineCR" width="36" height="36" style="display: block; border-radius: 8px;" />
           </div>
           <div>
-            <div class="brand-title">CineCR</div>
+            <div class="brand-title">
+              Cine<span style="color: #CE1126;">CR</span>
+            </div>
           </div>
         </div>
 
