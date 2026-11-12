@@ -322,8 +322,6 @@ const filteredMovies = computed(() => {
         if (filters.ageRating === '12' && m.ageTier !== '12') return false;
         if (filters.ageRating === '15' && m.ageTier !== '15') return false;
         if (filters.ageRating === '18' && m.ageTier !== '18') return false;
-        if (filters.ageRating === 'max-12' && m.minAge > 12) return false;
-        if (filters.ageRating === 'max-15' && m.minAge > 15) return false;
       }
       return true;
     })
@@ -689,8 +687,6 @@ const formatStatusDate = (isoStr) => {
                 <option value="12">Mayores de 12 (+12)</option>
                 <option value="15">Mayores de 15 (+15)</option>
                 <option value="18">Mayores de 18 (+18)</option>
-                <option value="max-12">Apto hasta 12 años (TP y +12)</option>
-                <option value="max-15">Apto hasta 15 años (TP, +12, +15)</option>
               </select>
             </div>
 
