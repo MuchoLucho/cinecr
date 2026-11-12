@@ -39,7 +39,7 @@ jobs:
       - name: Scrape live showtimes
         env:
           TMDB_READ_ACCESS_TOKEN: ${{ secrets.TMDB_READ_ACCESS_TOKEN }}
-        run: npm run scrape:cinemark
+        run: npm run scrape
 
       - name: Build Vite App
         run: npm run build

@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed, reactive, onMounted } from 'vue';
-import cinemarkData from './data/cinemark-data.json';
+import moviesData from './data/movies-data.json';
 
 const isDark = ref(true);
 const toggleTheme = () => {
@@ -56,6 +56,14 @@ const chains = [
     complexes: 'City Mall Alajuela, Multiplaza Curridabat, Multiplaza Escazú, Playground Oxígeno Heredia',
     integrationMethod: 'API Vista Live Feed Scraping (JSON)',
     status: 'Activo'
+  },
+  {
+    id: 'cinepolis',
+    name: 'Cinépolis',
+    url: 'https://cinepolis.co.cr',
+    complexes: 'Lincoln, Multicentro, Paseo De Las Flores, Paseo Metrópoli, TerraMall, Terrazas Lindora VIP',
+    integrationMethod: 'CinemaWorld REST API Scraping',
+    status: 'Activo'
   }
 ];
 
@@ -96,8 +104,8 @@ const genreColors = {
   'Ciencia Ficcion': '#0ea5e9'
 };
 
-// Real scraped movies from Cinemark
-const movies = ref(cinemarkData.map(m => {
+// Real scraped movies from Cinemark and Cinépolis
+const movies = ref(moviesData.map(m => {
   const genre = (m.genres && m.genres[0]) || 'Cine';
   const color = genreColors[genre] || '#f43f5e';
   return {
@@ -128,6 +136,7 @@ const languageOptions = [
 const filters = reactive({
   movie: null,
   province: null,
+  chain: null,
   language: null,
   formats: []
 });
@@ -147,6 +156,7 @@ const filteredMovies = computed(() => {
     .map(movie => {
       const groupedTheaters = movie.theaters
         .filter(complex => {
+          if (filters.chain && complex.chainId !== filters.chain) return false;
           if (filters.province && complex.province !== filters.province) return false;
           return true;
         })
@@ -155,7 +165,7 @@ const filteredMovies = computed(() => {
             .map(g => {
               if (filters.language && g.language !== filters.language) return null;
               if (filters.formats.length > 0 && !filters.formats.includes(g.format)) return null;
-              if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX'].includes(g.format)) return null;
+              if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX', 'MACRO XE'].includes(g.format)) return null;
 
               const times = g.times.filter(s => {
                 if (selectedDate.value === 'all') return true;
@@ -243,7 +253,7 @@ const activeComplexCount = computed(() => {
 });
 
 const hasActiveFilters = computed(() => Boolean(
-  filters.movie || filters.province || filters.language || filters.formats.length > 0 || onlyPremium.value
+  filters.movie || filters.province || filters.chain || filters.language || filters.formats.length > 0 || onlyPremium.value
 ));
 
 const toggleQuickLanguage = (lang) => {
@@ -253,6 +263,7 @@ const toggleQuickLanguage = (lang) => {
 const resetFilters = () => {
   filters.movie = null;
   filters.province = null;
+  filters.chain = null;
   filters.language = null;
   filters.formats = [];
   onlyPremium.value = false;
@@ -270,10 +281,14 @@ const getAvailableFormatsForMovie = (movie) => {
 const getFormatBadgeClass = (format) => {
   const map = {
     'XD': 'badge-red',
+    'MACRO XE': 'badge-red',
+    '4DX': 'badge-purple',
+    'IMAX': 'badge-cyan',
     'D-BOX': 'badge-orange',
     'VIP': 'badge-amber',
     '3D': 'badge-teal',
-    '2D': 'badge-grey'
+    '2D': 'badge-grey',
+    'JUNIOR': 'badge-green'
   };
   return map[format] || 'badge-blue';
 };
@@ -388,7 +403,7 @@ const openSessionModal = (movie, complex, group, session) => {
             </div>
             <h1 class="hero-title">Cartelera en Tiempo Real</h1>
             <p class="hero-desc">
-              Tandas, formatos de sala (XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde la API oficial de Cinemark Costa Rica.
+              Tandas, formatos de sala (VIP, IMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark y Cinépolis Costa Rica.
             </p>
           </div>
 
@@ -410,7 +425,7 @@ const openSessionModal = (movie, complex, group, session) => {
 
         <!-- Filter Card -->
         <div class="filter-card">
-          <div class="filter-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="filter-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
             <div class="md-field">
               <label class="md-field-label">
                 <span class="material-symbols-outlined sm">movie</span> Película
@@ -420,6 +435,16 @@ const openSessionModal = (movie, complex, group, session) => {
                 <option v-for="m in movieFilterOptions" :key="m.id" :value="m.id">
                   {{ m.title }}
                 </option>
+              </select>
+            </div>
+
+            <div class="md-field">
+              <label class="md-field-label">
+                <span class="material-symbols-outlined sm">theater_comedy</span> Cadena
+              </label>
+              <select v-model="filters.chain" class="md-select">
+                <option :value="null">Todas las cadenas ({{ chains.length }})</option>
+                <option v-for="c in chains" :key="c.id" :value="c.id">{{ c.name }}</option>
               </select>
             </div>
 
@@ -500,7 +525,7 @@ const openSessionModal = (movie, complex, group, session) => {
                 @click="onlyPremium = !onlyPremium"
               >
                 <span class="material-symbols-outlined sm">auto_awesome</span>
-                Salas Premium / XD / D-BOX
+                Formatos Especiales (VIP, XD, XE, 4DX)
               </button>
               <button
                 v-if="hasActiveFilters"
@@ -637,7 +662,7 @@ const openSessionModal = (movie, complex, group, session) => {
                   @click="togglePanel(movie.id, complex.complexId)"
                 >
                   <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                    <span class="md-badge badge-red">
+                    <span :class="['md-badge', complex.chainId === 'cinepolis' ? 'badge-blue' : 'badge-red']">
                       {{ complex.chainName }}
                     </span>
                     <div>
@@ -761,7 +786,7 @@ const openSessionModal = (movie, complex, group, session) => {
                   </td>
                   <td>
                     <div style="display: flex; align-items: center; gap: 8px;">
-                      <span class="md-badge xs badge-red">
+                      <span :class="['md-badge xs', item.complex.chainId === 'cinepolis' ? 'badge-blue' : 'badge-red']">
                         {{ item.complex.chainName }}
                       </span>
                       <span style="font-weight: 500;">{{ item.complex.complexName }}</span>
@@ -804,7 +829,7 @@ const openSessionModal = (movie, complex, group, session) => {
       <div class="md-dialog" role="dialog" aria-modal="true">
         <div class="md-dialog-header">
           <div style="display: flex; align-items: center; gap: 8px;">
-            <span class="md-badge badge-red">
+            <span :class="['md-badge', activeSession.complex.chainId === 'cinepolis' ? 'badge-blue' : 'badge-red']">
               {{ activeSession.complex.chainName }}
             </span>
             <span style="font-weight: 700; font-size: 1rem;">
@@ -899,7 +924,7 @@ const openSessionModal = (movie, complex, group, session) => {
           <div class="md-list">
             <div v-for="chain in chains" :key="chain.id" class="md-list-item">
               <div style="display: flex; align-items: flex-start; gap: 12px;">
-                <span class="md-badge badge-red" style="margin-top: 2px;">
+                <span :class="['md-badge', chain.id === 'cinepolis' ? 'badge-blue' : 'badge-red']" style="margin-top: 2px;">
                   {{ chain.name }}
                 </span>
                 <div>
