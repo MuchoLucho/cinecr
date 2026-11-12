@@ -20,90 +20,95 @@ const sessionDialog = ref(false);
 const sourcesDialog = ref(false);
 const activeSession = ref(null);
 
-const availableDates = [
-  { label: 'Hoy', value: 'today' },
-  { label: 'Próximos días', value: 'all' }
-];
-
+// Real chains active in CineCR right now
 const chains = [
   {
     id: 'cinemark',
     name: 'Cinemark',
     url: 'https://www.cinemarkca.com/costa-rica',
-    complexes: 'City Mall Alajuela, Multiplaza Curridabat, Multiplaza Escazú, Playground Oxígeno',
+    complexes: 'City Mall Alajuela, Multiplaza Curridabat, Multiplaza Escazú, Playground Oxígeno Heredia',
     integrationMethod: 'API Vista Live Feed Scraping (JSON)',
-    endpointHint: 'GET https://api.cinemarkca.com/api/vista/data/billboard?cinema_id={id}'
-  },
-  {
-    id: 'cinepolis',
-    name: 'Cinépolis',
-    url: 'https://cinepolis.co.cr',
-    complexes: 'Multiplaza Escazú, Multiplaza del Este, Terrazas Lindora, Lincoln Plaza, Paseo Metrópoli',
-    integrationMethod: 'API JSON POST (Próximamente)',
-    endpointHint: 'POST https://cinepolis.co.cr/Cartelera.aspx/GetNowPlayingByCity'
-  },
-  {
-    id: 'ccm',
-    name: 'CCM Cinemas',
-    url: 'https://www.ccmcinemas.com',
-    complexes: 'Plaza Mayor Rohrmoser, San Ramón, San Carlos, Jacó',
-    integrationMethod: 'Scraping Web (Próximamente)',
-    endpointHint: 'GET https://www.ccmcinemas.com/cartelera/'
-  },
-  {
-    id: 'nova',
-    name: 'Nova Cinemas',
-    url: 'https://www.novacinemas.cr',
-    complexes: 'Avenida Escazú, Plaza Real Alajuela, Ciudad del Este',
-    integrationMethod: 'Scraping Web (Próximamente)',
-    endpointHint: 'GET https://www.novacinemas.cr/cartelera/'
-  },
-  {
-    id: 'magaly',
-    name: 'Cine Magaly',
-    url: 'https://www.cinemagaly.com',
-    complexes: 'Barrio La California (San José)',
-    integrationMethod: 'Scraping Web (Próximamente)',
-    endpointHint: 'GET https://www.cinemagaly.com/cartelera'
+    status: 'Activo'
   }
 ];
 
-const provinces = ['Alajuela', 'San José', 'Heredia', 'Cartago'];
+// Helper to generate dynamic poster artworks
+function generatePosterSvg(title, genre, color) {
+  const safeTitle = (title || 'CineCR').substring(0, 32);
+  const safeGenre = (genre || 'Cine').toUpperCase();
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0f172a"/>
+        <stop offset="100%" stop-color="#020617"/>
+      </linearGradient>
+      <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="${color}"/>
+        <stop offset="100%" stop-color="#38bdf8"/>
+      </linearGradient>
+    </defs>
+    <rect width="600" height="900" fill="url(#bg)"/>
+    <circle cx="300" cy="380" r="180" fill="${color}" opacity="0.12"/>
+    <rect x="220" y="300" width="160" height="160" rx="28" fill="${color}" opacity="0.25"/>
+    <text x="300" y="395" font-family="system-ui, sans-serif" font-size="64" font-weight="bold" fill="${color}" text-anchor="middle">🎬</text>
+    <text x="300" y="540" font-family="system-ui, sans-serif" font-size="20" letter-spacing="4" font-weight="700" fill="${color}" text-anchor="middle">${safeGenre}</text>
+    <text x="300" y="600" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#f8fafc" text-anchor="middle">${safeTitle}</text>
+    <rect x="150" y="640" width="300" height="2" fill="url(#accent)" opacity="0.5"/>
+  </svg>`;
+  return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+}
+
+const genreColors = {
+  'Accion': '#ef4444',
+  'Terror': '#dc2626',
+  'Comedia': '#f59e0b',
+  'Animacion': '#10b981',
+  'Drama': '#8b5cf6',
+  'Suspenso': '#06b6d4',
+  'Aventura': '#3b82f6',
+  'Ciencia Ficcion': '#0ea5e9'
+};
+
+// Real scraped movies from Cinemark
+const movies = ref(cinemarkData.map(m => {
+  const genre = (m.genres && m.genres[0]) || 'Cine';
+  const color = genreColors[genre] || '#f43f5e';
+  return {
+    ...m,
+    poster: m.poster || generatePosterSvg(m.title, genre, color)
+  };
+}));
+
+// Real provinces where active theaters exist
+const provinces = computed(() => {
+  const set = new Set();
+  movies.value.forEach(m => m.theaters.forEach(t => { if (t.province) set.add(t.province); }));
+  return Array.from(set).sort();
+});
+
+// Real distinct formats currently on billboard
+const formatOptions = computed(() => {
+  const set = new Set();
+  movies.value.forEach(m => m.theaters.forEach(t => t.groups.forEach(g => { if (g.format) set.add(g.format); })));
+  return Array.from(set).sort();
+});
 
 const languageOptions = [
   { label: 'Subtitulada (SUB)', value: 'SUB' },
   { label: 'Doblada al Español (DOB)', value: 'DOB' }
 ];
 
-const formatOptions = ['2D', '3D', 'IMAX', 'VIP', '4DX', 'XD', 'D-BOX'];
-const premiumFormats = ['IMAX', 'VIP', '4DX', 'XD', 'D-BOX'];
-
 const filters = reactive({
   movie: null,
-  chains: [],
   province: null,
   language: null,
   formats: []
-});
-
-const selectedChainSingle = computed({
-  get: () => (filters.chains.length > 0 ? filters.chains[0] : null),
-  set: (val) => { filters.chains = val ? [val] : []; }
 });
 
 const selectedFormatSingle = computed({
   get: () => (filters.formats.length > 0 ? filters.formats[0] : null),
   set: (val) => { filters.formats = val ? [val] : []; }
 });
-
-// SVG Fallback for posters without images
-const defaultPoster = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900"><rect width="600" height="900" fill="#1e222d"/><text x="50%" y="50%" font-size="40" fill="#64748b" text-anchor="middle" font-family="sans-serif">CineCR Poster</text></svg>`);
-
-// Real scraped movies from Cinemark
-const movies = ref(cinemarkData.map(m => ({
-  ...m,
-  poster: m.poster || defaultPoster
-})));
 
 const movieFilterOptions = computed(() =>
   movies.value.map(m => ({ id: m.id, title: m.title }))
@@ -115,7 +120,6 @@ const filteredMovies = computed(() => {
     .map(movie => {
       const groupedTheaters = movie.theaters
         .filter(complex => {
-          if (filters.chains.length > 0 && !filters.chains.includes(complex.chainId)) return false;
           if (filters.province && complex.province !== filters.province) return false;
           return true;
         })
@@ -123,7 +127,7 @@ const filteredMovies = computed(() => {
           const matchingGroups = complex.groups.filter(g => {
             if (filters.language && g.language !== filters.language) return false;
             if (filters.formats.length > 0 && !filters.formats.includes(g.format)) return false;
-            if (onlyPremium.value && !premiumFormats.includes(g.format)) return false;
+            if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX'].includes(g.format)) return false;
             return true;
           });
 
@@ -147,9 +151,9 @@ const filteredMovies = computed(() => {
     .filter(movie => movie.groupedTheaters.length > 0);
 });
 
-// Initialize first 3 expanded by default
+// Open first few panels by default
 const expandedPanels = reactive({});
-movies.value.slice(0, 5).forEach(m => {
+movies.value.slice(0, 6).forEach(m => {
   expandedPanels[m.id] = m.theaters.map(t => t.complexId);
 });
 
@@ -174,7 +178,7 @@ const flatSchedule = computed(() => {
       complex.groupedByFormatLang.forEach(group => {
         group.times.forEach(session => {
           if (q) {
-            const haystack = `${movie.title} ${complex.chainName} ${complex.complexName} ${complex.province} ${group.format} ${group.language}`.toLowerCase();
+            const haystack = `${movie.title} ${complex.complexName} ${complex.province} ${group.format} ${group.language}`.toLowerCase();
             if (!haystack.includes(q)) return;
           }
           items.push({
@@ -203,7 +207,7 @@ const activeComplexCount = computed(() => {
 });
 
 const hasActiveFilters = computed(() => Boolean(
-  filters.movie || filters.chains.length > 0 || filters.province || filters.language || filters.formats.length > 0 || onlyPremium.value
+  filters.movie || filters.province || filters.language || filters.formats.length > 0 || onlyPremium.value
 ));
 
 const toggleQuickLanguage = (lang) => {
@@ -212,7 +216,6 @@ const toggleQuickLanguage = (lang) => {
 
 const resetFilters = () => {
   filters.movie = null;
-  filters.chains = [];
   filters.province = null;
   filters.language = null;
   filters.formats = [];
@@ -228,24 +231,11 @@ const getAvailableFormatsForMovie = (movie) => {
   return [...set];
 };
 
-const getChainBadgeClass = (chainId) => {
-  const map = {
-    cinepolis: 'badge-blue',
-    cinemark: 'badge-red',
-    ccm: 'badge-orange',
-    nova: 'badge-purple',
-    magaly: 'badge-amber'
-  };
-  return map[chainId] || 'badge-blue';
-};
-
 const getFormatBadgeClass = (format) => {
   const map = {
-    'IMAX': 'badge-blue',
-    'VIP': 'badge-amber',
-    '4DX': 'badge-purple',
     'XD': 'badge-red',
     'D-BOX': 'badge-orange',
+    'VIP': 'badge-amber',
     '3D': 'badge-teal',
     '2D': 'badge-grey'
   };
@@ -254,11 +244,9 @@ const getFormatBadgeClass = (format) => {
 
 const getFormatIcon = (format) => {
   const map = {
-    'IMAX': 'panorama_wide_angle',
-    'VIP': 'chair',
-    '4DX': 'air',
     'XD': 'speaker',
     'D-BOX': 'vibration',
+    'VIP': 'chair',
     '3D': '3d_rotation',
     '2D': 'theaters'
   };
@@ -267,13 +255,11 @@ const getFormatIcon = (format) => {
 
 const getFormatDescription = (format) => {
   const descriptions = {
-    'IMAX': 'Pantalla gigante con proyección láser de alta definición.',
-    'VIP': 'Butacas reclinables y atención a la sala.',
-    '4DX': 'Movimiento y efectos ambientales sincronizados.',
-    'XD': 'Extreme Digital Cinema de Cinemark con pantalla gigante.',
-    'D-BOX': 'Asientos con movimiento háptico sincronizado con la acción.',
+    'XD': 'Extreme Digital Cinema de Cinemark con pantalla gigante de pared a pared.',
+    'D-BOX': 'Asientos con movimiento háptico sincronizado directamente con la película.',
+    'VIP': 'Butacas reclinables de alta comodidad.',
     '3D': 'Proyección tridimensional digital.',
-    '2D': 'Proyección tradicional en alta definición.'
+    '2D': 'Proyección digital tradicional en alta definición.'
   };
   return descriptions[format] || 'Proyección digital estándar.';
 };
@@ -296,10 +282,10 @@ const openSessionModal = (movie, complex, group, session) => {
           <div>
             <div class="brand-title">
               CineCR
-              <span class="md-badge xs badge-green">LIVE CINEMARK</span>
+              <span class="md-badge xs badge-red">CINEMARK CR</span>
             </div>
             <div class="brand-subtitle">
-              Cartelera Unificada de Costa Rica • Cinemark en vivo
+              Cartelera en tiempo real • Datos 100% reales
             </div>
           </div>
         </div>
@@ -330,7 +316,7 @@ const openSessionModal = (movie, complex, group, session) => {
 
           <button type="button" class="md-btn md-btn-tonal md-btn-sm" @click="sourcesDialog = true">
             <span class="material-symbols-outlined sm">hub</span>
-            Fuentes ({{ chains.length }})
+            Cines ({{ chains.length }})
           </button>
 
           <button
@@ -354,11 +340,11 @@ const openSessionModal = (movie, complex, group, session) => {
           <div>
             <div class="hero-overline">
               <span class="material-symbols-outlined sm">location_on</span>
-              COSTA RICA • DATOS REALES DE CARTELERA
+              COSTA RICA • CARTELERA REAL EN VIVO
             </div>
-            <h1 class="hero-title">Todos los cines en un solo lugar</h1>
+            <h1 class="hero-title">Cartelera en Tiempo Real</h1>
             <p class="hero-desc">
-              Compara tandas reales de Cinemark Costa Rica (City Mall, Escazú, Curridabat, Oxígeno). Próximamente Cinépolis, Nova y CCM.
+              Tandas, formatos de sala (XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde la API oficial de Cinemark Costa Rica.
             </p>
           </div>
 
@@ -380,7 +366,7 @@ const openSessionModal = (movie, complex, group, session) => {
 
         <!-- Filter Card -->
         <div class="filter-card">
-          <div class="filter-grid">
+          <div class="filter-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
             <div class="md-field">
               <label class="md-field-label">
                 <span class="material-symbols-outlined sm">movie</span> Película
@@ -395,22 +381,10 @@ const openSessionModal = (movie, complex, group, session) => {
 
             <div class="md-field">
               <label class="md-field-label">
-                <span class="material-symbols-outlined sm">theaters</span> Cadena
-              </label>
-              <select v-model="selectedChainSingle" class="md-select">
-                <option :value="null">Todas las cadenas</option>
-                <option v-for="c in chains" :key="c.id" :value="c.id">
-                  {{ c.name }}
-                </option>
-              </select>
-            </div>
-
-            <div class="md-field">
-              <label class="md-field-label">
                 <span class="material-symbols-outlined sm">map</span> Provincia
               </label>
               <select v-model="filters.province" class="md-select">
-                <option :value="null">Todas</option>
+                <option :value="null">Todas las provincias</option>
                 <option v-for="p in provinces" :key="p" :value="p">{{ p }}</option>
               </select>
             </div>
@@ -427,7 +401,7 @@ const openSessionModal = (movie, complex, group, session) => {
 
             <div class="md-field">
               <label class="md-field-label">
-                <span class="material-symbols-outlined sm">3d_rotation</span> Formato
+                <span class="material-symbols-outlined sm">3d_rotation</span> Formato / Sala
               </label>
               <select v-model="selectedFormatSingle" class="md-select">
                 <option :value="null">Todos los formatos</option>
@@ -439,23 +413,6 @@ const openSessionModal = (movie, complex, group, session) => {
           <hr class="md-divider" />
 
           <div class="quick-bar">
-            <div class="chip-row">
-              <span style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant); margin-right: 4px; font-weight: 500;">
-                Fecha:
-              </span>
-              <button
-                v-for="d in availableDates"
-                :key="d.value"
-                type="button"
-                class="md-chip"
-                :class="{ selected: selectedDate === d.value }"
-                @click="selectedDate = d.value"
-              >
-                <span v-if="selectedDate === d.value" class="material-symbols-outlined sm">check</span>
-                {{ d.label }}
-              </button>
-            </div>
-
             <div class="chip-row">
               <button
                 type="button"
@@ -533,7 +490,7 @@ const openSessionModal = (movie, complex, group, session) => {
             No se encontraron tandas con los filtros seleccionados
           </div>
           <div style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 12px;">
-            Prueba cambiando el idioma, formato de sala o complejo.
+            Prueba cambiando el idioma, formato de sala o provincia.
           </div>
           <button type="button" class="md-btn md-btn-filled md-btn-sm" @click="resetFilters">
             Restablecer filtros
@@ -619,7 +576,7 @@ const openSessionModal = (movie, complex, group, session) => {
                   @click="togglePanel(movie.id, complex.complexId)"
                 >
                   <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                    <span class="md-badge" :class="getChainBadgeClass(complex.chainId)">
+                    <span class="md-badge badge-red">
                       {{ complex.chainName }}
                     </span>
                     <div>
@@ -704,7 +661,7 @@ const openSessionModal = (movie, complex, group, session) => {
             <div>
               <h2 style="font-size: 1.25rem; font-weight: 700;">Cronograma de Tandas</h2>
               <div style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant);">
-                Horarios cronológicos de cines en Costa Rica
+                Horarios cronológicos reales de Cinemark Costa Rica
               </div>
             </div>
             <div style="min-width: 260px;">
@@ -712,7 +669,7 @@ const openSessionModal = (movie, complex, group, session) => {
                 v-model="scheduleSearch"
                 type="search"
                 class="md-input"
-                placeholder="Buscar película, mall, formato..."
+                placeholder="Buscar película, complejo o formato..."
               />
             </div>
           </div>
@@ -745,7 +702,7 @@ const openSessionModal = (movie, complex, group, session) => {
                   </td>
                   <td>
                     <div style="display: flex; align-items: center; gap: 8px;">
-                      <span class="md-badge xs" :class="getChainBadgeClass(item.complex.chainId)">
+                      <span class="md-badge xs badge-red">
                         {{ item.complex.chainName }}
                       </span>
                       <span style="font-weight: 500;">{{ item.complex.complexName }}</span>
@@ -791,7 +748,7 @@ const openSessionModal = (movie, complex, group, session) => {
       <div class="md-dialog" role="dialog" aria-modal="true">
         <div class="md-dialog-header">
           <div style="display: flex; align-items: center; gap: 8px;">
-            <span class="md-badge" :class="getChainBadgeClass(activeSession.complex.chainId)">
+            <span class="md-badge badge-red">
               {{ activeSession.complex.chainName }}
             </span>
             <span style="font-weight: 700; font-size: 1rem;">
@@ -898,7 +855,7 @@ const openSessionModal = (movie, complex, group, session) => {
           <div class="md-list">
             <div v-for="chain in chains" :key="chain.id" class="md-list-item">
               <div style="display: flex; align-items: flex-start; gap: 12px;">
-                <span class="md-badge" :class="getChainBadgeClass(chain.id)" style="margin-top: 2px;">
+                <span class="md-badge badge-red" style="margin-top: 2px;">
                   {{ chain.name }}
                 </span>
                 <div>
@@ -926,7 +883,7 @@ const openSessionModal = (movie, complex, group, session) => {
     <!-- FOOTER -->
     <footer class="md-footer">
       <div class="md-container">
-        <strong>CineCR</strong> — Agregador de Cartelera para Costa Rica. Construido con Vite + Vue 3 + Google Material Design 3.
+        <strong>CineCR</strong> — Cartelera en tiempo real de Cinemark Costa Rica (City Mall, Multiplaza Escazú, Multiplaza Curridabat, Oxígeno).
       </div>
     </footer>
   </div>
