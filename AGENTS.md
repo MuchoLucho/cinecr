@@ -69,6 +69,9 @@ This document defines the architecture, design principles, conventions, and oper
 - **Do NOT commit JSON files back to the git repository** inside GitHub Actions. `npm run scrape` runs in the runner and `npm run build` bundles the fresh data directly into `dist/`, which is deployed to GitHub Pages.
 - The `movies-data.json` in git serves as an initial seed for local development.
 
+### Rule 4.2: Local Commits Only — Do Not Auto-Push
+- Do NOT push to `origin` automatically after each commit. Keep changes in local commits and only push when explicitly requested by the user.
+
 ---
 
 ## 5. Verification Checklist
