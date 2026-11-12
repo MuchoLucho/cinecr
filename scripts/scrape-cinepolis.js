@@ -63,49 +63,91 @@ function normalizeTitleKey(str) {
     .replace(/[^a-z0-9]/g, '');
 }
 
+const TCF_MAP = {
+  'soloilusion': 'Juste une illusion',
+  'abandonado': "L'Abandon",
+  'crimen3erpiso': 'Le crime du 3e étage',
+  'desconocidogranarco': "L'inconnu de la Grande Arche",
+  'meencontraste': "L'âme idéale",
+  'camino': 'Compostelle'
+};
+
 /**
- * Query TMDb Search API for poster and synopsis
+ * Query TMDb Search API for poster, synopsis, and runtime
  */
 async function fetchTmdbDetails(title) {
   if (!TMDB_TOKEN) return null;
   try {
     const cleanTitle = title.replace(/\b(2D|3D|XD|XE|VIP|DOB|SUB|PRE|IV|-CR|24TCF)\b/gi, '').replace(/[-:]/g, ' ').trim();
-    const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
-    const res = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${TMDB_TOKEN}`,
-        'Accept': 'application/json'
-      }
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const result = (data.results || []).find(m => m.poster_path || m.overview);
-    if (result) {
-      let duration = null;
-      if (result.id) {
-        try {
-          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
-            headers: {
-              'Authorization': `Bearer ${TMDB_TOKEN}`,
-              'Accept': 'application/json'
-            }
-          });
-          if (detailRes.ok) {
-            const detail = await detailRes.json();
-            if (detail.runtime && detail.runtime > 0) {
-              duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-            }
-          }
-        } catch {
-          // ignore detail error
+    const normKey = normalizeTitleKey(cleanTitle);
+    const queries = [cleanTitle];
+    if (TCF_MAP[normKey]) {
+      queries.unshift(TCF_MAP[normKey]);
+    }
+
+    for (const q of queries) {
+      const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(q)}&language=es-MX`;
+      const res = await fetch(url, {
+        headers: {
+          'Authorization': `Bearer ${TMDB_TOKEN}`,
+          'Accept': 'application/json'
         }
+      });
+      if (!res.ok) continue;
+      const data = await res.json();
+      const result = (data.results || []).find(m => m.poster_path || m.overview || m.id);
+      if (result) {
+        let duration = null;
+        let synopsis = result.overview ? result.overview.trim() : null;
+        let poster = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null;
+
+        if (result.id) {
+          try {
+            const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
+              headers: {
+                'Authorization': `Bearer ${TMDB_TOKEN}`,
+                'Accept': 'application/json'
+              }
+            });
+            if (detailRes.ok) {
+              const detail = await detailRes.json();
+              if (detail.runtime && detail.runtime > 0) {
+                duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
+              }
+              if (detail.overview) synopsis = detail.overview.trim();
+              if (detail.poster_path) poster = `https://image.tmdb.org/t/p/w500${detail.poster_path}`;
+            }
+
+            // Fallback: check translations if synopsis is empty
+            if (!synopsis) {
+              const transRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}/translations`, {
+                headers: {
+                  'Authorization': `Bearer ${TMDB_TOKEN}`,
+                  'Accept': 'application/json'
+                }
+              });
+              if (transRes.ok) {
+                const transData = await transRes.json();
+                const esTrans = (transData.translations || []).find(t => t.iso_639_1 === 'es' && t.data && t.data.overview);
+                if (esTrans) {
+                  synopsis = esTrans.data.overview.trim();
+                } else {
+                  const enTrans = (transData.translations || []).find(t => t.iso_639_1 === 'en' && t.data && t.data.overview);
+                  if (enTrans) synopsis = enTrans.data.overview.trim();
+                }
+              }
+            }
+          } catch {
+            // ignore detail error
+          }
+        }
+        return {
+          tmdbId: result.id,
+          poster,
+          synopsis,
+          duration
+        };
       }
-      return {
-        tmdbId: result.id,
-        poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-        synopsis: result.overview ? result.overview.trim() : null,
-        duration
-      };
     }
   } catch (err) {
     // shortcut: silent fallback on network/rate limit

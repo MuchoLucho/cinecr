@@ -1,634 +1,5 @@
 [
   {
-    "id": "cpl-godzillaminuszero",
-    "normalizedKey": "godzillaminuszero",
-    "title": "Godzilla Minus Zero",
-    "originalTitle": "Godzilla Minus Zero",
-    "studio": "Cinépolis",
-    "rating": "M12",
-    "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "2h 15m",
-    "director": "N/A",
-    "genres": [
-      "Drama",
-      "Acción",
-      "Ciencia ficción"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
-    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
-    "theaters": [
-      {
-        "complexId": "cpl-lincoln",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Lincoln",
-        "province": "San José",
-        "locationDetail": "Moravia, Plaza Lincoln",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:30",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "18:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:15",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "VIP",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:15",
-                "date": "2026-11-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-multicentro",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Multicentro",
-        "province": "San José",
-        "locationDetail": "Desamparados, Multicentro",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:30",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "20:25",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:25",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:25",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:25",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:25",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:25",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-paseo-flores",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Paseo De Las Flores",
-        "province": "Heredia",
-        "locationDetail": "Heredia, Paseo de las Flores",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:30",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:20",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "15:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:20",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "15:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:20",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:20",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:20",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-paseo-metropoli",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Paseo Metrópoli",
-        "province": "Cartago",
-        "locationDetail": "Cartago, Paseo Metrópoli",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "14:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "20:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-terramall",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis TerraMall",
-        "province": "Cartago",
-        "locationDetail": "Tres Ríos, TerraMall",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "17:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "20:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:15",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "VIP",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "17:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-terrazas-lindora",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Terrazas Lindora VIP",
-        "province": "San José",
-        "locationDetail": "Santa Ana, Terrazas Lindora",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "VIP",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "17:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "13:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "13:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:40",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:20",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "cpl-wildwoodbosquesalvaje",
     "normalizedKey": "wildwoodbosquesalvaje",
     "title": "Wildwood: El bosque salvaje",
@@ -1546,6 +917,613 @@
               {
                 "time": "15:00",
                 "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpl-godzillaminuszero",
+    "normalizedKey": "godzillaminuszero",
+    "title": "Godzilla Minus Zero",
+    "originalTitle": "Godzilla Minus Zero",
+    "studio": "Cinépolis",
+    "rating": "M12",
+    "ratingBadgeClass": "badge-amber",
+    "score": "8.0",
+    "duration": "2h 15m",
+    "director": "N/A",
+    "genres": [
+      "Drama",
+      "Acción",
+      "Ciencia ficción"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
+    "theaters": [
+      {
+        "complexId": "cpl-lincoln",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Lincoln",
+        "province": "San José",
+        "locationDetail": "Moravia, Plaza Lincoln",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-multicentro",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Multicentro",
+        "province": "San José",
+        "locationDetail": "Desamparados, Multicentro",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:25",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-flores",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo De Las Flores",
+        "province": "Heredia",
+        "locationDetail": "Heredia, Paseo de las Flores",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-metropoli",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo Metrópoli",
+        "province": "Cartago",
+        "locationDetail": "Cartago, Paseo Metrópoli",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terramall",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis TerraMall",
+        "province": "Cartago",
+        "locationDetail": "Tres Ríos, TerraMall",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "17:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "17:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terrazas-lindora",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Terrazas Lindora VIP",
+        "province": "San José",
+        "locationDetail": "Santa Ana, Terrazas Lindora",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "17:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-17"
               }
             ]
           }
@@ -3718,13 +3696,13 @@
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "1h 44m",
+    "duration": "1h 59m",
     "director": "N/A",
     "genres": [
       "Drama"
     ],
-    "poster": "https://assets.biggerpicture.ai/assets/HO-1620/eventmaster/2699_4.png",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg",
+    "synopsis": "1985. Vincent, de casi 13 años, vive en las afueras de París en el seno de una familia de clase media, entre un hermano mayor distante y unos padres en conflicto constante. Aunque ya no es un niño pero tampoco un adulto, la película sigue sus reflexiones y dudas sobre la identidad, la amistad y la familia, así como sus interrogantes acerca de la religión, el deseo y el amor.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4102,14 +4080,14 @@
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 44m",
+    "duration": "1h 46m",
     "director": "N/A",
     "genres": [
       "Comedia",
       "Thriller"
     ],
-    "poster": "https://assets.biggerpicture.ai/assets/HO-1620/eventmaster/2695_4.png",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/tCWAhDOglkW7ChhYvpRnMlLURTJ.jpg",
+    "synopsis": "El novelista misántropo François escribe apasionantes historias de crímenes -una mezcla de Agatha Christie y La Pimpinela Escarlata-, pero fuera del mundo imaginario de capa y espada de sus novelas, la vida dista mucho de ser emocionante. Su mujer, Colette, profesora de la Sorbona y experta mundialmente conocida en Alfred Hitchcock, está harta de ver a François sentado en su apartamento en pijama y añora la emoción de las películas clásicas que ve con sus alumnos. Cuando Colette empieza a sospechar que su extravagante vecino ha asesinado a su esposa, la tranquila vida de la pareja da un vuelco y su relación, que estaba estancada, resurge de golpe.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4243,13 +4221,13 @@
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "1h 36m",
+    "duration": "1h 38m",
     "director": "N/A",
     "genres": [
       "Comedia"
     ],
-    "poster": "https://assets.biggerpicture.ai/assets/HO-1620/eventmaster/2698_4.png",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/ws9wCKrqMsS700OOScv8L52wJMa.jpg",
+    "synopsis": "Elsa, a doctor, hides from the world the fact that she can see the dead and help them cross to the other side. Convinced that her gift leads to rejection, she has given up on love, retreating into solitude and her work. That is, until she meets Oscar - a dead man who doesn’t know he’s dead...",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4391,14 +4369,14 @@
     "rating": "TP12",
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
-    "duration": "2h 2m",
+    "duration": "1h 53m",
     "director": "N/A",
     "genres": [
       "Drama",
       "Comedia"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/xEpwHphcXRxkoQPGxEWCNLXpY0c.jpg",
-    "synopsis": "Después de escapar de Jack y su pandilla, Jesse Pinkman huye de la policía e intenta escapar de su propia tormenta interna.",
+    "poster": "https://image.tmdb.org/t/p/w500/4FaoBpDtzhZk9R907epSN5WCelq.jpg",
+    "synopsis": "Fred and Adam have nothing in common. Yet, they will meet while walking the Way of St. James as a form of spiritual path.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4545,8 +4523,8 @@
     "genres": [
       "Drama"
     ],
-    "poster": "https://assets.biggerpicture.ai/assets/HO-1620/eventmaster/2696_4.png",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/18Z7I9LJjK5gm05R1Tx6mwcUo1g.jpg",
+    "synopsis": "París, 1983. Un arquitecto danés totalmente desconocido gana por sorpresa el concurso para diseñar la Grande Arche de La Défense. Al aceptar el colosal encargo, este creador idealista se verá arrastrado a un despiadado laberinto político y burocrático, librando una batalla titánica contra la maquinaria del Estado francés para salvar su obra maestra.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4684,13 +4662,13 @@
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "1h 21m",
+    "duration": "1h 40m",
     "director": "N/A",
     "genres": [
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/a0THrka2LqK9ff6Taaf0hA11tFE.jpg",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/kfUKP5IgzgLQyQD1MDt99yq9Af0.jpg",
+    "synopsis": "Everyone knows the name of Samuel Paty, but few people really know his story. On October 16, 2020, Samuel Paty, professor of History-Geography, was murdered at the end of his college. In the light of investigations and trials, this film looks back on his last eleven days, and the gear that led to his tragic death.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4888,16 +4866,6 @@
         "locationDetail": "Heredia, Paseo de las Flores",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:40",
-                "date": "2026-11-11"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "DOB",
