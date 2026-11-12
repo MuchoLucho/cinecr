@@ -68,9 +68,9 @@ async function fetchBillboard(theaterId) {
 }
 
 /**
- * Query TMDb Search API
+ * Query TMDb Search API for poster and synopsis
  */
-async function fetchTmdbPoster(title) {
+async function fetchTmdbDetails(title) {
   if (!TMDB_TOKEN) return null;
   try {
     const cleanTitle = title.replace(/\b(2D|3D|XD|DOB|SUB|PRE|IV|-CR)\b/gi, '').trim();
@@ -83,9 +83,12 @@ async function fetchTmdbPoster(title) {
     });
     if (!res.ok) return null;
     const data = await res.json();
-    const result = (data.results || []).find(m => m.poster_path);
-    if (result && result.poster_path) {
-      return `https://image.tmdb.org/t/p/w500${result.poster_path}`;
+    const result = (data.results || []).find(m => m.poster_path || m.overview);
+    if (result) {
+      return {
+        poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
+        synopsis: result.overview ? result.overview.trim() : null
+      };
     }
   } catch (err) {
     // shortcut: silent fallback on network/rate limit
@@ -196,19 +199,20 @@ export async function scrapeCinemark() {
 
   const movies = Array.from(movieMap.values()).filter(m => m.theaters.length > 0);
 
-  // Enrich with TMDb posters (Wikipedia fallback)
-  console.log(`Enriching ${movies.length} movies with posters...`);
+  // Enrich with TMDb posters and synopsis (Wikipedia fallback for poster)
+  console.log(`Enriching ${movies.length} movies with TMDb details...`);
   for (const movie of movies) {
-    if (!movie.poster) {
-      const tmdbPoster = await fetchTmdbPoster(movie.originalTitle || movie.title);
-      if (tmdbPoster) {
-        movie.poster = tmdbPoster;
-        console.log(`  ✓ TMDb: ${movie.title}`);
-      } else {
+    const tmdbData = await fetchTmdbDetails(movie.originalTitle || movie.title);
+    if (tmdbData) {
+      if (tmdbData.poster && !movie.poster) movie.poster = tmdbData.poster;
+      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
+      console.log(`  ✓ TMDb (poster & synopsis): ${movie.title}`);
+    } else {
+      if (!movie.poster) {
         const wikiPoster = await fetchWikipediaPoster(movie.originalTitle || movie.title);
         if (wikiPoster) {
           movie.poster = wikiPoster;
-          console.log(`  ✓ Wikipedia: ${movie.title}`);
+          console.log(`  ✓ Wikipedia (poster): ${movie.title}`);
         } else {
           console.log(`  - Fallback SVG: ${movie.title}`);
         }

@@ -13,7 +13,7 @@
       "Terror"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/7NpaoOzGDRKJ53znEucFpF2IszT.jpg",
-    "synopsis": "Una reinvencion oscura de Pinocho, este inquietante relato explora la naturaleza siniestra de la iconica marioneta, desdibujando la linea entre realidad y fantasia.",
+    "synopsis": "Un niño llamado James visita a su abuelo, Geppetto, quien le presenta a Pinocho, una marioneta de madera aparentemente mágica, para convertirse en su mejor amigo. Sin embargo, ignorando la ingenuidad de Pinocho, James lo presenta al mundo, lo que lleva al títere a emprender una cruzada para eliminar todo lo \"malo\" junto con su amigo y compañero Pepe el Grillo.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -75,7 +75,7 @@
       "Terror"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5yUwsjgWlYCIF5ck1NaUr5zEGg7.jpg",
-    "synopsis": "Bela, una ninia de 8 anios que vive en un hogar con problemas matrimoniales, enfrenta a una entidad siniestra que sale de su closet. La presencia, a quien llama Otra Mama, se vuelve cada vez mas amenazante para ella y su familia.",
+    "synopsis": "Bela, una niña de 8 años que vive en un hogar con problemas matrimoniales, enfrenta a una entidad siniestra que sale de su clóset. La presencia, a quien llama “Otra Mamá”, se vuelve cada vez más amenazante para ella y su familia.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -316,17 +316,6 @@
                 "date": "2026-11-11"
               }
             ]
-          },
-          {
-            "format": "2D",
-            "language": "SUB",
-            "auditorium": "HO00071586",
-            "times": [
-              {
-                "time": "19:15",
-                "date": "2026-11-11"
-              }
-            ]
           }
         ]
       }
@@ -346,7 +335,7 @@
       "Accion"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
-    "synopsis": "Tras sobrevivir a un brutal accidente aereo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate Odín intentan regresar a la civilizacion desde un remoto lugar en medio de los parajes salvajes de Alaska.",
+    "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -570,7 +559,7 @@
       "Terror"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
-    "synopsis": "La historia sigue a Matt Hagen, un actor que sufre una transformacion aterradora que lo convierte en Clayface.",
+    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -996,7 +985,7 @@
       "Accion"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
-    "synopsis": "En 1949, la familia Shikishima se enfrenta a una nueva catastrofe dos anos despues de haber sobrevivido a su anterior encuentro con el legendario monstruo.",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -1014,17 +1003,6 @@
             "times": [
               {
                 "time": "20:40",
-                "date": "2026-11-11"
-              }
-            ]
-          },
-          {
-            "format": "XD",
-            "language": "DOB",
-            "auditorium": "HO00072103",
-            "times": [
-              {
-                "time": "19:35",
                 "date": "2026-11-11"
               }
             ]
@@ -1978,7 +1956,7 @@
       "Animada"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
-    "synopsis": "El Gato con Sombrero llega a la pantalla grande en su debut en pelicula animada, una aventura epica y completamente nueva, con un toque rebelde, donde la travesura, la magia y el caos gobiernan por completo. ",
+    "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -2392,17 +2370,6 @@
         "locationDetail": "Escazú, Multiplaza",
         "website": "https://www.cinemarkca.com/costa-rica",
         "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "auditorium": "HO00072356",
-            "times": [
-              {
-                "time": "19:25",
-                "date": "2026-11-11"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "DOB",
@@ -2840,7 +2807,7 @@
       "Accion"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/ulvGcZer26aBaNG0s4IEJGyyLIq.jpg",
-    "synopsis": "En 1973, durante un periodo de tension politica en Chile, dos agentes de la CIA emprenden una mision que los lleva desde Santiago hasta la Isla de Pascua. El viaje pondra a prueba su confianza y lealtad. ",
+    "synopsis": "Poco antes del golpe de estado chileno de 1973, los agentes de la CIA Chris y Lee son enviados desde Santiago a la Isla de Pascua por su jefa de la oficina, MJ. Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros lidian con sus oscuros pasados ​​y conspiraciones actuales, el nuevo vínculo que Chris establece con un par de estudiantes rebeldes amenaza con desbaratar el viaje de todos a este remoto paraíso.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -2946,7 +2913,7 @@
       "Accion"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
-    "synopsis": "Un grupo de ladrones de bancos comienza a compartir sus atracos en redes sociales, convirtiendo sus delitos en un espectaculo. Mientras ganan popularidad, las autoridades inician una intensa persecucion para detenerlos.",
+    "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -3639,7 +3606,7 @@
       "Drama"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/24NaFGEgoQ6W9OgXMaDHyg7Rfwq.jpg",
-    "synopsis": "En un bosque de Finlandia, Saga y su esposo comienzan una nueva etapa como padres. Sin embargo, la felicidad se transforma en inquietud cuando Saga sospecha que algo perturbador sucede con su bebe, provocando una creciente tension en su matrimonio.",
+    "synopsis": "Una pareja de astronautas regresa de un viaje espacial donde algo extraño ha sucedido. Spencer Armacost y Alex Streck estaban en una en misión espacial cuando, durante una salida de la nave, pierden el contacto con la base de control durante algunos minutos. Luego todo vuelve a la normalidad y ellos regresan a la Tierra. Pero, tras el regreso, muchas cosas extrañas comienzan a suceder en la vida de los astronautas.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -3910,7 +3877,7 @@
       "Animada"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
-    "synopsis": "Mientras la pareja se ve arrastrada a un conflicto que amenaza el equilibrio del bosque, Prue debe descubrir la fuerza y la fe que nunca supo que poseia. Si quiere salvar a su hermano y proteger el futuro de Wildwood, tendra que arriesgarlo todo.",
+    "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -4329,7 +4296,7 @@
       "Fantasia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
-    "synopsis": "Ebenezer, un hombre egoista y avaro, recibe la visita de tres espiritus que lo llevan a recorrer su pasado, presente y futuro. Durante esta experiencia sobrenatural debera enfrentarse a sus errores y descubrir el verdadero significado de la Navidad.",
+    "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -5880,7 +5847,7 @@
       "Drama"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/hKKX2PxzynUxs8JXVjApuiW89Yo.jpg",
-    "synopsis": "Austin es un vendedor de automoviles usados que utiliza metodos deshonestos para obtener ganancias. Cuando sus decisiones comienzan a perjudicar a su familia y su negocio, descubre que necesita cambiar su forma de vivir y recuperar la confianza.",
+    "synopsis": "Sigue la historia de Noah Silva, un vendedor de autos usados cuya manera poco ética de hacer negocios comienza a afectar tanto su vida familiar como profesional. Después de enfrentar varias llamadas de atención que lo confrontan con sus errores, emprende un difícil camino de transformación para recuperar su integridad y reconquistar el amor y la confianza de su esposa y su hijo.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -6250,7 +6217,7 @@
       "Drama"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
-    "synopsis": "Sylvester Stallone, un joven que lucha por abrirse camino en Hollywood, encuentra inspiracion para escribir la historia de un boxeador. Convencido que debe interpretar al protagonista, enfrenta obstaculos para llevar su proyecto a la pantalla grande.",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -6936,7 +6903,7 @@
       "Terror"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/ms6V9gUMcw6T6ENgUCU7SL5x7dl.jpg",
-    "synopsis": "Una mujer desesperada por convertirse en madre realiza un pacto con fuerzas sobrenaturales. Cuando finalmente queda embarazada, comienza a experimentar acontecimientos aterradores que ponen en peligro su vida y la de su familia.",
+    "synopsis": "Una pareja de recién casados sufre un evento inesperado en una casa a la que acaban de mudarse, la cual esconde secretos que ellos ignoran. Repentinamente, ella se conecta con un ente demoniaco, el mismo que reclamó la vida de su hijo.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -7281,7 +7248,7 @@
       "Drama"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
-    "synopsis": "Esta historia nos transporta al pasado de Panem, 24 anios antes de los eventos originales, durante el 50 Juego del Hambre, una edicion historica conocida como el Segundo Vasallaje de los Veinticinco, donde el numero de tributos se duplica.",
+    "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -9451,7 +9418,7 @@
       "Accion"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5myJqI5SeZckhC8B2vMz7Nbl46z.jpg",
-    "synopsis": "Duna 3 se ambienta casi dos decadas despues de que Paul Atreides tomo el control del Imperio. Convertido en un despiadado Emperador, debera enfrentar las consecuencias de su reinado a medida que regresan viejos aliados, surgen aterradoras amenazas.",
+    "synopsis": "Como emperador, Paul Atreides se enfrenta a las consecuencias de su ascenso al poder, mientras conspiraciones políticas y una guerra santa que abarca toda la galaxia amenazan el futuro que solo él puede prever.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -10116,7 +10083,7 @@
       "Suspenso"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/3A4IzhQHCzX5nuQParZp07F5rCT.jpg",
-    "synopsis": "En AVENGERS: DOOMSDAY, queridos heroes de tres universos distintos se veran arrastrados hacia una colision mortal y enfrentaran una amenaza existencial como ninguna otra que hayan encontrado.",
+    "synopsis": "Héroes amados de tres universos distintos están en rumbo a una colisión letal y enfrentan una amenaza existencial como ninguna otra que hayan conocido.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -15827,7 +15794,7 @@
       "Terror"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
-    "synopsis": "Sigue a un desafortunado mensajero encargado de entregar un paquete a un hospital remoto. Pronto se encuentra atrapado en medio de una epidemia y debe luchar contra hordas de criaturas mutantes para sobrevivir.",
+    "synopsis": "Un desafortunado mensajero, encargado de entregar un paquete a un hospital remoto, se ve atrapado en medio de un brote y debe luchar contra hordas de criaturas mutantes para sobrevivir.",
     "theaters": [
       {
         "complexId": "cmk-773",
