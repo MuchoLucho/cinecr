@@ -27,6 +27,18 @@ for (const m of movies) {
     assert.equal(new Set(m.genres).size, m.genres.length, `Movie ${m.title} has duplicate genres: ${JSON.stringify(m.genres)}`);
   }
 
+  // TMDb Exclusive Metadata validation
+  if (m.poster) {
+    assert.ok(
+      m.poster.startsWith('https://image.tmdb.org/'),
+      `Movie ${m.title} has non-TMDb poster: ${m.poster}`
+    );
+  }
+  if (m.score) {
+    const s = parseFloat(m.score);
+    assert.ok(!isNaN(s) && s >= 0 && s <= 10, `Invalid score ${m.score} in ${m.title}`);
+  }
+
   for (const t of m.theaters) {
     assert.ok(['cinemark', 'cinepolis', 'ccm', 'nova', 'magaly', 'sanpedro', 'studio', 'citicinemas'].includes(t.chainId), `Invalid chainId ${t.chainId} in ${t.complexName}`);
     chainsFound.add(t.chainId);

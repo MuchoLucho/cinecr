@@ -586,14 +586,14 @@
     "studio": "Cinépolis",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": null,
-    "duration": "N/A",
-    "director": "Alexandre Hilaire",
+    "score": "6.3",
+    "duration": "1h 56m",
+    "director": "Stéphane Brizé",
     "genres": [
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/mXJdyw257EO3J2dvhgjAkt2yv9f.jpg",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/jURgNwJkxZO1nwtLqRQTyVZP2nS.jpg",
+    "synopsis": "Mathieu vive en París, Alice en un pequeño balneario del oeste de Francia. Él es un actor famoso, a punto de cumplir cincuenta años. Ella es una profesora de piano cuarentona. Se enamoraron hace quince años y se separaron. El tiempo ha pasado. Cada uno siguió su camino y poco a poco se fueron curando.Cuando Mathieu va a intentar superar su melancolía en un balneario termal, tropieza con Alice.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -7165,14 +7165,14 @@
     "id": "magaly-capitan",
     "title": "El capitán",
     "originalTitle": "El capitán",
-    "synopsis": "Mientras Steve Rogers lucha por asumir su papel en el mundo moderno, se une a un compañero Vengador y agente de S.H.I.E.L.D., Viuda Negra, para luchar contra una nueva amenaza de la historia: un asesino conocido como el Soldado de Invierno.",
-    "poster": "https://image.tmdb.org/t/p/w500/3Zv12uAqBxj4xAdeHeVySEQzY1o.jpg",
+    "synopsis": "Desesperado, hambriento, aterido de hipotermia y huido de su pelotón, el soldado raso Willi Herold encuentra un uniforme de capitán y decide cambiar su identidad. A partir de entonces actúa como un alto rango en una misión secreta encomendada por el mismísimo Führer. Su suplantación le conducirá a los placeres y los infiernos de su nueva personalidad proactiva, hasta formar un grupo de soldados perdidos que actuarán a sus órdenes sembrando el horror entre la población inocente, actuando con impunidad en su viaje a la degradación moral, el mesianismo nazi y la perversión de la barbarie",
+    "poster": "https://image.tmdb.org/t/p/w500/pcQkdpyXxYBJbDrB8P6rE880Ul3.jpg",
     "rating": "TP+12",
-    "duration": "2h 16m",
+    "duration": "1h 58m",
     "genres": [
-      "Acción",
-      "Aventura",
-      "Ciencia Ficción"
+      "Bélica",
+      "Drama",
+      "Historia"
     ],
     "theaters": [
       {
@@ -7200,8 +7200,8 @@
     ],
     "ratingBadgeClass": "badge-amber",
     "normalizedKey": "capitan",
-    "score": "7.7",
-    "director": "Joe Russo, Anthony Russo"
+    "score": "7.2",
+    "director": "Robert Schwentke"
   },
   {
     "id": "112951",
@@ -10677,15 +10677,14 @@
     "studio": "Cinemark / Cinépolis / Cinema San Pedro",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
-    "score": "5.6",
-    "duration": "1h 30m",
-    "director": "Michael Winnick",
+    "score": "1.0",
+    "duration": "N/A",
+    "director": "Doğukan Mısır",
     "genres": [
-      "Suspenso",
       "Terror"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/ms6V9gUMcw6T6ENgUCU7SL5x7dl.jpg",
-    "synopsis": "Una pareja de recién casados sufre un evento inesperado en una casa a la que acaban de mudarse, la cual esconde secretos que ellos ignoran. Repentinamente, ella se conecta con un ente demoniaco, el mismo que reclamó la vida de su hijo.",
+    "poster": "https://image.tmdb.org/t/p/w500/wYRD4yrCXlaBjAAaY20PW0wZ551.jpg",
+    "synopsis": "Cuando una joven regresa a su pueblo natal para cuidara su madre enferma, comienza a sufrir aterradoras visiones quedesentierran un oscuro pacto de brujería familiar del pasado, el cual reclama su vida como el precio final de una vieja venganza.",
     "theaters": [
       {
         "complexId": "cmk-2204",
@@ -14631,12 +14630,13 @@
     "id": "magaly-pingpongtriunfo",
     "title": "Ping Pong: El Triunfo",
     "originalTitle": "Ping Pong: El Triunfo",
-    "synopsis": "A principios de la década de 1990, cuando el equipo masculino de tenis de mesa chino está en su punto más bajo, el entrenador en jefe Cai Zhenhua tiene la tarea de formar un nuevo equipo para finalmente luchar hasta la cima en el Campeonato Mundial de Ping de 1995 en Tianjin, China.",
-    "poster": "https://image.tmdb.org/t/p/w500/mSZMWfXipCQIosy0pryLSdus8d9.jpg",
+    "synopsis": "Sin sinopsis disponible.",
+    "poster": null,
     "rating": "TP+12",
-    "duration": "2h 20m",
+    "duration": "N/A",
     "genres": [
-      "Drama"
+      "Drama",
+      "Independiente"
     ],
     "theaters": [
       {
@@ -14662,8 +14662,8 @@
         "website": "https://www.cinemagaly.com"
       }
     ],
-    "score": "7.2",
-    "director": "俞白眉, 邓超",
+    "score": null,
+    "director": "N/A",
     "ratingBadgeClass": "badge-amber",
     "normalizedKey": "pingpongtriunfo"
   },
