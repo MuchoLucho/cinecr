@@ -31,14 +31,65 @@ const getNowCR = () => {
 const currentTimeTrigger = ref(Date.now());
 let timerInterval = null;
 
+const scrollY = ref(0);
+const showScrollTop = computed(() => scrollY.value > 250);
+
+const handleScroll = () => {
+  scrollY.value = window.scrollY;
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+const scrollToNextMovie = () => {
+  const cards = Array.from(document.querySelectorAll('.movie-card-item'));
+  if (cards.length === 0) return;
+  const navOffset = 76;
+  const currentPos = window.scrollY + navOffset;
+
+  const nextCard = cards.find(card => {
+    const cardTop = card.getBoundingClientRect().top + window.scrollY;
+    return cardTop > currentPos + 12;
+  });
+
+  if (nextCard) {
+    const targetY = nextCard.getBoundingClientRect().top + window.scrollY - navOffset;
+    window.scrollTo({ top: targetY, behavior: 'smooth' });
+  }
+};
+
+const scrollToPrevMovie = () => {
+  const cards = Array.from(document.querySelectorAll('.movie-card-item'));
+  if (cards.length === 0) return;
+  const navOffset = 76;
+  const currentPos = window.scrollY + navOffset;
+
+  const prevCards = cards.filter(card => {
+    const cardTop = card.getBoundingClientRect().top + window.scrollY;
+    return cardTop < currentPos - 12;
+  });
+
+  if (prevCards.length > 0) {
+    const prevCard = prevCards[prevCards.length - 1];
+    const targetY = prevCard.getBoundingClientRect().top + window.scrollY - navOffset;
+    window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+};
+
 onMounted(() => {
   document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light');
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
   timerInterval = setInterval(() => {
     currentTimeTrigger.value = Date.now();
   }, 30000);
 });
 
 onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
   if (timerInterval) clearInterval(timerInterval);
 });
 
@@ -780,7 +831,7 @@ const formatStatusDate = (isoStr) => {
 
       <!-- VIEW 1: MOVIES -->
       <div v-if="viewMode === 'movies'">
-        <article v-for="movie in filteredMovies" :key="movie.id" class="md-card">
+        <article v-for="movie in filteredMovies" :key="movie.id" class="md-card movie-card-item">
           <div class="movie-card-grid">
             <div class="movie-sidebar">
               <div class="poster-wrapper">
@@ -1076,6 +1127,49 @@ const formatStatusDate = (isoStr) => {
         </div>
       </div>
     </div>
+
+    <!-- FLOATING NAVIGATION CONTROLS -->
+    <aside
+      class="floating-nav-dock"
+      aria-label="Navegación rápida"
+    >
+      <!-- Scroll to Top (desktop & mobile) -->
+      <button
+        v-show="showScrollTop"
+        type="button"
+        class="floating-nav-btn primary"
+        title="Volver arriba"
+        aria-label="Volver arriba"
+        @click="scrollToTop"
+      >
+        <span class="material-symbols-outlined">arrow_upward</span>
+      </button>
+
+      <!-- Mobile-only Stepper (Previous / Next movie) -->
+      <div
+        v-if="viewMode === 'movies' && filteredMovies.length > 1"
+        class="floating-mobile-stepper show-mobile-only"
+      >
+        <button
+          type="button"
+          class="floating-nav-btn"
+          title="Película anterior"
+          aria-label="Película anterior"
+          @click="scrollToPrevMovie"
+        >
+          <span class="material-symbols-outlined">keyboard_arrow_up</span>
+        </button>
+        <button
+          type="button"
+          class="floating-nav-btn"
+          title="Película siguiente"
+          aria-label="Película siguiente"
+          @click="scrollToNextMovie"
+        >
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </button>
+      </div>
+    </aside>
 
     <!-- FOOTER -->
     <footer class="md-footer">

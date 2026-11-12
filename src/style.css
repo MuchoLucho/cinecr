@@ -805,3 +805,80 @@ h1, h2, h3, h4 {
   .hide-mobile { display: inline-flex; }
   .show-mobile-only { display: none !important; }
 }
+
+/* Floating Navigation Controls */
+.floating-nav-dock {
+  position: fixed;
+  bottom: 24px;
+  right: 18px;
+  z-index: 95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.floating-nav-dock > * {
+  pointer-events: auto;
+}
+
+.floating-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
+
+.floating-nav-btn:hover {
+  background-color: var(--md-sys-color-surface-container-highest);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.floating-nav-btn:active {
+  transform: translateY(0);
+}
+
+.floating-nav-btn.primary {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border-color: transparent;
+}
+
+.floating-nav-btn.primary:hover {
+  background-color: #f43f5e;
+}
+
+.floating-mobile-stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px;
+  background-color: var(--md-sys-color-surface-container-high);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: 28px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.floating-mobile-stepper .floating-nav-btn {
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+}
+
+.floating-mobile-stepper .floating-nav-btn:hover,
+.floating-mobile-stepper .floating-nav-btn:active {
+  background-color: var(--md-sys-color-surface-container-highest);
+}
