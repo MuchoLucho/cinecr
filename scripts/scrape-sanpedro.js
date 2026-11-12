@@ -105,8 +105,10 @@ async function fetchTmdbDetails(title) {
  */
 export async function scrapeSanPedro() {
   console.log('Scraping Cinema San Pedro (Mall San Pedro) showtimes...');
+  const cacheFile = path.resolve(__dirname, '../src/data/sanpedro-data.json');
 
-  // 1. Fetch homepage to get all movie URLs
+  try {
+    // 1. Fetch homepage to get all movie URLs
   const homeHtml = fetchWithCurl('https://cinemasanpedro.com/home');
   const movieLinks = [...new Set([...homeHtml.matchAll(/href="(\/boleteria\/pelicula\/[^"]+)"/g)].map(m => m[1]))];
 
@@ -250,13 +252,22 @@ export async function scrapeSanPedro() {
     }
   }
 
-  const outDir = path.resolve(__dirname, '../src/data');
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-  const outFile = path.join(outDir, 'sanpedro-data.json');
-  fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
-  console.log(`Saved ${movies.length} Cinema San Pedro movies to ${outFile}`);
+    const outDir = path.resolve(__dirname, '../src/data');
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    const outFile = path.join(outDir, 'sanpedro-data.json');
+    if (movies.length > 0) {
+      fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
+      console.log(`Saved ${movies.length} Cinema San Pedro movies to ${outFile}`);
+    }
 
-  return movies;
+    return movies;
+  } catch (err) {
+    console.warn(`⚠️ Warning: Cinema San Pedro scrape error (${err.message}). Falling back to cached data.`);
+    if (fs.existsSync(cacheFile)) {
+      return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+    }
+    return [];
+  }
 }
 
 // Standalone execution

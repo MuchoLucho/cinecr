@@ -163,7 +163,10 @@ async function fetchWikipediaPoster(title) {
 
 export async function scrapeNova() {
   console.log('Scraping Nova Cinemas Costa Rica showtimes...');
-  const movieMap = new Map();
+  const cacheFile = path.resolve(__dirname, '../src/data/nova-data.json');
+
+  try {
+    const movieMap = new Map();
 
   // Current 7-day cinema week window
   const today = new Date();
@@ -309,13 +312,22 @@ export async function scrapeNova() {
     }
   }
 
-  const outDir = path.resolve(__dirname, '../src/data');
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    const outDir = path.resolve(__dirname, '../src/data');
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-  const outFile = path.join(outDir, 'nova-data.json');
-  fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
-  console.log(`Saved ${movies.length} Nova Cinemas movies to ${outFile}`);
-  return movies;
+    const outFile = path.join(outDir, 'nova-data.json');
+    if (movies.length > 0) {
+      fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
+      console.log(`Saved ${movies.length} Nova Cinemas movies to ${outFile}`);
+    }
+    return movies;
+  } catch (err) {
+    console.warn(`⚠️ Warning: Nova Cinemas scrape error (${err.message}). Falling back to cached data.`);
+    if (fs.existsSync(cacheFile)) {
+      return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+    }
+    return [];
+  }
 }
 
 if (process.argv[1] && process.argv[1].endsWith('scrape-nova.js')) {

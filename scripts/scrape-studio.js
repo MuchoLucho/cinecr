@@ -97,8 +97,10 @@ async function fetchTmdbDetails(title, originalTitle) {
  */
 export async function scrapeStudio() {
   console.log('Scraping Studio Cinemas (City Place Santa Ana) showtimes...');
+  const cacheFile = path.resolve(__dirname, '../src/data/studio-data.json');
 
-  const commonData = {
+  try {
+    const commonData = {
     token_access: '4jH6k-3m.b@s_T8',
     database: 'produccion',
     sqlQuery: '',
@@ -268,13 +270,22 @@ export async function scrapeStudio() {
     }
   }
 
-  const outDir = path.resolve(__dirname, '../src/data');
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-  const outFile = path.join(outDir, 'studio-data.json');
-  fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
-  console.log(`Saved ${movies.length} Studio Cinemas movies to ${outFile}`);
+    const outDir = path.resolve(__dirname, '../src/data');
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    const outFile = path.join(outDir, 'studio-data.json');
+    if (movies.length > 0) {
+      fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
+      console.log(`Saved ${movies.length} Studio Cinemas movies to ${outFile}`);
+    }
 
-  return movies;
+    return movies;
+  } catch (err) {
+    console.warn(`⚠️ Warning: Studio Cinemas scrape error (${err.message}). Falling back to cached data.`);
+    if (fs.existsSync(cacheFile)) {
+      return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+    }
+    return [];
+  }
 }
 
 // Standalone execution

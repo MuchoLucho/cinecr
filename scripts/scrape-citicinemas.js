@@ -94,16 +94,23 @@ async function fetchTmdbDetails(title) {
  */
 export async function scrapeCitiCinemas() {
   console.log('Scraping CitiCinemas (Plaza Grecia) showtimes...');
+  const cacheFile = path.resolve(__dirname, '../src/data/citicinemas-data.json');
 
-  const res = await fetch('https://www.citicinemascr.com/cartelera/', {
-    headers: { 'User-Agent': USER_AGENT }
-  });
+  try {
+    const res = await fetch('https://www.citicinemascr.com/cartelera/', {
+      headers: { 'User-Agent': USER_AGENT }
+    });
 
-  if (!res.ok) {
-    throw new Error(`Failed to fetch CitiCinemas cartelera: ${res.statusText}`);
-  }
+    if (!res.ok) {
+      console.warn(`⚠️ CitiCinemas responded with HTTP ${res.status} (${res.statusText}).`);
+      if (fs.existsSync(cacheFile)) {
+        console.log('Falling back to cached citicinemas-data.json');
+        return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+      }
+      return [];
+    }
 
-  const html = await res.text();
+    const html = await res.text();
 
   // Tab mapping: e.g. <a href="#Wed">Miercoles 11</a>
   const tabMatches = [...html.matchAll(/<a[^>]+href="#([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)];
@@ -266,13 +273,22 @@ export async function scrapeCitiCinemas() {
     }
   }
 
-  const outDir = path.resolve(__dirname, '../src/data');
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-  const outFile = path.join(outDir, 'citicinemas-data.json');
-  fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
-  console.log(`Saved ${movies.length} CitiCinemas movies to ${outFile}`);
+    const outDir = path.resolve(__dirname, '../src/data');
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    const outFile = path.join(outDir, 'citicinemas-data.json');
+    if (movies.length > 0) {
+      fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
+      console.log(`Saved ${movies.length} CitiCinemas movies to ${outFile}`);
+    }
 
-  return movies;
+    return movies;
+  } catch (err) {
+    console.warn(`⚠️ Warning: CitiCinemas scrape error (${err.message}). Falling back to cached data.`);
+    if (fs.existsSync(cacheFile)) {
+      return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+    }
+    return [];
+  }
 }
 
 // Standalone execution

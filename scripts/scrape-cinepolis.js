@@ -179,7 +179,10 @@ async function fetchWikipediaPoster(title) {
 
 export async function scrapeCinepolis() {
   console.log('Scraping Cinépolis Costa Rica showtimes...');
-  const movieMap = new Map();
+  const cacheFile = path.resolve(__dirname, '../src/data/cinepolis-data.json');
+
+  try {
+    const movieMap = new Map();
 
   // Load sites-data catalog for genres and additional metadata
   let catalogMovies = [];
@@ -354,13 +357,22 @@ export async function scrapeCinepolis() {
     }
   }
 
-  const outDir = path.resolve(__dirname, '../src/data');
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    const outDir = path.resolve(__dirname, '../src/data');
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-  const outFile = path.join(outDir, 'cinepolis-data.json');
-  fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
-  console.log(`Saved ${movies.length} Cinépolis movies to ${outFile}`);
-  return movies;
+    const outFile = path.join(outDir, 'cinepolis-data.json');
+    if (movies.length > 0) {
+      fs.writeFileSync(outFile, JSON.stringify(movies, null, 2), 'utf-8');
+      console.log(`Saved ${movies.length} Cinépolis movies to ${outFile}`);
+    }
+    return movies;
+  } catch (err) {
+    console.warn(`⚠️ Warning: Cinépolis scrape error (${err.message}). Falling back to cached data.`);
+    if (fs.existsSync(cacheFile)) {
+      return JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+    }
+    return [];
+  }
 }
 
 if (process.argv[1] && process.argv[1].endsWith('scrape-cinepolis.js')) {
