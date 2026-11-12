@@ -1017,7 +1017,7 @@ const formatStatusDate = (isoStr) => {
                 Estado de Carteleras
               </div>
               <div style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant);">
-                Última sincronización exitosa de cada cine
+                Última sincronización de cada cine
               </div>
             </div>
           </div>
@@ -1033,37 +1033,24 @@ const formatStatusDate = (isoStr) => {
               :key="chain.id"
               class="status-item-row"
             >
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <span :class="['md-badge', getChainBadgeClass(chain.id)]" style="min-width: 82px; text-align: center;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span :class="['md-badge', getChainBadgeClass(chain.id)]" style="min-width: 90px; text-align: center;">
                   {{ chain.name }}
                 </span>
-                <div>
-                  <div style="display: flex; align-items: center; gap: 6px;">
-                    <span style="font-weight: 600; font-size: 0.92rem;">{{ chain.name }}</span>
-                    <span
-                      class="md-badge xs"
-                      :class="chain.status === 'healthy' ? 'badge-green' : 'badge-amber'"
-                    >
-                      <span class="material-symbols-outlined" style="font-size: 11px;">
-                        {{ chain.status === 'healthy' ? 'check_circle' : 'history' }}
-                      </span>
-                      {{ chain.status === 'healthy' ? 'Actualizado' : 'Respaldo' }}
-                    </span>
-                  </div>
-                  <div style="font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); margin-top: 2px;">
-                    {{ chain.moviesCount }} películas • {{ chain.showtimesCount }} tandas
-                    <span v-if="chain.note" style="color: #f59e0b; margin-left: 4px;">
-                      — {{ chain.note }}
-                    </span>
-                  </div>
-                </div>
+                <span
+                  v-if="chain.status === 'warning'"
+                  class="md-badge xs badge-amber"
+                  title="Respaldo en uso"
+                >
+                  Respaldo
+                </span>
               </div>
 
               <div style="text-align: right;">
                 <div style="font-size: 0.72rem; text-transform: uppercase; font-weight: 600; color: var(--md-sys-color-on-surface-variant);">
-                  Último éxito
+                  Last sync
                 </div>
-                <div style="font-size: 0.82rem; font-weight: 600; color: var(--md-sys-color-on-surface); white-space: nowrap;">
+                <div style="font-size: 0.84rem; font-weight: 600; color: var(--md-sys-color-on-surface); white-space: nowrap;">
                   {{ formatStatusDate(chain.lastSuccess) }}
                 </div>
               </div>
