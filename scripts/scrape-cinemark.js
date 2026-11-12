@@ -109,7 +109,6 @@ export async function scrapeCinemark() {
               const timeParts = s.hour ? s.hour.split(':') : (s.showtime ? s.showtime.split('T')[1].split(':') : ['00', '00']);
               return {
                 time: `${timeParts[0]}:${timeParts[1]}`,
-                occupancy: (s.seats_available < 30) ? 'Alta' : (s.seats_available < 80) ? 'Media' : 'Baja',
                 date: s.day || date
               };
             });

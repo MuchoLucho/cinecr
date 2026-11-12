@@ -183,7 +183,6 @@ const flatSchedule = computed(() => {
           }
           items.push({
             time: session.time,
-            occupancy: session.occupancy,
             movie,
             complex,
             group
@@ -778,24 +777,18 @@ const openSessionModal = (movie, complex, group, session) => {
             </div>
           </div>
 
-          <div style="background-color: var(--md-sys-color-surface-container); border: 1px solid var(--md-sys-color-outline-variant); border-radius: 16px; padding: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div style="background-color: var(--md-sys-color-surface-container); border: 1px solid var(--md-sys-color-outline-variant); border-radius: 16px; padding: 16px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between;">
             <div>
-              <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Hora</div>
-              <div style="font-size: 1.25rem; font-weight: 700; color: var(--md-sys-color-primary);">
+              <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Hora de función</div>
+              <div style="font-size: 1.35rem; font-weight: 700; color: var(--md-sys-color-primary);">
                 {{ activeSession.session.time }}
               </div>
             </div>
-            <div>
-              <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Disponibilidad</div>
-              <div style="font-size: 0.9rem; font-weight: 500; display: flex; align-items: center; gap: 4px; margin-top: 4px;">
-                <span
-                  class="material-symbols-outlined sm"
-                  :style="{ color: activeSession.session.occupancy === 'Alta' ? '#f59e0b' : '#10b981' }"
-                >
-                  {{ activeSession.session.occupancy === 'Alta' ? 'warning' : 'check_circle' }}
-                </span>
-                Ocupación {{ activeSession.session.occupancy }}
-              </div>
+            <div style="text-align: right;">
+              <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Formato</div>
+              <span class="md-badge" :class="getFormatBadgeClass(activeSession.group.format)">
+                {{ activeSession.group.format }}
+              </span>
             </div>
           </div>
 
