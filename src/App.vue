@@ -294,22 +294,12 @@ const getFormatDescription = (format) => {
   return descriptions[format] || 'Proyección digital estándar.';
 };
 
-const groupSessionsByDate = (times) => {
-  const map = {};
+const formatSessionDate = (dateStr) => {
+  if (!dateStr) return '';
   const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
-  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
-
-  (times || []).forEach(s => {
-    let label = 'Hoy';
-    if (s.date) {
-      const parts = s.date.split('-');
-      const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-      label = `${dayNames[d.getDay()]} ${d.getDate()} ${monthNames[d.getMonth()]}`;
-    }
-    if (!map[label]) map[label] = [];
-    map[label].push(s);
-  });
-  return map;
+  const parts = dateStr.split('-');
+  const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+  return `${dayNames[d.getDay()]} ${d.getDate()}`;
 };
 
 const openSessionModal = (movie, complex, group, session) => {
@@ -695,28 +685,20 @@ const openSessionModal = (movie, complex, group, session) => {
                       </span>
                     </div>
 
-                    <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
-                      <div
-                        v-for="(times, dayLabel) in groupSessionsByDate(group.times)"
-                        :key="dayLabel"
-                        style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;"
+                    <div class="chip-row">
+                      <button
+                        v-for="session in group.times"
+                        :key="session.time + session.date"
+                        type="button"
+                        class="showtime-btn"
+                        @click="openSessionModal(movie, complex, group, session)"
                       >
-                        <span v-if="selectedDate === 'all'" style="font-size: 0.76rem; font-weight: 700; color: var(--md-sys-color-primary); min-width: 90px;">
-                          {{ dayLabel }}:
+                        <span class="material-symbols-outlined sm">calendar_today</span>
+                        <span v-if="session.date" style="opacity: 0.75; font-size: 0.78rem; font-weight: 500;">
+                          {{ formatSessionDate(session.date) }}
                         </span>
-                        <div class="chip-row">
-                          <button
-                            v-for="session in times"
-                            :key="session.time + session.date"
-                            type="button"
-                            class="showtime-btn"
-                            @click="openSessionModal(movie, complex, group, session)"
-                          >
-                            <span class="material-symbols-outlined sm">confirmation_number</span>
-                            {{ session.time }}
-                          </button>
-                        </div>
-                      </div>
+                        <span>{{ session.time }}</span>
+                      </button>
                     </div>
                   </div>
                 </div>
