@@ -64,6 +64,14 @@ const chains = [
     complexes: 'Lincoln, Multicentro, Paseo De Las Flores, Paseo Metrópoli, TerraMall, Terrazas Lindora VIP',
     integrationMethod: 'CinemaWorld REST API Scraping',
     status: 'Activo'
+  },
+  {
+    id: 'ccm',
+    name: 'CCM Cinemas',
+    url: 'https://www.ccmcinemas.com',
+    complexes: 'Plaza Mayor Rohrmoser, San Ramón, San Carlos (Ciudad Quesada)',
+    integrationMethod: 'CCM Funciones JSON API Scraping',
+    status: 'Activo'
   }
 ];
 
@@ -278,6 +286,12 @@ const getAvailableFormatsForMovie = (movie) => {
   return [...set];
 };
 
+const getChainBadgeClass = (chainId) => {
+  if (chainId === 'cinepolis') return 'badge-blue';
+  if (chainId === 'ccm') return 'badge-cyan';
+  return 'badge-red';
+};
+
 const getFormatBadgeClass = (format) => {
   const map = {
     'XD': 'badge-red',
@@ -403,7 +417,7 @@ const openSessionModal = (movie, complex, group, session) => {
             </div>
             <h1 class="hero-title">Cartelera en Tiempo Real</h1>
             <p class="hero-desc">
-              Tandas, formatos de sala (VIP, IMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark y Cinépolis Costa Rica.
+              Tandas, formatos de sala (VIP, IMAX, 4DX, MACRO XE, XD, D-BOX, 3D, 2D) e idiomas (Doblada / Subtitulada) obtenidos directamente desde las plataformas oficiales de Cinemark, Cinépolis y CCM Cinemas Costa Rica.
             </p>
           </div>
 
@@ -662,7 +676,7 @@ const openSessionModal = (movie, complex, group, session) => {
                   @click="togglePanel(movie.id, complex.complexId)"
                 >
                   <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                    <span :class="['md-badge', complex.chainId === 'cinepolis' ? 'badge-blue' : 'badge-red']">
+                    <span :class="['md-badge', getChainBadgeClass(complex.chainId)]">
                       {{ complex.chainName }}
                     </span>
                     <div>
@@ -746,7 +760,7 @@ const openSessionModal = (movie, complex, group, session) => {
             <div>
               <h2 style="font-size: 1.25rem; font-weight: 700;">Cronograma de Tandas</h2>
               <div style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant);">
-                Horarios cronológicos reales de Cinemark Costa Rica
+                Horarios cronológicos reales de Cinemark, Cinépolis y CCM Cinemas
               </div>
             </div>
             <div style="min-width: 260px;">
@@ -786,7 +800,7 @@ const openSessionModal = (movie, complex, group, session) => {
                   </td>
                   <td>
                     <div style="display: flex; align-items: center; gap: 8px;">
-                      <span :class="['md-badge xs', item.complex.chainId === 'cinepolis' ? 'badge-blue' : 'badge-red']">
+                      <span :class="['md-badge xs', getChainBadgeClass(item.complex.chainId)]">
                         {{ item.complex.chainName }}
                       </span>
                       <span style="font-weight: 500;">{{ item.complex.complexName }}</span>
@@ -829,7 +843,7 @@ const openSessionModal = (movie, complex, group, session) => {
       <div class="md-dialog" role="dialog" aria-modal="true">
         <div class="md-dialog-header">
           <div style="display: flex; align-items: center; gap: 8px;">
-            <span :class="['md-badge', activeSession.complex.chainId === 'cinepolis' ? 'badge-blue' : 'badge-red']">
+            <span :class="['md-badge', getChainBadgeClass(activeSession.complex.chainId)]">
               {{ activeSession.complex.chainName }}
             </span>
             <span style="font-weight: 700; font-size: 1rem;">
@@ -900,7 +914,7 @@ const openSessionModal = (movie, complex, group, session) => {
             target="_blank"
             rel="noopener"
           >
-            Ir a Cinemark CR
+            Ir a {{ activeSession.complex.chainName }}
             <span class="material-symbols-outlined sm">open_in_new</span>
           </a>
         </div>
@@ -924,7 +938,7 @@ const openSessionModal = (movie, complex, group, session) => {
           <div class="md-list">
             <div v-for="chain in chains" :key="chain.id" class="md-list-item">
               <div style="display: flex; align-items: flex-start; gap: 12px;">
-                <span :class="['md-badge', chain.id === 'cinepolis' ? 'badge-blue' : 'badge-red']" style="margin-top: 2px;">
+                <span :class="['md-badge', getChainBadgeClass(chain.id)]" style="margin-top: 2px;">
                   {{ chain.name }}
                 </span>
                 <div>

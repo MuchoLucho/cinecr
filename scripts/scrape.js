@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { scrapeCinemark } from './scrape-cinemark.js';
 import { scrapeCinepolis } from './scrape-cinepolis.js';
+import { scrapeCcm } from './scrape-ccm.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -11,85 +12,90 @@ function normalizeTitleKey(str) {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
-    .replace(/\b(la|el|los|las|de|del|con|un|una|unos|unas|the|a|an)\b/g, '')
+    .replace(/\b(la|el|los|las|de|del|con|un|una|unos|unas|the|a|an|en|parte)\b/g, '')
     .replace(/[^a-z0-9]/g, '');
 }
 
-export function mergeDatasets(cinemarkMovies, cinepolisMovies) {
+export function mergeDatasets(...datasets) {
   const mergedMap = new Map();
 
-  // 1. Add all Cinemark movies
-  for (const cm of cinemarkMovies) {
-    const key = normalizeTitleKey(cm.title);
-    mergedMap.set(key, {
-      ...cm,
-      normalizedKey: key,
-      theaters: [...cm.theaters]
-    });
-  }
+  for (const movieList of datasets) {
+    if (!Array.isArray(movieList)) continue;
+    for (const incoming of movieList) {
+      const key = normalizeTitleKey(incoming.title);
+      if (!key) continue;
 
-  // 2. Merge Cinépolis movies
-  for (const cp of cinepolisMovies) {
-    const key = normalizeTitleKey(cp.title);
+      let existingKey = mergedMap.has(key) ? key : null;
 
-    // Look for exact key match or substring match
-    let existingKey = mergedMap.has(key) ? key : null;
-    if (!existingKey) {
-      for (const k of mergedMap.keys()) {
-        if (k.length > 5 && key.length > 5 && (k.includes(key) || key.includes(k))) {
-          existingKey = k;
-          break;
-        }
-      }
-    }
-
-    if (existingKey) {
-      const existing = mergedMap.get(existingKey);
-      // Combine theaters
-      for (const t of cp.theaters) {
-        const found = existing.theaters.find(et => et.complexId === t.complexId);
-        if (!found) {
-          existing.theaters.push(t);
+      // Match by identical TMDb poster or substring title key
+      if (!existingKey) {
+        const incomingTmdbPoster = incoming.poster && incoming.poster.includes('image.tmdb.org') ? incoming.poster : null;
+        for (const [k, existingMovie] of mergedMap.entries()) {
+          if (incomingTmdbPoster && existingMovie.poster === incomingTmdbPoster) {
+            existingKey = k;
+            break;
+          }
+          if (k.length > 5 && key.length > 5 && (k.includes(key) || key.includes(k))) {
+            existingKey = k;
+            break;
+          }
         }
       }
 
-      // Upgrade poster if existing is placeholder/svg or missing and cp has a better one
-      if ((!existing.poster || existing.poster.includes('data:image') || existing.poster.includes('poster-not-found')) && cp.poster) {
-        existing.poster = cp.poster;
-      }
+      if (existingKey) {
+        const existing = mergedMap.get(existingKey);
+        for (const t of incoming.theaters) {
+          const found = existing.theaters.find(et => et.complexId === t.complexId);
+          if (!found) {
+            existing.theaters.push(t);
+          }
+        }
 
-      // Prefer TMDB synopsis if available
-      if ((!existing.synopsis || existing.synopsis.startsWith('Sin sinopsis')) && cp.synopsis && !cp.synopsis.startsWith('Sin sinopsis')) {
-        existing.synopsis = cp.synopsis;
-      }
+        // Upgrade poster if existing is placeholder/svg or missing and incoming has a better one
+        if ((!existing.poster || existing.poster.includes('data:image') || existing.poster.includes('poster-not-found') || !existing.poster.includes('image.tmdb.org')) && incoming.poster && incoming.poster.includes('image.tmdb.org')) {
+          existing.poster = incoming.poster;
+        } else if (!existing.poster && incoming.poster) {
+          existing.poster = incoming.poster;
+        }
 
-      // Union genres
-      existing.genres = Array.from(new Set([...(existing.genres || []), ...(cp.genres || [])])).filter(Boolean);
-      existing.studio = 'Cinemark / Cinépolis';
-    } else {
-      mergedMap.set(key, {
-        ...cp,
-        normalizedKey: key,
-        theaters: [...cp.theaters]
-      });
+        // Prefer richer synopsis
+        if ((!existing.synopsis || existing.synopsis.startsWith('Sin sinopsis')) && incoming.synopsis && !incoming.synopsis.startsWith('Sin sinopsis')) {
+          existing.synopsis = incoming.synopsis;
+        }
+
+        if ((existing.director === 'N/A' || !existing.director) && incoming.director && incoming.director !== 'N/A') {
+          existing.director = incoming.director;
+        }
+
+        // Union genres and chains
+        existing.genres = Array.from(new Set([...(existing.genres || []), ...(incoming.genres || [])])).filter(Boolean);
+        const chainNames = Array.from(new Set(existing.theaters.map(t => t.chainName)));
+        existing.studio = chainNames.join(' / ');
+      } else {
+        mergedMap.set(key, {
+          ...incoming,
+          normalizedKey: key,
+          theaters: [...incoming.theaters]
+        });
+      }
     }
   }
 
   const merged = Array.from(mergedMap.values());
-  // Sort movies by title
   merged.sort((a, b) => a.title.localeCompare(b.title));
 
   return merged;
 }
 
 export async function scrapeAll() {
-  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis) ===');
-  const [cinemarkMovies, cinepolisMovies] = await Promise.all([
+  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM Cinemas) ===');
+  const [cinemarkMovies, cinepolisMovies, ccmMovies] = await Promise.all([
     scrapeCinemark(),
-    scrapeCinepolis()
+    scrapeCinepolis(),
+    scrapeCcm()
   ]);
 
-  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies);
+  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies);
   const outDir = path.resolve(__dirname, '../src/data');
   const outFile = path.join(outDir, 'movies-data.json');
   fs.writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf-8');
@@ -98,12 +104,12 @@ export async function scrapeAll() {
 }
 
 if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
-  // If arguments provide --merge-only, just merge existing json files
   if (process.argv.includes('--merge-only')) {
     const dataDir = path.resolve(__dirname, '../src/data');
     const cm = JSON.parse(fs.readFileSync(path.join(dataDir, 'cinemark-data.json'), 'utf8'));
     const cp = JSON.parse(fs.readFileSync(path.join(dataDir, 'cinepolis-data.json'), 'utf8'));
-    const merged = mergeDatasets(cm, cp);
+    const ccm = JSON.parse(fs.readFileSync(path.join(dataDir, 'ccm-data.json'), 'utf8'));
+    const merged = mergeDatasets(cm, cp, ccm);
     fs.writeFileSync(path.join(dataDir, 'movies-data.json'), JSON.stringify(merged, null, 2), 'utf8');
     console.log(`Merged ${merged.length} movies to movies-data.json`);
   } else {

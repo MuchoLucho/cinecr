@@ -973,10 +973,50 @@
     "normalizedKey": "caballosalvajenueve"
   },
   {
+    "id": "ccm-95",
+    "normalizedKey": "cineentrelineas",
+    "title": "Cine entre lineas",
+    "originalTitle": "Cine entre lineas",
+    "studio": "CCM Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "2h 0m",
+    "director": "N/A",
+    "genres": [
+      "Drama"
+    ],
+    "poster": "https://www.ccmcinemas.com/images/posters/400_95.jpg",
+    "synopsis": "Un espacio para disfrutar de peliculas basadas en libros.",
+    "theaters": [
+      {
+        "complexId": "ccm-plaza-mayor",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM Plaza Mayor",
+        "province": "San José",
+        "locationDetail": "Rohrmoser, Plaza Mayor",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "113609",
     "title": "Clayface",
     "originalTitle": "Clayface",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -984,7 +1024,8 @@
     "director": "James  Watkins",
     "genres": [
       "Terror",
-      "Suspenso"
+      "Suspenso",
+      "Cine"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
     "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
@@ -1455,6 +1496,48 @@
             ]
           }
         ]
+      },
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-carlos",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Carlos",
+        "province": "Alajuela",
+        "locationDetail": "Ciudad Quesada, San Carlos",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "clayface"
@@ -1463,7 +1546,7 @@
     "id": "113516",
     "title": "Como robar un banco",
     "originalTitle": "Como robar un banco",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -1473,7 +1556,8 @@
       "Accion",
       "Acción",
       "Comedia",
-      "Thriller"
+      "Thriller",
+      "Cine"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
     "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
@@ -2499,9 +2583,163 @@
             ]
           }
         ]
+      },
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-carlos",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Carlos",
+        "province": "Alajuela",
+        "locationDetail": "Ciudad Quesada, San Carlos",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "12:25",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:25",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "comorobarbanco"
+  },
+  {
+    "id": "ccm-94",
+    "normalizedKey": "conciertoplanchaydespecho",
+    "title": "Concierto Plancha y Despecho",
+    "originalTitle": "Concierto Plancha y Despecho",
+    "studio": "CCM Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "2h 0m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://www.ccmcinemas.com/images/posters/400_94.jpg",
+    "synopsis": "Concierto de Plancha y despecho en el Cine\n\nVen a disfrutar de un evento especial y único,en el que podrás disfrutar los mejores éxitos de Plancha y Despecho,en la voz de Yecson Carvajal,en vivo en el Cine.",
+    "theaters": [
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-14"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "cpl-coyotevsacme",
@@ -2578,7 +2816,7 @@
     "id": "113989",
     "title": "Ebenezer fantasmas de Navidad",
     "originalTitle": "Ebenezer fantasmas de Navidad ",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -2587,7 +2825,8 @@
     "genres": [
       "Fantasia",
       "Drama",
-      "Ciencia ficción"
+      "Ciencia ficción",
+      "Comedia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
@@ -4299,6 +4538,227 @@
             ]
           }
         ]
+      },
+      {
+        "complexId": "ccm-plaza-mayor",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM Plaza Mayor",
+        "province": "San José",
+        "locationDetail": "Rohrmoser, Plaza Mayor",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-carlos",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Carlos",
+        "province": "Alajuela",
+        "locationDetail": "Ciudad Quesada, San Carlos",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
@@ -4878,7 +5338,7 @@
     "id": "113899",
     "title": "El Gato con Sombrero",
     "originalTitle": "El Gato con Sombrero",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -4886,7 +5346,8 @@
     "director": "Alessandro  Carloni",
     "genres": [
       "Animada",
-      "Animado"
+      "Animado",
+      "Animación"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
@@ -6042,6 +6503,281 @@
             ]
           }
         ]
+      },
+      {
+        "complexId": "ccm-plaza-mayor",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM Plaza Mayor",
+        "province": "San José",
+        "locationDetail": "Rohrmoser, Plaza Mayor",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "12:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:55",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "3D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-carlos",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Carlos",
+        "province": "Alajuela",
+        "locationDetail": "Ciudad Quesada, San Carlos",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:20",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "3D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "gatosombrero"
@@ -6472,7 +7208,7 @@
     "id": "113646",
     "title": "Godzilla Minus Zero",
     "originalTitle": "Godzilla Minus Zero",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -6482,7 +7218,8 @@
       "Accion",
       "Drama",
       "Acción",
-      "Ciencia ficción"
+      "Ciencia ficción",
+      "Ciencia Ficción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
@@ -7732,6 +8469,259 @@
             ]
           }
         ]
+      },
+      {
+        "complexId": "ccm-plaza-mayor",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM Plaza Mayor",
+        "province": "San José",
+        "locationDetail": "Rohrmoser, Plaza Mayor",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-15"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:25",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:20",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:25",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:25",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-carlos",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Carlos",
+        "province": "Alajuela",
+        "locationDetail": "Ciudad Quesada, San Carlos",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:20",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "17:35",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:40",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:10",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:25",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "godzillaminuszero"
@@ -7740,14 +8730,15 @@
     "id": "113840",
     "title": "Hunger Games 6 Amanecer",
     "originalTitle": "Hunger Games 6 Amanecer ",
-    "studio": "Cinemark",
+    "studio": "Cinemark / CCM Cinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
     "duration": "2h 40m",
     "director": "Francis  Lawrence",
     "genres": [
-      "Drama"
+      "Drama",
+      "Ciencia Ficción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
     "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
@@ -7906,6 +8897,89 @@
           },
           {
             "format": "XD",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-plaza-mayor",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM Plaza Mayor",
+        "province": "San José",
+        "locationDetail": "Rohrmoser, Plaza Mayor",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-carlos",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Carlos",
+        "province": "Alajuela",
+        "locationDetail": "Ciudad Quesada, San Carlos",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
             "language": "SUB",
             "times": [
               {
@@ -8237,6 +9311,60 @@
     "normalizedKey": "residentevilnochecero"
   },
   {
+    "id": "ccm-101",
+    "normalizedKey": "sensatezysentimientos",
+    "title": "Sensatez y Sentimientos",
+    "originalTitle": "Sense and Sensibility",
+    "studio": "CCM Cinemas",
+    "rating": "TP",
+    "ratingBadgeClass": "badge-green",
+    "score": "8.0",
+    "duration": "2h 15m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/m9uBQtgUcFdY5hBWdTlgEypkcDq.jpg",
+    "synopsis": "La señora Dashwood, Elinor, Marianne y Margaret, son tres hermanas del segundo matrimonio del señor Dashwood. Cuando este muere, deja toda la herencia al hijo de su primer matrimonio. Las Dashwood, se quedan un corto tiempo en la que era su casa, donde conocen a Edward Ferrars, cuñado de su hermanastro del cual Elinor se enamora. Cuando se trasladan a una casa en el campo, Marianne se enamora de John Willoughby, que vive cerca de su nueva casa. Durante su estancia allí ella aprenderá a madurar acerca de los conceptos del amor.",
+    "theaters": [
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cpl-shrek25aniversario",
     "normalizedKey": "shrek25aniversario",
     "title": "Shrek 25 Aniversario",
@@ -8323,6 +9451,54 @@
               {
                 "time": "15:55",
                 "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ccm-80",
+    "normalizedKey": "streetfighter",
+    "title": "STREET FIGHTER",
+    "originalTitle": "STREET FIGHTER",
+    "studio": "CCM Cinemas",
+    "rating": "M12",
+    "ratingBadgeClass": "badge-amber",
+    "score": "8.0",
+    "duration": "2h 0m",
+    "director": "N/A",
+    "genres": [
+      "Cine"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
+    "synopsis": "En 1993, los distanciados luchadores Ryu y Ken Masters se ven obligados a volver a la acción cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros.",
+    "theaters": [
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:30",
+                "date": "2026-11-11"
+              },
+              {
+                "time": "12:35",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
               }
             ]
           }
@@ -8693,7 +9869,7 @@
     "id": "113816",
     "title": "Wildwood El Bosque Salvaje",
     "originalTitle": "Wildwood El Bosque Salvaje",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -8702,7 +9878,8 @@
     "genres": [
       "Animada",
       "Animado",
-      "Aventura"
+      "Aventura",
+      "Acción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
     "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
@@ -9254,6 +10431,27 @@
             ]
           }
         ]
+      },
+      {
+        "complexId": "ccm-plaza-mayor",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM Plaza Mayor",
+        "province": "San José",
+        "locationDetail": "Rohrmoser, Plaza Mayor",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-11"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "wildwoodbosquesalvaje"
@@ -9262,7 +10460,7 @@
     "id": "114001",
     "title": "Yo soy Rocky",
     "originalTitle": "Yo soy Rocky",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
@@ -10287,6 +11485,72 @@
               {
                 "time": "20:00",
                 "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-plaza-mayor",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM Plaza Mayor",
+        "province": "San José",
+        "locationDetail": "Rohrmoser, Plaza Mayor",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "ccm-san-ramon",
+        "chainId": "ccm",
+        "chainName": "CCM Cinemas",
+        "complexName": "CCM San Ramón",
+        "province": "Alajuela",
+        "locationDetail": "San Ramón, Alajuela",
+        "website": "https://www.ccmcinemas.com",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "17:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-18"
               }
             ]
           }

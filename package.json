@@ -10,6 +10,7 @@
     "scrape": "node scripts/scrape.js",
     "scrape:cinemark": "node scripts/scrape-cinemark.js",
     "scrape:cinepolis": "node scripts/scrape-cinepolis.js",
+    "scrape:ccm": "node scripts/scrape-ccm.js",
     "scrape:all": "node scripts/scrape.js"
   },
   "dependencies": {
