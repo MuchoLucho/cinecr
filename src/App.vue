@@ -628,10 +628,6 @@ const openSessionModal = (movie, complex, group, session) => {
                       >
                         {{ group.language === 'SUB' ? 'SUBTITULADA' : 'DOBLADA' }}
                       </span>
-
-                      <span style="font-size: 0.78rem; color: var(--md-sys-color-on-surface-variant);">
-                        {{ group.priceFormatted }}
-                      </span>
                     </div>
 
                     <div class="chip-row">
@@ -684,7 +680,6 @@ const openSessionModal = (movie, complex, group, session) => {
                   <th>Provincia</th>
                   <th>Formato</th>
                   <th>Idioma</th>
-                  <th style="text-align: right;">Precio</th>
                   <th style="text-align: center;">Acción</th>
                 </tr>
               </thead>
@@ -721,9 +716,6 @@ const openSessionModal = (movie, complex, group, session) => {
                     >
                       {{ item.group.language === 'SUB' ? 'Subtitulada' : 'Doblada' }}
                     </span>
-                  </td>
-                  <td style="text-align: right; font-weight: 500;">
-                    {{ item.group.priceFormatted }}
                   </td>
                   <td style="text-align: center;">
                     <button
@@ -794,14 +786,8 @@ const openSessionModal = (movie, complex, group, session) => {
               </div>
             </div>
             <div>
-              <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Precio estimado</div>
-              <div style="font-size: 1.25rem; font-weight: 700;">
-                {{ activeSession.group.priceFormatted }}
-              </div>
-            </div>
-            <div>
               <div style="font-size: 0.75rem; color: var(--md-sys-color-on-surface-variant);">Disponibilidad</div>
-              <div style="font-size: 0.9rem; font-weight: 500; display: flex; align-items: center; gap: 4px;">
+              <div style="font-size: 0.9rem; font-weight: 500; display: flex; align-items: center; gap: 4px; margin-top: 4px;">
                 <span
                   class="material-symbols-outlined sm"
                   :style="{ color: activeSession.session.occupancy === 'Alta' ? '#f59e0b' : '#10b981' }"

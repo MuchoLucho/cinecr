@@ -65,7 +65,8 @@ export async function scrapeCinemark() {
         const rawMovies = dayEntry.movies || [];
 
         for (const rawMovie of rawMovies) {
-          const movieId = rawMovie.film_HO_code || rawMovie.corporate_film_id || rawMovie.title.toLowerCase().replace(/[^a-z0-9]/g, '-');
+          // Group by corporate_film_id (same movie across regular/VIP complexes) or fallback to normalized title
+          const movieId = rawMovie.corporate_film_id || rawMovie.title.toLowerCase().replace(/[^a-z0-9]/g, '-');
           
           if (!movieMap.has(movieId)) {
             movieMap.set(movieId, {
@@ -118,8 +119,6 @@ export async function scrapeCinemark() {
                 format,
                 language,
                 auditorium: version.film_HOPK || '1',
-                price: 4500,
-                priceFormatted: '₡4,500',
                 times: sessions
               });
             }
