@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -34,59 +35,6 @@ function normalizeTitleKey(str) {
     .toLowerCase()
     .replace(/\b(la|el|los|las|de|del|con|un|una|unos|unas|the|a|an|en|parte)\b/g, '')
     .replace(/[^a-z0-9]/g, '');
-}
-
-/**
- * Query TMDb Search & Movie Details API for poster, synopsis, and runtime
- */
-async function fetchTmdbDetails(title) {
-  if (!TMDB_TOKEN) return null;
-  try {
-    const cleanTitle = title
-      .replace(/\b(2D|3D|XD|VIP|DOB|SUB|PRE|IMAX)\b/gi, '')
-      .replace(/[-:]/g, ' ')
-      .trim();
-    const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
-    const res = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${TMDB_TOKEN}`,
-        'Accept': 'application/json'
-      }
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const result = (data.results || []).find(m => m.poster_path || m.overview);
-    if (result) {
-      let duration = null;
-      if (result.id) {
-        try {
-          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
-            headers: {
-              'Authorization': `Bearer ${TMDB_TOKEN}`,
-              'Accept': 'application/json'
-            }
-          });
-          if (detailRes.ok) {
-            const detail = await detailRes.json();
-            if (detail.runtime && detail.runtime > 0) {
-              duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-            }
-          }
-        } catch {
-          // ignore detail error
-        }
-      }
-      return {
-        tmdbId: result.id,
-        poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-        synopsis: result.overview ? result.overview.trim() : null,
-        duration
-      };
-    }
-  } catch {
-    // shortcut: silent fallback on network/rate limit
-  }
-  return null;
 }
 
 /**
@@ -155,12 +103,6 @@ export async function scrapeCitiCinemas() {
       const title = titleMatch[1].replace(/<[^>]+>/g, '').trim();
       if (!title) continue;
 
-      const posterMatch = mb.match(/<img[^>]+src="([^"]+)"/i);
-      const poster = posterMatch ? posterMatch[1] : null;
-
-      const pMatch = mb.match(/<p>([\s\S]*?)<\/p>/i);
-      const synopsis = pMatch ? pMatch[1].replace(/<[^>]+>/g, '').trim() : '';
-
       const timeRegex = /<span class="time[^"]*">\s*([\d:]+\s*(?:AM|PM))\s*<\/span>\s*<span class="threeD[^"]*">\s*([^<]+)\s*<\/span>/gi;
       const timeMatches = [...mb.matchAll(timeRegex)];
 
@@ -169,8 +111,8 @@ export async function scrapeCitiCinemas() {
         moviesMap.set(key, {
           title,
           originalTitle: title,
-          poster,
-          synopsis,
+          poster: null,
+          synopsis: 'Sin sinopsis disponible.',
           sessions: []
         });
       }
@@ -235,10 +177,12 @@ export async function scrapeCitiCinemas() {
       id: `citicinemas-${key}`,
       title: item.title,
       originalTitle: item.originalTitle,
-      synopsis: item.synopsis || `Funciones de ${item.title} en CitiCinemas Plaza Grecia.`,
+      synopsis: item.synopsis,
       poster: item.poster,
       rating: 'TP',
       duration: 'N/A',
+      score: null,
+      director: null,
       genres: ['Cine'],
       theaters: [
         {
@@ -263,13 +207,14 @@ export async function scrapeCitiCinemas() {
     const tmdbData = await fetchTmdbDetails(movie.title);
     if (tmdbData) {
       if (tmdbData.poster) movie.poster = tmdbData.poster;
-      if (tmdbData.synopsis && (!movie.synopsis || movie.synopsis.startsWith('Funciones de'))) {
-        movie.synopsis = tmdbData.synopsis;
-      }
+      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
       if (tmdbData.duration) movie.duration = tmdbData.duration;
-      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration})`);
+      if (tmdbData.score) movie.score = tmdbData.score;
+      if (tmdbData.director) movie.director = tmdbData.director;
+      if (tmdbData.genres?.length) movie.genres = tmdbData.genres;
+      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration}, ★ ${movie.score || 'N/A'})`);
     } else {
-      console.log(`  - Local CitiCinemas data: ${movie.title} (${movie.duration})`);
+      console.log(`  - No TMDb found: ${movie.title} (using placeholder artwork and no cinema text)`);
     }
   }
 

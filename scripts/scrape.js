@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 import { scrapeCinemark } from './scrape-cinemark.js';
 import { scrapeCinepolis } from './scrape-cinepolis.js';
 import { scrapeCcm } from './scrape-ccm.js';
@@ -279,6 +280,30 @@ export function mergeDatasets(...datasets) {
   return merged;
 }
 
+export async function enrichMergedWithTmdb(mergedMovies) {
+  console.log(`Enriching ${mergedMovies.length} movies strictly from TMDb (no cinema metadata)...`);
+  for (const movie of mergedMovies) {
+    const tmdb = await fetchTmdbDetails(movie.title, movie.originalTitle);
+    if (tmdb) {
+      movie.poster = tmdb.poster;
+      movie.synopsis = tmdb.synopsis;
+      movie.duration = tmdb.duration;
+      movie.score = tmdb.score;
+      movie.director = tmdb.director;
+      if (tmdb.genres && tmdb.genres.length > 0) {
+        movie.genres = cleanGenres(tmdb.genres, movie.normalizedKey);
+      }
+    } else {
+      // If not in TMDb, do not keep proprietary cinema descriptions or artwork
+      movie.poster = null;
+      movie.synopsis = 'Sin sinopsis disponible.';
+      movie.duration = 'N/A';
+      movie.score = null;
+      movie.director = 'N/A';
+    }
+  }
+}
+
 const STATUS_FILE = path.resolve(__dirname, '../src/data/scraping-status.json');
 
 function loadStatus() {
@@ -387,6 +412,7 @@ export async function scrapeAll() {
   ]);
 
   const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies, sanPedroMovies, studioMovies, citiMovies);
+  await enrichMergedWithTmdb(merged);
   const outDir = path.resolve(__dirname, '../src/data');
   const outFile = path.join(outDir, 'movies-data.json');
   fs.writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf-8');
@@ -411,6 +437,7 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
     const studio = JSON.parse(fs.readFileSync(path.join(dataDir, 'studio-data.json'), 'utf8'));
     const citicinemas = JSON.parse(fs.readFileSync(path.join(dataDir, 'citicinemas-data.json'), 'utf8'));
     const merged = mergeDatasets(cm, cp, ccm, nova, magaly, sanpedro, studio, citicinemas);
+    await enrichMergedWithTmdb(merged);
     fs.writeFileSync(path.join(dataDir, 'movies-data.json'), JSON.stringify(merged, null, 2), 'utf8');
     console.log(`Merged ${merged.length} movies to movies-data.json`);
 

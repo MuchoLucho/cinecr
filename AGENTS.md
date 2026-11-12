@@ -66,6 +66,17 @@ This document defines the architecture, design principles, conventions, and oper
   - `niños`, `infantil`, `familiar` → `Familiar`
 - Ensure all tags are unique and deduplicated.
 
+### Rule 3.5: TMDb Exclusive Metadata & Cinema Copyright Protection
+- **No cinema proprietary text or artwork**: Never scrape or persist cinema promotional blurbs, synopses, or cinema-hosted poster artwork. Cinema websites must solely be queried for factual showtime schedules (dates, times, room format, language audio) and theater/complex directory details (name, province, address, official ticketing link).
+- **TMDb as exclusive metadata source**: All rich movie metadata (posters, synopses, runtimes, scores, directors, genres) must originate strictly from The Movie Database (TMDb) via `scripts/tmdb.js`.
+- **Strict fallback when not in TMDb**: If a title, festival piece, or special event is not in TMDb:
+  - `poster: null` (Frontend dynamically displays SVG fallback artwork).
+  - `synopsis: 'Sin sinopsis disponible.'` (Never copy cinema synopsis).
+  - `score: null` (Star badge is hidden).
+  - `duration: 'N/A'`.
+  - `director: 'N/A'`.
+- **Zero fake scores**: Eliminate all hardcoded dummy scores (such as `'8.0'`). Scores must reflect real TMDb `vote_average` or remain `null`.
+
 ---
 
 ## 4. GitHub Actions & Deployment Rules

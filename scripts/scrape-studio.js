@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -34,62 +35,6 @@ function normalizeTitleKey(str) {
     .toLowerCase()
     .replace(/\b(la|el|los|las|de|del|con|un|una|unos|unas|the|a|an|en|parte|cine para todos)\b/g, '')
     .replace(/[^a-z0-9]/g, '');
-}
-
-/**
- * Query TMDb Search & Movie Details API for poster, synopsis, and runtime
- */
-async function fetchTmdbDetails(title, originalTitle) {
-  if (!TMDB_TOKEN) return null;
-  const queries = [title, originalTitle].filter(Boolean);
-  for (const q of queries) {
-    try {
-      const cleanTitle = q
-        .replace(/\b(2D|3D|XD|VIP|DOB|SUB|PRE|IMAX|CINE PARA TODOS)\b/gi, '')
-        .replace(/[-:]/g, ' ')
-        .trim();
-      const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
-      const res = await fetch(url, {
-        headers: {
-          'Authorization': `Bearer ${TMDB_TOKEN}`,
-          'Accept': 'application/json'
-        }
-      });
-      if (!res.ok) continue;
-      const data = await res.json();
-      const result = (data.results || []).find(m => m.poster_path || m.overview);
-      if (result) {
-        let duration = null;
-        if (result.id) {
-          try {
-            const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
-              headers: {
-                'Authorization': `Bearer ${TMDB_TOKEN}`,
-                'Accept': 'application/json'
-              }
-            });
-            if (detailRes.ok) {
-              const detail = await detailRes.json();
-              if (detail.runtime && detail.runtime > 0) {
-                duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-              }
-            }
-          } catch {
-            // ignore detail error
-          }
-        }
-        return {
-          tmdbId: result.id,
-          poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-          synopsis: result.overview ? result.overview.trim() : null,
-          duration
-        };
-      }
-    } catch {
-      // shortcut: silent fallback on network/rate limit
-    }
-  }
-  return null;
 }
 
 /**
@@ -199,43 +144,30 @@ export async function scrapeStudio() {
       return g;
     });
 
-    // Extract fallback metadata from rawMovie
     let originalTitle = title;
-    let fallbackDuration = 'N/A';
     let rating = 'TP';
-    let synopsis = `Funciones de ${title} en Studio Cinemas City Place Santa Ana.`;
 
-    // Try finding detail in types -> movies
     if (Array.isArray(rawMovie.types)) {
       for (const t of rawMovie.types) {
         if (Array.isArray(t.movies) && t.movies[0]) {
           const mInfo = t.movies[0];
           if (mInfo.original_title_info_movie_bp) originalTitle = mInfo.original_title_info_movie_bp;
-          if (mInfo.duration_info_movie_bp) {
-            const mins = parseInt(mInfo.duration_info_movie_bp, 10);
-            if (!isNaN(mins) && mins > 0) {
-              fallbackDuration = `${Math.floor(mins / 60)}h ${mins % 60}m`;
-            }
-          }
           if (mInfo.classification_info_movie_bp) rating = mInfo.classification_info_movie_bp;
           break;
         }
       }
     }
 
-    if (Array.isArray(rawMovie.contents)) {
-      const descContent = rawMovie.contents.find(c => c.h1_description_content_tb && c.h1_description_content_tb.length > 20);
-      if (descContent) synopsis = descContent.h1_description_content_tb;
-    }
-
     const movie = {
       id: `studio-${normalizeTitleKey(title)}`,
       title,
       originalTitle,
-      synopsis,
+      synopsis: 'Sin sinopsis disponible.',
       poster: null,
       rating,
-      duration: fallbackDuration,
+      duration: 'N/A',
+      score: null,
+      director: null,
       genres: ['Cine'],
       theaters: [
         {
@@ -260,13 +192,14 @@ export async function scrapeStudio() {
     const tmdbData = await fetchTmdbDetails(movie.title, movie.originalTitle);
     if (tmdbData) {
       if (tmdbData.poster) movie.poster = tmdbData.poster;
-      if (tmdbData.synopsis && (!movie.synopsis || movie.synopsis.startsWith('Funciones de'))) {
-        movie.synopsis = tmdbData.synopsis;
-      }
+      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
       if (tmdbData.duration) movie.duration = tmdbData.duration;
-      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration})`);
+      if (tmdbData.score) movie.score = tmdbData.score;
+      if (tmdbData.director) movie.director = tmdbData.director;
+      if (tmdbData.genres?.length) movie.genres = tmdbData.genres;
+      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration}, ★ ${movie.score || 'N/A'})`);
     } else {
-      console.log(`  - Local Studio data: ${movie.title} (${movie.duration})`);
+      console.log(`  - No TMDb found: ${movie.title} (using placeholder artwork and no cinema text)`);
     }
   }
 

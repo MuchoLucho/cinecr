@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -34,74 +35,6 @@ function normalizeTitleKey(str) {
     .toLowerCase()
     .replace(/\b(la|el|los|las|de|del|con|un|una|unos|unas|the|a|an|en|parte)\b/g, '')
     .replace(/[^a-z0-9]/g, '');
-}
-
-const TITLE_MAP = {
-  'ping pong: el triunfo': 'Ping Pong: The Triumph',
-  'ping pong el triunfo': 'Ping Pong: The Triumph'
-};
-
-/**
- * Query TMDb Search & Movie Details API for poster, synopsis, and runtime
- */
-async function fetchTmdbDetails(title) {
-  if (!TMDB_TOKEN) return null;
-  try {
-    const lookupTitle = TITLE_MAP[title.toLowerCase().trim()] || title;
-    const cleanTitle = lookupTitle
-      .replace(/\b(2D|3D|XD|VIP|DOB|SUB|PRE|IMAX|Gratuito)\b/gi, '')
-      .replace(/[-:]/g, ' ')
-      .trim();
-    const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
-    const res = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${TMDB_TOKEN}`,
-        'Accept': 'application/json'
-      }
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const result = (data.results || []).find(m => m.poster_path || m.overview);
-    if (result) {
-      let duration = null;
-      let score = null;
-      let director = null;
-      if (result.id) {
-        try {
-          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX&append_to_response=credits`, {
-            headers: {
-              'Authorization': `Bearer ${TMDB_TOKEN}`,
-              'Accept': 'application/json'
-            }
-          });
-          if (detailRes.ok) {
-            const detail = await detailRes.json();
-            if (detail.runtime && detail.runtime > 0) {
-              duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-            }
-            if (detail.vote_average && detail.vote_average > 0) {
-              score = detail.vote_average.toFixed(1);
-            }
-            const dir = (detail.credits?.crew || []).find(c => c.job === 'Director');
-            if (dir?.name) director = dir.name;
-          }
-        } catch {
-          // ignore detail error
-        }
-      }
-      return {
-        tmdbId: result.id,
-        poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-        synopsis: result.overview ? result.overview.trim() : null,
-        duration,
-        score,
-        director
-      };
-    }
-  } catch {
-    // shortcut: silent fallback on network/rate limit
-  }
-  return null;
 }
 
 /**
@@ -169,10 +102,6 @@ export async function scrapeMagaly() {
         const title = rawTitle.split('\n')[0].trim();
         if (!title) continue;
 
-        // Poster
-        const posterMatch = card.match(/<img[^>]+src="([^"]+)"/);
-        const poster = posterMatch ? posterMatch[1] : null;
-
         // Metadata spans: [Rating, Duration, Language]
         const metaBlock = card.match(/<div class="fs-5c mb-0 opacity-75[^>]*>([\s\S]*?)<\/div>/);
         const spans = metaBlock
@@ -180,23 +109,8 @@ export async function scrapeMagaly() {
           : [];
 
         const rating = spans[0] || 'TP';
-        let duration = 'N/A';
-        if (spans[1]) {
-          const minsMatch = spans[1].match(/(\d+)/);
-          if (minsMatch) {
-            const mins = parseInt(minsMatch[1], 10);
-            if (!isNaN(mins) && mins > 0) {
-              duration = `${Math.floor(mins / 60)}h ${mins % 60}m`;
-            }
-          }
-        }
-
         const langStr = spans[2] || 'Subtitulada';
         const language = langStr.toLowerCase().includes('doblada') ? 'DOB' : 'SUB';
-
-        // Synopsis
-        const pMatch = card.match(/<div class="fs-5c mt-3">[\s\S]*?<p>([\s\S]*?)<\/p>/);
-        const synopsis = pMatch ? pMatch[1].replace(/<[^>]+>/g, '').trim() : '';
 
         // Showtimes
         const funcMatches = [...card.matchAll(/<a[^>]+class="btn-warning2[^>]*>([\s\S]*?)<\/a>/g)];
@@ -223,11 +137,13 @@ export async function scrapeMagaly() {
             id: `magaly-${key}`,
             title,
             originalTitle: title,
-            poster,
+            poster: null,
             rating,
-            duration,
+            duration: 'N/A',
+            score: null,
+            director: null,
             language,
-            synopsis,
+            synopsis: 'Sin sinopsis disponible.',
             showtimes: []
           });
         }
@@ -252,10 +168,12 @@ export async function scrapeMagaly() {
       id: item.id,
       title: item.title,
       originalTitle: item.originalTitle,
-      synopsis: item.synopsis || `Funciones de ${item.title} en Cine Magaly.`,
+      synopsis: item.synopsis,
       poster: item.poster,
       rating: item.rating,
       duration: item.duration,
+      score: item.score,
+      director: item.director,
       genres: ['Cine', 'Independiente'],
       theaters: [
         {
@@ -286,15 +204,14 @@ export async function scrapeMagaly() {
     const tmdbData = await fetchTmdbDetails(movie.title);
     if (tmdbData) {
       if (tmdbData.poster) movie.poster = tmdbData.poster;
-      if (tmdbData.synopsis && (!movie.synopsis || movie.synopsis.startsWith('Funciones de'))) {
-        movie.synopsis = tmdbData.synopsis;
-      }
+      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
       if (tmdbData.duration) movie.duration = tmdbData.duration;
       if (tmdbData.score) movie.score = tmdbData.score;
       if (tmdbData.director) movie.director = tmdbData.director;
-      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration})`);
+      if (tmdbData.genres?.length) movie.genres = tmdbData.genres;
+      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration}, ★ ${movie.score || 'N/A'})`);
     } else {
-      console.log(`  - Local Magaly data: ${movie.title} (${movie.duration})`);
+      console.log(`  - No TMDb found: ${movie.title} (using placeholder artwork and no cinema text)`);
     }
   }
 

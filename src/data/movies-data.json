@@ -7,14 +7,15 @@
     "studio": "Cinépolis",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
-    "duration": "1h 40m",
-    "director": "N/A",
+    "score": "5.3",
+    "duration": "1h 44m",
+    "director": "Céline Rouzet",
     "genres": [
-      "Drama"
+      "Drama",
+      "Terror"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/kfUKP5IgzgLQyQD1MDt99yq9Af0.jpg",
-    "synopsis": "Everyone knows the name of Samuel Paty, but few people really know his story. On October 16, 2020, Samuel Paty, professor of History-Geography, was murdered at the end of his college. In the light of investigations and trials, this film looks back on his last eleven days, and the gear that led to his tragic death.",
+    "poster": "https://image.tmdb.org/t/p/w500/7vsZi00TVXkWBqqDhSAMEhlxJSL.jpg",
+    "synopsis": "Philémon no es un adolescente como los demás. Acaba de mudarse con su familia a un tranquilo barrio de las afueras donde intenta hacer todo lo posible por integrarse. Hasta el día en que se enamora de su vecina Camila y sus evidentes diferencias se hacen difíciles de seguir ocultando.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -151,15 +152,14 @@
     "studio": "Cinépolis",
     "rating": "TP12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "1h 53m",
-    "director": "N/A",
+    "score": "6.3",
+    "duration": "1h 32m",
+    "director": "Denis Imbert",
     "genres": [
-      "Drama",
-      "Comedia"
+      "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/4FaoBpDtzhZk9R907epSN5WCelq.jpg",
-    "synopsis": "Fred and Adam have nothing in common. Yet, they will meet while walking the Way of St. James as a form of spiritual path.",
+    "poster": "https://image.tmdb.org/t/p/w500/bbn4xHSmzOOQbsaj14DIBrPMSYo.jpg",
+    "synopsis": "Pierre es un célebre escritor con una inclinación por las experiencias extremas y los viajes en solitario. Siempre ha hecho todo a su manera, cuando le convenía y con quien quería pero cada vez que las restricciones amenazaban su libertad, hacía lo que mejor sabe hacer: huir. Una tarde de borrachera, trepa por la fachada de un edificio y cae varios pisos. El accidente lo deja en coma profundo. Cuando sale de él, Pierre apenas puede mantenerse en pie. Y en contra de los consejos de todos, decide caminar solo por Francia, desde la Provenza hasta el Mont Saint Michel, a lo largo de senderos olvidados a través de algunas de las regiones más ásperas, inhóspitas y hermosas de Francia. Basado en hechos reales.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -300,15 +300,15 @@
     "studio": "Cinépolis",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
-    "duration": "1h 46m",
-    "director": "N/A",
+    "score": "6.1",
+    "duration": "1h 31m",
+    "director": "Pascal Bonitzer",
     "genres": [
-      "Comedia",
-      "Suspenso"
+      "Drama",
+      "Comedia"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/tCWAhDOglkW7ChhYvpRnMlLURTJ.jpg",
-    "synopsis": "El novelista misántropo François escribe apasionantes historias de crímenes -una mezcla de Agatha Christie y La Pimpinela Escarlata-, pero fuera del mundo imaginario de capa y espada de sus novelas, la vida dista mucho de ser emocionante. Su mujer, Colette, profesora de la Sorbona y experta mundialmente conocida en Alfred Hitchcock, está harta de ver a François sentado en su apartamento en pijama y añora la emoción de las películas clásicas que ve con sus alumnos. Cuando Colette empieza a sospechar que su extravagante vecino ha asesinado a su esposa, la tranquila vida de la pareja da un vuelco y su relación, que estaba estancada, resurge de golpe.",
+    "poster": "https://image.tmdb.org/t/p/w500/1D8on0AKvFxBGgyW05PW30Bn24N.jpg",
+    "synopsis": "Un día, André Masson, subastador de la famosa casa de subastas Scottie's, recibe una carta en la que se afirma que se ha encontrado un cuadro de Egon Schiele en la casa de un joven obrero de Mulhouse. Muy escéptico, acude al lugar y se ve obligado a afrontar los hechos: la obra es auténtica, una obra maestra desaparecida desde 1939, expoliada por los nazis. André ve en este descubrimiento la cumbre de su carrera, pero también el inicio de una batalla que podría ponerla en peligro. Afortunadamente, va a contar con la ayuda de su ex mujer y colega Bertina, y de su caprichosa aprendiz Aurore...",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -441,11 +441,12 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "6.9",
     "duration": "1h 44m",
-    "director": "N/A",
+    "director": "Stéphane Demoustier",
     "genres": [
-      "Drama"
+      "Drama",
+      "Historia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/18Z7I9LJjK5gm05R1Tx6mwcUo1g.jpg",
     "synopsis": "París, 1983. Un arquitecto danés totalmente desconocido gana por sorpresa el concurso para diseñar la Grande Arche de La Défense. Al aceptar el colosal encargo, este creador idealista se verá arrastrado a un despiadado laberinto político y burocrático, librando una batalla titánica contra la maquinaria del Estado francés para salvar su obra maestra.",
@@ -585,14 +586,14 @@
     "studio": "Cinépolis",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "1h 38m",
-    "director": "N/A",
+    "score": null,
+    "duration": "N/A",
+    "director": "Alexandre Hilaire",
     "genres": [
-      "Comedia"
+      "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/ws9wCKrqMsS700OOScv8L52wJMa.jpg",
-    "synopsis": "Elsa, a doctor, hides from the world the fact that she can see the dead and help them cross to the other side. Convinced that her gift leads to rejection, she has given up on love, retreating into solitude and her work. That is, until she meets Oscar - a dead man who doesn’t know he’s dead...",
+    "poster": "https://image.tmdb.org/t/p/w500/mXJdyw257EO3J2dvhgjAkt2yv9f.jpg",
+    "synopsis": "Sin sinopsis disponible.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -733,14 +734,15 @@
     "studio": "Cinépolis",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "1h 59m",
-    "director": "N/A",
+    "score": "6.3",
+    "duration": "1h 37m",
+    "director": "Morgan Simon",
     "genres": [
+      "Comedia",
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg",
-    "synopsis": "1985. Vincent, de casi 13 años, vive en las afueras de París en el seno de una familia de clase media, entre un hermano mayor distante y unos padres en conflicto constante. Aunque ya no es un niño pero tampoco un adulto, la película sigue sus reflexiones y dudas sobre la identidad, la amistad y la familia, así como sus interrogantes acerca de la religión, el deseo y el amor.",
+    "poster": "https://image.tmdb.org/t/p/w500/jJNSoRj5itqtgAFLBV3Dv0ICtye.jpg",
+    "synopsis": "En su piso de protección oficial de las afueras de París, Nicole, de 52 años, y su hijo, Serge, de 19, viven un amor fusional que florece a pesar de las adversidades de su vida cotidiana. Nicole está en paro, no consigue encontrar trabajo, la deuda de su tarjeta de crédito se va disparando y de repente se ve obligada a entregar al banco la chequera y la tarjeta pocos días antes de Navidad. La relación y la vida de madre e hijo dan un vuelco. Cuando toca fondo, Nicole vislumbra un rayo de esperanza al acercarse a la enigmática Norah, que regenta un café en la planta baja de su edificio… A veces, encuentras sentido a la vida a un tiro de piedra de tu casa. A veces, hay que buscar e ir construyendo la felicidad. Nicole atravesará el período más duro de su vida, un momento que la cambiará para siempre, como madre y como mujer. (FIRE!!)",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -873,12 +875,14 @@
     "id": "magaly-caballosalvajenueve",
     "title": "Caballo Salvaje Nueve",
     "originalTitle": "Caballo Salvaje Nueve",
-    "synopsis": "Poco antes del golpe de Estado chileno de 1973, los agentes de la CIA Chris (John Malkovich) y Lee (Sam Rockwell) son enviados desde Santiago a la Isla de Pascua por su jefe de oficina, MJ (Steve Buscemi). Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros se enfrentan a sus oscuros pasados y a las conspiraciones del presente, el nuevo vínculo de Chris con dos estudiantes rebeldes (Mariana di Girolamo y Ailín Salas) amenaza con dar un giro inesperado al viaje de todos a este remoto paraíso.",
+    "synopsis": "Poco antes del golpe de estado chileno de 1973, los agentes de la CIA Chris y Lee son enviados desde Santiago a la Isla de Pascua por su jefa de la oficina, MJ. Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros lidian con sus oscuros pasados ​​y conspiraciones actuales, el nuevo vínculo que Chris establece con un par de estudiantes rebeldes amenaza con desbaratar el viaje de todos a este remoto paraíso.",
     "poster": "https://image.tmdb.org/t/p/w500/ulvGcZer26aBaNG0s4IEJGyyLIq.jpg",
     "rating": "M15",
     "duration": "1h 57m",
     "genres": [
-      "Independiente"
+      "Comedia",
+      "Crimen",
+      "Suspenso"
     ],
     "theaters": [
       {
@@ -913,7 +917,9 @@
       }
     ],
     "ratingBadgeClass": "badge-orange",
-    "normalizedKey": "caballosalvajenueve"
+    "normalizedKey": "caballosalvajenueve",
+    "score": "8.1",
+    "director": "Martin McDonagh"
   },
   {
     "id": "ccm-95",
@@ -923,14 +929,14 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
-    "duration": "2h 0m",
+    "score": null,
+    "duration": "N/A",
     "director": "N/A",
     "genres": [
       "Drama"
     ],
-    "poster": "https://www.ccmcinemas.com/images/posters/400_95.jpg",
-    "synopsis": "Un espacio para disfrutar de peliculas basadas en libros.",
+    "poster": null,
+    "synopsis": "Sin sinopsis disponible.",
     "theaters": [
       {
         "complexId": "ccm-plaza-mayor",
@@ -962,12 +968,13 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Studio Cinemas / CitiCinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "7.4",
     "duration": "1h 49m",
-    "director": "James  Watkins",
+    "director": "James Watkins",
     "genres": [
       "Terror",
-      "Suspenso"
+      "Suspenso",
+      "Ciencia Ficción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
     "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
@@ -1597,12 +1604,12 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "6.9",
     "duration": "2h 2m",
-    "director": "David  Leitch",
+    "director": "David Leitch",
     "genres": [
       "Acción",
-      "Comedia",
+      "Crimen",
       "Suspenso"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
@@ -3415,12 +3422,12 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
-    "duration": "2h 0m",
+    "score": null,
+    "duration": "N/A",
     "director": "N/A",
     "genres": [],
-    "poster": "https://www.ccmcinemas.com/images/posters/400_94.jpg",
-    "synopsis": "Concierto de Plancha y despecho en el Cine\n\nVen a disfrutar de un evento especial y único,en el que podrás disfrutar los mejores éxitos de Plancha y Despecho,en la voz de Yecson Carvajal,en vivo en el Cine.",
+    "poster": null,
+    "synopsis": "Sin sinopsis disponible.",
     "theaters": [
       {
         "complexId": "ccm-san-ramon",
@@ -3453,13 +3460,14 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "8.2",
     "duration": "1h 43m",
-    "director": "N/A",
+    "director": "Dave Green",
     "genres": [
-      "Acción",
-      "Animación",
-      "Aventura"
+      "Comedia",
+      "Aventura",
+      "Familia",
+      "Animación"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/e4P8CIoffzsyjTm9e6U87Mng2CU.jpg",
     "synopsis": "Luego de que los productos Acme le fallan demasiadas veces en su tenaz búsqueda del Correcaminos, Wile E. Coyote decide contratar a un abogado especializado en vallas publicitarias para demandar a Acme Corporation.",
@@ -3523,15 +3531,12 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "8.6",
     "duration": "1h 55m",
-    "director": "Ti  West",
+    "director": "Ti West",
     "genres": [
       "Fantasía",
-      "Drama",
-      "Ciencia Ficción",
-      "Comedia",
-      "Independiente"
+      "Comedia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
@@ -7165,7 +7170,9 @@
     "rating": "TP+12",
     "duration": "2h 16m",
     "genres": [
-      "Independiente"
+      "Acción",
+      "Aventura",
+      "Ciencia Ficción"
     ],
     "theaters": [
       {
@@ -7192,7 +7199,9 @@
       }
     ],
     "ratingBadgeClass": "badge-amber",
-    "normalizedKey": "capitan"
+    "normalizedKey": "capitan",
+    "score": "7.7",
+    "director": "Joe Russo, Anthony Russo"
   },
   {
     "id": "112951",
@@ -7201,13 +7210,12 @@
     "studio": "Cinemark / Cinépolis / Nova Cinemas / Cinema San Pedro / CitiCinemas",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.5",
     "duration": "1h 41m",
-    "director": "David  Ayer",
+    "director": "David Ayer",
     "genres": [
-      "Acción",
-      "Drama",
-      "Aventura"
+      "Aventura",
+      "Suspenso"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
     "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
@@ -7584,12 +7592,13 @@
     "studio": "Cinemark / Cinépolis",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "5.6",
     "duration": "1h 49m",
-    "director": "Hanna  Bergholm",
+    "director": "Rand Ravich",
     "genres": [
       "Drama",
-      "Terror"
+      "Ciencia Ficción",
+      "Suspenso"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/24NaFGEgoQ6W9OgXMaDHyg7Rfwq.jpg",
     "synopsis": "Una pareja de astronautas regresa de un viaje espacial donde algo extraño ha sucedido. Spencer Armacost y Alex Streck estaban en una en misión espacial cuando, durante una salida de la nave, pierden el contacto con la base de control durante algunos minutos. Luego todo vuelve a la normalidad y ellos regresan a la Tierra. Pero, tras el regreso, muchas cosas extrañas comienzan a suceder en la vida de los astronautas.",
@@ -7958,11 +7967,15 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.2",
     "duration": "1h 48m",
-    "director": "Alessandro  Carloni",
+    "director": "Erica Rivinoja, Alessandro Carloni",
     "genres": [
-      "Animación"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
@@ -10664,10 +10677,11 @@
     "studio": "Cinemark / Cinépolis / Cinema San Pedro",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "5.6",
     "duration": "1h 30m",
-    "director": "Doğukan  Mısır",
+    "director": "Michael Winnick",
     "genres": [
+      "Suspenso",
       "Terror"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/ms6V9gUMcw6T6ENgUCU7SL5x7dl.jpg",
@@ -11149,7 +11163,7 @@
     "id": "citicinemas-entregaallimite",
     "title": "Entrega al Limite",
     "originalTitle": "Entrega al Limite",
-    "synopsis": "Tras los devastadores acontecimientos de *Avengers: Infinity War* (2018), el universo ha quedado en ruinas. Con la ayuda de los aliados restantes, los Vengadores se reúnen una vez más para revertir las acciones de Thanos y restaurar el equilibrio en el universo.",
+    "synopsis": "Hank es un mensajero encargado de transportar un órgano que puede salvarle la vida a un joven receptor. Pero la misión se vuelve una carrera contra el tiempo cuando un despiadado jefe del crimen hará lo que sea necesario para quedarse con él.",
     "poster": "https://image.tmdb.org/t/p/w500/gxrGVQdFmc3xxVn6UyY31ZjqM0s.jpg",
     "rating": "TP",
     "duration": "1h 37m",
@@ -11431,7 +11445,9 @@
       }
     ],
     "ratingBadgeClass": "badge-green",
-    "normalizedKey": "entregaallimite"
+    "normalizedKey": "entregaallimite",
+    "score": "8.2",
+    "director": "Scott Waugh"
   },
   {
     "id": "113646",
@@ -11440,13 +11456,13 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.8",
     "duration": "2h 15m",
-    "director": "Takashi  Yamazaki",
+    "director": "山崎貴",
     "genres": [
-      "Acción",
-      "Drama",
-      "Ciencia Ficción"
+      "Ciencia Ficción",
+      "Terror",
+      "Acción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
@@ -13867,12 +13883,12 @@
     "id": "magaly-hombresperdidos",
     "title": "Hombres perdidos",
     "originalTitle": "Hombres perdidos",
-    "synopsis": "Mi abuelo, casado durante 57 años en Costa Rica conservadora, murió en un incendio en 2019. Mi papá me reveló que, igual que yo, mi abuelo era gay. Tras este suceso, juntos revisitamos la vida de mi abuelo, mientras nos descubrimos a nosotros mismos.",
+    "synopsis": "Mi abuelo, Neftalí Madrigal Cartín, fue un importante escritor, vivió casado por 57 años, tuvo 3 hijos y además era homosexual. Este documental es el viaje por la memoria que emprendemos mi padre y yo para revisitar la vida de quién fue mi abuelo, y de paso, descubrirnos a nosotros mismos.",
     "poster": "https://image.tmdb.org/t/p/w500/rpRNKLV9NC9NnxjLjgWhvXJ2emW.jpg",
     "rating": "M15",
     "duration": "1h 24m",
     "genres": [
-      "Independiente"
+      "Documental"
     ],
     "theaters": [
       {
@@ -13911,7 +13927,9 @@
       }
     ],
     "ratingBadgeClass": "badge-orange",
-    "normalizedKey": "hombresperdidos"
+    "normalizedKey": "hombresperdidos",
+    "score": null,
+    "director": "Andrés Madrigal Alvarado"
   },
   {
     "id": "113840",
@@ -13920,12 +13938,13 @@
     "studio": "Cinemark / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": null,
     "duration": "2h 39m",
-    "director": "Francis  Lawrence",
+    "director": "Francis Lawrence",
     "genres": [
-      "Drama",
-      "Ciencia Ficción"
+      "Ciencia Ficción",
+      "Acción",
+      "Aventura"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
     "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
@@ -14408,14 +14427,14 @@
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
     "duration": "2h 53m",
-    "director": "N/A",
+    "director": "Christopher Nolan",
     "genres": [
       "Aventura",
       "Acción",
       "Fantasía"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/sRxbUe5FB25Gde0e2FnwwSckpXb.jpg",
-    "synopsis": "El legendario Odiseo enfrenta peligros épicos en su viaje de regreso a casa tras la Guerra de Troya. A lo largo de su travesía se encuentra con criaturas míticas y dioses caprichosos, superando múltiples desafíos antes de reunirse con Penélope.",
+    "synopsis": "Odiseo, el legendario rey de Ítaca, emprende un largo y peligroso viaje de regreso a casa tras la guerra de Troya. A lo largo de su travesía, se ve obligado a enfrentarse a los caprichos de los dioses, a monstruos mitológicos y a pruebas que ponen a prueba su astucia y su humanidad hasta el límite.",
     "theaters": [
       {
         "complexId": "nova-escazu",
@@ -14460,12 +14479,15 @@
     "id": "magaly-inmortales",
     "title": "Los inmortales",
     "originalTitle": "Los inmortales",
-    "synopsis": "Jin Feng, un joven divino, desciende al mundo mortal para redimir los pecados de su familia capturandoa 28 espíritus estelares. Allí conoce a Xiao Fan, una joven mortal que busca alcanzar el reino celestialpara encontrar a su madre desaparecida. Aunque inicialmente se enfrentan como rivales, ambosterminan formando una alianza. Mientras atraviesan desafíos, criaturas y fuerzas legendarias,descubren una verdad que permanecía oculta y que cambiará para siempre su destino.",
+    "synopsis": "El mundo está sumido en el caos. Duncan MacLeod, el Inmortal, recorre la ciudad que se desmorona, mientras va recordando los tiempos felices que vivió junto a su amada. Desesperado y solo, MacLeod se encuentra con su antigua banda, entre ellos con su misterioso amigo Methos, y un mortal, Watcher Joe Dawson. Reunido este pequeño grupo, juntos deciden encontrar el origen del primer Inmortal y la fuente de su inmortalidad.",
     "poster": "https://image.tmdb.org/t/p/w500/9mKXsmDDYpnKKuviOxMTQxr2q86.jpg",
     "rating": "TP+12",
     "duration": "1h 26m",
     "genres": [
-      "Independiente"
+      "Acción",
+      "Fantasía",
+      "Aventura",
+      "Película de TV"
     ],
     "theaters": [
       {
@@ -14492,7 +14514,9 @@
       }
     ],
     "ratingBadgeClass": "badge-amber",
-    "normalizedKey": "inmortales"
+    "normalizedKey": "inmortales",
+    "score": "4.0",
+    "director": "Brett Leonard"
   },
   {
     "id": "112854",
@@ -14501,9 +14525,9 @@
     "studio": "Cinemark",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "5.9",
     "duration": "1h 33m",
-    "director": "Rob  Savage",
+    "director": "Rob Savage",
     "genres": [
       "Terror"
     ],
@@ -14607,13 +14631,12 @@
     "id": "magaly-pingpongtriunfo",
     "title": "Ping Pong: El Triunfo",
     "originalTitle": "Ping Pong: El Triunfo",
-    "synopsis": "A principios de la década de 1990, cuando el equipo masculino de tenis de mesa chino está en su punto más bajo, el entrenador en jefe Cai Zhenhua tiene la tarea de formar un nuevo equipo para finalmente luchar hasta la cima en el Campeonato Mundial de Ping Pong de 1995 en Tianjin, China.",
+    "synopsis": "A principios de la década de 1990, cuando el equipo masculino de tenis de mesa chino está en su punto más bajo, el entrenador en jefe Cai Zhenhua tiene la tarea de formar un nuevo equipo para finalmente luchar hasta la cima en el Campeonato Mundial de Ping de 1995 en Tianjin, China.",
     "poster": "https://image.tmdb.org/t/p/w500/mSZMWfXipCQIosy0pryLSdus8d9.jpg",
     "rating": "TP+12",
     "duration": "2h 20m",
     "genres": [
-      "Drama",
-      "Independiente"
+      "Drama"
     ],
     "theaters": [
       {
@@ -14640,7 +14663,7 @@
       }
     ],
     "score": "7.2",
-    "director": "Deng Chao, Yu Baimei",
+    "director": "俞白眉, 邓超",
     "ratingBadgeClass": "badge-amber",
     "normalizedKey": "pingpongtriunfo"
   },
@@ -14651,11 +14674,13 @@
     "studio": "Cinemark / Cinema San Pedro",
     "rating": "M-18",
     "ratingBadgeClass": "badge-red",
-    "score": "8.0",
+    "score": "7.5",
     "duration": "1h 34m",
-    "director": "Zach  Cregger",
+    "director": "Zach Cregger",
     "genres": [
-      "Terror"
+      "Terror",
+      "Ciencia Ficción",
+      "Aventura"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
     "synopsis": "Un desafortunado mensajero, encargado de entregar un paquete a un hospital remoto, se ve atrapado en medio de un brote y debe luchar contra hordas de criaturas mutantes para sobrevivir.",
@@ -14854,9 +14879,9 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.4",
     "duration": "2h 16m",
-    "director": "N/A",
+    "director": "李安",
     "genres": [
       "Drama",
       "Romance"
@@ -14909,15 +14934,18 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
-    "duration": "1h 31m",
-    "director": "N/A",
+    "score": "7.8",
+    "duration": "1h 30m",
+    "director": "Andrew Adamson, Vicky Jenson",
     "genres": [
-      "Familiar",
-      "Animación"
+      "Animación",
+      "Comedia",
+      "Fantasía",
+      "Aventura",
+      "Familia"
     ],
-    "poster": "https://assets.biggerpicture.ai/assets/HO-1620/eventmaster/2677_4.png",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/fYHRKCerIesCUxLLfQQY4TdmKqM.jpg",
+    "synopsis": "Un malvado lord exilia a las criaturas de cuentos de hadas al pantano de un ogro gruñón, que debe ir en busca y rescatar a una princesa para el lord con el fin de recuperar su tierra.",
     "theaters": [
       {
         "complexId": "cpl-paseo-flores",
@@ -15003,11 +15031,12 @@
     "studio": "CCM Cinemas / Nova Cinemas / Cinema San Pedro",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
+    "score": "6.3",
     "duration": "2h 0m",
-    "director": "N/A",
+    "director": "Kitao Sakurai",
     "genres": [
-      "Acción"
+      "Acción",
+      "Fantasía"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
     "synopsis": "En 1993, los distanciados luchadores Ryu y Ken Masters se ven obligados a volver a la acción cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros.",
@@ -15158,9 +15187,9 @@
     "studio": "Cinemark / Cinépolis / Nova Cinemas",
     "rating": "TPA",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": null,
     "duration": "2h 5m",
-    "director": "Alex  Kendrick",
+    "director": "Alessandro Barros",
     "genres": [
       "Drama"
     ],
@@ -15652,14 +15681,14 @@
     "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Studio Cinemas / CitiCinemas",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "8.5",
     "duration": "2h 12m",
-    "director": "Travis  Knight",
+    "director": "Travis Knight",
     "genres": [
       "Animación",
+      "Fantasía",
       "Aventura",
-      "Acción",
-      "Independiente"
+      "Drama"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
     "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
@@ -17016,14 +17045,13 @@
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "8.0",
-    "duration": "2h 8m",
-    "director": "Peter  Farrelly",
+    "duration": "1h 30m",
+    "director": "Linus O'Brien",
     "genres": [
-      "Drama",
-      "Independiente"
+      "Documental"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
-    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
+    "poster": "https://image.tmdb.org/t/p/w500/dsmzcTYLKrHLeZZZXiLPN0uUuYH.jpg",
+    "synopsis": "Una obra de teatro londinense se convierte en un innovador fenómeno de culto, con canciones icónicas e interpretaciones que celebran la individualidad. Su legado perdura a través de proyecciones a medianoche y un público devoto que abarca generaciones.",
     "theaters": [
       {
         "complexId": "cmk-2204",

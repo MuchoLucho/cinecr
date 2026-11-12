@@ -6,24 +6,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// Load .env if present
-const envPath = path.resolve(__dirname, '../.env');
-if (fs.existsSync(envPath)) {
-  const envContent = fs.readFileSync(envPath, 'utf-8');
-  for (const line of envContent.split('\n')) {
-    const trimmed = line.trim();
-    if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
-      const [key, ...vals] = trimmed.split('=');
-      const val = vals.join('=').replace(/^["']|["']$/g, '');
-      process.env[key.trim()] = val.trim();
-    }
-  }
-}
-
-const TMDB_TOKEN = process.env.TMDB_READ_ACCESS_TOKEN;
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36';
 
 // Theaters mapping in Costa Rica (consolidating regular + VIP complexes in same mall)
@@ -61,120 +46,6 @@ function normalizeTitleKey(str) {
     .toLowerCase()
     .replace(/\b(la|el|los|las|de|del|con|un|una|unos|unas|the|a|an)\b/g, '')
     .replace(/[^a-z0-9]/g, '');
-}
-
-const TCF_MAP = {
-  'soloilusion': 'Juste une illusion',
-  'abandonado': "L'Abandon",
-  'crimen3erpiso': 'Le crime du 3e étage',
-  'desconocidogranarco': "L'inconnu de la Grande Arche",
-  'meencontraste': "L'âme idéale",
-  'camino': 'Compostelle'
-};
-
-/**
- * Query TMDb Search API for poster, synopsis, and runtime
- */
-async function fetchTmdbDetails(title) {
-  if (!TMDB_TOKEN) return null;
-  try {
-    const cleanTitle = title.replace(/\b(2D|3D|XD|XE|VIP|DOB|SUB|PRE|IV|-CR|24TCF)\b/gi, '').replace(/[-:]/g, ' ').trim();
-    const normKey = normalizeTitleKey(cleanTitle);
-    const queries = [cleanTitle];
-    if (TCF_MAP[normKey]) {
-      queries.unshift(TCF_MAP[normKey]);
-    }
-
-    for (const q of queries) {
-      const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(q)}&language=es-MX`;
-      const res = await fetch(url, {
-        headers: {
-          'Authorization': `Bearer ${TMDB_TOKEN}`,
-          'Accept': 'application/json'
-        }
-      });
-      if (!res.ok) continue;
-      const data = await res.json();
-      const result = (data.results || []).find(m => m.poster_path || m.overview || m.id);
-      if (result) {
-        let duration = null;
-        let synopsis = result.overview ? result.overview.trim() : null;
-        let poster = result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null;
-
-        if (result.id) {
-          try {
-            const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
-              headers: {
-                'Authorization': `Bearer ${TMDB_TOKEN}`,
-                'Accept': 'application/json'
-              }
-            });
-            if (detailRes.ok) {
-              const detail = await detailRes.json();
-              if (detail.runtime && detail.runtime > 0) {
-                duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-              }
-              if (detail.overview) synopsis = detail.overview.trim();
-              if (detail.poster_path) poster = `https://image.tmdb.org/t/p/w500${detail.poster_path}`;
-            }
-
-            // Fallback: check translations if synopsis is empty
-            if (!synopsis) {
-              const transRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}/translations`, {
-                headers: {
-                  'Authorization': `Bearer ${TMDB_TOKEN}`,
-                  'Accept': 'application/json'
-                }
-              });
-              if (transRes.ok) {
-                const transData = await transRes.json();
-                const esTrans = (transData.translations || []).find(t => t.iso_639_1 === 'es' && t.data && t.data.overview);
-                if (esTrans) {
-                  synopsis = esTrans.data.overview.trim();
-                } else {
-                  const enTrans = (transData.translations || []).find(t => t.iso_639_1 === 'en' && t.data && t.data.overview);
-                  if (enTrans) synopsis = enTrans.data.overview.trim();
-                }
-              }
-            }
-          } catch {
-            // ignore detail error
-          }
-        }
-        return {
-          tmdbId: result.id,
-          poster,
-          synopsis,
-          duration
-        };
-      }
-    }
-  } catch (err) {
-    // shortcut: silent fallback on network/rate limit
-  }
-  return null;
-}
-
-/**
- * Wikipedia API Fallback
- */
-async function fetchWikipediaPoster(title) {
-  try {
-    const cleanTitle = title.replace(/\b(2D|3D|XD|XE|VIP|DOB|SUB|PRE|IV|-CR|24TCF)\b/gi, '').trim();
-    const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent(cleanTitle + ' film')}&gsrlimit=1&prop=pageimages&pithumbsize=500`;
-    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const pages = data?.query?.pages || {};
-    for (const pageId in pages) {
-      if (pages[pageId]?.thumbnail?.source) {
-        return pages[pageId].thumbnail.source;
-      }
-    }
-  } catch (err) {
-    // shortcut: silent fallback
-  }
-  return null;
 }
 
 export async function scrapeCinepolis() {
@@ -263,11 +134,11 @@ export async function scrapeCinepolis() {
               studio: 'Cinépolis',
               rating,
               ratingBadgeClass: rating.includes('18') ? 'badge-red' : rating.includes('15') ? 'badge-orange' : rating.includes('12') ? 'badge-amber' : 'badge-green',
-              score: '8.0',
-              duration,
+              score: null,
+              duration: 'N/A',
               director: 'N/A',
-              genres,
-              poster: rawPoster,
+              genres: [],
+              poster: null,
               synopsis: 'Sin sinopsis disponible.',
               theaters: []
             });
@@ -337,23 +208,25 @@ export async function scrapeCinepolis() {
     }
   }
 
-  // Enrich with TMDb posters and synopses
-  console.log(`Enriching ${movies.length} Cinépolis movies with TMDb details...`);
+  // Enrich strictly with TMDb details (no proprietary cinema metadata)
+  console.log(`Enriching ${movies.length} Cinépolis movies strictly with TMDb details...`);
   for (const movie of movies) {
-    const tmdbData = await fetchTmdbDetails(movie.title);
+    const tmdbData = await fetchTmdbDetails(movie.title, movie.originalTitle);
     if (tmdbData) {
-      if (tmdbData.poster) movie.poster = tmdbData.poster;
-      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
-      if (tmdbData.duration) movie.duration = tmdbData.duration;
-      console.log(`  ✓ TMDb: ${movie.title}`);
+      movie.poster = tmdbData.poster;
+      movie.synopsis = tmdbData.synopsis;
+      movie.duration = tmdbData.duration;
+      movie.score = tmdbData.score;
+      movie.director = tmdbData.director;
+      if (tmdbData.genres && tmdbData.genres.length > 0) movie.genres = tmdbData.genres;
+      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration}, score: ${movie.score})`);
     } else {
-      if (!movie.poster) {
-        const wikiPoster = await fetchWikipediaPoster(movie.title);
-        if (wikiPoster) {
-          movie.poster = wikiPoster;
-          console.log(`  ✓ Wikipedia: ${movie.title}`);
-        }
-      }
+      movie.poster = null;
+      movie.synopsis = 'Sin sinopsis disponible.';
+      movie.duration = 'N/A';
+      movie.score = null;
+      movie.director = 'N/A';
+      console.log(`  - No TMDb entry: ${movie.title}`);
     }
   }
 

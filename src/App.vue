@@ -845,7 +845,7 @@ const formatStatusDate = (isoStr) => {
                     <span class="md-badge" :class="movie.ratingBadgeClass">
                       {{ movie.rating }}
                     </span>
-                    <span class="md-badge" style="background: rgba(0,0,0,0.8); color: #fbbf24;">
+                    <span v-if="movie.score" class="md-badge" style="background: rgba(0,0,0,0.8); color: #fbbf24;">
                       <span class="material-symbols-outlined sm filled" style="font-size: 14px;">star</span>
                       {{ movie.score }}
                     </span>

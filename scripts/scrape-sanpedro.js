@@ -7,6 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -45,59 +46,6 @@ function fetchWithCurl(url) {
     `curl -sL "${url}" -H "User-Agent: ${USER_AGENT}" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"`,
     { maxBuffer: 10 * 1024 * 1024, timeout: 30000 }
   ).toString();
-}
-
-/**
- * Query TMDb Search & Movie Details API for poster, synopsis, and runtime
- */
-async function fetchTmdbDetails(title) {
-  if (!TMDB_TOKEN) return null;
-  try {
-    const cleanTitle = title
-      .replace(/\b(2D|3D|XD|VIP|DOB|SUB|PRE|IMAX)\b/gi, '')
-      .replace(/[-:]/g, ' ')
-      .trim();
-    const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
-    const res = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${TMDB_TOKEN}`,
-        'Accept': 'application/json'
-      }
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const result = (data.results || []).find(m => m.poster_path || m.overview);
-    if (result) {
-      let duration = null;
-      if (result.id) {
-        try {
-          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
-            headers: {
-              'Authorization': `Bearer ${TMDB_TOKEN}`,
-              'Accept': 'application/json'
-            }
-          });
-          if (detailRes.ok) {
-            const detail = await detailRes.json();
-            if (detail.runtime && detail.runtime > 0) {
-              duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-            }
-          }
-        } catch {
-          // ignore detail error
-        }
-      }
-      return {
-        tmdbId: result.id,
-        poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-        synopsis: result.overview ? result.overview.trim() : null,
-        duration
-      };
-    }
-  } catch {
-    // shortcut: silent fallback on network/rate limit
-  }
-  return null;
 }
 
 /**
@@ -196,26 +144,17 @@ export async function scrapeSanPedro() {
         return g;
       });
 
-      // Parse duration from ISO string if present (e.g. PT1H30M -> 1h 30m)
-      let duration = 'N/A';
-      if (movieItem?.duration) {
-        const dMatch = movieItem.duration.match(/PT(?:(\d+)H)?(?:(\d+)M)?/i);
-        if (dMatch) {
-          const h = parseInt(dMatch[1] || '0', 10);
-          const m = parseInt(dMatch[2] || '0', 10);
-          if (h > 0 || m > 0) duration = `${h}h ${m}m`;
-        }
-      }
-
       const movie = {
         id: `sanpedro-${normalizeTitleKey(title)}`,
         title,
         originalTitle: title,
-        synopsis: movieItem?.description || `Funciones de ${title} en Cinema San Pedro.`,
-        poster: movieItem?.image || null,
+        synopsis: 'Sin sinopsis disponible.',
+        poster: null,
         rating: movieItem?.contentRating || 'TP',
-        duration,
-        genres: movieItem?.genre ? [movieItem.genre] : ['Cine'],
+        duration: 'N/A',
+        score: null,
+        director: null,
+        genres: ['Cine'],
         theaters: [
           {
             chainId: 'sanpedro',
@@ -242,13 +181,14 @@ export async function scrapeSanPedro() {
     const tmdbData = await fetchTmdbDetails(movie.title);
     if (tmdbData) {
       if (tmdbData.poster) movie.poster = tmdbData.poster;
-      if (tmdbData.synopsis && (!movie.synopsis || movie.synopsis.startsWith('Funciones de'))) {
-        movie.synopsis = tmdbData.synopsis;
-      }
+      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
       if (tmdbData.duration) movie.duration = tmdbData.duration;
-      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration})`);
+      if (tmdbData.score) movie.score = tmdbData.score;
+      if (tmdbData.director) movie.director = tmdbData.director;
+      if (tmdbData.genres?.length) movie.genres = tmdbData.genres;
+      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration}, ★ ${movie.score || 'N/A'})`);
     } else {
-      console.log(`  - Local Cinema San Pedro data: ${movie.title} (${movie.duration})`);
+      console.log(`  - No TMDb found: ${movie.title} (using placeholder artwork and no cinema text)`);
     }
   }
 

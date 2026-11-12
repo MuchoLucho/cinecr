@@ -6,24 +6,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// Load .env if present
-const envPath = path.resolve(__dirname, '../.env');
-if (fs.existsSync(envPath)) {
-  const envContent = fs.readFileSync(envPath, 'utf-8');
-  for (const line of envContent.split('\n')) {
-    const trimmed = line.trim();
-    if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
-      const [key, ...vals] = trimmed.split('=');
-      const val = vals.join('=').replace(/^["']|["']$/g, '');
-      process.env[key.trim()] = val.trim();
-    }
-  }
-}
-
-const TMDB_TOKEN = process.env.TMDB_READ_ACCESS_TOKEN;
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36';
 
 const THEATERS = [
@@ -73,74 +58,9 @@ function normalizeTitleKey(str) {
     .replace(/[^a-z0-9]/g, '');
 }
 
-async function fetchTmdbDetails(title, originalTitle) {
-  if (!TMDB_TOKEN) return null;
-  const queries = [title, originalTitle].filter(Boolean);
-  for (const q of queries) {
-    try {
-      const cleanTitle = q.replace(/\b(2D|3D|XD|VIP|DOB|SUB|PRE)\b/gi, '').trim();
-      const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
-      const res = await fetch(url, {
-        headers: {
-          'Authorization': `Bearer ${TMDB_TOKEN}`,
-          'Accept': 'application/json'
-        }
-      });
-      if (!res.ok) continue;
-      const data = await res.json();
-      const result = (data.results || []).find(m => m.poster_path || m.overview);
-      if (result) {
-        let duration = null;
-        if (result.id) {
-          try {
-            const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
-              headers: {
-                'Authorization': `Bearer ${TMDB_TOKEN}`,
-                'Accept': 'application/json'
-              }
-            });
-            if (detailRes.ok) {
-              const detail = await detailRes.json();
-              if (detail.runtime && detail.runtime > 0) {
-                duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-              }
-            }
-          } catch {
-            // ignore detail error
-          }
-        }
-        return {
-          tmdbId: result.id,
-          poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-          synopsis: result.overview ? result.overview.trim() : null,
-          duration
-        };
-      }
-    } catch {
-      // shortcut: silent fallback on network/rate limit
-    }
-  }
-  return null;
-}
 
-async function fetchWikipediaPoster(title) {
-  try {
-    const cleanTitle = title.replace(/\b(2D|3D|XD|VIP|DOB|SUB|PRE)\b/gi, '').trim();
-    const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent(cleanTitle + ' film')}&gsrlimit=1&prop=pageimages&pithumbsize=500`;
-    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const pages = data?.query?.pages || {};
-    for (const pageId in pages) {
-      if (pages[pageId]?.thumbnail?.source) {
-        return pages[pageId].thumbnail.source;
-      }
-    }
-  } catch {
-    // shortcut: silent fallback
-  }
-  return null;
-}
+
+
 
 export async function scrapeCcm() {
   console.log('Scraping CCM Cinemas Costa Rica showtimes...');
@@ -212,12 +132,12 @@ export async function scrapeCcm() {
             studio: 'CCM Cinemas',
             rating: ratingInfo.label,
             ratingBadgeClass: ratingInfo.badge,
-            score: '8.0',
-            duration,
+            score: null,
+            duration: 'N/A',
             director: 'N/A',
-            genres: [genre],
-            poster: rawMovie.filename ? `https://www.ccmcinemas.com/images/posters/${rawMovie.filename}` : '',
-            synopsis: (rawMovie.sinopsis || 'Sin sinopsis disponible.').trim(),
+            genres: [],
+            poster: null,
+            synopsis: 'Sin sinopsis disponible.',
             theaters: []
           });
         }
@@ -282,21 +202,25 @@ export async function scrapeCcm() {
     }
   }
 
-  // Enrich with TMDb posters and synopses
-  console.log(`Enriching ${movies.length} CCM movies with TMDb details...`);
+  // Enrich strictly with TMDb details (no proprietary cinema metadata)
+  console.log(`Enriching ${movies.length} CCM movies strictly with TMDb details...`);
   for (const movie of movies) {
     const tmdbData = await fetchTmdbDetails(movie.title, movie.originalTitle);
     if (tmdbData) {
-      if (tmdbData.poster) movie.poster = tmdbData.poster;
-      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
-      if (tmdbData.duration) movie.duration = tmdbData.duration;
-      console.log(`  ✓ TMDb: ${movie.title}`);
-    } else if (!movie.poster) {
-      const wikiPoster = await fetchWikipediaPoster(movie.originalTitle || movie.title);
-      if (wikiPoster) {
-        movie.poster = wikiPoster;
-        console.log(`  ✓ Wikipedia: ${movie.title}`);
-      }
+      movie.poster = tmdbData.poster;
+      movie.synopsis = tmdbData.synopsis;
+      movie.duration = tmdbData.duration;
+      movie.score = tmdbData.score;
+      movie.director = tmdbData.director;
+      if (tmdbData.genres && tmdbData.genres.length > 0) movie.genres = tmdbData.genres;
+      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration}, score: ${movie.score})`);
+    } else {
+      movie.poster = null;
+      movie.synopsis = 'Sin sinopsis disponible.';
+      movie.duration = 'N/A';
+      movie.score = null;
+      movie.director = 'N/A';
+      console.log(`  - No TMDb entry: ${movie.title}`);
     }
   }
 

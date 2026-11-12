@@ -6,24 +6,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchTmdbDetails } from './tmdb.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// Load .env if present
-const envPath = path.resolve(__dirname, '../.env');
-if (fs.existsSync(envPath)) {
-  const envContent = fs.readFileSync(envPath, 'utf-8');
-  for (const line of envContent.split('\n')) {
-    const trimmed = line.trim();
-    if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
-      const [key, ...vals] = trimmed.split('=');
-      const val = vals.join('=').replace(/^["']|["']$/g, '');
-      process.env[key.trim()] = val.trim();
-    }
-  }
-}
-
-const TMDB_TOKEN = process.env.TMDB_READ_ACCESS_TOKEN;
 
 // Cinemark theaters in Costa Rica
 const THEATERS = [
@@ -67,78 +52,6 @@ async function fetchBillboard(theaterId) {
   return await res.json();
 }
 
-/**
- * Query TMDb Search API for poster and synopsis
- */
-async function fetchTmdbDetails(title) {
-  if (!TMDB_TOKEN) return null;
-  try {
-    const cleanTitle = title.replace(/\b(2D|3D|XD|DOB|SUB|PRE|IV|-CR)\b/gi, '').trim();
-    const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(cleanTitle)}&language=es-MX`;
-    const res = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${TMDB_TOKEN}`,
-        'Accept': 'application/json'
-      }
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const result = (data.results || []).find(m => m.poster_path || m.overview);
-    if (result) {
-      let duration = null;
-      if (result.id) {
-        try {
-          const detailRes = await fetch(`https://api.themoviedb.org/3/movie/${result.id}?language=es-MX`, {
-            headers: {
-              'Authorization': `Bearer ${TMDB_TOKEN}`,
-              'Accept': 'application/json'
-            }
-          });
-          if (detailRes.ok) {
-            const detail = await detailRes.json();
-            if (detail.runtime && detail.runtime > 0) {
-              duration = `${Math.floor(detail.runtime / 60)}h ${detail.runtime % 60}m`;
-            }
-          }
-        } catch {
-          // ignore detail error
-        }
-      }
-      return {
-        tmdbId: result.id,
-        poster: result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : null,
-        synopsis: result.overview ? result.overview.trim() : null,
-        duration
-      };
-    }
-  } catch (err) {
-    // shortcut: silent fallback on network/rate limit
-  }
-  return null;
-}
-
-/**
- * Wikipedia API Fallback
- */
-async function fetchWikipediaPoster(title) {
-  try {
-    const cleanTitle = title.replace(/\b(2D|3D|XD|DOB|SUB|PRE|IV|-CR)\b/gi, '').trim();
-    const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent(cleanTitle + ' film')}&gsrlimit=1&prop=pageimages&pithumbsize=500`;
-    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const pages = data?.query?.pages || {};
-    for (const pageId in pages) {
-      if (pages[pageId]?.thumbnail?.source) {
-        return pages[pageId].thumbnail.source;
-      }
-    }
-  } catch (err) {
-    // shortcut: silent fallback
-  }
-  return null;
-}
-
 export async function scrapeCinemark() {
   console.log('Scraping Cinemark Costa Rica showtimes...');
   const cacheFile = path.resolve(__dirname, '../src/data/cinemark-data.json');
@@ -179,12 +92,12 @@ export async function scrapeCinemark() {
               studio: 'Cinemark',
               rating: rawMovie.rating || 'TP',
               ratingBadgeClass: (rawMovie.rating && rawMovie.rating.includes('18')) ? 'badge-red' : (rawMovie.rating && rawMovie.rating.includes('15')) ? 'badge-orange' : 'badge-green',
-              score: '8.0',
-              duration: rawMovie.runtime ? `${Math.floor(rawMovie.runtime / 60)}h ${rawMovie.runtime % 60}m` : 'N/A',
-              director: (rawMovie.cast || []).find(c => c.PersonType === 'Director') ? `${(rawMovie.cast.find(c => c.PersonType === 'Director').FirstName || '')} ${(rawMovie.cast.find(c => c.PersonType === 'Director').LastName || '')}`.trim() : 'N/A',
-              genres: [rawMovie.genre, rawMovie.genre2, rawMovie.genre3].filter(Boolean),
-              poster: rawMovie.graphic_url || '',
-              synopsis: rawMovie.synopsis || 'Sin sinopsis disponible.',
+              score: null,
+              duration: 'N/A',
+              director: 'N/A',
+              genres: [],
+              poster: null,
+              synopsis: 'Sin sinopsis disponible.',
               theaters: []
             });
           }
@@ -254,25 +167,25 @@ export async function scrapeCinemark() {
     }
   }
 
-  // Enrich with TMDb posters and synopsis (Wikipedia fallback for poster)
-  console.log(`Enriching ${movies.length} movies with TMDb details...`);
+  // Enrich strictly with TMDb details (no proprietary cinema metadata)
+  console.log(`Enriching ${movies.length} movies strictly with TMDb details...`);
   for (const movie of movies) {
-    const tmdbData = await fetchTmdbDetails(movie.originalTitle || movie.title);
+    const tmdbData = await fetchTmdbDetails(movie.title, movie.originalTitle);
     if (tmdbData) {
-      if (tmdbData.poster && !movie.poster) movie.poster = tmdbData.poster;
-      if (tmdbData.synopsis) movie.synopsis = tmdbData.synopsis;
-      if (tmdbData.duration) movie.duration = tmdbData.duration;
-      console.log(`  ✓ TMDb (poster & synopsis): ${movie.title}`);
+      movie.poster = tmdbData.poster;
+      movie.synopsis = tmdbData.synopsis;
+      movie.duration = tmdbData.duration;
+      movie.score = tmdbData.score;
+      movie.director = tmdbData.director;
+      if (tmdbData.genres && tmdbData.genres.length > 0) movie.genres = tmdbData.genres;
+      console.log(`  ✓ TMDb: ${movie.title} (${movie.duration}, score: ${movie.score})`);
     } else {
-      if (!movie.poster) {
-        const wikiPoster = await fetchWikipediaPoster(movie.originalTitle || movie.title);
-        if (wikiPoster) {
-          movie.poster = wikiPoster;
-          console.log(`  ✓ Wikipedia (poster): ${movie.title}`);
-        } else {
-          console.log(`  - Fallback SVG: ${movie.title}`);
-        }
-      }
+      movie.poster = null;
+      movie.synopsis = 'Sin sinopsis disponible.';
+      movie.duration = 'N/A';
+      movie.score = null;
+      movie.director = 'N/A';
+      console.log(`  - No TMDb entry: ${movie.title}`);
     }
   }
 
