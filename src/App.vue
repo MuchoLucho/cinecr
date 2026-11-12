@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, reactive, onMounted } from 'vue';
+import { ref, computed, reactive, onMounted, onUnmounted } from 'vue';
 import moviesData from './data/movies-data.json';
 
 const isDark = ref(true);
@@ -8,19 +8,76 @@ const toggleTheme = () => {
   document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light');
 };
 
+const getNowCR = () => {
+  const formatter = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Costa_Rica',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  });
+  const parts = formatter.formatToParts(new Date());
+  const p = {};
+  parts.forEach(part => { p[part.type] = part.value; });
+  const date = `${p.year}-${p.month}-${p.day}`;
+  const time = `${p.hour}:${p.minute}`;
+  return { date, time, dateTime: `${date} ${time}` };
+};
+
+const currentTimeTrigger = ref(Date.now());
+let timerInterval = null;
+
 onMounted(() => {
   document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light');
+  timerInterval = setInterval(() => {
+    currentTimeTrigger.value = Date.now();
+  }, 30000);
 });
 
+onUnmounted(() => {
+  if (timerInterval) clearInterval(timerInterval);
+});
+
+const isSessionInPast = (sessionDate, sessionTime) => {
+  currentTimeTrigger.value; // reactive dependency
+  const now = getNowCR();
+  if (sessionDate < now.date) return true;
+  if (sessionDate === now.date && sessionTime < now.time) return true;
+  return false;
+};
+
+const hasRemainingToday = () => {
+  const now = getNowCR();
+  for (const m of moviesData) {
+    for (const t of m.theaters || []) {
+      for (const g of t.groups || []) {
+        for (const s of g.times || []) {
+          if (s.date === now.date && s.time >= now.time) {
+            return true;
+          }
+        }
+      }
+    }
+  }
+  return false;
+};
+
 const viewMode = ref('movies');
-const selectedDate = ref('today');
+const selectedDate = ref(hasRemainingToday() ? 'today' : 'tomorrow');
 const onlyPremium = ref(false);
 const scheduleSearch = ref('');
 
 const availableDates = computed(() => {
+  currentTimeTrigger.value;
+  const now = getNowCR();
+  const [y, m, d] = now.date.split('-').map(Number);
+  const tomorrowStr = new Date(Date.UTC(y, m - 1, d + 1)).toISOString().slice(0, 10);
+
   const dates = new Set();
   movies.value.forEach(m => m.theaters.forEach(t => t.groups.forEach(g => g.times.forEach(s => {
-    if (s.date) dates.add(s.date);
+    if (s.date && s.date >= now.date) dates.add(s.date);
   }))));
 
   const sorted = Array.from(dates).sort();
@@ -29,13 +86,22 @@ const availableDates = computed(() => {
   const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
   const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
 
-  sorted.forEach((dStr, idx) => {
+  sorted.forEach(dStr => {
     const parts = dStr.split('-');
-    const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-    // First date is 'today'
-    const value = idx === 0 ? 'today' : dStr;
-    const dayLabel = idx === 0 ? 'Hoy' : idx === 1 ? 'Mañana' : `${dayNames[d.getDay()]} ${d.getDate()} ${monthNames[d.getMonth()]}`;
-    options.push({ label: dayLabel, value, rawDate: dStr });
+    const dt = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+
+    let value = dStr;
+    let label = `${dayNames[dt.getDay()]} ${dt.getDate()} ${monthNames[dt.getMonth()]}`;
+
+    if (dStr === now.date) {
+      value = 'today';
+      label = 'Hoy';
+    } else if (dStr === tomorrowStr) {
+      value = 'tomorrow';
+      label = 'Mañana';
+    }
+
+    options.push({ label, value, rawDate: dStr });
   });
 
   // Add 'Toda la semana' as an option
@@ -189,10 +255,20 @@ const filteredMovies = computed(() => {
               if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX', 'MACRO XE', 'LASERMAX', 'ONE'].includes(g.format)) return null;
 
               const times = g.times.filter(s => {
+                // 1. Hide shows whose start time has already passed
+                if (isSessionInPast(s.date, s.time)) return false;
+
+                // 2. Filter by selected date
                 if (selectedDate.value === 'all') return true;
+
+                const now = getNowCR();
                 if (selectedDate.value === 'today') {
-                  const todayOption = availableDates.value.find(o => o.value === 'today');
-                  return s.date === todayOption?.rawDate;
+                  return s.date === now.date;
+                }
+                if (selectedDate.value === 'tomorrow') {
+                  const [y, m, d] = now.date.split('-').map(Number);
+                  const tomorrowStr = new Date(Date.UTC(y, m - 1, d + 1)).toISOString().slice(0, 10);
+                  return s.date === tomorrowStr;
                 }
                 return s.date === selectedDate.value;
               });

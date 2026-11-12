@@ -25,12 +25,15 @@ This document defines the architecture, design principles, conventions, and oper
 ### Rule 2.2: Closed Accordions by Default
 - In the movie view, all theater accordions (`.md-expansion-panel`) **must start collapsed/closed** by default (`expandedPanels = ref(new Set())`). This ensures users can scan through many movies and theaters quickly on mobile and desktop without endless scrolling.
 
-### Rule 2.3: Date Filter Defaults to "Today"
-- `selectedDate` defaults to `'today'`.
+### Rule 2.3: Date Filter & Smart Default
+- `selectedDate` defaults to `'today'` if there are remaining future showtimes today; if all shows today have already started, it automatically defaults to `'tomorrow'`.
 - The date bar must offer individual days (Hoy, Mañana, Días de la semana) plus an option for `"Toda la semana"` (`'all'`).
 
 ### Rule 2.4: Zero Useless Pop-ups / Modals
 - Clicking on a showtime button (`.showtime-btn`) must directly open the cinema's official page in a new tab (`target="_blank" rel="noopener"`). Do NOT create intermediate dialogs that simply parrot the movie title and time.
+
+### Rule 2.5: Hide Past Showtimes
+- Showtimes whose starting time has already passed (relative to Costa Rica time `America/Costa_Rica`) are filtered out of all views. Users should only see actionable, upcoming shows.
 
 ---
 
