@@ -294,6 +294,14 @@ const getMovieAgeRating = (ratingStr) => {
   return { tier: 'TP', minAge: 0, label: 'Todo Público (TP)' };
 };
 
+const getAgeRatingLabel = (tier) => {
+  if (tier === 'TP') return 'Todo Público';
+  if (tier === '12') return '+12';
+  if (tier === '15') return '+15';
+  if (tier === '18') return '+18';
+  return 'Todas';
+};
+
 const movies = ref(moviesData.map(m => {
   const genres = cleanGenres(m.genres);
   const genre = genres[0] || 'Película';
@@ -349,11 +357,8 @@ const selectedFormatSingle = computed({
 const filteredMovies = computed(() => {
   return movies.value
     .filter(m => {
-      if (filters.ageRating) {
-        if (filters.ageRating === 'TP' && m.ageTier !== 'TP') return false;
-        if (filters.ageRating === '12' && m.ageTier !== '12') return false;
-        if (filters.ageRating === '15' && m.ageTier !== '15') return false;
-        if (filters.ageRating === '18' && m.ageTier !== '18') return false;
+      if (filters.ageRating && m.ageTier !== filters.ageRating) {
+        return false;
       }
       return true;
     })
@@ -792,16 +797,77 @@ const formatStatusDate = (isoStr) => {
             </div>
 
             <div class="md-field">
-              <label class="md-field-label">
-                <span class="material-symbols-outlined sm">family_restroom</span> Clasificación / Edad
-              </label>
-              <select v-model="filters.ageRating" class="md-select">
-                <option :value="null">Todas las edades</option>
-                <option value="TP">Todo Público (TP)</option>
-                <option value="12">Mayores de 12 (+12)</option>
-                <option value="15">Mayores de 15 (+15)</option>
-                <option value="18">Mayores de 18 (+18)</option>
-              </select>
+              <div class="md-field-header">
+                <label class="md-field-label">
+                  <span class="material-symbols-outlined sm">family_restroom</span> Clasificación
+                  <span v-if="filters.ageRating" class="filter-count-chip">({{ getAgeRatingLabel(filters.ageRating) }})</span>
+                </label>
+                <button
+                  v-if="filters.ageRating"
+                  type="button"
+                  class="clear-link-btn"
+                  @click="filters.ageRating = null"
+                  title="Restablecer clasificación"
+                >
+                  Todas
+                </button>
+              </div>
+              <div class="age-scale-container" role="radiogroup" aria-label="Escala de clasificación por edad">
+                <button
+                  type="button"
+                  class="age-scale-btn"
+                  :class="{ active: filters.ageRating === null }"
+                  :aria-checked="filters.ageRating === null"
+                  role="radio"
+                  @click="filters.ageRating = null"
+                >
+                  Todas
+                </button>
+                <button
+                  type="button"
+                  class="age-scale-btn age-scale-tp"
+                  :class="{ active: filters.ageRating === 'TP' }"
+                  :aria-checked="filters.ageRating === 'TP'"
+                  role="radio"
+                  @click="filters.ageRating = filters.ageRating === 'TP' ? null : 'TP'"
+                  title="Todo Público (Apta para toda la familia)"
+                >
+                  TP
+                </button>
+                <button
+                  type="button"
+                  class="age-scale-btn age-scale-12"
+                  :class="{ active: filters.ageRating === '12' }"
+                  :aria-checked="filters.ageRating === '12'"
+                  role="radio"
+                  @click="filters.ageRating = filters.ageRating === '12' ? null : '12'"
+                  title="Mayores de 12 años (+12)"
+                >
+                  +12
+                </button>
+                <button
+                  type="button"
+                  class="age-scale-btn age-scale-15"
+                  :class="{ active: filters.ageRating === '15' }"
+                  :aria-checked="filters.ageRating === '15'"
+                  role="radio"
+                  @click="filters.ageRating = filters.ageRating === '15' ? null : '15'"
+                  title="Mayores de 15 años (+15)"
+                >
+                  +15
+                </button>
+                <button
+                  type="button"
+                  class="age-scale-btn age-scale-18"
+                  :class="{ active: filters.ageRating === '18' }"
+                  :aria-checked="filters.ageRating === '18'"
+                  role="radio"
+                  @click="filters.ageRating = filters.ageRating === '18' ? null : '18'"
+                  title="Mayores de 18 años (+18)"
+                >
+                  +18
+                </button>
+              </div>
             </div>
 
             <div class="md-field">
@@ -828,15 +894,6 @@ const formatStatusDate = (isoStr) => {
 
             <div class="sidebar-section-title">Opciones rápidas</div>
             <div class="sidebar-quick-chips">
-              <button
-                type="button"
-                class="md-chip"
-                :class="{ selected: filters.ageRating === 'TP' }"
-                @click="filters.ageRating = filters.ageRating === 'TP' ? null : 'TP'"
-              >
-                <span v-if="filters.ageRating === 'TP'" class="material-symbols-outlined sm">check</span>
-                Todo Público (TP)
-              </button>
               <button
                 type="button"
                 class="md-chip"

@@ -692,6 +692,78 @@ h1, h2, h3, h4 {
   white-space: nowrap;
 }
 
+/* Horizontal Age Rating Scale */
+.age-scale-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background-color: var(--md-sys-color-surface-container);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: 10px;
+  padding: 3px;
+  width: 100%;
+}
+
+.age-scale-btn {
+  flex: 1;
+  min-width: 0;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  background-color: transparent;
+  color: var(--md-sys-color-on-surface-variant);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.age-scale-btn:hover {
+  background-color: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+}
+
+.age-scale-btn:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+.age-scale-btn.active {
+  background-color: var(--md-sys-color-surface-container-highest);
+  color: var(--md-sys-color-on-surface);
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.age-scale-btn.age-scale-tp.active {
+  background-color: #10b981;
+  color: #002114;
+  box-shadow: 0 1px 3px rgba(16, 185, 129, 0.35);
+}
+
+.age-scale-btn.age-scale-12.active {
+  background-color: #f59e0b;
+  color: #1c1300;
+  box-shadow: 0 1px 3px rgba(245, 158, 11, 0.35);
+}
+
+.age-scale-btn.age-scale-15.active {
+  background-color: #ea580c;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(234, 88, 12, 0.35);
+}
+
+.age-scale-btn.age-scale-18.active {
+  background-color: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.35);
+}
+
 .md-field-label {
   font-size: 0.74rem;
   font-weight: 600;
