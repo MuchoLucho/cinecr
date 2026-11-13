@@ -1,168 +1,5 @@
 [
   {
-    "id": "pacific-avengersdoomday",
-    "title": "Avengers: Doomday",
-    "originalTitle": "Avengers: Doomday",
-    "synopsis": "Héroes amados de tres universos distintos están en rumbo a una colisión letal y enfrentan una amenaza existencial como ninguna otra que hayan conocido.",
-    "poster": "https://image.tmdb.org/t/p/w500/3A4IzhQHCzX5nuQParZp07F5rCT.jpg",
-    "rating": "M15",
-    "duration": "2h 45m",
-    "score": null,
-    "director": "Joe Russo, Anthony Russo",
-    "genres": [
-      "Ciencia ficción",
-      "Acción",
-      "Aventura"
-    ],
-    "theaters": [
-      {
-        "chainId": "pacific",
-        "chainName": "Pacific Cinemas",
-        "complexId": "pacific-paso-canoas",
-        "complexName": "Pacific Cinemas Paso Canoas",
-        "province": "Puntarenas",
-        "city": "Paso Canoas",
-        "address": "Paso Canoas, Corredores, Puntarenas",
-        "locationDetail": "Paso Canoas, Corredores",
-        "website": "https://pacificcinemas.com/pelicula/822/Avengers-Doomday",
-        "groups": [
-          {
-            "format": "3D",
-            "language": "DOB",
-            "times": [
-              {
-                "date": "2026-12-16",
-                "time": "12:55"
-              },
-              {
-                "date": "2026-12-16",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-16",
-                "time": "21:30"
-              },
-              {
-                "date": "2026-12-17",
-                "time": "12:55"
-              },
-              {
-                "date": "2026-12-17",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-17",
-                "time": "21:30"
-              },
-              {
-                "date": "2026-12-18",
-                "time": "12:55"
-              },
-              {
-                "date": "2026-12-18",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-18",
-                "time": "21:30"
-              },
-              {
-                "date": "2026-12-19",
-                "time": "12:55"
-              },
-              {
-                "date": "2026-12-19",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-19",
-                "time": "21:30"
-              },
-              {
-                "date": "2026-12-20",
-                "time": "12:55"
-              },
-              {
-                "date": "2026-12-20",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-20",
-                "time": "21:30"
-              },
-              {
-                "date": "2026-12-21",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-21",
-                "time": "21:30"
-              },
-              {
-                "date": "2026-12-22",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-22",
-                "time": "21:30"
-              },
-              {
-                "date": "2026-12-23",
-                "time": "12:55"
-              },
-              {
-                "date": "2026-12-23",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-12-23",
-                "time": "21:30"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "date": "2026-12-16",
-                "time": "16:30"
-              },
-              {
-                "date": "2026-12-17",
-                "time": "16:30"
-              },
-              {
-                "date": "2026-12-18",
-                "time": "16:30"
-              },
-              {
-                "date": "2026-12-19",
-                "time": "16:30"
-              },
-              {
-                "date": "2026-12-20",
-                "time": "16:30"
-              },
-              {
-                "date": "2026-12-21",
-                "time": "16:30"
-              },
-              {
-                "date": "2026-12-22",
-                "time": "16:30"
-              },
-              {
-                "date": "2026-12-23",
-                "time": "16:30"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "pacific-juegoshambreamanecercosecha",
     "title": "Los juegos del hambre: amanecer en la cosecha",
     "originalTitle": "Los juegos del hambre: amanecer en la cosecha",
@@ -199,26 +36,6 @@
               },
               {
                 "date": "2026-11-19",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-11-20",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-11-21",
-                "time": "14:10"
-              },
-              {
-                "date": "2026-11-21",
-                "time": "19:10"
-              },
-              {
-                "date": "2026-11-22",
-                "time": "13:30"
-              },
-              {
-                "date": "2026-11-22",
                 "time": "19:10"
               }
             ]
@@ -327,7 +144,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
     "rating": "TP",
     "duration": "2h 8m",
-    "score": "8.8",
+    "score": "8.9",
     "director": "Peter Farrelly",
     "genres": [
       "Drama",

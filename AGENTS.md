@@ -77,6 +77,11 @@ This document defines the architecture, design principles, conventions, and oper
   - `director: 'N/A'`.
 - **Zero fake scores**: Eliminate all hardcoded dummy scores (such as `'8.0'`). Scores must reflect real TMDb `vote_average` or remain `null`.
 
+### Rule 3.6: No Pre-sales / 7-Day Window Maximum (Enforced)
+- **Zero Pre-sales beyond 7 days**: CineCR only displays movies and showtimes currently in active exhibition within a rolling 7-day window from the current date in Costa Rica (`America/Costa_Rica`).
+- Showtimes for dates beyond 7 days (e.g. advance ticket sales/preventas weeks or months in advance) must be strictly discarded by scrapers, `mergeDatasets`, and the frontend date filter.
+- Movies with no active showtimes within the 7-day window must be excluded from the dataset.
+
 ---
 
 ## 4. GitHub Actions & Deployment Rules

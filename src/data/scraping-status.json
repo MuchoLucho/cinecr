@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-13T01:30:05.801Z",
+  "lastRun": "2026-11-13T01:33:54.402Z",
   "chains": {
     "cinemark": {
       "id": "cinemark",
@@ -70,8 +70,8 @@
       "name": "Pacific Cinemas",
       "status": "healthy",
       "lastSuccess": "2026-11-13T00:48:07.621Z",
-      "moviesCount": 8,
-      "showtimesCount": 50
+      "moviesCount": 7,
+      "showtimesCount": 15
     },
     "sunset": {
       "id": "sunset",

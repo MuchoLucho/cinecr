@@ -271,18 +271,48 @@ export function mergeDatasets(...datasets) {
     }
   }
 
-  const merged = Array.from(mergedMap.values());
-  merged.sort((a, b) => a.title.localeCompare(b.title));
+  // Enforce Rule 3.6: No pre-sales beyond 7 days rolling window from America/Costa_Rica
+  const now = new Date();
+  const crParts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Costa_Rica',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(now);
+  const getPart = (type) => crParts.find(p => p.type === type)?.value;
+  const y = parseInt(getPart('year'), 10);
+  const m = parseInt(getPart('month'), 10) - 1;
+  const d = parseInt(getPart('day'), 10);
 
+  const today = new Date(Date.UTC(y, m, d));
+  const maxDay = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+  const formatIso = (dt) => {
+    const yr = dt.getUTCFullYear();
+    const mo = String(dt.getUTCMonth() + 1).padStart(2, '0');
+    const da = String(dt.getUTCDate()).padStart(2, '0');
+    return `${yr}-${mo}-${da}`;
+  };
+
+  const todayStr = formatIso(today);
+  const maxDateStr = formatIso(maxDay);
+
+  const merged = Array.from(mergedMap.values());
+
+  const activeMovies = [];
   for (const movie of merged) {
+    const validTheaters = [];
     for (const t of movie.theaters || []) {
       if (!t.website) {
         t.website = CHAIN_WEBSITES[t.chainId] || 'https://cinecr.pages.dev';
       }
+      const validGroups = [];
       for (const g of t.groups || []) {
         const uniqueTimes = [];
         const seen = new Set();
         for (const tm of g.times || []) {
+          // Exclude dates in the past or beyond 7-day rolling window
+          if (!tm.date || tm.date < todayStr || tm.date > maxDateStr) continue;
           const k = `${tm.date}_${tm.time}`;
           if (!seen.has(k)) {
             seen.add(k);
@@ -290,12 +320,21 @@ export function mergeDatasets(...datasets) {
           }
         }
         uniqueTimes.sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
-        g.times = uniqueTimes;
+        if (uniqueTimes.length > 0) {
+          validGroups.push({ ...g, times: uniqueTimes });
+        }
       }
+      if (validGroups.length > 0) {
+        validTheaters.push({ ...t, groups: validGroups });
+      }
+    }
+    if (validTheaters.length > 0) {
+      activeMovies.push({ ...movie, theaters: validTheaters });
     }
   }
 
-  return merged;
+  activeMovies.sort((a, b) => a.title.localeCompare(b.title));
+  return activeMovies;
 }
 
 export async function enrichMergedWithTmdb(mergedMovies) {

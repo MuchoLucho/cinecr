@@ -100,6 +100,28 @@ export async function scrapePacific() {
     const movieCards = html.split(/<article\s+class=[\x27"]pc-movie-card[\x27"]>/).slice(1).map(c => c.split('</article>')[0]);
     console.log(`Found ${movieCards.length} movie cards on Pacific Cinemas...`);
 
+    const now = new Date();
+    const crParts = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/Costa_Rica',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit'
+    }).formatToParts(now);
+    const getPart = (type) => crParts.find(p => p.type === type)?.value;
+    const y = parseInt(getPart('year'), 10);
+    const m = parseInt(getPart('month'), 10) - 1;
+    const d = parseInt(getPart('day'), 10);
+    const today = new Date(Date.UTC(y, m, d));
+    const maxDay = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const formatIso = (dt) => {
+      const yr = dt.getUTCFullYear();
+      const mo = String(dt.getUTCMonth() + 1).padStart(2, '0');
+      const da = String(dt.getUTCDate()).padStart(2, '0');
+      return `${yr}-${mo}-${da}`;
+    };
+    const todayStr = formatIso(today);
+    const maxDateStr = formatIso(maxDay);
+
     const movies = [];
 
     for (const card of movieCards) {
@@ -121,7 +143,7 @@ export async function scrapePacific() {
 
       for (const d of days) {
         const dateStr = parseDateToIso(d[2]);
-        if (!dateStr) continue;
+        if (!dateStr || dateStr < todayStr || dateStr > maxDateStr) continue;
 
         const chips = [...d[3].matchAll(/<div\s+class=[\x27"]pc-time-chip[^\x27"]*[\x27"]>.*?<span\s+class=[\x27"]format[\x27"]>([^<]+)<\/span>.*?<span\s+class=[\x27"]lang[\x27"]>([^<]+)<\/span>.*?<span\s+class=[\x27"]hour[\x27"]>([^<]+)<\/span>/gis)];
 
