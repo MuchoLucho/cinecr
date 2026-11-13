@@ -79,6 +79,147 @@ const scrollToPrevMovie = () => {
   }
 };
 
+// Floating Navigation Dock (Draggable & repositionable to any corner)
+const dockSide = ref('right'); // 'right' | 'left'
+const dockY = ref(null); // vertical offset in px (null = default bottom: 24px)
+const isDraggingDock = ref(false);
+const dragPos = ref(null);
+
+let startPointer = { x: 0, y: 0 };
+let startDock = { x: 0, y: 0 };
+let hasDragged = false;
+
+const loadDockPosition = () => {
+  try {
+    const saved = localStorage.getItem('cinecr-dock-pos');
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed.side === 'left' || parsed.side === 'right') {
+        dockSide.value = parsed.side;
+      }
+      if (typeof parsed.y === 'number') {
+        const maxY = Math.max(80, window.innerHeight - 160);
+        dockY.value = Math.min(Math.max(80, parsed.y), maxY);
+      }
+    }
+  } catch (err) {
+    // Ignore storage errors
+  }
+};
+
+const saveDockPosition = () => {
+  try {
+    localStorage.setItem(
+      'cinecr-dock-pos',
+      JSON.stringify({ side: dockSide.value, y: dockY.value })
+    );
+  } catch (err) {
+    // Ignore storage errors
+  }
+};
+
+const toggleCorner = () => {
+  dockSide.value = dockSide.value === 'right' ? 'left' : 'right';
+  saveDockPosition();
+};
+
+const dockStyle = computed(() => {
+  if (isDraggingDock.value && dragPos.value) {
+    return {
+      left: `${dragPos.value.x}px`,
+      top: `${dragPos.value.y}px`,
+      right: 'auto',
+      bottom: 'auto'
+    };
+  }
+  const style = {};
+  if (dockSide.value === 'left') {
+    style.left = '18px';
+    style.right = 'auto';
+  } else {
+    style.right = '18px';
+    style.left = 'auto';
+  }
+  if (dockY.value !== null) {
+    style.top = `${dockY.value}px`;
+    style.bottom = 'auto';
+  } else {
+    style.bottom = '24px';
+    style.top = 'auto';
+  }
+  return style;
+});
+
+const onDockPointerDown = (e) => {
+  const target = e.target;
+  const isButton = target.closest('.floating-nav-btn');
+  const isHandle = target.closest('.floating-drag-handle');
+
+  // Allow clicking on nav buttons without initiating drag
+  if (isButton && !isHandle) return;
+
+  const dockEl = e.currentTarget;
+  if (!dockEl) return;
+
+  const rect = dockEl.getBoundingClientRect();
+  startDock = { x: rect.left, y: rect.top };
+  startPointer = { x: e.clientX, y: e.clientY };
+  hasDragged = false;
+
+  const onPointerMove = (moveEvent) => {
+    const dx = moveEvent.clientX - startPointer.x;
+    const dy = moveEvent.clientY - startPointer.y;
+
+    if (!hasDragged && (Math.abs(dx) > 6 || Math.abs(dy) > 6)) {
+      hasDragged = true;
+      isDraggingDock.value = true;
+    }
+
+    if (hasDragged) {
+      const maxX = Math.max(12, window.innerWidth - rect.width - 12);
+      const maxY = Math.max(80, window.innerHeight - rect.height - 12);
+      const newX = Math.min(Math.max(12, startDock.x + dx), maxX);
+      const newY = Math.min(Math.max(80, startDock.y + dy), maxY);
+      dragPos.value = { x: newX, y: newY };
+    }
+  };
+
+  const onPointerUp = () => {
+    window.removeEventListener('pointermove', onPointerMove);
+    window.removeEventListener('pointerup', onPointerUp);
+    window.removeEventListener('pointercancel', onPointerUp);
+
+    if (hasDragged) {
+      isDraggingDock.value = false;
+      const currentX = dragPos.value ? dragPos.value.x : startDock.x;
+      const currentY = dragPos.value ? dragPos.value.y : startDock.y;
+      dragPos.value = null;
+
+      // Snap to left or right corner
+      const centerX = currentX + rect.width / 2;
+      dockSide.value = centerX < window.innerWidth / 2 ? 'left' : 'right';
+
+      const maxY = Math.max(80, window.innerHeight - rect.height - 24);
+      dockY.value = Math.min(Math.max(80, currentY), maxY);
+      saveDockPosition();
+    } else if (isHandle) {
+      // Tap/click on handle toggles corner instantly
+      toggleCorner();
+    }
+  };
+
+  window.addEventListener('pointermove', onPointerMove);
+  window.addEventListener('pointerup', onPointerUp);
+  window.addEventListener('pointercancel', onPointerUp);
+};
+
+const handleWindowResize = () => {
+  if (dockY.value !== null) {
+    const maxY = Math.max(80, window.innerHeight - 160);
+    dockY.value = Math.min(Math.max(80, dockY.value), maxY);
+  }
+};
+
 const handleKeyDown = (e) => {
   if (e.key === 'Escape' && isMobileFilterOpen.value) {
     closeMobileFilter();
@@ -89,6 +230,8 @@ onMounted(() => {
   document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light');
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('keydown', handleKeyDown);
+  window.addEventListener('resize', handleWindowResize, { passive: true });
+  loadDockPosition();
   handleScroll();
   updateSidebarHeight();
   if (typeof ResizeObserver !== 'undefined' && sidebarRef.value) {
@@ -105,6 +248,7 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
   window.removeEventListener('keydown', handleKeyDown);
+  window.removeEventListener('resize', handleWindowResize);
   if (resizeObserver) {
     resizeObserver.disconnect();
   }
@@ -1310,28 +1454,29 @@ const formatStatusDate = (isoStr) => {
       </div>
     </div>
 
-    <!-- FLOATING NAVIGATION CONTROLS -->
+    <!-- FLOATING NAVIGATION CONTROLS (Draggable & repositionable) -->
     <aside
       class="floating-nav-dock"
+      :class="{ 'is-dragging': isDraggingDock, 'is-left': dockSide === 'left' }"
+      :style="dockStyle"
       aria-label="Navegación rápida"
+      @pointerdown="onDockPointerDown"
     >
-      <!-- Scroll to Top (desktop & mobile) -->
-      <button
-        v-show="showScrollTop"
-        type="button"
-        class="floating-nav-btn primary"
-        title="Volver arriba"
-        aria-label="Volver arriba"
-        @click="scrollToTop"
-      >
-        <span class="material-symbols-outlined">arrow_upward</span>
-      </button>
-
-      <!-- Mobile-only Stepper (Previous / Next movie) -->
+      <!-- Stepper (Previous / Next movie) - now on PC & Mobile -->
       <div
         v-if="viewMode === 'movies' && filteredMovies.length > 1"
-        class="floating-mobile-stepper show-mobile-only"
+        class="floating-nav-stepper"
       >
+        <!-- Drag Handle / Corner Switch -->
+        <button
+          type="button"
+          class="floating-drag-handle"
+          title="Arrastrar para mover o clic para cambiar de esquina"
+          aria-label="Cambiar de esquina o arrastrar"
+        >
+          <span class="material-symbols-outlined drag-icon">drag_indicator</span>
+        </button>
+
         <button
           type="button"
           class="floating-nav-btn"
@@ -1351,6 +1496,18 @@ const formatStatusDate = (isoStr) => {
           <span class="material-symbols-outlined">keyboard_arrow_down</span>
         </button>
       </div>
+
+      <!-- Scroll to Top (desktop & mobile) -->
+      <button
+        v-show="showScrollTop"
+        type="button"
+        class="floating-nav-btn primary"
+        title="Volver arriba"
+        aria-label="Volver arriba"
+        @click="scrollToTop"
+      >
+        <span class="material-symbols-outlined">arrow_upward</span>
+      </button>
     </aside>
 
     <!-- FOOTER -->

@@ -1110,18 +1110,26 @@ h1, h2, h3, h4 {
 /* Floating Navigation Controls */
 .floating-nav-dock {
   position: fixed;
-  bottom: 24px;
-  right: 18px;
   z-index: 95;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+  transition: left 0.28s cubic-bezier(0.2, 0, 0, 1),
+              right 0.28s cubic-bezier(0.2, 0, 0, 1),
+              top 0.28s cubic-bezier(0.2, 0, 0, 1),
+              bottom 0.28s cubic-bezier(0.2, 0, 0, 1);
 }
 
-.floating-nav-dock > * {
-  pointer-events: auto;
+.floating-nav-dock.is-dragging {
+  transition: none !important;
+  cursor: grabbing !important;
+}
+
+.floating-nav-dock.is-dragging * {
+  cursor: grabbing !important;
 }
 
 .floating-nav-btn {
@@ -1160,17 +1168,48 @@ h1, h2, h3, h4 {
   background-color: #f43f5e;
 }
 
+.floating-nav-stepper,
 .floating-mobile-stepper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2px;
   padding: 4px;
   background-color: var(--md-sys-color-surface-container-high);
   border: 1px solid var(--md-sys-color-outline-variant);
   border-radius: 28px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
 }
 
+.floating-drag-handle {
+  width: 38px;
+  height: 22px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  color: var(--md-sys-color-on-surface-variant);
+  opacity: 0.6;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  transition: opacity 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.floating-drag-handle:hover {
+  opacity: 1;
+  color: var(--md-sys-color-on-surface);
+  transform: scale(1.08);
+}
+
+.floating-drag-handle .drag-icon {
+  font-size: 1.15rem;
+}
+
+.floating-nav-stepper .floating-nav-btn,
 .floating-mobile-stepper .floating-nav-btn {
   width: 40px;
   height: 40px;
@@ -1179,6 +1218,8 @@ h1, h2, h3, h4 {
   border: none;
 }
 
+.floating-nav-stepper .floating-nav-btn:hover,
+.floating-nav-stepper .floating-nav-btn:active,
 .floating-mobile-stepper .floating-nav-btn:hover,
 .floating-mobile-stepper .floating-nav-btn:active {
   background-color: var(--md-sys-color-surface-container-highest);
