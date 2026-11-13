@@ -1,69 +1,85 @@
 {
-  "lastRun": "2026-11-12T23:22:27.032Z",
+  "lastRun": "2026-11-13T00:49:08.735Z",
   "chains": {
     "cinemark": {
       "id": "cinemark",
       "name": "Cinemark",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T03:34:49.409Z",
+      "lastSuccess": "2026-11-13T00:48:09.670Z",
       "moviesCount": 14,
-      "showtimesCount": 777
+      "showtimesCount": 748
     },
     "cinepolis": {
       "id": "cinepolis",
       "name": "Cinépolis",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T04:04:28.780Z",
-      "moviesCount": 19,
-      "showtimesCount": 876
+      "lastSuccess": "2026-11-13T00:48:24.972Z",
+      "moviesCount": 21,
+      "showtimesCount": 927
     },
     "ccm": {
       "id": "ccm",
       "name": "CCM Cinemas",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T03:34:41.965Z",
-      "moviesCount": 12,
-      "showtimesCount": 177
+      "lastSuccess": "2026-11-13T00:48:09.333Z",
+      "moviesCount": 10,
+      "showtimesCount": 169
     },
     "nova": {
       "id": "nova",
       "name": "Nova Cinemas",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T03:34:29.553Z",
-      "moviesCount": 12,
-      "showtimesCount": 522
+      "lastSuccess": "2026-11-13T00:48:08.814Z",
+      "moviesCount": 9,
+      "showtimesCount": 490
     },
     "magaly": {
       "id": "magaly",
       "name": "Cine Magaly",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T04:42:42.204Z",
+      "lastSuccess": "2026-11-13T00:48:10.507Z",
       "moviesCount": 8,
-      "showtimesCount": 37
+      "showtimesCount": 35
     },
     "sanpedro": {
       "id": "sanpedro",
       "name": "Cinema San Pedro",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T03:48:35.440Z",
+      "lastSuccess": "2026-11-13T00:48:08.206Z",
       "moviesCount": 10,
-      "showtimesCount": 214
+      "showtimesCount": 188
     },
     "studio": {
       "id": "studio",
       "name": "Studio Cinemas",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T03:57:10.176Z",
+      "lastSuccess": "2026-11-13T00:49:02.162Z",
       "moviesCount": 9,
-      "showtimesCount": 108
+      "showtimesCount": 94
     },
     "citicinemas": {
       "id": "citicinemas",
       "name": "CitiCinemas",
       "status": "healthy",
-      "lastSuccess": "2026-11-12T03:57:17.900Z",
-      "moviesCount": 9,
-      "showtimesCount": 594
+      "lastSuccess": "2026-11-13T00:48:08.844Z",
+      "moviesCount": 7,
+      "showtimesCount": 588
+    },
+    "pacific": {
+      "id": "pacific",
+      "name": "Pacific Cinemas",
+      "status": "healthy",
+      "lastSuccess": "2026-11-13T00:48:07.621Z",
+      "moviesCount": 8,
+      "showtimesCount": 50
+    },
+    "sunset": {
+      "id": "sunset",
+      "name": "Sunset Cinema",
+      "status": "healthy",
+      "lastSuccess": "2026-11-13T00:48:10.016Z",
+      "moviesCount": 5,
+      "showtimesCount": 51
     }
   }
 }

@@ -7,11 +7,13 @@
     "studio": "CCM Cinemas",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "7.8",
     "duration": "2h 15m",
-    "director": "N/A",
+    "director": "山崎貴",
     "genres": [
-      "Ciencia Ficción"
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
@@ -25,28 +27,6 @@
         "locationDetail": "Rohrmoser, Plaza Mayor",
         "website": "https://www.ccmcinemas.com",
         "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "20:40",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:40",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:20",
-                "date": "2026-11-15"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "DOB",
@@ -72,6 +52,24 @@
                 "date": "2026-11-18"
               }
             ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-15"
+              }
+            ]
           }
         ]
       },
@@ -86,12 +84,42 @@
         "groups": [
           {
             "format": "2D",
-            "language": "SUB",
+            "language": "DOB",
             "times": [
               {
-                "time": "15:20",
+                "time": "17:55",
                 "date": "2026-11-12"
               },
+              {
+                "time": "17:55",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:55",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
               {
                 "time": "20:30",
                 "date": "2026-11-12"
@@ -129,40 +157,6 @@
                 "date": "2026-11-18"
               }
             ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "17:55",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:50",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:55",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "14:50",
-                "date": "2026-11-18"
-              }
-            ]
           }
         ]
       },
@@ -179,10 +173,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "20:20",
-                "date": "2026-11-11"
-              },
               {
                 "time": "17:35",
                 "date": "2026-11-12"
@@ -238,10 +228,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "15:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "15:20",
                 "date": "2026-11-13"
               },
@@ -275,14 +261,12 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
-    "duration": "2h 0m",
+    "score": null,
+    "duration": "N/A",
     "director": "N/A",
-    "genres": [
-      "Drama"
-    ],
-    "poster": "https://www.ccmcinemas.com/images/posters/400_95.jpg",
-    "synopsis": "Un espacio para disfrutar de peliculas basadas en libros.",
+    "genres": [],
+    "poster": null,
+    "synopsis": "Sin sinopsis disponible.",
     "theaters": [
       {
         "complexId": "ccm-plaza-mayor",
@@ -315,11 +299,15 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.4",
     "duration": "1h 48m",
-    "director": "N/A",
+    "director": "Erica Rivinoja, Alessandro Carloni",
     "genres": [
-      "Animación"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
@@ -337,10 +325,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "15:40",
-                "date": "2026-11-12"
-              },
               {
                 "time": "18:10",
                 "date": "2026-11-12"
@@ -407,10 +391,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "15:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "17:30",
                 "date": "2026-11-12"
               },
@@ -506,60 +486,10 @@
         "website": "https://www.ccmcinemas.com",
         "groups": [
           {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:20",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "17:30",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
             "format": "3D",
             "language": "DOB",
             "times": [
               {
-                "time": "15:30",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "18:00",
                 "date": "2026-11-12"
               },
@@ -590,6 +520,48 @@
               {
                 "time": "18:00",
                 "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -605,11 +577,13 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": null,
     "duration": "2h 39m",
-    "director": "N/A",
+    "director": "Francis Lawrence",
     "genres": [
-      "Ciencia Ficción"
+      "Ciencia ficción",
+      "Acción",
+      "Aventura"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
     "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
@@ -630,6 +604,20 @@
               {
                 "time": "20:00",
                 "date": "2026-11-18"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-19"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:30",
+                "date": "2026-11-19"
               }
             ]
           }
@@ -651,6 +639,10 @@
               {
                 "time": "19:00",
                 "date": "2026-11-18"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-19"
               }
             ]
           },
@@ -661,6 +653,10 @@
               {
                 "time": "20:00",
                 "date": "2026-11-18"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-19"
               }
             ]
           }
@@ -682,6 +678,10 @@
               {
                 "time": "19:00",
                 "date": "2026-11-18"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-19"
               }
             ]
           },
@@ -692,46 +692,10 @@
               {
                 "time": "20:00",
                 "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ccm-100",
-    "normalizedKey": "bosquesalvaje",
-    "title": "El Bosque Salvaje",
-    "originalTitle": "Wildwood",
-    "studio": "CCM Cinemas",
-    "rating": "M12",
-    "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "2h 12m",
-    "director": "N/A",
-    "genres": [
-      "Acción"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
-    "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
-    "theaters": [
-      {
-        "complexId": "ccm-plaza-mayor",
-        "chainId": "ccm",
-        "chainName": "CCM Cinemas",
-        "complexName": "CCM Plaza Mayor",
-        "province": "San José",
-        "locationDetail": "Rohrmoser, Plaza Mayor",
-        "website": "https://www.ccmcinemas.com",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
+              },
               {
-                "time": "20:00",
-                "date": "2026-11-11"
+                "time": "20:20",
+                "date": "2026-11-19"
               }
             ]
           }
@@ -749,8 +713,9 @@
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
     "duration": "1h 55m",
-    "director": "N/A",
+    "director": "Ti West",
     "genres": [
+      "Fantasía",
       "Comedia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
@@ -769,10 +734,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "15:30",
-                "date": "2026-11-12"
-              },
               {
                 "time": "18:00",
                 "date": "2026-11-12"
@@ -824,12 +785,34 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
+            "language": "SUB",
             "times": [
               {
-                "time": "15:30",
+                "time": "18:00",
                 "date": "2026-11-12"
               },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
               {
                 "time": "20:30",
                 "date": "2026-11-12"
@@ -883,32 +866,6 @@
                 "date": "2026-11-18"
               }
             ]
-          },
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-17"
-              }
-            ]
           }
         ]
       },
@@ -925,10 +882,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "15:00",
-                "date": "2026-11-12"
-              },
               {
                 "time": "17:30",
                 "date": "2026-11-12"
@@ -987,11 +940,12 @@
     "studio": "CCM Cinemas",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "8.8",
     "duration": "2h 8m",
-    "director": "N/A",
+    "director": "Peter Farrelly",
     "genres": [
-      "Drama"
+      "Drama",
+      "Historia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
     "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
@@ -1072,11 +1026,12 @@
     "studio": "CCM Cinemas",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
+    "score": "6.3",
     "duration": "2h 0m",
-    "director": "N/A",
+    "director": "Kitao Sakurai",
     "genres": [
-      "Cine"
+      "Acción",
+      "Fantasía"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
     "synopsis": "En 1993, los distanciados luchadores Ryu y Ken Masters se ven obligados a volver a la acción cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros.",
@@ -1116,14 +1071,12 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
-    "duration": "2h 0m",
+    "score": null,
+    "duration": "N/A",
     "director": "N/A",
-    "genres": [
-      "Cine"
-    ],
-    "poster": "https://www.ccmcinemas.com/images/posters/400_94.jpg",
-    "synopsis": "Concierto de Plancha y despecho en el Cine\n\nVen a disfrutar de un evento especial y único,en el que podrás disfrutar los mejores éxitos de Plancha y Despecho,en la voz de Yecson Carvajal,en vivo en el Cine.",
+    "genres": [],
+    "poster": null,
+    "synopsis": "Sin sinopsis disponible.",
     "theaters": [
       {
         "complexId": "ccm-san-ramon",
@@ -1156,11 +1109,12 @@
     "studio": "CCM Cinemas",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.4",
     "duration": "2h 16m",
-    "director": "N/A",
+    "director": "李安",
     "genres": [
-      "Cine"
+      "Drama",
+      "Romance"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/m9uBQtgUcFdY5hBWdTlgEypkcDq.jpg",
     "synopsis": "La señora Dashwood, Elinor, Marianne y Margaret, son tres hermanas del segundo matrimonio del señor Dashwood. Cuando este muere, deja toda la herencia al hijo de su primer matrimonio. Las Dashwood, se quedan un corto tiempo en la que era su casa, donde conocen a Edward Ferrars, cuñado de su hermanastro del cual Elinor se enamora. Cuando se trasladan a una casa en el campo, Marianne se enamora de John Willoughby, que vive cerca de su nueva casa. Durante su estancia allí ella aprenderá a madurar acerca de los conceptos del amor.",
@@ -1210,11 +1164,13 @@
     "studio": "CCM Cinemas",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "6.9",
     "duration": "2h 2m",
-    "director": "N/A",
+    "director": "David Leitch",
     "genres": [
-      "Cine"
+      "Acción",
+      "Crimen",
+      "Suspense"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
     "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
@@ -1232,10 +1188,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "15:15",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:30",
                 "date": "2026-11-12"
@@ -1328,46 +1280,6 @@
               {
                 "time": "20:00",
                 "date": "2026-11-13"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ccm-91",
-    "normalizedKey": "clayface",
-    "title": "Clayface",
-    "originalTitle": "Clayface",
-    "studio": "CCM Cinemas",
-    "rating": "M18",
-    "ratingBadgeClass": "badge-red",
-    "score": "8.0",
-    "duration": "1h 49m",
-    "director": "N/A",
-    "genres": [
-      "Cine"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
-    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
-    "theaters": [
-      {
-        "complexId": "ccm-san-carlos",
-        "chainId": "ccm",
-        "chainName": "CCM Cinemas",
-        "complexName": "CCM San Carlos",
-        "province": "Alajuela",
-        "locationDetail": "Ciudad Quesada, San Carlos",
-        "website": "https://www.ccmcinemas.com",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-11"
               }
             ]
           }

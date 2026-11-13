@@ -40,7 +40,7 @@ for (const m of movies) {
   }
 
   for (const t of m.theaters) {
-    assert.ok(['cinemark', 'cinepolis', 'ccm', 'nova', 'magaly', 'sanpedro', 'studio', 'citicinemas'].includes(t.chainId), `Invalid chainId ${t.chainId} in ${t.complexName}`);
+    assert.ok(['cinemark', 'cinepolis', 'ccm', 'nova', 'magaly', 'sanpedro', 'studio', 'citicinemas', 'pacific', 'sunset'].includes(t.chainId), `Invalid chainId ${t.chainId} in ${t.complexName}`);
     chainsFound.add(t.chainId);
     assert.ok(t.complexName, `Missing complexName in ${m.title}`);
     assert.ok(t.province, `Missing province in ${t.complexName}`);
@@ -69,7 +69,7 @@ for (const m of movies) {
 assert.ok(chainsFound.size >= 1, 'At least one cinema chain must be present');
 assert.ok(totalShowtimes > 50, `Expected > 50 showtimes, got ${totalShowtimes}`);
 
-const allKnownChains = ['cinemark', 'cinepolis', 'ccm', 'nova', 'magaly', 'sanpedro', 'studio', 'citicinemas'];
+const allKnownChains = ['cinemark', 'cinepolis', 'ccm', 'nova', 'magaly', 'sanpedro', 'studio', 'citicinemas', 'pacific', 'sunset'];
 const missingChains = allKnownChains.filter(c => !chainsFound.has(c));
 if (missingChains.length > 0) {
   console.log(`ℹ️ Note: Chains currently without active showtimes: ${missingChains.join(', ')}`);

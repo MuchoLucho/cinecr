@@ -3,12 +3,16 @@
     "id": "studio-clayface",
     "title": "CLAYFACE",
     "originalTitle": "CLAYFACE",
-    "synopsis": "El meteórico ascenso de Matt Hagen, desde chico de la calle en Gotham hasta protagonista de Hollywood, se ve trágicamente truncado cuando las acciones de un jefe del crimen local lo dejan horriblemente desfigurado. Basada en el personaje de DC Comics.",
+    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
     "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
     "rating": "MAYORES 18 AÑOS",
     "duration": "1h 49m",
+    "score": "7.4",
+    "director": "James Watkins",
     "genres": [
-      "Cine"
+      "Terror",
+      "Suspense",
+      "Ciencia ficción"
     ],
     "theaters": [
       {
@@ -24,14 +28,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "18:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-12"
-              },
               {
                 "time": "18:15",
                 "date": "2026-11-13"
@@ -82,8 +78,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -91,12 +86,16 @@
     "id": "studio-godzillaminuszero",
     "title": "GODZILLA MINUS ZERO",
     "originalTitle": "GODZILLA MINUS ZERO",
-    "synopsis": "Retoma la historia en 1949, dos años después de los turbulentos acontecimientos de Godzilla Minus One, y continúa la historia de la familia Shikishima mientras enfrentan una nueva catástrofe. Han pasado dos años desde entonces (Audio japonés).",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "rating": "MAYORES 12 AÑOS",
     "duration": "2h 15m",
+    "score": "7.8",
+    "director": "山崎貴",
     "genres": [
-      "Cine"
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
     ],
     "theaters": [
       {
@@ -112,10 +111,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "15:40",
-                "date": "2026-11-12"
-              },
               {
                 "time": "15:40",
                 "date": "2026-11-13"
@@ -142,8 +137,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -155,8 +149,14 @@
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "rating": "TP",
     "duration": "1h 48m",
+    "score": "7.4",
+    "director": "Erica Rivinoja, Alessandro Carloni",
     "genres": [
-      "Cine"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
     ],
     "theaters": [
       {
@@ -172,14 +172,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "13:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
               {
                 "time": "13:20",
                 "date": "2026-11-13"
@@ -228,10 +220,6 @@
             "times": [
               {
                 "time": "15:40",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:40",
                 "date": "2026-11-13"
               },
               {
@@ -256,8 +244,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -265,12 +252,17 @@
     "id": "studio-bosquesalvaje",
     "title": "EL BOSQUE SALVAJE",
     "originalTitle": "WILD WOOD",
-    "synopsis": "E hermanito de Prue McKeel es raptado por una bandada de cuervos, se verá obligada a emprender una desesperada misión de rescate. Acompañada por su compañero de clase Curtis Mehlberg, Prue se adentra en un mundo de animales parlantes.",
+    "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
     "rating": "MAYORES 12 AÑOS",
     "duration": "2h 12m",
+    "score": "8.5",
+    "director": "Travis Knight",
     "genres": [
-      "Cine"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Drama"
     ],
     "theaters": [
       {
@@ -284,46 +276,8 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "13:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "13:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "13:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "13:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "13:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "13:00",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "13:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:35",
-                "date": "2026-11-12"
-              },
               {
                 "time": "13:00",
                 "date": "2026-11-13"
@@ -369,9 +323,30 @@
                 "date": "2026-11-18"
               }
             ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-18"
+              }
+            ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -379,12 +354,16 @@
     "id": "studio-juegoshambreamanecercosecha",
     "title": "LOS JUEGOS DEL HAMBRE: AMANECER EN LA COSECHA",
     "originalTitle": "The Hunger Games: Sunrise on the Reaping",
-    "synopsis": "Vuelve al mundo de Panem 24 años antes de los acontecimientos de la primera película, comenzando en la mañana de la cosecha de los 50º Juegos del Hambre, también denominados como el Segundo Vasallaje de los Veinticinco. Allí participa un joven Haymitch Abernathy.",
+    "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
     "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
     "rating": "MAYORES 12 AÑOS",
     "duration": "2h 39m",
+    "score": null,
+    "director": "Francis Lawrence",
     "genres": [
-      "Cine"
+      "Ciencia ficción",
+      "Acción",
+      "Aventura"
     ],
     "theaters": [
       {
@@ -403,11 +382,28 @@
               {
                 "time": "19:30",
                 "date": "2026-11-18"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-19"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-19"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:20",
+                "date": "2026-11-19"
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -415,12 +411,18 @@
     "id": "studio-gatosombrero",
     "title": "CINE PARA TODOS: EL GATO CON SOMBRERO",
     "originalTitle": "CAT IN THE HAT",
-    "synopsis": "Cine para Todos es una función adaptada para personas neurodivergentes o con necesidades sensoriales específicas. La sala ofrece un ambiente más cómodo, con volumen moderado, iluminación parcial y mayor flexibilidad para que cada persona disfrute la película a su manera.",
+    "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "rating": "TP",
     "duration": "1h 48m",
+    "score": "7.4",
+    "director": "Erica Rivinoja, Alessandro Carloni",
     "genres": [
-      "Cine"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
     ],
     "theaters": [
       {
@@ -442,8 +444,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -451,12 +452,15 @@
     "id": "studio-ebenezerfantasmasnavidad",
     "title": "EBENEZER: LOS FANTASMAS DE NAVIDAD",
     "originalTitle": "EBENEZER",
-    "synopsis": "Johnny Depp nos sorprende con su regreso a la pantalla grande, en este clásico literario. La historia de fantasmas ambientada en el Londres de Dickens que sigue el viaje sobrenatural de Ebenezer Scrooge, para enfrentarse a su pasado, presente y futuro y luchar por una segunda oportunidad.",
+    "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "rating": "MAYORES 12 AÑOS",
     "duration": "1h 55m",
+    "score": "8.0",
+    "director": "Ti West",
     "genres": [
-      "Cine"
+      "Fantasía",
+      "Comedia"
     ],
     "theaters": [
       {
@@ -472,14 +476,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "13:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:20",
-                "date": "2026-11-12"
-              },
               {
                 "time": "13:00",
                 "date": "2026-11-13"
@@ -532,14 +528,6 @@
             "times": [
               {
                 "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
                 "date": "2026-11-13"
               },
               {
@@ -588,8 +576,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -597,12 +584,15 @@
     "id": "studio-yosoyrocky",
     "title": "YO SOY ROCKY",
     "originalTitle": "I PLAY ROCKY",
-    "synopsis": "Stallone, sueña con ser actor, pero creció en la pobreza, yendo de una casa a otra. Un día, viendo a Muhammad Ali pelear contra Chuck Wepner, le llega la inspiración: escribe un guion sobre un boxeador desvalido que llega hasta el final. ¿Qué pasará ahora?",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
     "rating": "MAYORES 15 AÑOS",
     "duration": "2h 8m",
+    "score": "8.8",
+    "director": "Peter Farrelly",
     "genres": [
-      "Cine"
+      "Drama",
+      "Historia"
     ],
     "theaters": [
       {
@@ -618,14 +608,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "18:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:20",
-                "date": "2026-11-12"
-              },
               {
                 "time": "18:10",
                 "date": "2026-11-13"
@@ -676,8 +658,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   },
@@ -685,12 +666,16 @@
     "id": "studio-comorobarbanco",
     "title": "CÓMO ROBAR UN BANCO",
     "originalTitle": "HOW TO ROB A BANCK",
-    "synopsis": "Un hombre desesperado planea un elaborado atraco contra el corrupto sistema financiero que arruinó su vida, con un grupo que documenta sus actos en redes sociales.",
+    "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
     "rating": "MAYORES 15 AÑOS",
     "duration": "2h 2m",
+    "score": "6.9",
+    "director": "David Leitch",
     "genres": [
-      "Cine"
+      "Acción",
+      "Crimen",
+      "Suspense"
     ],
     "theaters": [
       {
@@ -706,10 +691,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "20:40",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:40",
                 "date": "2026-11-13"
@@ -732,8 +713,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.studiocinemascr.com"
+        ]
       }
     ]
   }

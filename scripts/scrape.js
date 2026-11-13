@@ -10,6 +10,8 @@ import { scrapeMagaly } from './scrape-magaly.js';
 import { scrapeSanPedro } from './scrape-sanpedro.js';
 import { scrapeStudio } from './scrape-studio.js';
 import { scrapeCitiCinemas } from './scrape-citicinemas.js';
+import { scrapePacific } from './scrape-pacific.js';
+import { scrapeSunset } from './scrape-sunset.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -388,7 +390,7 @@ async function safeScrape(chainId, name, scraperFn, cacheFileName, statusData) {
 }
 
 export async function scrapeAll() {
-  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova + Magaly + San Pedro + Studio + CitiCinemas) ===');
+  console.log('=== Starting full CineCR scrape (Cinemark + Cinépolis + CCM + Nova + Magaly + San Pedro + Studio + CitiCinemas + Pacific + Sunset) ===');
   const statusData = loadStatus();
 
   const [
@@ -399,7 +401,9 @@ export async function scrapeAll() {
     magalyMovies,
     sanPedroMovies,
     studioMovies,
-    citiMovies
+    citiMovies,
+    pacificMovies,
+    sunsetMovies
   ] = await Promise.all([
     safeScrape('cinemark', 'Cinemark', scrapeCinemark, 'cinemark-data.json', statusData),
     safeScrape('cinepolis', 'Cinépolis', scrapeCinepolis, 'cinepolis-data.json', statusData),
@@ -408,10 +412,23 @@ export async function scrapeAll() {
     safeScrape('magaly', 'Cine Magaly', scrapeMagaly, 'magaly-data.json', statusData),
     safeScrape('sanpedro', 'Cinema San Pedro', scrapeSanPedro, 'sanpedro-data.json', statusData),
     safeScrape('studio', 'Studio Cinemas', scrapeStudio, 'studio-data.json', statusData),
-    safeScrape('citicinemas', 'CitiCinemas', scrapeCitiCinemas, 'citicinemas-data.json', statusData)
+    safeScrape('citicinemas', 'CitiCinemas', scrapeCitiCinemas, 'citicinemas-data.json', statusData),
+    safeScrape('pacific', 'Pacific Cinemas', scrapePacific, 'pacific-data.json', statusData),
+    safeScrape('sunset', 'Sunset Cinema', scrapeSunset, 'sunset-data.json', statusData)
   ]);
 
-  const merged = mergeDatasets(cinemarkMovies, cinepolisMovies, ccmMovies, novaMovies, magalyMovies, sanPedroMovies, studioMovies, citiMovies);
+  const merged = mergeDatasets(
+    cinemarkMovies,
+    cinepolisMovies,
+    ccmMovies,
+    novaMovies,
+    magalyMovies,
+    sanPedroMovies,
+    studioMovies,
+    citiMovies,
+    pacificMovies,
+    sunsetMovies
+  );
   await enrichMergedWithTmdb(merged);
   const outDir = path.resolve(__dirname, '../src/data');
   const outFile = path.join(outDir, 'movies-data.json');
@@ -436,7 +453,9 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
     const sanpedro = JSON.parse(fs.readFileSync(path.join(dataDir, 'sanpedro-data.json'), 'utf8'));
     const studio = JSON.parse(fs.readFileSync(path.join(dataDir, 'studio-data.json'), 'utf8'));
     const citicinemas = JSON.parse(fs.readFileSync(path.join(dataDir, 'citicinemas-data.json'), 'utf8'));
-    const merged = mergeDatasets(cm, cp, ccm, nova, magaly, sanpedro, studio, citicinemas);
+    const pacific = JSON.parse(fs.readFileSync(path.join(dataDir, 'pacific-data.json'), 'utf8'));
+    const sunset = JSON.parse(fs.readFileSync(path.join(dataDir, 'sunset-data.json'), 'utf8'));
+    const merged = mergeDatasets(cm, cp, ccm, nova, magaly, sanpedro, studio, citicinemas, pacific, sunset);
     await enrichMergedWithTmdb(merged);
     fs.writeFileSync(path.join(dataDir, 'movies-data.json'), JSON.stringify(merged, null, 2), 'utf8');
     console.log(`Merged ${merged.length} movies to movies-data.json`);
@@ -450,7 +469,9 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
       { id: 'magaly', name: 'Cine Magaly', file: 'magaly-data.json', data: magaly },
       { id: 'sanpedro', name: 'Cinema San Pedro', file: 'sanpedro-data.json', data: sanpedro },
       { id: 'studio', name: 'Studio Cinemas', file: 'studio-data.json', data: studio },
-      { id: 'citicinemas', name: 'CitiCinemas', file: 'citicinemas-data.json', data: citicinemas }
+      { id: 'citicinemas', name: 'CitiCinemas', file: 'citicinemas-data.json', data: citicinemas },
+      { id: 'pacific', name: 'Pacific Cinemas', file: 'pacific-data.json', data: pacific },
+      { id: 'sunset', name: 'Sunset Cinema', file: 'sunset-data.json', data: sunset }
     ];
     for (const c of chainDatasets) {
       const existing = statusData.chains[c.id] || {};
@@ -464,7 +485,7 @@ if (process.argv[1] && process.argv[1].endsWith('scrape.js')) {
       };
     }
     statusData.lastRun = new Date().toISOString();
-    fs.writeFileSync(STATUS_FILE, JSON.stringify(statusData, null, 2), 'utf8');
+    fs.writeFileSync(STATUS_FILE, JSON.stringify(statusData, null, 2), 'utf-8');
     console.log(`Scraping status updated to ${STATUS_FILE}`);
   } else {
     scrapeAll();

@@ -27,7 +27,9 @@ export const TCF_MAP = {
 export const TITLE_ALIASES = {
   'ping pong: el triunfo': 'Ping Pong: The Triumph',
   'ping pong el triunfo': 'Ping Pong: The Triumph',
-  'shrek 25 aniversario': 'Shrek'
+  'shrek 25 aniversario': 'Shrek',
+  'avengers: doomday': 'Avengers: Doomsday',
+  'avengers doomday': 'Avengers: Doomsday'
 };
 
 function normalizeText(str) {

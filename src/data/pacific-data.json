@@ -1,0 +1,504 @@
+[
+  {
+    "id": "pacific-avengersdoomday",
+    "title": "Avengers: Doomday",
+    "originalTitle": "Avengers: Doomday",
+    "synopsis": "Héroes amados de tres universos distintos están en rumbo a una colisión letal y enfrentan una amenaza existencial como ninguna otra que hayan conocido.",
+    "poster": "https://image.tmdb.org/t/p/w500/3A4IzhQHCzX5nuQParZp07F5rCT.jpg",
+    "rating": "M15",
+    "duration": "2h 45m",
+    "score": null,
+    "director": "Joe Russo, Anthony Russo",
+    "genres": [
+      "Ciencia ficción",
+      "Acción",
+      "Aventura"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/822/Avengers-Doomday",
+        "groups": [
+          {
+            "format": "3D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-12-16",
+                "time": "12:55"
+              },
+              {
+                "date": "2026-12-16",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-16",
+                "time": "21:30"
+              },
+              {
+                "date": "2026-12-17",
+                "time": "12:55"
+              },
+              {
+                "date": "2026-12-17",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-17",
+                "time": "21:30"
+              },
+              {
+                "date": "2026-12-18",
+                "time": "12:55"
+              },
+              {
+                "date": "2026-12-18",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-18",
+                "time": "21:30"
+              },
+              {
+                "date": "2026-12-19",
+                "time": "12:55"
+              },
+              {
+                "date": "2026-12-19",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-19",
+                "time": "21:30"
+              },
+              {
+                "date": "2026-12-20",
+                "time": "12:55"
+              },
+              {
+                "date": "2026-12-20",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-20",
+                "time": "21:30"
+              },
+              {
+                "date": "2026-12-21",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-21",
+                "time": "21:30"
+              },
+              {
+                "date": "2026-12-22",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-22",
+                "time": "21:30"
+              },
+              {
+                "date": "2026-12-23",
+                "time": "12:55"
+              },
+              {
+                "date": "2026-12-23",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-12-23",
+                "time": "21:30"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-12-16",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-12-17",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-12-18",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-12-19",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-12-20",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-12-21",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-12-22",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-12-23",
+                "time": "16:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacific-juegoshambreamanecercosecha",
+    "title": "Los juegos del hambre: amanecer en la cosecha",
+    "originalTitle": "Los juegos del hambre: amanecer en la cosecha",
+    "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
+    "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
+    "rating": "M12",
+    "duration": "2h 39m",
+    "score": null,
+    "director": "Francis Lawrence",
+    "genres": [
+      "Ciencia ficción",
+      "Acción",
+      "Aventura"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/830/Los-juegos-del-hambre-amanecer-en-la-cosecha",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-18",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-11-19",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-11-20",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-11-21",
+                "time": "14:10"
+              },
+              {
+                "date": "2026-11-21",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-11-22",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-22",
+                "time": "19:10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacific-ebenezerfantasmasnavidad",
+    "title": "Ebenezer: los fantasmas en navidad",
+    "originalTitle": "Ebenezer: los fantasmas en navidad",
+    "synopsis": "Sin sinopsis disponible.",
+    "poster": null,
+    "rating": "M12",
+    "duration": "N/A",
+    "score": null,
+    "director": "N/A",
+    "genres": [
+      "Acción"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/834/Ebenezer-los-fantasmas-en-navidad",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-14",
+                "time": "19:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:45"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacific-comorobarbanco",
+    "title": "Como robar un banco",
+    "originalTitle": "Como robar un banco",
+    "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
+    "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
+    "rating": "M18",
+    "duration": "2h 2m",
+    "score": "6.9",
+    "director": "David Leitch",
+    "genres": [
+      "Acción",
+      "Crimen",
+      "Suspense"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/839/Como-robar-un-banco",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "19:10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacific-yosoyrocky",
+    "title": "Yo soy Rocky",
+    "originalTitle": "Yo soy Rocky",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
+    "rating": "TP",
+    "duration": "2h 8m",
+    "score": "8.8",
+    "director": "Peter Farrelly",
+    "genres": [
+      "Drama",
+      "Historia"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/841/Yo-soy-Rocky",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-15",
+                "time": "16:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacific-godzillaminuszero",
+    "title": "Godzilla Minus Zero",
+    "originalTitle": "Godzilla Minus Zero",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
+    "rating": "M18",
+    "duration": "2h 15m",
+    "score": "7.8",
+    "director": "山崎貴",
+    "genres": [
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/825/Godzilla-Minus-Zero",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "17:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:45"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacific-gatosombrero",
+    "title": "El gato con sombrero",
+    "originalTitle": "El gato con sombrero",
+    "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
+    "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
+    "rating": "TP",
+    "duration": "1h 48m",
+    "score": "7.4",
+    "director": "Erica Rivinoja, Alessandro Carloni",
+    "genres": [
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/831/El-gato-con-sombrero",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "19:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "16:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacific-bosquesalvajewildwood",
+    "title": "El bosque salvaje: Wildwood",
+    "originalTitle": "El bosque salvaje: Wildwood",
+    "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
+    "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
+    "rating": "M12",
+    "duration": "2h 12m",
+    "score": "8.5",
+    "director": "Travis Knight",
+    "genres": [
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Drama"
+    ],
+    "theaters": [
+      {
+        "chainId": "pacific",
+        "chainName": "Pacific Cinemas",
+        "complexId": "pacific-paso-canoas",
+        "complexName": "Pacific Cinemas Paso Canoas",
+        "province": "Puntarenas",
+        "city": "Paso Canoas",
+        "address": "Paso Canoas, Corredores, Puntarenas",
+        "locationDetail": "Paso Canoas, Corredores",
+        "website": "https://pacificcinemas.com/pelicula/824/El-bosque-salvaje-Wildwood",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-14",
+                "time": "17:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "19:10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

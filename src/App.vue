@@ -187,7 +187,9 @@ const chains = [
   { id: 'magaly', name: 'Cine Magaly' },
   { id: 'sanpedro', name: 'Cinema San Pedro' },
   { id: 'studio', name: 'Studio Cinemas' },
-  { id: 'citicinemas', name: 'CitiCinemas' }
+  { id: 'citicinemas', name: 'CitiCinemas' },
+  { id: 'pacific', name: 'Pacific Cinemas' },
+  { id: 'sunset', name: 'Sunset Cinema' }
 ];
 
 const CHAIN_WEBSITES = {
@@ -198,7 +200,9 @@ const CHAIN_WEBSITES = {
   magaly: 'https://www.cinemagaly.com',
   sanpedro: 'https://cinemasanpedro.com',
   studio: 'https://www.studiocinemascr.com',
-  citicinemas: 'https://www.citicinemascr.com'
+  citicinemas: 'https://www.citicinemascr.com',
+  pacific: 'https://pacificcinemas.com/cartelera.php',
+  sunset: 'https://sunsetcinemajaco.com/cartelera/'
 };
 
 const getCinemaWebsite = (complex) => {
@@ -532,6 +536,8 @@ const getChainBadgeClass = (chainId) => {
   if (chainId === 'sanpedro') return 'badge-orange';
   if (chainId === 'studio') return 'badge-purple';
   if (chainId === 'citicinemas') return 'badge-teal';
+  if (chainId === 'pacific') return 'badge-blue';
+  if (chainId === 'sunset') return 'badge-amber';
   return 'badge-red';
 };
 

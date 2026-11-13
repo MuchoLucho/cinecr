@@ -7,12 +7,14 @@
     "studio": "Cinépolis",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
+    "score": "8.5",
     "duration": "2h 12m",
-    "director": "N/A",
+    "director": "Travis Knight",
     "genres": [
-      "Animado",
-      "Aventura"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Drama"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
     "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
@@ -75,10 +77,6 @@
             "times": [
               {
                 "time": "16:40",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:40",
                 "date": "2026-11-13"
               },
               {
@@ -110,6 +108,10 @@
               {
                 "time": "13:45",
                 "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -130,10 +132,6 @@
             "times": [
               {
                 "time": "15:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:30",
                 "date": "2026-11-13"
               },
               {
@@ -151,6 +149,10 @@
               {
                 "time": "15:30",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -185,10 +187,6 @@
             "times": [
               {
                 "time": "15:55",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:55",
                 "date": "2026-11-13"
               },
               {
@@ -206,6 +204,10 @@
               {
                 "time": "15:55",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "15:55",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -253,6 +255,10 @@
               {
                 "time": "15:10",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "15:10",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -281,10 +287,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "17:30",
-                "date": "2026-11-12"
-              },
               {
                 "time": "21:00",
                 "date": "2026-11-12"
@@ -328,6 +330,10 @@
               {
                 "time": "21:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -357,11 +363,15 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.4",
     "duration": "1h 48m",
-    "director": "N/A",
+    "director": "Erica Rivinoja, Alessandro Carloni",
     "genres": [
-      "Animado"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
@@ -380,14 +390,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "14:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "19:30",
                 "date": "2026-11-12"
               },
@@ -458,6 +460,10 @@
               {
                 "time": "19:30",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -478,14 +484,6 @@
             "times": [
               {
                 "time": "14:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:25",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:45",
                 "date": "2026-11-13"
               },
               {
@@ -531,6 +529,14 @@
               {
                 "time": "17:25",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "14:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:25",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -550,10 +556,6 @@
             "language": "DOB",
             "times": [
               {
-                "time": "17:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "19:40",
                 "date": "2026-11-12"
               },
@@ -564,10 +566,6 @@
               {
                 "time": "19:40",
                 "date": "2026-11-13"
-              },
-              {
-                "time": "11:30",
-                "date": "2026-11-14"
               },
               {
                 "time": "14:15",
@@ -580,10 +578,6 @@
               {
                 "time": "19:40",
                 "date": "2026-11-14"
-              },
-              {
-                "time": "11:30",
-                "date": "2026-11-15"
               },
               {
                 "time": "14:15",
@@ -612,6 +606,10 @@
               {
                 "time": "18:50",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "14:50",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -632,18 +630,6 @@
             "times": [
               {
                 "time": "14:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:45",
                 "date": "2026-11-13"
               },
               {
@@ -725,6 +711,18 @@
               {
                 "time": "17:30",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "14:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -740,13 +738,35 @@
         "website": "https://cinepolis.co.cr",
         "groups": [
           {
-            "format": "JUNIOR",
+            "format": "2D",
             "language": "DOB",
             "times": [
               {
-                "time": "18:00",
+                "time": "18:55",
                 "date": "2026-11-12"
               },
+              {
+                "time": "18:55",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:55",
+                "date": "2026-11-14"
+              }
+            ]
+          },
+          {
+            "format": "JUNIOR",
+            "language": "DOB",
+            "times": [
               {
                 "time": "20:45",
                 "date": "2026-11-12"
@@ -802,32 +822,14 @@
               {
                 "time": "20:45",
                 "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "18:55",
-                "date": "2026-11-12"
               },
               {
-                "time": "18:55",
-                "date": "2026-11-13"
+                "time": "18:00",
+                "date": "2026-11-18"
               },
               {
-                "time": "13:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:55",
-                "date": "2026-11-14"
+                "time": "20:45",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -856,10 +858,6 @@
             "format": "JUNIOR",
             "language": "DOB",
             "times": [
-              {
-                "time": "17:15",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:15",
                 "date": "2026-11-12"
@@ -932,13 +930,13 @@
     "studio": "Cinépolis",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
+    "score": "7.8",
     "duration": "2h 15m",
-    "director": "N/A",
+    "director": "山崎貴",
     "genres": [
-      "Drama",
-      "Acción",
-      "Ciencia ficción"
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
@@ -952,52 +950,6 @@
         "locationDetail": "Moravia, Plaza Lincoln",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "15:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-17"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "DOB",
@@ -1033,6 +985,52 @@
               {
                 "time": "18:30",
                 "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -1049,60 +1047,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "14:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "14:10",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "17:10",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
               {
@@ -1128,6 +1072,60 @@
               {
                 "time": "20:25",
                 "date": "2026-11-17"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -1147,10 +1145,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "15:20",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "21:15",
                 "date": "2026-11-12"
               },
@@ -1193,6 +1187,10 @@
               {
                 "time": "21:15",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -1200,10 +1198,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "18:20",
-                "date": "2026-11-12"
-              },
               {
                 "time": "18:20",
                 "date": "2026-11-13"
@@ -1247,60 +1241,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "14:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
               {
@@ -1328,6 +1268,56 @@
                 "date": "2026-11-17"
               }
             ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-18"
+              }
+            ]
           }
         ]
       },
@@ -1340,44 +1330,6 @@
         "locationDetail": "Tres Ríos, TerraMall",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "17:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:15",
-                "date": "2026-11-17"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "SUB",
@@ -1400,11 +1352,45 @@
               },
               {
                 "time": "20:15",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:15",
                 "date": "2026-11-16"
               },
               {
-                "time": "20:15",
+                "time": "16:10",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "17:15",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -1412,10 +1398,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "17:00",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:30",
                 "date": "2026-11-12"
@@ -1469,10 +1451,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "17:00",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:00",
                 "date": "2026-11-12"
@@ -1541,10 +1519,10 @@
     "ratingBadgeClass": "badge-amber",
     "score": "8.0",
     "duration": "1h 55m",
-    "director": "N/A",
+    "director": "Ti West",
     "genres": [
-      "Drama",
-      "Ciencia ficción"
+      "Fantasía",
+      "Comedia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
@@ -1560,85 +1538,89 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
+            "language": "SUB",
             "times": [
               {
-                "time": "15:15",
+                "time": "21:00",
                 "date": "2026-11-12"
               },
               {
-                "time": "15:15",
+                "time": "18:00",
                 "date": "2026-11-13"
               },
               {
-                "time": "12:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:15",
-                "date": "2026-11-14"
-              },
-              {
                 "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
                 "date": "2026-11-14"
               },
               {
-                "time": "12:30",
+                "time": "18:00",
                 "date": "2026-11-15"
               },
               {
-                "time": "15:15",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:15",
+                "time": "18:00",
                 "date": "2026-11-16"
               },
               {
-                "time": "15:15",
+                "time": "18:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
               }
             ]
           },
           {
             "format": "2D",
-            "language": "SUB",
+            "language": "DOB",
             "times": [
               {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
+                "time": "15:15",
                 "date": "2026-11-13"
               },
               {
-                "time": "21:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:00",
+                "time": "12:30",
                 "date": "2026-11-14"
               },
               {
-                "time": "18:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-17"
+                "time": "15:15",
+                "date": "2026-11-14"
               },
               {
                 "time": "21:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:15",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "15:15",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -1647,10 +1629,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "20:45",
                 "date": "2026-11-12"
               },
@@ -1693,6 +1671,14 @@
               {
                 "time": "20:45",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -1731,36 +1717,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "15:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "15:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:45",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "DOB",
             "times": [
               {
@@ -1818,6 +1774,44 @@
               {
                 "time": "21:15",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "15:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:45",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -1834,93 +1828,97 @@
         "groups": [
           {
             "format": "2D",
-            "language": "SUB",
+            "language": "DOB",
             "times": [
               {
-                "time": "15:05",
+                "time": "21:10",
                 "date": "2026-11-12"
               },
               {
-                "time": "15:05",
+                "time": "18:10",
                 "date": "2026-11-13"
               },
               {
-                "time": "15:05",
+                "time": "21:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:10",
                 "date": "2026-11-14"
               },
               {
-                "time": "15:05",
+                "time": "18:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:10",
                 "date": "2026-11-15"
               },
               {
-                "time": "15:05",
+                "time": "18:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:10",
                 "date": "2026-11-16"
               },
               {
-                "time": "15:05",
+                "time": "21:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:10",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-18"
               }
             ]
           },
           {
             "format": "2D",
-            "language": "DOB",
+            "language": "SUB",
             "times": [
               {
-                "time": "18:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:10",
+                "time": "15:05",
                 "date": "2026-11-13"
               },
               {
-                "time": "21:10",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:10",
+                "time": "15:05",
                 "date": "2026-11-14"
               },
               {
-                "time": "18:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:10",
+                "time": "15:05",
                 "date": "2026-11-15"
               },
               {
-                "time": "18:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:10",
+                "time": "15:05",
                 "date": "2026-11-16"
               },
               {
-                "time": "21:10",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:10",
+                "time": "15:05",
                 "date": "2026-11-17"
               },
               {
-                "time": "21:10",
-                "date": "2026-11-17"
+                "time": "15:05",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -1937,44 +1935,6 @@
         "groups": [
           {
             "format": "MACRO XE",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "16:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "13:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "16:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "13:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "16:45",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "MACRO XE",
             "language": "SUB",
             "times": [
               {
@@ -2030,6 +1990,48 @@
               {
                 "time": "20:15",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "MACRO XE",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "16:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:45",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -2046,17 +2048,59 @@
         "groups": [
           {
             "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
             "language": "DOB",
             "times": [
               {
-                "time": "16:40",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:15",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "21:50",
                 "date": "2026-11-12"
               },
@@ -2071,10 +2115,6 @@
               {
                 "time": "21:50",
                 "date": "2026-11-13"
-              },
-              {
-                "time": "12:00",
-                "date": "2026-11-14"
               },
               {
                 "time": "13:00",
@@ -2105,53 +2145,29 @@
                 "date": "2026-11-17"
               },
               {
+                "time": "16:40",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:15",
+                "date": "2026-11-18"
+              },
+              {
                 "time": "21:50",
-                "date": "2026-11-17"
+                "date": "2026-11-18"
               }
             ]
           },
           {
-            "format": "2D",
+            "format": "4DX",
             "language": "SUB",
             "times": [
               {
-                "time": "19:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "15:05",
                 "date": "2026-11-13"
               },
               {
-                "time": "19:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:00",
-                "date": "2026-11-14"
-              },
-              {
                 "time": "15:05",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:40",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "19:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:00",
                 "date": "2026-11-14"
               },
               {
@@ -2159,16 +2175,22 @@
                 "date": "2026-11-16"
               },
               {
-                "time": "19:15",
-                "date": "2026-11-16"
+                "time": "15:55",
+                "date": "2026-11-17"
               },
               {
                 "time": "15:05",
-                "date": "2026-11-17"
-              },
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "4DX",
+            "language": "DOB",
+            "times": [
               {
-                "time": "19:15",
-                "date": "2026-11-17"
+                "time": "12:00",
+                "date": "2026-11-14"
               }
             ]
           },
@@ -2177,10 +2199,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "21:00",
                 "date": "2026-11-12"
               },
@@ -2215,6 +2233,14 @@
               {
                 "time": "21:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -2243,10 +2269,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "15:50",
-                "date": "2026-11-12"
-              },
               {
                 "time": "19:30",
                 "date": "2026-11-12"
@@ -2294,36 +2316,14 @@
               {
                 "time": "19:30",
                 "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "MACRO XE",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "17:45",
-                "date": "2026-11-12"
               },
               {
-                "time": "18:45",
-                "date": "2026-11-13"
+                "time": "16:30",
+                "date": "2026-11-18"
               },
               {
-                "time": "12:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:45",
-                "date": "2026-11-15"
+                "time": "19:40",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -2356,6 +2356,32 @@
                 "date": "2026-11-15"
               }
             ]
+          },
+          {
+            "format": "MACRO XE",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:45",
+                "date": "2026-11-15"
+              }
+            ]
           }
         ]
       }
@@ -2369,13 +2395,13 @@
     "studio": "Cinépolis",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
+    "score": "6.9",
     "duration": "2h 2m",
-    "director": "N/A",
+    "director": "David Leitch",
     "genres": [
       "Acción",
-      "Comedia",
-      "Thriller"
+      "Crimen",
+      "Suspense"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
     "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
@@ -2389,52 +2415,6 @@
         "locationDetail": "Moravia, Plaza Lincoln",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "16:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-17"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "SUB",
@@ -2470,6 +2450,60 @@
               {
                 "time": "19:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -2527,10 +2561,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "15:15",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "20:45",
                 "date": "2026-11-12"
               },
@@ -2573,6 +2603,14 @@
               {
                 "time": "20:45",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -2582,10 +2620,6 @@
             "times": [
               {
                 "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
                 "date": "2026-11-13"
               },
               {
@@ -2611,6 +2645,10 @@
               {
                 "time": "18:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -2625,68 +2663,6 @@
         "locationDetail": "Heredia, Paseo de las Flores",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "16:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "13:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "13:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "16:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-17"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "SUB",
@@ -2714,6 +2690,72 @@
               {
                 "time": "18:50",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -2755,6 +2797,10 @@
               {
                 "time": "20:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -2801,6 +2847,14 @@
               {
                 "time": "17:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -2816,23 +2870,83 @@
         "website": "https://cinepolis.co.cr",
         "groups": [
           {
+            "format": "4DX",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:10",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
             "format": "2D",
             "language": "DOB",
             "times": [
               {
                 "time": "15:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:30",
                 "date": "2026-11-13"
               },
               {
@@ -2844,15 +2958,7 @@
                 "date": "2026-11-14"
               },
               {
-                "time": "20:30",
-                "date": "2026-11-14"
-              },
-              {
                 "time": "15:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:30",
                 "date": "2026-11-16"
               },
               {
@@ -2860,37 +2966,17 @@
                 "date": "2026-11-17"
               },
               {
-                "time": "20:30",
-                "date": "2026-11-17"
+                "time": "15:30",
+                "date": "2026-11-18"
               }
             ]
           },
           {
-            "format": "2D",
+            "format": "4DX",
             "language": "SUB",
             "times": [
               {
                 "time": "17:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:10",
                 "date": "2026-11-13"
               },
               {
@@ -2898,11 +2984,7 @@
                 "date": "2026-11-14"
               },
               {
-                "time": "18:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:10",
+                "time": "20:30",
                 "date": "2026-11-14"
               },
               {
@@ -2910,24 +2992,8 @@
                 "date": "2026-11-16"
               },
               {
-                "time": "18:20",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:10",
-                "date": "2026-11-16"
-              },
-              {
                 "time": "17:45",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:10",
-                "date": "2026-11-17"
+                "date": "2026-11-18"
               }
             ]
           },
@@ -2954,6 +3020,10 @@
               {
                 "time": "18:45",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -2972,10 +3042,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
               {
                 "time": "21:40",
                 "date": "2026-11-12"
@@ -3023,6 +3089,14 @@
               {
                 "time": "18:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3038,11 +3112,12 @@
     "studio": "Cinépolis",
     "rating": "TBC",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "8.8",
     "duration": "2h 8m",
-    "director": "N/A",
+    "director": "Peter Farrelly",
     "genres": [
-      "Drama"
+      "Drama",
+      "Historia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
     "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
@@ -3058,42 +3133,8 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "14:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "14:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "14:00",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "17:10",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:15",
                 "date": "2026-11-12"
@@ -3137,6 +3178,44 @@
               {
                 "time": "20:15",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:15",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -3145,10 +3224,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "16:00",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "21:45",
                 "date": "2026-11-12"
               },
@@ -3191,6 +3266,10 @@
               {
                 "time": "21:45",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "16:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3207,60 +3286,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "16:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "16:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "16:15",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "16:15",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "DOB",
             "times": [
               {
@@ -3294,6 +3319,68 @@
               {
                 "time": "19:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:55",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3310,93 +3397,97 @@
         "groups": [
           {
             "format": "2D",
-            "language": "SUB",
+            "language": "DOB",
             "times": [
               {
-                "time": "15:00",
+                "time": "21:00",
                 "date": "2026-11-12"
               },
               {
-                "time": "15:00",
+                "time": "18:00",
                 "date": "2026-11-13"
               },
               {
-                "time": "15:00",
+                "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:00",
                 "date": "2026-11-14"
               },
               {
-                "time": "15:00",
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:00",
                 "date": "2026-11-15"
               },
               {
-                "time": "15:00",
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
                 "date": "2026-11-16"
               },
               {
-                "time": "15:00",
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
               }
             ]
           },
           {
             "format": "2D",
-            "language": "DOB",
+            "language": "SUB",
             "times": [
               {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
+                "time": "15:00",
                 "date": "2026-11-13"
               },
               {
-                "time": "21:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:00",
+                "time": "15:00",
                 "date": "2026-11-14"
               },
               {
-                "time": "18:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:00",
+                "time": "15:00",
                 "date": "2026-11-15"
               },
               {
-                "time": "18:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:00",
+                "time": "15:00",
                 "date": "2026-11-16"
               },
               {
-                "time": "21:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:00",
+                "time": "15:00",
                 "date": "2026-11-17"
               },
               {
-                "time": "21:00",
-                "date": "2026-11-17"
+                "time": "15:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3413,60 +3504,6 @@
         "groups": [
           {
             "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "15:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-17"
-              }
-            ]
-          },
-          {
-            "format": "2D",
             "language": "SUB",
             "times": [
               {
@@ -3492,6 +3529,64 @@
               {
                 "time": "21:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3506,32 +3601,6 @@
         "locationDetail": "Tres Ríos, TerraMall",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "18:05",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:05",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:05",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:05",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:05",
-                "date": "2026-11-17"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "DOB",
@@ -3571,6 +3640,40 @@
               {
                 "time": "21:20",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:05",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -3601,6 +3704,10 @@
               {
                 "time": "21:30",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "20:25",
+                "date": "2026-11-18"
               }
             ]
           },
@@ -3629,10 +3736,6 @@
             "format": "VIP",
             "language": "SUB",
             "times": [
-              {
-                "time": "16:40",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:30",
                 "date": "2026-11-12"
@@ -3680,6 +3783,14 @@
               {
                 "time": "20:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "17:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3695,14 +3806,15 @@
     "studio": "Cinépolis",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "1h 59m",
-    "director": "N/A",
+    "score": "6.3",
+    "duration": "1h 37m",
+    "director": "Morgan Simon",
     "genres": [
+      "Comedia",
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg",
-    "synopsis": "1985. Vincent, de casi 13 años, vive en las afueras de París en el seno de una familia de clase media, entre un hermano mayor distante y unos padres en conflicto constante. Aunque ya no es un niño pero tampoco un adulto, la película sigue sus reflexiones y dudas sobre la identidad, la amistad y la familia, así como sus interrogantes acerca de la religión, el deseo y el amor.",
+    "poster": "https://image.tmdb.org/t/p/w500/jJNSoRj5itqtgAFLBV3Dv0ICtye.jpg",
+    "synopsis": "En su piso de protección oficial de las afueras de París, Nicole, de 52 años, y su hijo, Serge, de 19, viven un amor fusional que florece a pesar de las adversidades de su vida cotidiana. Nicole está en paro, no consigue encontrar trabajo, la deuda de su tarjeta de crédito se va disparando y de repente se ve obligada a entregar al banco la chequera y la tarjeta pocos días antes de Navidad. La relación y la vida de madre e hijo dan un vuelco. Cuando toca fondo, Nicole vislumbra un rayo de esperanza al acercarse a la enigmática Norah, que regenta un café en la planta baja de su edificio… A veces, encuentras sentido a la vida a un tiro de piedra de tu casa. A veces, hay que buscar e ir construyendo la felicidad. Nicole atravesará el período más duro de su vida, un momento que la cambiará para siempre, como madre y como mujer. (FIRE!!)",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -3718,36 +3830,7 @@
             "language": "SUB",
             "times": [
               {
-                "time": "16:15",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "18:35",
-                "date": "2026-11-12"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-paseo-flores",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Paseo De Las Flores",
-        "province": "Heredia",
-        "locationDetail": "Heredia, Paseo de las Flores",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "16:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "19:00",
                 "date": "2026-11-12"
               }
             ]
@@ -3767,10 +3850,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "16:15",
-                "date": "2026-11-12"
-              },
               {
                 "time": "19:00",
                 "date": "2026-11-12"
@@ -3793,10 +3872,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "16:10",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "19:00",
                 "date": "2026-11-12"
               }
@@ -3818,10 +3893,6 @@
             "language": "SUB",
             "times": [
               {
-                "time": "16:15",
-                "date": "2026-11-12"
-              },
-              {
                 "time": "19:00",
                 "date": "2026-11-12"
               }
@@ -3839,14 +3910,14 @@
     "studio": "Cinépolis",
     "rating": "M18",
     "ratingBadgeClass": "badge-red",
-    "score": "8.0",
-    "duration": "1h 30m",
-    "director": "N/A",
+    "score": "1.0",
+    "duration": "N/A",
+    "director": "Doğukan Mısır",
     "genres": [
       "Terror"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/ms6V9gUMcw6T6ENgUCU7SL5x7dl.jpg",
-    "synopsis": "Una pareja de recién casados sufre un evento inesperado en una casa a la que acaban de mudarse, la cual esconde secretos que ellos ignoran. Repentinamente, ella se conecta con un ente demoniaco, el mismo que reclamó la vida de su hijo.",
+    "poster": "https://image.tmdb.org/t/p/w500/wYRD4yrCXlaBjAAaY20PW0wZ551.jpg",
+    "synopsis": "Cuando una joven regresa a su pueblo natal para cuidara su madre enferma, comienza a sufrir aterradoras visiones quedesentierran un oscuro pacto de brujería familiar del pasado, el cual reclama su vida como el precio final de una vieja venganza.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -3876,6 +3947,10 @@
               {
                 "time": "22:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "22:15",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3917,6 +3992,10 @@
               {
                 "time": "20:10",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -3942,6 +4021,10 @@
               {
                 "time": "21:35",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4007,6 +4090,14 @@
               {
                 "time": "21:15",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4064,6 +4155,14 @@
               {
                 "time": "20:50",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4079,15 +4178,15 @@
     "studio": "Cinépolis",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
-    "duration": "1h 46m",
-    "director": "N/A",
+    "score": "6.1",
+    "duration": "1h 31m",
+    "director": "Pascal Bonitzer",
     "genres": [
-      "Comedia",
-      "Thriller"
+      "Drama",
+      "Comedia"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/tCWAhDOglkW7ChhYvpRnMlLURTJ.jpg",
-    "synopsis": "El novelista misántropo François escribe apasionantes historias de crímenes -una mezcla de Agatha Christie y La Pimpinela Escarlata-, pero fuera del mundo imaginario de capa y espada de sus novelas, la vida dista mucho de ser emocionante. Su mujer, Colette, profesora de la Sorbona y experta mundialmente conocida en Alfred Hitchcock, está harta de ver a François sentado en su apartamento en pijama y añora la emoción de las películas clásicas que ve con sus alumnos. Cuando Colette empieza a sospechar que su extravagante vecino ha asesinado a su esposa, la tranquila vida de la pareja da un vuelco y su relación, que estaba estancada, resurge de golpe.",
+    "poster": "https://image.tmdb.org/t/p/w500/1D8on0AKvFxBGgyW05PW30Bn24N.jpg",
+    "synopsis": "Un día, André Masson, subastador de la famosa casa de subastas Scottie's, recibe una carta en la que se afirma que se ha encontrado un cuadro de Egon Schiele en la casa de un joven obrero de Mulhouse. Muy escéptico, acude al lugar y se ve obligado a afrontar los hechos: la obra es auténtica, una obra maestra desaparecida desde 1939, expoliada por los nazis. André ve en este descubrimiento la cumbre de su carrera, pero también el inicio de una batalla que podría ponerla en peligro. Afortunadamente, va a contar con la ayuda de su ex mujer y colega Bertina, y de su caprichosa aprendiz Aurore...",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4220,14 +4319,14 @@
     "studio": "Cinépolis",
     "rating": "M12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "1h 38m",
-    "director": "N/A",
+    "score": "6.3",
+    "duration": "1h 56m",
+    "director": "Stéphane Brizé",
     "genres": [
-      "Comedia"
+      "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/ws9wCKrqMsS700OOScv8L52wJMa.jpg",
-    "synopsis": "Elsa, a doctor, hides from the world the fact that she can see the dead and help them cross to the other side. Convinced that her gift leads to rejection, she has given up on love, retreating into solitude and her work. That is, until she meets Oscar - a dead man who doesn’t know he’s dead...",
+    "poster": "https://image.tmdb.org/t/p/w500/jURgNwJkxZO1nwtLqRQTyVZP2nS.jpg",
+    "synopsis": "Mathieu vive en París, Alice en un pequeño balneario del oeste de Francia. Él es un actor famoso, a punto de cumplir cincuenta años. Ella es una profesora de piano cuarentona. Se enamoraron hace quince años y se separaron. El tiempo ha pasado. Cada uno siguió su camino y poco a poco se fueron curando.Cuando Mathieu va a intentar superar su melancolía en un balneario termal, tropieza con Alice.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4368,15 +4467,14 @@
     "studio": "Cinépolis",
     "rating": "TP12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "1h 53m",
-    "director": "N/A",
+    "score": "6.3",
+    "duration": "1h 32m",
+    "director": "Denis Imbert",
     "genres": [
-      "Drama",
-      "Comedia"
+      "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/4FaoBpDtzhZk9R907epSN5WCelq.jpg",
-    "synopsis": "Fred and Adam have nothing in common. Yet, they will meet while walking the Way of St. James as a form of spiritual path.",
+    "poster": "https://image.tmdb.org/t/p/w500/bbn4xHSmzOOQbsaj14DIBrPMSYo.jpg",
+    "synopsis": "Pierre es un célebre escritor con una inclinación por las experiencias extremas y los viajes en solitario. Siempre ha hecho todo a su manera, cuando le convenía y con quien quería pero cada vez que las restricciones amenazaban su libertad, hacía lo que mejor sabe hacer: huir. Una tarde de borrachera, trepa por la fachada de un edificio y cae varios pisos. El accidente lo deja en coma profundo. Cuando sale de él, Pierre apenas puede mantenerse en pie. Y en contra de los consejos de todos, decide caminar solo por Francia, desde la Provenza hasta el Mont Saint Michel, a lo largo de senderos olvidados a través de algunas de las regiones más ásperas, inhóspitas y hermosas de Francia. Basado en hechos reales.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4517,11 +4615,12 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "6.9",
     "duration": "1h 44m",
-    "director": "N/A",
+    "director": "Stéphane Demoustier",
     "genres": [
-      "Drama"
+      "Drama",
+      "Historia"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/18Z7I9LJjK5gm05R1Tx6mwcUo1g.jpg",
     "synopsis": "París, 1983. Un arquitecto danés totalmente desconocido gana por sorpresa el concurso para diseñar la Grande Arche de La Défense. Al aceptar el colosal encargo, este creador idealista se verá arrastrado a un despiadado laberinto político y burocrático, librando una batalla titánica contra la maquinaria del Estado francés para salvar su obra maestra.",
@@ -4661,14 +4760,15 @@
     "studio": "Cinépolis",
     "rating": "M15",
     "ratingBadgeClass": "badge-orange",
-    "score": "8.0",
-    "duration": "1h 40m",
-    "director": "N/A",
+    "score": "5.3",
+    "duration": "1h 44m",
+    "director": "Céline Rouzet",
     "genres": [
-      "Drama"
+      "Drama",
+      "Terror"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/kfUKP5IgzgLQyQD1MDt99yq9Af0.jpg",
-    "synopsis": "Everyone knows the name of Samuel Paty, but few people really know his story. On October 16, 2020, Samuel Paty, professor of History-Geography, was murdered at the end of his college. In the light of investigations and trials, this film looks back on his last eleven days, and the gear that led to his tragic death.",
+    "poster": "https://image.tmdb.org/t/p/w500/7vsZi00TVXkWBqqDhSAMEhlxJSL.jpg",
+    "synopsis": "Philémon no es un adolescente como los demás. Acaba de mudarse con su familia a un tranquilo barrio de las afueras donde intenta hacer todo lo posible por integrarse. Hasta el día en que se enamora de su vecina Camila y sus evidentes diferencias se hacen difíciles de seguir ocultando.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4798,22 +4898,23 @@
     ]
   },
   {
-    "id": "cpl-clayface",
-    "normalizedKey": "clayface",
-    "title": "Clayface",
-    "originalTitle": "Clayface",
+    "id": "cpl-juegoshambreamanecerencosecha",
+    "normalizedKey": "juegoshambreamanecerencosecha",
+    "title": "Los juegos del hambre: Amanecer en la cosecha",
+    "originalTitle": "Los juegos del hambre: Amanecer en la cosecha",
     "studio": "Cinépolis",
-    "rating": "M18",
-    "ratingBadgeClass": "badge-red",
-    "score": "8.0",
-    "duration": "1h 49m",
-    "director": "N/A",
+    "rating": "TBC",
+    "ratingBadgeClass": "badge-green",
+    "score": null,
+    "duration": "2h 39m",
+    "director": "Francis Lawrence",
     "genres": [
-      "Terror",
-      "Suspenso"
+      "Ciencia ficción",
+      "Acción",
+      "Aventura"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
-    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
+    "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
+    "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
     "theaters": [
       {
         "complexId": "cpl-lincoln",
@@ -4825,12 +4926,26 @@
         "website": "https://cinepolis.co.cr",
         "groups": [
           {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "19:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
             "format": "VIP",
             "language": "SUB",
             "times": [
               {
-                "time": "21:45",
-                "date": "2026-11-11"
+                "time": "19:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4850,8 +4965,8 @@
             "language": "DOB",
             "times": [
               {
-                "time": "21:45",
-                "date": "2026-11-11"
+                "time": "19:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4871,28 +4986,12 @@
             "language": "DOB",
             "times": [
               {
-                "time": "21:30",
-                "date": "2026-11-12"
+                "time": "19:00",
+                "date": "2026-11-18"
               },
               {
-                "time": "21:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-17"
+                "time": "19:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4909,35 +5008,21 @@
         "groups": [
           {
             "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:10",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "MACRO XE",
             "language": "DOB",
             "times": [
               {
-                "time": "21:45",
-                "date": "2026-11-11"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:45",
-                "date": "2026-11-17"
+                "time": "19:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4957,24 +5042,22 @@
             "language": "SUB",
             "times": [
               {
-                "time": "21:35",
-                "date": "2026-11-12"
+                "time": "19:00",
+                "date": "2026-11-18"
               },
               {
-                "time": "21:35",
-                "date": "2026-11-13"
-              },
+                "time": "19:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
               {
-                "time": "21:35",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:35",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:35",
-                "date": "2026-11-17"
+                "time": "19:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -4994,24 +5077,164 @@
             "language": "SUB",
             "times": [
               {
-                "time": "22:00",
-                "date": "2026-11-12"
+                "time": "19:15",
+                "date": "2026-11-18"
               },
               {
-                "time": "22:00",
-                "date": "2026-11-13"
+                "time": "20:30",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "MACRO XE",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "19:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpl-24tcfcopiaperfecta",
+    "normalizedKey": "24tcfcopiaperfecta",
+    "title": "24TCF - La copia perfecta",
+    "originalTitle": "24TCF - La copia perfecta",
+    "studio": "Cinépolis",
+    "rating": "M15",
+    "ratingBadgeClass": "badge-orange",
+    "score": null,
+    "duration": "N/A",
+    "director": "N/A",
+    "genres": [],
+    "poster": null,
+    "synopsis": "Sin sinopsis disponible.",
+    "theaters": [
+      {
+        "complexId": "cpl-lincoln",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Lincoln",
+        "province": "San José",
+        "locationDetail": "Moravia, Plaza Lincoln",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:10",
+                "date": "2026-11-18"
               },
               {
-                "time": "22:00",
-                "date": "2026-11-14"
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-flores",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo De Las Flores",
+        "province": "Heredia",
+        "locationDetail": "Heredia, Paseo de las Flores",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:15",
+                "date": "2026-11-18"
               },
               {
-                "time": "22:00",
-                "date": "2026-11-15"
+                "time": "19:15",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-metropoli",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo Metrópoli",
+        "province": "Cartago",
+        "locationDetail": "Cartago, Paseo Metrópoli",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:15",
+                "date": "2026-11-18"
               },
               {
-                "time": "22:00",
-                "date": "2026-11-16"
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terramall",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis TerraMall",
+        "province": "Cartago",
+        "locationDetail": "Tres Ríos, TerraMall",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terrazas-lindora",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Terrazas Lindora VIP",
+        "province": "San José",
+        "locationDetail": "Santa Ana, Terrazas Lindora",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "16:10",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5027,9 +5250,9 @@
     "studio": "Cinépolis",
     "rating": "TBC",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "5.9",
     "duration": "1h 32m",
-    "director": "N/A",
+    "director": "Hanna Bergholm",
     "genres": [
       "Terror"
     ],
@@ -5116,10 +5339,6 @@
             "times": [
               {
                 "time": "21:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:20",
                 "date": "2026-11-13"
               },
               {
@@ -5178,6 +5397,10 @@
               {
                 "time": "21:30",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5192,32 +5415,6 @@
         "locationDetail": "Tres Ríos, TerraMall",
         "website": "https://cinepolis.co.cr",
         "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "17:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:20",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:20",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:20",
-                "date": "2026-11-17"
-              }
-            ]
-          },
           {
             "format": "2D",
             "language": "SUB",
@@ -5241,6 +5438,229 @@
               {
                 "time": "20:00",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "17:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:20",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpl-clayface",
+    "normalizedKey": "clayface",
+    "title": "Clayface",
+    "originalTitle": "Clayface",
+    "studio": "Cinépolis",
+    "rating": "M18",
+    "ratingBadgeClass": "badge-red",
+    "score": "7.4",
+    "duration": "1h 49m",
+    "director": "James Watkins",
+    "genres": [
+      "Terror",
+      "Suspense",
+      "Ciencia ficción"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
+    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
+    "theaters": [
+      {
+        "complexId": "cpl-paseo-flores",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo De Las Flores",
+        "province": "Heredia",
+        "locationDetail": "Heredia, Paseo de las Flores",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:30",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-metropoli",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo Metrópoli",
+        "province": "Cartago",
+        "locationDetail": "Cartago, Paseo Metrópoli",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:45",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terramall",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis TerraMall",
+        "province": "Cartago",
+        "locationDetail": "Tres Ríos, TerraMall",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:35",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terrazas-lindora",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Terrazas Lindora VIP",
+        "province": "San José",
+        "locationDetail": "Santa Ana, Terrazas Lindora",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "22:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5256,9 +5676,9 @@
     "studio": "Cinépolis",
     "rating": "TP12",
     "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
+    "score": null,
     "duration": "2h 5m",
-    "director": "N/A",
+    "director": "Alessandro Barros",
     "genres": [
       "Drama"
     ],
@@ -5301,6 +5721,10 @@
               {
                 "time": "18:30",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5342,6 +5766,10 @@
               {
                 "time": "18:45",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:45",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5362,6 +5790,10 @@
             "times": [
               {
                 "time": "18:45",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:45",
                 "date": "2026-11-13"
               },
               {
@@ -5379,6 +5811,10 @@
               {
                 "time": "18:45",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:45",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5420,6 +5856,10 @@
               {
                 "time": "18:30",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5435,15 +5875,18 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
-    "duration": "1h 31m",
-    "director": "N/A",
+    "score": "7.8",
+    "duration": "1h 30m",
+    "director": "Andrew Adamson, Vicky Jenson",
     "genres": [
-      "Niños",
-      "Animado"
+      "Animación",
+      "Comedia",
+      "Fantasía",
+      "Aventura",
+      "Familia"
     ],
-    "poster": "https://assets.biggerpicture.ai/assets/HO-1620/eventmaster/2677_4.png",
-    "synopsis": "Sin sinopsis disponible.",
+    "poster": "https://image.tmdb.org/t/p/w500/fYHRKCerIesCUxLLfQQY4TdmKqM.jpg",
+    "synopsis": "Un malvado lord exilia a las criaturas de cuentos de hadas al pantano de un ogro gruñón, que debe ir en busca y rescatar a una princesa para el lord con el fin de recuperar su tierra.",
     "theaters": [
       {
         "complexId": "cpl-paseo-flores",
@@ -5459,16 +5902,8 @@
             "language": "DOB",
             "times": [
               {
-                "time": "11:45",
-                "date": "2026-11-14"
-              },
-              {
                 "time": "14:00",
                 "date": "2026-11-14"
-              },
-              {
-                "time": "11:45",
-                "date": "2026-11-15"
               },
               {
                 "time": "14:00",
@@ -5493,10 +5928,6 @@
             "times": [
               {
                 "time": "15:55",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:55",
                 "date": "2026-11-13"
               },
               {
@@ -5514,6 +5945,10 @@
               {
                 "time": "15:55",
                 "date": "2026-11-17"
+              },
+              {
+                "time": "15:55",
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5529,13 +5964,14 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "8.2",
     "duration": "1h 43m",
-    "director": "N/A",
+    "director": "Dave Green",
     "genres": [
-      "Acción",
-      "Animado",
-      "Aventura"
+      "Comedia",
+      "Aventura",
+      "Familia",
+      "Animación"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/e4P8CIoffzsyjTm9e6U87Mng2CU.jpg",
     "synopsis": "Luego de que los productos Acme le fallan demasiadas veces en su tenaz búsqueda del Correcaminos, Wile E. Coyote decide contratar a un abogado especializado en vallas publicitarias para demandar a Acme Corporation.",
@@ -5600,12 +6036,12 @@
     "studio": "Cinépolis",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
-    "score": "8.0",
+    "score": "7.5",
     "duration": "1h 41m",
-    "director": "N/A",
+    "director": "David Ayer",
     "genres": [
-      "Drama",
-      "Acción"
+      "Aventura",
+      "Suspense"
     ],
     "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
     "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
@@ -5637,7 +6073,7 @@
               },
               {
                 "time": "21:40",
-                "date": "2026-11-17"
+                "date": "2026-11-18"
               }
             ]
           }
@@ -5675,6 +6111,10 @@
               {
                 "time": "21:00",
                 "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
               }
             ]
           }

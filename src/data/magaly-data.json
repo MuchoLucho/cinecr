@@ -3,13 +3,14 @@
     "id": "magaly-hombresperdidos",
     "title": "Hombres perdidos",
     "originalTitle": "Hombres perdidos",
-    "synopsis": "Mi abuelo, casado durante 57 años en Costa Rica conservadora, murió en un incendio en 2019. Mi papá me reveló que, igual que yo, mi abuelo era gay. Tras este suceso, juntos revisitamos la vida de mi abuelo, mientras nos descubrimos a nosotros mismos.",
+    "synopsis": "Mi abuelo, Neftalí Madrigal Cartín, fue un importante escritor, vivió casado por 57 años, tuvo 3 hijos y además era homosexual. Este documental es el viaje por la memoria que emprendemos mi padre y yo para revisitar la vida de quién fue mi abuelo, y de paso, descubrirnos a nosotros mismos.",
     "poster": "https://image.tmdb.org/t/p/w500/rpRNKLV9NC9NnxjLjgWhvXJ2emW.jpg",
     "rating": "M15",
     "duration": "1h 24m",
+    "score": null,
+    "director": "Andrés Madrigal Alvarado",
     "genres": [
-      "Cine",
-      "Independiente"
+      "Documental"
     ],
     "theaters": [
       {
@@ -43,8 +44,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.cinemagaly.com"
+        ]
       }
     ]
   },
@@ -52,13 +52,16 @@
     "id": "magaly-caballosalvajenueve",
     "title": "Caballo Salvaje Nueve",
     "originalTitle": "Caballo Salvaje Nueve",
-    "synopsis": "Poco antes del golpe de Estado chileno de 1973, los agentes de la CIA Chris (John Malkovich) y Lee (Sam Rockwell) son enviados desde Santiago a la Isla de Pascua por su jefe de oficina, MJ (Steve Buscemi). Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros se enfrentan a sus oscuros pasados y a las conspiraciones del presente, el nuevo vínculo de Chris con dos estudiantes rebeldes (Mariana di Girolamo y Ailín Salas) amenaza con dar un giro inesperado al viaje de todos a este remoto paraíso.",
+    "synopsis": "Poco antes del golpe de estado chileno de 1973, los agentes de la CIA Chris y Lee son enviados desde Santiago a la Isla de Pascua por su jefa de la oficina, MJ. Entre las emblemáticas estatuas de la isla, y mientras los veteranos compañeros lidian con sus oscuros pasados ​​y conspiraciones actuales, el nuevo vínculo que Chris establece con un par de estudiantes rebeldes amenaza con desbaratar el viaje de todos a este remoto paraíso.",
     "poster": "https://image.tmdb.org/t/p/w500/ulvGcZer26aBaNG0s4IEJGyyLIq.jpg",
     "rating": "M15",
     "duration": "1h 57m",
+    "score": "8.1",
+    "director": "Martin McDonagh",
     "genres": [
-      "Cine",
-      "Independiente"
+      "Comedia",
+      "Crimen",
+      "Suspense"
     ],
     "theaters": [
       {
@@ -88,134 +91,23 @@
               }
             ]
           }
-        ],
-        "website": "https://www.cinemagaly.com"
+        ]
       }
     ]
-  },
-  {
-    "id": "magaly-ebenezerfantasmasnavidad",
-    "title": "Ebenezer: los fantasmas de Navidad",
-    "originalTitle": "Ebenezer: los fantasmas de Navidad",
-    "synopsis": "Reimaginación del clásico literario, una historia de fantasmas ambientada en el Londres de Dickens que sigue el viaje sobrenatural de un hombre para enfrentarse a su pasado, presente y futuro y luchar por una segunda oportunidad.",
-    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
-    "rating": "M12",
-    "duration": "1h 55m",
-    "genres": [
-      "Cine",
-      "Independiente"
-    ],
-    "theaters": [
-      {
-        "chainId": "magaly",
-        "chainName": "Cine Magaly",
-        "complexId": "magaly-california",
-        "complexName": "Cine Magaly",
-        "province": "San José",
-        "city": "San José",
-        "address": "Barrio La California, San José",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "15:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:25",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:05",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "11:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:20",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:20",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "19:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "16:20",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "15:20",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "20:35",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ],
-        "website": "https://www.cinemagaly.com"
-      }
-    ]
-  },
-  {
-    "id": "magaly-pingpongtriunfo",
-    "title": "Ping Pong: El Triunfo",
-    "originalTitle": "Ping Pong: El Triunfo",
-    "synopsis": "A principios de la década de 1990, cuando el equipo masculino de tenis de mesa chino está en su punto más bajo, el entrenador en jefe Cai Zhenhua tiene la tarea de formar un nuevo equipo para finalmente luchar hasta la cima en el Campeonato Mundial de Ping Pong de 1995 en Tianjin, China.",
-    "poster": "https://image.tmdb.org/t/p/w500/mSZMWfXipCQIosy0pryLSdus8d9.jpg",
-    "rating": "TP+12",
-    "duration": "2h 20m",
-    "genres": [
-      "Drama",
-      "Independiente"
-    ],
-    "theaters": [
-      {
-        "chainId": "magaly",
-        "chainName": "Cine Magaly",
-        "complexId": "magaly-california",
-        "complexName": "Cine Magaly",
-        "province": "San José",
-        "city": "San José",
-        "address": "Barrio La California, San José",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "18:00",
-                "date": "2026-11-12"
-              }
-            ]
-          }
-        ],
-        "website": "https://www.cinemagaly.com"
-      }
-    ],
-    "score": "7.2",
-    "director": "Deng Chao, Yu Baimei"
   },
   {
     "id": "magaly-yosoyrocky",
     "title": "Yo soy Rocky",
     "originalTitle": "Yo soy Rocky",
-    "synopsis": "Sylvester Stallone (Ippolito) sueña con ser actor, pero creció en la pobreza, yendo de una casa a otra, e incluso llegó a vivir en la calle. Ahora, con veintitantos años, lo más cerca que ha estado de la gran pantalla es actuando en una película porno y trabajando como acomodador. Un día, viendo a Muhammad Ali pelear contra Chuck Wepner, le llega la inspiración: en unos días de frenética actividad, escribe un guion sobre un boxeador desvalido que llega hasta el final. A los ejecutivos del estudio les encanta, pero se resisten a la condición de Sylvester de interpretar al héroe. La producción de esta ambiciosa película independiente resultará mucho más ardua de lo que nadie podría haber imaginado.",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
-    "rating": "M15",
+    "rating": "TP+12",
     "duration": "2h 8m",
+    "score": "8.8",
+    "director": "Peter Farrelly",
     "genres": [
-      "Cine",
-      "Independiente"
+      "Drama",
+      "Historia"
     ],
     "theaters": [
       {
@@ -231,10 +123,6 @@
             "format": "2D",
             "language": "SUB",
             "times": [
-              {
-                "time": "15:45",
-                "date": "2026-11-12"
-              },
               {
                 "time": "20:55",
                 "date": "2026-11-12"
@@ -289,8 +177,77 @@
               }
             ]
           }
-        ],
-        "website": "https://www.cinemagaly.com"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-ebenezerfantasmasnavidad",
+    "title": "Ebenezer: los fantasmas de Navidad",
+    "originalTitle": "Ebenezer: los fantasmas de Navidad",
+    "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
+    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
+    "rating": "M12",
+    "duration": "1h 55m",
+    "score": "8.0",
+    "director": "Ti West",
+    "genres": [
+      "Fantasía",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:20",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:35",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -298,13 +255,16 @@
     "id": "magaly-capitan",
     "title": "El capitán",
     "originalTitle": "El capitán",
-    "synopsis": "Mientras Steve Rogers lucha por asumir su papel en el mundo moderno, se une a un compañero Vengador y agente de S.H.I.E.L.D., Viuda Negra, para luchar contra una nueva amenaza de la historia: un asesino conocido como el Soldado de Invierno.",
-    "poster": "https://image.tmdb.org/t/p/w500/3Zv12uAqBxj4xAdeHeVySEQzY1o.jpg",
+    "synopsis": "Desesperado, hambriento, aterido de hipotermia y huido de su pelotón, el soldado raso Willi Herold encuentra un uniforme de capitán y decide cambiar su identidad. A partir de entonces actúa como un alto rango en una misión secreta encomendada por el mismísimo Führer. Su suplantación le conducirá a los placeres y los infiernos de su nueva personalidad proactiva, hasta formar un grupo de soldados perdidos que actuarán a sus órdenes sembrando el horror entre la población inocente, actuando con impunidad en su viaje a la degradación moral, el mesianismo nazi y la perversión de la barbarie",
+    "poster": "https://image.tmdb.org/t/p/w500/pcQkdpyXxYBJbDrB8P6rE880Ul3.jpg",
     "rating": "TP+12",
-    "duration": "2h 16m",
+    "duration": "1h 58m",
+    "score": "7.2",
+    "director": "Robert Schwentke",
     "genres": [
-      "Cine",
-      "Independiente"
+      "Bélica",
+      "Drama",
+      "Historia"
     ],
     "theaters": [
       {
@@ -326,8 +286,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.cinemagaly.com"
+        ]
       }
     ]
   },
@@ -335,13 +294,17 @@
     "id": "magaly-wildwoodbosquesalvaje",
     "title": "Wildwood: El bosque salvaje",
     "originalTitle": "Wildwood: El bosque salvaje",
-    "synopsis": "Cuando el hermanito de Prue McKeel es raptado por una bandada de cuervos, se verá obligada a emprender una desesperada misión de rescate. Acompañada por su torpe pero leal compañero de clase Curtis Mehlberg, Prue se adentra en un mundo de animales parlantes, bandidos y poderosos personajes movidos por el dolor y la ambición. A medida que ambos se ven arrastrados a un conflicto que amenaza el equilibrio del bosque, Prue deberá descubrir una fortaleza y una determinación que nunca supo que poseía. Si quiere salvar a su hermano y proteger el frágil futuro de Wildwood, tendrá que arriesgarlo todo.",
+    "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
     "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
     "rating": "M12",
     "duration": "2h 12m",
+    "score": "8.5",
+    "director": "Travis Knight",
     "genres": [
-      "Cine",
-      "Independiente"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Drama"
     ],
     "theaters": [
       {
@@ -371,8 +334,7 @@
               }
             ]
           }
-        ],
-        "website": "https://www.cinemagaly.com"
+        ]
       }
     ]
   },
@@ -380,13 +342,17 @@
     "id": "magaly-inmortales",
     "title": "Los inmortales",
     "originalTitle": "Los inmortales",
-    "synopsis": "Jin Feng, un joven divino, desciende al mundo mortal para redimir los pecados de su familia capturandoa 28 espíritus estelares. Allí conoce a Xiao Fan, una joven mortal que busca alcanzar el reino celestialpara encontrar a su madre desaparecida. Aunque inicialmente se enfrentan como rivales, ambosterminan formando una alianza. Mientras atraviesan desafíos, criaturas y fuerzas legendarias,descubren una verdad que permanecía oculta y que cambiará para siempre su destino.",
+    "synopsis": "El mundo está sumido en el caos. Duncan MacLeod, el Inmortal, recorre la ciudad que se desmorona, mientras va recordando los tiempos felices que vivió junto a su amada. Desesperado y solo, MacLeod se encuentra con su antigua banda, entre ellos con su misterioso amigo Methos, y un mortal, Watcher Joe Dawson. Reunido este pequeño grupo, juntos deciden encontrar el origen del primer Inmortal y la fuente de su inmortalidad.",
     "poster": "https://image.tmdb.org/t/p/w500/9mKXsmDDYpnKKuviOxMTQxr2q86.jpg",
     "rating": "TP+12",
     "duration": "1h 26m",
+    "score": "4.0",
+    "director": "Brett Leonard",
     "genres": [
-      "Cine",
-      "Independiente"
+      "Acción",
+      "Fantasía",
+      "Aventura",
+      "Película de TV"
     ],
     "theaters": [
       {
@@ -408,8 +374,45 @@
               }
             ]
           }
-        ],
-        "website": "https://www.cinemagaly.com"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magaly-angelmimesa",
+    "title": "Un ángel en mi mesa",
+    "originalTitle": "Un ángel en mi mesa",
+    "synopsis": "Adaptación de la autobiografía de la escritora Janet Frame. Nacida en una familia pobre y muy numerosa, desde muy pequeña se sintió diferente a los demás niños. Aunque estudió para maestra, fue considerada una persona anormal y, por tanto, fue encerrada en una institución para enfermos mentales durante ocho años. Alcanzó el éxito cuando empezó a escribir libros",
+    "poster": "https://image.tmdb.org/t/p/w500/17RKVQcxoXhw9qR8VY7SXk5ZLS3.jpg",
+    "rating": "M15",
+    "duration": "2h 38m",
+    "score": "7.0",
+    "director": "Jane Campion",
+    "genres": [
+      "Drama",
+      "Historia"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

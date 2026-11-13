@@ -3,155 +3,15 @@
     "id": "sanpedro-residentevilnochecero",
     "title": "Resident Evil: Noche Cero",
     "originalTitle": "Resident Evil: Noche Cero",
-    "synopsis": "Resident Evil sigue a Bryan (Austin Abrams), un mensajero médico que, sin saberlo, se ve envuelto en una carrera por la supervivencia llena de acción y sin tregua cuando una noche fatídica y espantosa se convierte en un caos a su alrededor.",
+    "synopsis": "Un desafortunado mensajero, encargado de entregar un paquete a un hospital remoto, se ve atrapado en medio de un brote y debe luchar contra hordas de criaturas mutantes para sobrevivir.",
     "poster": "https://image.tmdb.org/t/p/w500/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
     "rating": "Mayores de 18",
     "duration": "1h 34m",
+    "score": "7.5",
+    "director": "Zach Cregger",
     "genres": [
-      "Terror"
-    ],
-    "theaters": [
-      {
-        "chainId": "sanpedro",
-        "chainName": "Cinema San Pedro",
-        "complexId": "sanpedro-mall",
-        "complexName": "Cinema San Pedro (Mall San Pedro)",
-        "province": "San José",
-        "city": "Montes de Oca",
-        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "14:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "16:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "16:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "16:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "16:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "16:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "14:30",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "16:30",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ],
-        "website": "https://cinemasanpedro.com"
-      }
-    ]
-  },
-  {
-    "id": "sanpedro-corazonbestia",
-    "title": "EL CORAZÓN DE LA BESTIA",
-    "originalTitle": "EL CORAZÓN DE LA BESTIA",
-    "synopsis": "Tras sobrevivir a un brutal accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate Odín intentan regresar a la civilización desde un remoto lugar en medio de los parajes salvajes de Alaska.",
-    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
-    "rating": "Todo publico",
-    "duration": "1h 41m",
-    "genres": [
+      "Terror",
+      "Ciencia ficción",
       "Aventura"
     ],
     "theaters": [
@@ -169,17 +29,135 @@
             "language": "DOB",
             "times": [
               {
-                "time": "15:30",
-                "date": "2026-11-12"
+                "time": "14:30",
+                "date": "2026-11-13"
               },
               {
-                "time": "17:45",
-                "date": "2026-11-12"
+                "time": "16:30",
+                "date": "2026-11-13"
               },
               {
-                "time": "20:00",
-                "date": "2026-11-12"
+                "time": "18:30",
+                "date": "2026-11-13"
               },
+              {
+                "time": "20:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "14:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "16:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanpedro-corazonbestia",
+    "title": "EL CORAZÓN DE LA BESTIA",
+    "originalTitle": "EL CORAZÓN DE LA BESTIA",
+    "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
+    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
+    "rating": "Todo publico",
+    "duration": "1h 41m",
+    "score": "7.5",
+    "director": "David Ayer",
+    "genres": [
+      "Aventura",
+      "Suspense"
+    ],
+    "theaters": [
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
               {
                 "time": "15:30",
                 "date": "2026-11-13"
@@ -262,8 +240,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -271,12 +248,15 @@
     "id": "sanpedro-streetfighter",
     "title": "STREET FIGHTER",
     "originalTitle": "STREET FIGHTER",
-    "synopsis": "Ambientada en 1993, la historia sigue a Ryu y Ken Masters, dos luchadores de Street Fighter distanciados, quienes se ven obligados a volver al combate cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros: un brutal choque de puños, destino y furia. Pero detrás de esta batalla se esconde una conspiración mortal que los obliga a enfrentarse entre ellos y a los demonios de sus pasados.",
+    "synopsis": "En 1993, los distanciados luchadores Ryu y Ken Masters se ven obligados a volver a la acción cuando la misteriosa Chun-Li los recluta para el próximo Torneo Mundial de Guerreros.",
     "poster": "https://image.tmdb.org/t/p/w500/j9Ukn1hRqSyv5qhHgDHd1s1Dhsg.jpg",
     "rating": "Mayores de 12",
     "duration": "2h 0m",
+    "score": "6.3",
+    "director": "Kitao Sakurai",
     "genres": [
-      "Acción"
+      "Acción",
+      "Fantasía"
     ],
     "theaters": [
       {
@@ -292,14 +272,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "15:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-12"
-              },
               {
                 "time": "15:10",
                 "date": "2026-11-13"
@@ -346,8 +318,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -359,8 +330,14 @@
     "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
     "rating": "Todo publico",
     "duration": "1h 48m",
+    "score": "7.4",
+    "director": "Erica Rivinoja, Alessandro Carloni",
     "genres": [
-      "Animadas"
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
     ],
     "theaters": [
       {
@@ -376,30 +353,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "13:45",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "15:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:05",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:25",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-12"
-              },
               {
                 "time": "13:45",
                 "date": "2026-11-13"
@@ -558,8 +511,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -567,12 +519,16 @@
     "id": "sanpedro-godzillaminuszero",
     "title": "GODZILLA MINUS ZERO",
     "originalTitle": "GODZILLA MINUS ZERO",
-    "synopsis": "Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
     "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
     "rating": "Mayores de 12",
     "duration": "2h 15m",
+    "score": "7.8",
+    "director": "山崎貴",
     "genres": [
-      "Ciencia Ficción"
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
     ],
     "theaters": [
       {
@@ -588,18 +544,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "15:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-12"
-              },
               {
                 "time": "15:15",
                 "date": "2026-11-13"
@@ -674,8 +618,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -683,12 +626,15 @@
     "id": "sanpedro-ebenezer",
     "title": "EBENEZER",
     "originalTitle": "EBENEZER",
-    "synopsis": "Una historia de fantasmas ambientada en el Londres de Dickens que sigue el viaje sobrenatural de un hombre para enfrentarse a su pasado, presente y futuro y luchar por una segunda oportunidad.",
+    "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
     "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
     "rating": "Mayores de 12",
     "duration": "1h 55m",
+    "score": "8.0",
+    "director": "Ti West",
     "genres": [
-      "Fantasía"
+      "Fantasía",
+      "Comedia"
     ],
     "theaters": [
       {
@@ -704,22 +650,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "13:50",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:40",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-12"
-              },
               {
                 "time": "13:50",
                 "date": "2026-11-13"
@@ -832,10 +762,6 @@
             "times": [
               {
                 "time": "17:40",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "17:40",
                 "date": "2026-11-13"
               },
               {
@@ -856,8 +782,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -869,7 +794,10 @@
     "poster": "https://image.tmdb.org/t/p/w500/ms6V9gUMcw6T6ENgUCU7SL5x7dl.jpg",
     "rating": "Mayores de 18",
     "duration": "1h 30m",
+    "score": "5.6",
+    "director": "Michael Winnick",
     "genres": [
+      "Suspense",
       "Terror"
     ],
     "theaters": [
@@ -888,14 +816,6 @@
             "times": [
               {
                 "time": "18:50",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:50",
                 "date": "2026-11-13"
               },
               {
@@ -936,8 +856,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -945,12 +864,16 @@
     "id": "sanpedro-comorobarbanco",
     "title": "COMO ROBAR UN BANCO",
     "originalTitle": "COMO ROBAR UN BANCO",
-    "synopsis": "Un hombre desesperado planea un elaborado atraco contra el corrupto sistema financiero que arruinó su vida, con un grupo que documenta sus actos en redes sociales.",
+    "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
     "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
     "rating": "Mayores de 15",
     "duration": "2h 2m",
+    "score": "6.9",
+    "director": "David Leitch",
     "genres": [
-      "Acción"
+      "Acción",
+      "Crimen",
+      "Suspense"
     ],
     "theaters": [
       {
@@ -966,14 +889,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "15:25",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-12"
-              },
               {
                 "time": "15:25",
                 "date": "2026-11-13"
@@ -1048,8 +963,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -1057,12 +971,15 @@
     "id": "sanpedro-yosoyrocky",
     "title": "YO SOY ROCKY",
     "originalTitle": "YO SOY ROCKY",
-    "synopsis": "Una inspiradora historia de perseverancia que dio origen a una de las mayores leyendas de la historia del cine.",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
     "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
     "rating": "Mayores de 15",
     "duration": "2h 8m",
+    "score": "8.8",
+    "director": "Peter Farrelly",
     "genres": [
-      "Drama"
+      "Drama",
+      "Historia"
     ],
     "theaters": [
       {
@@ -1078,14 +995,6 @@
             "format": "2D",
             "language": "DOB",
             "times": [
-              {
-                "time": "13:30",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "16:10",
-                "date": "2026-11-12"
-              },
               {
                 "time": "13:30",
                 "date": "2026-11-13"
@@ -1128,8 +1037,7 @@
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   },
@@ -1137,12 +1045,16 @@
     "id": "sanpedro-juegoshambreamanecercosecha",
     "title": "LOS JUEGOS DEL HAMBRE: AMANECER EN LA COSECHA",
     "originalTitle": "LOS JUEGOS DEL HAMBRE: AMANECER EN LA COSECHA",
-    "synopsis": "Explora Panem 24 años antes de la saga de Katniss, comenzando en la mañana de la siega de los 50º Juegos del Hambre, donde participa un joven Haymitch Abernathy.",
+    "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
     "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
     "rating": "TP",
     "duration": "2h 39m",
+    "score": null,
+    "director": "Francis Lawrence",
     "genres": [
-      "Ciencia Ficción"
+      "Ciencia ficción",
+      "Acción",
+      "Aventura"
     ],
     "theaters": [
       {
@@ -1173,11 +1085,22 @@
               {
                 "time": "20:20",
                 "date": "2026-11-19"
+              },
+              {
+                "time": "14:00",
+                "date": "2026-11-20"
+              },
+              {
+                "time": "17:10",
+                "date": "2026-11-20"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-20"
               }
             ]
           }
-        ],
-        "website": "https://cinemasanpedro.com"
+        ]
       }
     ]
   }
