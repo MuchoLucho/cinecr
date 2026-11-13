@@ -450,16 +450,10 @@ h1, h2, h3, h4 {
 @media (min-width: 960px) {
   .filter-sidebar {
     position: sticky;
-    top: 84px;
-    max-height: calc(100vh - 104px);
-    overflow-y: auto;
-    /* Completely hide nested scrollbars for a clean classic sidebar */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .filter-sidebar::-webkit-scrollbar {
-    display: none;
+    top: min(84px, calc(100vh - var(--sidebar-height, 500px) - 24px));
+    align-self: start;
+    max-height: none;
+    overflow: visible;
   }
 }
 

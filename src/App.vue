@@ -90,6 +90,13 @@ onMounted(() => {
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('keydown', handleKeyDown);
   handleScroll();
+  updateSidebarHeight();
+  if (typeof ResizeObserver !== 'undefined' && sidebarRef.value) {
+    resizeObserver = new ResizeObserver(() => {
+      updateSidebarHeight();
+    });
+    resizeObserver.observe(sidebarRef.value);
+  }
   timerInterval = setInterval(() => {
     currentTimeTrigger.value = Date.now();
   }, 30000);
@@ -98,6 +105,9 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
   window.removeEventListener('keydown', handleKeyDown);
+  if (resizeObserver) {
+    resizeObserver.disconnect();
+  }
   if (timerInterval) clearInterval(timerInterval);
 });
 
@@ -472,6 +482,17 @@ const activeFilterCount = computed(() => {
 });
 
 const isMobileFilterOpen = ref(false);
+const sidebarRef = ref(null);
+let resizeObserver = null;
+
+const updateSidebarHeight = () => {
+  if (sidebarRef.value && typeof window !== 'undefined') {
+    const h = sidebarRef.value.offsetHeight;
+    if (h > 0) {
+      sidebarRef.value.style.setProperty('--sidebar-height', `${h}px`);
+    }
+  }
+};
 const toggleMobileFilter = () => {
   isMobileFilterOpen.value = !isMobileFilterOpen.value;
 };
@@ -695,6 +716,7 @@ const formatStatusDate = (isoStr) => {
       <div class="app-layout">
         <!-- SIDEBAR / DRAWER -->
         <aside
+          ref="sidebarRef"
           class="filter-sidebar"
           :class="{ 'mobile-open': isMobileFilterOpen }"
           aria-label="Filtros de cartelera"
