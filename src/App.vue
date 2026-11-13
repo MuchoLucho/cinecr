@@ -334,7 +334,7 @@ const languageOptions = [
 ];
 
 const filters = reactive({
-  province: null,
+  provinces: [],
   chain: null,
   language: null,
   formats: [],
@@ -361,7 +361,7 @@ const filteredMovies = computed(() => {
       const groupedTheaters = movie.theaters
         .filter(complex => {
           if (filters.chain && complex.chainId !== filters.chain) return false;
-          if (filters.province && complex.province !== filters.province) return false;
+          if (filters.provinces.length > 0 && !filters.provinces.includes(complex.province)) return false;
           return true;
         })
         .map(complex => {
@@ -467,12 +467,12 @@ const activeComplexCount = computed(() => {
 });
 
 const hasActiveFilters = computed(() => Boolean(
-  filters.province || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating || onlyPremium.value
+  filters.provinces.length > 0 || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating || onlyPremium.value
 ));
 
 const activeFilterCount = computed(() => {
   let count = 0;
-  if (filters.province) count++;
+  if (filters.provinces.length > 0) count++;
   if (filters.chain) count++;
   if (filters.language) count++;
   if (filters.formats.length > 0) count++;
@@ -511,7 +511,7 @@ const toggleQuickLanguage = (lang) => {
 };
 
 const resetFilters = () => {
-  filters.province = null;
+  filters.provinces = [];
   filters.chain = null;
   filters.language = null;
   filters.formats = [];
@@ -758,13 +758,37 @@ const formatStatusDate = (isoStr) => {
             </div>
 
             <div class="md-field">
-              <label class="md-field-label">
-                <span class="material-symbols-outlined sm">map</span> Provincia
-              </label>
-              <select v-model="filters.province" class="md-select">
-                <option :value="null">Todas las provincias</option>
-                <option v-for="p in provinces" :key="p" :value="p">{{ p }}</option>
-              </select>
+              <div class="md-field-header">
+                <label class="md-field-label">
+                  <span class="material-symbols-outlined sm">map</span> Provincias
+                  <span v-if="filters.provinces.length > 0" class="filter-count-chip">({{ filters.provinces.length }})</span>
+                </label>
+                <button
+                  v-if="filters.provinces.length > 0"
+                  type="button"
+                  class="clear-link-btn"
+                  @click="filters.provinces = []"
+                  title="Limpiar provincias seleccionadas"
+                >
+                  Limpiar
+                </button>
+              </div>
+              <div class="checkbox-group" role="group" aria-label="Filtrar por provincias">
+                <label
+                  v-for="p in provinces"
+                  :key="p"
+                  class="checkbox-item"
+                  :class="{ 'is-checked': filters.provinces.includes(p) }"
+                >
+                  <input
+                    type="checkbox"
+                    :value="p"
+                    v-model="filters.provinces"
+                    class="md-checkbox"
+                  />
+                  <span class="checkbox-label-text">{{ p }}</span>
+                </label>
+              </div>
             </div>
 
             <div class="md-field">
