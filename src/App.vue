@@ -372,6 +372,71 @@ const getCinemaWebsite = (complex) => {
   return complex?.website || CHAIN_WEBSITES[complex?.chainId] || 'https://cinecr.pages.dev';
 };
 
+const normStr = (str) => {
+  return (str || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+};
+
+const formatComplexLocation = (complex) => {
+  if (!complex) return '';
+  const { province, complexName, locationDetail } = complex;
+  if (!locationDetail) return province || '';
+
+  const normProv = normStr(province);
+  const normName = normStr(complexName);
+
+  const stripGenerics = (s) =>
+    s.replace(/\b(plaza|mall|centro|comercial|condominio|cond|paseo|galeria|galerias|playa|del|de|el|la|los|las|este|oeste|norte|sur)\b/gi, ' ').trim();
+
+  const parts = locationDetail.split(',').map(p => p.trim()).filter(Boolean);
+  const kept = [];
+
+  for (const part of parts) {
+    const normPart = normStr(part);
+    if (!normPart) continue;
+
+    // 1. Matches or is contained in province
+    if (normPart === normProv || normProv.includes(normPart)) continue;
+
+    // 2. Matches or is contained in cinema name
+    if (normName.includes(normPart) || normPart.includes(normName)) continue;
+
+    // 3. Significant keywords comparison
+    const significantWords = part
+      .split(/\s+/)
+      .map(w => normStr(w))
+      .filter(w => w.length >= 4 && !['plaza', 'mall', 'centro', 'comercial', 'paseo'].includes(w));
+
+    if (significantWords.length > 0 && significantWords.every(w => normName.includes(w) || normProv.includes(w))) {
+      continue;
+    }
+
+    const strippedPart = normStr(stripGenerics(part));
+    if (strippedPart && normName.includes(strippedPart)) {
+      continue;
+    }
+
+    // Clean repetitive province suffixes like "de Heredia", "de Alajuela"
+    const cleanedPart = part
+      .replace(/\s+de\s+(Heredia|Alajuela|San\s+Jos[eé]|Cartago|Guanacaste|Puntarenas|Lim[oó]n)\b/i, '')
+      .trim();
+
+    if (normStr(cleanedPart) && !normName.includes(normStr(cleanedPart))) {
+      if (!kept.some(k => normStr(k) === normStr(cleanedPart))) {
+        kept.push(cleanedPart);
+      }
+    }
+  }
+
+  if (kept.length === 0) {
+    return province || '';
+  }
+  return `${province} • ${kept.join(', ')}`;
+};
+
 const CINEMA_COORDINATES = {
   'bistro-hermosa': { lat: 10.5673, lng: -85.6696 },
   'ccm-plaza-mayor': { lat: 9.9448, lng: -84.1178 },
@@ -1434,7 +1499,7 @@ const formatStatusDate = (isoStr) => {
                       <div style="font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
                         <span style="display: inline-flex; align-items: center; gap: 3px;">
                           <span class="material-symbols-outlined sm" style="font-size: 14px;">location_on</span>
-                          {{ complex.province }} • {{ complex.locationDetail }}
+                          {{ formatComplexLocation(complex) }}
                         </span>
                         <span
                           v-if="complex.distanceKm !== null"
