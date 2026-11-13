@@ -137,7 +137,6 @@ const hasRemainingToday = () => {
 
 const viewMode = ref('movies');
 const selectedDate = ref(hasRemainingToday() ? 'today' : 'tomorrow');
-const onlyPremium = ref(false);
 const scheduleSearch = ref('');
 
 const availableDates = computed(() => {
@@ -374,7 +373,6 @@ const filteredMovies = computed(() => {
             .map(g => {
               if (filters.language && g.language !== filters.language) return null;
               if (filters.formats.length > 0 && !filters.formats.includes(g.format)) return null;
-              if (onlyPremium.value && !['XD', 'D-BOX', 'VIP', 'IMAX', '4DX', 'MACRO XE', 'LASERMAX', 'ONE'].includes(g.format)) return null;
 
               const times = g.times.filter(s => {
                 // 1. Hide shows whose start time has already passed
@@ -472,7 +470,7 @@ const activeComplexCount = computed(() => {
 });
 
 const hasActiveFilters = computed(() => Boolean(
-  filters.provinces.length > 0 || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating || onlyPremium.value
+  filters.provinces.length > 0 || filters.chain || filters.language || filters.formats.length > 0 || filters.ageRating
 ));
 
 const activeFilterCount = computed(() => {
@@ -482,7 +480,6 @@ const activeFilterCount = computed(() => {
   if (filters.language) count++;
   if (filters.formats.length > 0) count++;
   if (filters.ageRating) count++;
-  if (onlyPremium.value) count++;
   return count;
 });
 
@@ -511,17 +508,12 @@ watch(isMobileFilterOpen, (open) => {
   }
 });
 
-const toggleQuickLanguage = (lang) => {
-  filters.language = filters.language === lang ? null : lang;
-};
-
 const resetFilters = () => {
   filters.provinces = [];
   filters.chain = null;
   filters.language = null;
   filters.formats = [];
   filters.ageRating = null;
-  onlyPremium.value = false;
 };
 
 const countMovieShowtimes = (movie) =>
@@ -888,39 +880,6 @@ const formatStatusDate = (isoStr) => {
                 <option :value="null">Todos los formatos</option>
                 <option v-for="f in formatOptions" :key="f" :value="f">{{ f }}</option>
               </select>
-            </div>
-
-            <hr class="md-divider" />
-
-            <div class="sidebar-section-title">Opciones rápidas</div>
-            <div class="sidebar-quick-chips">
-              <button
-                type="button"
-                class="md-chip"
-                :class="{ selected: filters.language === 'SUB' }"
-                @click="toggleQuickLanguage('SUB')"
-              >
-                <span v-if="filters.language === 'SUB'" class="material-symbols-outlined sm">check</span>
-                Subtitulada
-              </button>
-              <button
-                type="button"
-                class="md-chip"
-                :class="{ selected: filters.language === 'DOB' }"
-                @click="toggleQuickLanguage('DOB')"
-              >
-                <span v-if="filters.language === 'DOB'" class="material-symbols-outlined sm">check</span>
-                Doblada
-              </button>
-              <button
-                type="button"
-                class="md-chip"
-                :class="{ selected: onlyPremium }"
-                @click="onlyPremium = !onlyPremium"
-              >
-                <span class="material-symbols-outlined sm">auto_awesome</span>
-                Especiales (VIP, XD, 4DX)
-              </button>
             </div>
           </div>
 
