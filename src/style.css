@@ -1230,3 +1230,79 @@ h1, h2, h3, h4 {
 .floating-mobile-stepper .floating-nav-btn:active {
   background-color: var(--md-sys-color-surface-container-highest);
 }
+
+/* Geolocation Prompt Banner & Distance Pill */
+.geo-prompt-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background-color: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.geo-prompt-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.geo-prompt-icon {
+  color: #38bdf8;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+[data-theme="light"] .geo-prompt-icon {
+  color: #0284c7;
+}
+
+.geo-prompt-text {
+  font-size: 0.86rem;
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.35;
+}
+
+.geo-prompt-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.distance-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: rgba(56, 189, 248, 0.14);
+  color: #38bdf8;
+  font-weight: 600;
+  font-size: 0.74rem;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+[data-theme="light"] .distance-pill {
+  background-color: rgba(2, 132, 199, 0.12);
+  color: #0369a1;
+}
+
+.geo-active-btn {
+  background-color: rgba(56, 189, 248, 0.16) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+[data-theme="light"] .geo-active-btn {
+  background-color: rgba(2, 132, 199, 0.12) !important;
+  color: #0369a1 !important;
+  border: 1px solid rgba(2, 132, 199, 0.3);
+}

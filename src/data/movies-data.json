@@ -40,7 +40,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -65,7 +67,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -90,7 +94,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -115,7 +121,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -140,7 +148,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       }
     ]
   },
@@ -184,7 +194,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -209,7 +221,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -234,7 +248,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -263,7 +279,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -288,7 +306,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       }
     ]
   },
@@ -333,7 +353,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -358,7 +380,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -383,7 +407,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -404,7 +430,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -429,7 +457,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       }
     ]
   },
@@ -474,7 +504,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -499,7 +531,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -524,7 +558,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -549,7 +585,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -574,7 +612,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       }
     ]
   },
@@ -616,7 +656,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -641,7 +683,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -666,7 +710,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -691,7 +737,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -716,7 +764,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       }
     ]
   },
@@ -760,7 +810,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -785,7 +837,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -810,7 +864,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -839,7 +895,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -864,7 +922,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       }
     ]
   },
@@ -905,7 +965,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -926,7 +988,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -947,7 +1011,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -968,7 +1034,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       }
     ]
   },
@@ -1007,7 +1075,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       }
     ],
     "ratingBadgeClass": "badge-orange",
@@ -1057,7 +1127,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       }
     ],
     "ratingBadgeClass": "badge-orange",
@@ -1099,7 +1171,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       }
     ],
     "ratingBadgeClass": "badge-amber",
@@ -1139,7 +1213,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9448,
+        "lng": -84.1178
       }
     ]
   },
@@ -1218,7 +1294,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -1287,7 +1365,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-2210",
@@ -1370,7 +1450,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -1415,7 +1497,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -1460,7 +1544,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -1501,7 +1587,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -1542,7 +1630,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "chainId": "studio",
@@ -1608,7 +1698,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "multicines",
@@ -1655,7 +1747,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       },
       {
         "chainId": "paseodelviento",
@@ -1678,7 +1772,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.4706,
+        "lng": -84.9691
       }
     ],
     "normalizedKey": "clayface"
@@ -1776,7 +1872,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -1863,7 +1961,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -1970,7 +2070,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -2053,7 +2155,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -2194,7 +2298,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -2301,7 +2407,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -2408,7 +2516,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -2507,7 +2617,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -2676,7 +2788,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -2749,7 +2863,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "ccm-san-ramon",
@@ -2804,7 +2920,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       },
       {
         "complexId": "ccm-san-carlos",
@@ -2859,7 +2977,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3331,
+        "lng": -84.4347
       },
       {
         "complexId": "nova-tamarindo",
@@ -2956,7 +3076,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3087,
+        "lng": -85.8311
       },
       {
         "complexId": "nova-limon",
@@ -3027,7 +3149,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9879,
+        "lng": -83.0968
       },
       {
         "complexId": "nova-alajuela",
@@ -3074,7 +3198,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -3169,7 +3295,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       },
       {
         "chainId": "sanpedro",
@@ -3259,7 +3387,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       },
       {
         "chainId": "studio",
@@ -3297,7 +3427,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "citicinemas",
@@ -3343,7 +3475,9 @@
             ]
           }
         ],
-        "website": "https://www.citicinemascr.com"
+        "website": "https://www.citicinemascr.com",
+        "lat": 10.0786,
+        "lng": -84.317
       },
       {
         "chainId": "pacific",
@@ -3374,7 +3508,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 8.5381,
+        "lng": -82.8391
       },
       {
         "chainId": "sunset",
@@ -3447,7 +3583,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.6175,
+        "lng": -84.631
       },
       {
         "chainId": "multicines",
@@ -3494,7 +3632,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       }
     ],
     "normalizedKey": "comorobarbanco"
@@ -3533,7 +3673,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       }
     ]
   },
@@ -3593,7 +3735,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-770",
@@ -3646,7 +3790,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cpl-terramall",
@@ -3679,7 +3825,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -3720,7 +3868,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "chainId": "sanpedro",
@@ -3818,7 +3968,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       },
       {
         "chainId": "multicines",
@@ -3865,7 +4017,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       },
       {
         "chainId": "paseodelviento",
@@ -3892,7 +4046,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.4706,
+        "lng": -84.9691
       }
     ],
     "normalizedKey": "corazonbestia"
@@ -3940,7 +4096,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -3965,7 +4123,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "chainId": "paseodelviento",
@@ -3988,7 +4148,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.4706,
+        "lng": -84.9691
       }
     ]
   },
@@ -4220,7 +4382,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -4419,7 +4583,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -4618,7 +4784,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -4841,7 +5009,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -5020,7 +5190,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -5131,7 +5303,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -5238,7 +5412,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -5351,7 +5527,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -5570,7 +5748,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -5699,7 +5879,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "ccm-plaza-mayor",
@@ -5752,7 +5934,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9448,
+        "lng": -84.1178
       },
       {
         "complexId": "ccm-san-ramon",
@@ -5847,7 +6031,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       },
       {
         "complexId": "ccm-san-carlos",
@@ -5908,7 +6094,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3331,
+        "lng": -84.4347
       },
       {
         "complexId": "nova-tamarindo",
@@ -6043,7 +6231,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3087,
+        "lng": -85.8311
       },
       {
         "complexId": "nova-limon",
@@ -6178,7 +6368,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9879,
+        "lng": -83.0968
       },
       {
         "complexId": "nova-alajuela",
@@ -6425,7 +6617,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -6668,7 +6862,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       },
       {
         "chainId": "magaly",
@@ -6722,7 +6918,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       },
       {
         "chainId": "sanpedro",
@@ -6870,7 +7068,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       },
       {
         "chainId": "studio",
@@ -6986,7 +7186,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "citicinemas",
@@ -7088,7 +7290,9 @@
             ]
           }
         ],
-        "website": "https://www.citicinemascr.com"
+        "website": "https://www.citicinemascr.com",
+        "lat": 10.0786,
+        "lng": -84.317
       },
       {
         "chainId": "pacific",
@@ -7115,7 +7319,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 8.5381,
+        "lng": -82.8391
       },
       {
         "chainId": "sunset",
@@ -7208,7 +7414,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.6175,
+        "lng": -84.631
       },
       {
         "chainId": "bistro",
@@ -7253,7 +7461,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.5673,
+        "lng": -85.6696
       },
       {
         "chainId": "multicines",
@@ -7342,7 +7552,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       },
       {
         "chainId": "paseodelviento",
@@ -7379,7 +7591,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.4706,
+        "lng": -84.9691
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
@@ -7445,7 +7659,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -7486,7 +7702,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -7515,7 +7733,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -7540,7 +7760,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-multicentro",
@@ -7605,7 +7827,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -7642,7 +7866,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -7687,7 +7913,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -7754,7 +7982,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "chainId": "multicines",
@@ -7801,7 +8031,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       }
     ],
     "normalizedKey": "engendro"
@@ -7866,7 +8098,9 @@
             ]
           }
         ],
-        "website": "https://www.citicinemascr.com"
+        "website": "https://www.citicinemascr.com",
+        "lat": 10.0786,
+        "lng": -84.317
       }
     ],
     "ratingBadgeClass": "badge-green",
@@ -8029,7 +8263,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -8146,7 +8382,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -8275,7 +8513,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -8426,7 +8666,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -8519,7 +8761,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -8592,7 +8836,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -8665,7 +8911,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -8778,7 +9026,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -8895,7 +9145,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -8970,7 +9222,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "ccm-plaza-mayor",
@@ -9035,7 +9289,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9448,
+        "lng": -84.1178
       },
       {
         "complexId": "ccm-san-ramon",
@@ -9134,7 +9390,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       },
       {
         "complexId": "ccm-san-carlos",
@@ -9225,7 +9483,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3331,
+        "lng": -84.4347
       },
       {
         "complexId": "nova-tamarindo",
@@ -9294,7 +9554,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3087,
+        "lng": -85.8311
       },
       {
         "complexId": "nova-limon",
@@ -9363,7 +9625,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9879,
+        "lng": -83.0968
       },
       {
         "complexId": "nova-alajuela",
@@ -9456,7 +9720,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -9529,7 +9795,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       },
       {
         "chainId": "sanpedro",
@@ -9703,7 +9971,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       },
       {
         "chainId": "studio",
@@ -9791,7 +10061,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "citicinemas",
@@ -9893,7 +10165,9 @@
             ]
           }
         ],
-        "website": "https://www.citicinemascr.com"
+        "website": "https://www.citicinemascr.com",
+        "lat": 10.0786,
+        "lng": -84.317
       },
       {
         "chainId": "pacific",
@@ -9920,7 +10194,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 8.5381,
+        "lng": -82.8391
       },
       {
         "chainId": "bistro",
@@ -9965,7 +10241,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.5673,
+        "lng": -85.6696
       },
       {
         "chainId": "multicines",
@@ -10056,7 +10334,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       },
       {
         "chainId": "paseodelviento",
@@ -10093,7 +10373,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.4706,
+        "lng": -84.9691
       }
     ],
     "normalizedKey": "gatosombrero"
@@ -10211,7 +10493,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -10366,7 +10650,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -10513,7 +10799,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -10654,7 +10942,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -10749,7 +11039,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -10844,7 +11136,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -10943,7 +11237,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -11034,7 +11330,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -11151,7 +11449,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -11220,7 +11520,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "ccm-plaza-mayor",
@@ -11275,7 +11577,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9448,
+        "lng": -84.1178
       },
       {
         "complexId": "ccm-san-ramon",
@@ -11362,7 +11666,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       },
       {
         "complexId": "ccm-san-carlos",
@@ -11453,7 +11759,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3331,
+        "lng": -84.4347
       },
       {
         "complexId": "nova-tamarindo",
@@ -11510,7 +11818,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3087,
+        "lng": -85.8311
       },
       {
         "complexId": "nova-limon",
@@ -11559,7 +11869,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9879,
+        "lng": -83.0968
       },
       {
         "complexId": "nova-alajuela",
@@ -11674,7 +11986,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -11831,7 +12145,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       },
       {
         "chainId": "sanpedro",
@@ -11921,7 +12237,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       },
       {
         "chainId": "studio",
@@ -11963,7 +12281,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "citicinemas",
@@ -12037,7 +12357,9 @@
             ]
           }
         ],
-        "website": "https://www.citicinemascr.com"
+        "website": "https://www.citicinemascr.com",
+        "lat": 10.0786,
+        "lng": -84.317
       },
       {
         "chainId": "pacific",
@@ -12068,7 +12390,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 8.5381,
+        "lng": -82.8391
       },
       {
         "chainId": "sunset",
@@ -12137,7 +12461,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.6175,
+        "lng": -84.631
       },
       {
         "chainId": "bistro",
@@ -12182,7 +12508,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.5673,
+        "lng": -85.6696
       },
       {
         "chainId": "multicines",
@@ -12281,7 +12609,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       },
       {
         "chainId": "paseodelviento",
@@ -12308,7 +12638,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.4706,
+        "lng": -84.9691
       }
     ],
     "normalizedKey": "godzillaminuszero"
@@ -12359,7 +12691,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       }
     ],
     "ratingBadgeClass": "badge-orange",
@@ -12464,7 +12798,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -12559,7 +12895,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -12642,7 +12980,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -12731,7 +13071,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -12766,7 +13108,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -12787,7 +13131,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -12812,7 +13158,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -12843,7 +13191,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -12878,7 +13228,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -12913,7 +13265,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "ccm-plaza-mayor",
@@ -12948,7 +13302,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9448,
+        "lng": -84.1178
       },
       {
         "complexId": "ccm-san-ramon",
@@ -12987,7 +13343,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       },
       {
         "complexId": "ccm-san-carlos",
@@ -13026,7 +13384,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3331,
+        "lng": -84.4347
       },
       {
         "complexId": "nova-tamarindo",
@@ -13075,7 +13435,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3087,
+        "lng": -85.8311
       },
       {
         "complexId": "nova-limon",
@@ -13118,7 +13480,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9879,
+        "lng": -83.0968
       },
       {
         "complexId": "nova-alajuela",
@@ -13205,7 +13569,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -13294,7 +13660,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       },
       {
         "chainId": "sanpedro",
@@ -13328,7 +13696,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       },
       {
         "chainId": "studio",
@@ -13368,7 +13738,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "pacific",
@@ -13395,7 +13767,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 8.5381,
+        "lng": -82.8391
       },
       {
         "chainId": "multicines",
@@ -13418,7 +13792,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       }
     ],
     "normalizedKey": "hungergames6amanecer"
@@ -13460,7 +13836,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       }
     ],
     "ratingBadgeClass": "badge-amber",
@@ -13525,7 +13903,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-770",
@@ -13570,7 +13950,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "chainId": "multicines",
@@ -13617,7 +13999,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       }
     ],
     "normalizedKey": "madresiniestra"
@@ -13676,7 +14060,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       }
     ]
   },
@@ -13738,7 +14124,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.6175,
+        "lng": -84.631
       },
       {
         "chainId": "multicines",
@@ -13785,7 +14173,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       }
     ],
     "ratingBadgeClass": "badge-green",
@@ -13861,7 +14251,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "chainId": "sanpedro",
@@ -13975,7 +14367,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       }
     ],
     "normalizedKey": "residentevilnochecero"
@@ -14031,7 +14425,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       }
     ]
   },
@@ -14079,7 +14475,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-terramall",
@@ -14120,7 +14518,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       }
     ]
   },
@@ -14165,7 +14565,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       },
       {
         "chainId": "sanpedro",
@@ -14227,7 +14629,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       }
     ]
   },
@@ -14286,7 +14690,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -14327,7 +14733,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -14368,7 +14776,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -14409,7 +14819,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -14454,7 +14866,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -14499,7 +14913,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -14544,7 +14960,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -14589,7 +15007,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "nova-limon",
@@ -14634,7 +15054,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9879,
+        "lng": -83.0968
       },
       {
         "complexId": "nova-alajuela",
@@ -14675,7 +15097,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -14720,7 +15144,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       }
     ],
     "normalizedKey": "vidaproposito"
@@ -14780,7 +15206,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -14833,7 +15261,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -14866,7 +15296,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -14917,7 +15349,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -14954,7 +15388,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -14999,7 +15435,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -15028,7 +15466,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -15101,7 +15541,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -15166,7 +15608,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "chainId": "sanpedro",
@@ -15224,7 +15668,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       }
     ],
     "normalizedKey": "vientrediablo"
@@ -15295,7 +15741,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -15336,7 +15784,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -15385,7 +15835,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -15426,7 +15878,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -15469,7 +15923,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -15524,7 +15980,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -15579,7 +16037,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -15634,7 +16094,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -15681,7 +16143,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -15760,7 +16224,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "nova-tamarindo",
@@ -15831,7 +16297,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.3087,
+        "lng": -85.8311
       },
       {
         "complexId": "nova-limon",
@@ -15888,7 +16356,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9879,
+        "lng": -83.0968
       },
       {
         "complexId": "nova-alajuela",
@@ -16023,7 +16493,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -16170,7 +16642,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       },
       {
         "chainId": "magaly",
@@ -16200,7 +16674,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       },
       {
         "chainId": "studio",
@@ -16284,7 +16760,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "citicinemas",
@@ -16330,7 +16808,9 @@
             ]
           }
         ],
-        "website": "https://www.citicinemascr.com"
+        "website": "https://www.citicinemascr.com",
+        "lat": 10.0786,
+        "lng": -84.317
       },
       {
         "chainId": "pacific",
@@ -16357,7 +16837,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 8.5381,
+        "lng": -82.8391
       },
       {
         "chainId": "multicines",
@@ -16438,7 +16920,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       }
     ],
     "normalizedKey": "wildwoodbosquesalvaje"
@@ -16547,7 +17031,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0044,
+        "lng": -84.2117
       },
       {
         "complexId": "cmk-773",
@@ -16630,7 +17116,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9172,
+        "lng": -84.0466
       },
       {
         "complexId": "cmk-770",
@@ -16705,7 +17193,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9443,
+        "lng": -84.1509
       },
       {
         "complexId": "cmk-2210",
@@ -16818,7 +17308,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9939,
+        "lng": -84.1326
       },
       {
         "complexId": "cpl-lincoln",
@@ -16971,7 +17463,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9628,
+        "lng": -84.0554
       },
       {
         "complexId": "cpl-multicentro",
@@ -17082,7 +17576,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.8996,
+        "lng": -84.0677
       },
       {
         "complexId": "cpl-paseo-flores",
@@ -17189,7 +17685,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.985,
+        "lng": -84.1114
       },
       {
         "complexId": "cpl-paseo-metropoli",
@@ -17288,7 +17786,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.867,
+        "lng": -83.9426
       },
       {
         "complexId": "cpl-terramall",
@@ -17419,7 +17919,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.902,
+        "lng": -83.9965
       },
       {
         "complexId": "cpl-terrazas-lindora",
@@ -17492,7 +17994,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9569,
+        "lng": -84.1966
       },
       {
         "complexId": "ccm-plaza-mayor",
@@ -17517,7 +18021,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.9448,
+        "lng": -84.1178
       },
       {
         "complexId": "ccm-san-ramon",
@@ -17558,7 +18064,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0777,
+        "lng": -84.4694
       },
       {
         "complexId": "nova-alajuela",
@@ -17609,7 +18117,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.0111,
+        "lng": -84.2063
       },
       {
         "complexId": "nova-escazu",
@@ -17634,7 +18144,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.939,
+        "lng": -84.1426
       },
       {
         "chainId": "magaly",
@@ -17704,7 +18216,9 @@
             ]
           }
         ],
-        "website": "https://www.cinemagaly.com"
+        "website": "https://www.cinemagaly.com",
+        "lat": 9.9331,
+        "lng": -84.0679
       },
       {
         "chainId": "sanpedro",
@@ -17762,7 +18276,9 @@
             ]
           }
         ],
-        "website": "https://cinemasanpedro.com"
+        "website": "https://cinemasanpedro.com",
+        "lat": 9.9339,
+        "lng": -84.0566
       },
       {
         "chainId": "studio",
@@ -17828,7 +18344,9 @@
             ]
           }
         ],
-        "website": "https://www.studiocinemascr.com"
+        "website": "https://www.studiocinemascr.com",
+        "lat": 9.9358,
+        "lng": -84.19
       },
       {
         "chainId": "citicinemas",
@@ -17874,7 +18392,9 @@
             ]
           }
         ],
-        "website": "https://www.citicinemascr.com"
+        "website": "https://www.citicinemascr.com",
+        "lat": 10.0786,
+        "lng": -84.317
       },
       {
         "chainId": "pacific",
@@ -17897,7 +18417,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 8.5381,
+        "lng": -82.8391
       },
       {
         "chainId": "sunset",
@@ -17942,7 +18464,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 9.6175,
+        "lng": -84.631
       },
       {
         "chainId": "multicines",
@@ -18003,7 +18527,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.6182,
+        "lng": -85.4368
       },
       {
         "chainId": "paseodelviento",
@@ -18036,7 +18562,9 @@
               }
             ]
           }
-        ]
+        ],
+        "lat": 10.4706,
+        "lng": -84.9691
       }
     ],
     "normalizedKey": "yosoyrocky"

@@ -56,6 +56,14 @@ for (const m of movies) {
     assert.ok(t.complexName, `Missing complexName in ${m.title}`);
     assert.ok(t.province, `Missing province in ${t.complexName}`);
     assert.ok(t.website && t.website.startsWith('http'), `Missing or invalid website in ${t.complexName} for ${m.title}`);
+    assert.ok(
+      typeof t.lat === 'number' && t.lat >= 8.0 && t.lat <= 11.5,
+      `Missing or out-of-bounds latitude in ${t.complexName}: ${t.lat}`
+    );
+    assert.ok(
+      typeof t.lng === 'number' && t.lng >= -86.0 && t.lng <= -82.5,
+      `Missing or out-of-bounds longitude in ${t.complexName}: ${t.lng}`
+    );
     assert.ok(Array.isArray(t.groups), `Missing groups in ${t.complexName}`);
 
     for (const g of t.groups) {

@@ -232,6 +232,14 @@ onMounted(() => {
   window.addEventListener('keydown', handleKeyDown);
   window.addEventListener('resize', handleWindowResize, { passive: true });
   loadDockPosition();
+  try {
+    geoPromptDismissed.value = localStorage.getItem('cinecr-geo-dismissed') === 'true';
+    if (localStorage.getItem('cinecr-geo-enabled') === 'true') {
+      requestUserLocation();
+    }
+  } catch {
+    // Ignore storage errors
+  }
   handleScroll();
   updateSidebarHeight();
   if (typeof ResizeObserver !== 'undefined' && sidebarRef.value) {
@@ -364,6 +372,126 @@ const getCinemaWebsite = (complex) => {
   return complex?.website || CHAIN_WEBSITES[complex?.chainId] || 'https://cinecr.pages.dev';
 };
 
+const CINEMA_COORDINATES = {
+  'bistro-hermosa': { lat: 10.5673, lng: -85.6696 },
+  'ccm-plaza-mayor': { lat: 9.9448, lng: -84.1178 },
+  'ccm-san-ramon': { lat: 10.0777, lng: -84.4694 },
+  'ccm-san-carlos': { lat: 10.3331, lng: -84.4347 },
+  'cmk-2204': { lat: 10.0044, lng: -84.2117 },
+  'cmk-770': { lat: 9.9443, lng: -84.1509 },
+  'cmk-773': { lat: 9.9172, lng: -84.0466 },
+  'cmk-2210': { lat: 9.9939, lng: -84.1326 },
+  'cpl-lincoln': { lat: 9.9628, lng: -84.0554 },
+  'cpl-multicentro': { lat: 9.8996, lng: -84.0677 },
+  'cpl-paseo-flores': { lat: 9.9850, lng: -84.1114 },
+  'cpl-paseo-metropoli': { lat: 9.8670, lng: -83.9426 },
+  'cpl-terramall': { lat: 9.9020, lng: -83.9965 },
+  'cpl-terrazas-lindora': { lat: 9.9569, lng: -84.1966 },
+  'citicinemas-grecia': { lat: 10.0786, lng: -84.3170 },
+  'magaly-california': { lat: 9.9331, lng: -84.0679 },
+  'studio-santa-ana': { lat: 9.9358, lng: -84.1900 },
+  'multicines-liberia': { lat: 10.6182, lng: -85.4368 },
+  'paseodelviento-tilaran': { lat: 10.4706, lng: -84.9691 },
+  'nova-escazu': { lat: 9.9390, lng: -84.1426 },
+  'nova-curridabat': { lat: 9.9081, lng: -84.0175 },
+  'nova-alajuela': { lat: 10.0111, lng: -84.2063 },
+  'nova-limon': { lat: 9.9879, lng: -83.0968 },
+  'nova-tamarindo': { lat: 10.3087, lng: -85.8311 },
+  'sanpedro-mall': { lat: 9.9339, lng: -84.0566 },
+  'pacific-paso-canoas': { lat: 8.5381, lng: -82.8391 },
+  'sunset-jaco': { lat: 9.6175, lng: -84.6310 }
+};
+
+// User Geolocation & Distance Calculation (Haversine)
+const userLocation = ref(null);
+const geoStatus = ref('idle'); // 'idle' | 'loading' | 'granted' | 'denied' | 'unsupported'
+const geoPromptDismissed = ref(false);
+
+const calculateDistanceKm = (lat1, lng1, lat2, lng2) => {
+  if (
+    typeof lat1 !== 'number' || typeof lng1 !== 'number' ||
+    typeof lat2 !== 'number' || typeof lng2 !== 'number'
+  ) {
+    return null;
+  }
+  const toRad = (deg) => (deg * Math.PI) / 180;
+  const R = 6371; // Earth radius in km
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+    Math.sin(dLng / 2) * Math.sin(dLng / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+};
+
+const formatDistanceKm = (km) => {
+  if (km === null || km === undefined || Number.isNaN(km)) return '';
+  if (km < 1) return `a ${km.toFixed(1)} km`;
+  return `a ${km.toFixed(1).replace(/\.0$/, '')} km`;
+};
+
+const getComplexDistanceKm = (complex) => {
+  if (!userLocation.value || !complex) return null;
+  const coords = (typeof complex.lat === 'number' && typeof complex.lng === 'number')
+    ? { lat: complex.lat, lng: complex.lng }
+    : CINEMA_COORDINATES[complex.complexId];
+  if (!coords) return null;
+  return calculateDistanceKm(userLocation.value.lat, userLocation.value.lng, coords.lat, coords.lng);
+};
+
+const requestUserLocation = () => {
+  if (typeof navigator === 'undefined' || !navigator.geolocation) {
+    geoStatus.value = 'unsupported';
+    return;
+  }
+  geoStatus.value = 'loading';
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      userLocation.value = {
+        lat: pos.coords.latitude,
+        lng: pos.coords.longitude
+      };
+      geoStatus.value = 'granted';
+      try {
+        localStorage.setItem('cinecr-geo-enabled', 'true');
+        localStorage.removeItem('cinecr-geo-dismissed');
+      } catch {
+        // Ignore storage errors
+      }
+    },
+    () => {
+      geoStatus.value = 'denied';
+      try {
+        localStorage.removeItem('cinecr-geo-enabled');
+      } catch {
+        // Ignore storage errors
+      }
+    },
+    { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+  );
+};
+
+const clearUserLocation = () => {
+  userLocation.value = null;
+  geoStatus.value = 'idle';
+  try {
+    localStorage.removeItem('cinecr-geo-enabled');
+  } catch {
+    // Ignore storage errors
+  }
+};
+
+const dismissGeoPrompt = () => {
+  geoPromptDismissed.value = true;
+  try {
+    localStorage.setItem('cinecr-geo-dismissed', 'true');
+  } catch {
+    // Ignore storage errors
+  }
+};
+
 // Helper to generate dynamic poster artworks
 function generatePosterSvg(title, genre, color) {
   const safeTitle = (title || 'CineCR').substring(0, 32);
@@ -481,10 +609,15 @@ const movies = ref(moviesData.map(m => {
   const genre = genres[0] || 'Película';
   const color = genreColors[genre] || '#f43f5e';
   const ageInfo = getMovieAgeRating(m.rating);
-  const theaters = (m.theaters || []).map(t => ({
-    ...t,
-    website: t.website || CHAIN_WEBSITES[t.chainId] || 'https://cinecr.pages.dev'
-  }));
+  const theaters = (m.theaters || []).map(t => {
+    const coords = CINEMA_COORDINATES[t.complexId];
+    return {
+      ...t,
+      lat: t.lat ?? coords?.lat ?? null,
+      lng: t.lng ?? coords?.lng ?? null,
+      website: t.website || CHAIN_WEBSITES[t.chainId] || 'https://cinecr.pages.dev'
+    };
+  });
   return {
     ...m,
     genres,
@@ -578,12 +711,17 @@ const filteredMovies = computed(() => {
 
           return {
             ...complex,
+            distanceKm: getComplexDistanceKm(complex),
             groupedByFormatLang: matchingGroups,
             uniqueFormats,
             sessions: flatSessions
           };
         })
         .filter(complex => complex.groupedByFormatLang.length > 0);
+
+      if (userLocation.value) {
+        groupedTheaters.sort((a, b) => (a.distanceKm ?? Infinity) - (b.distanceKm ?? Infinity));
+      }
 
       return {
         ...movie,
@@ -838,6 +976,22 @@ const formatStatusDate = (isoStr) => {
               Cronograma
             </button>
           </div>
+
+          <button
+            type="button"
+            class="md-btn md-btn-tonal md-btn-sm"
+            :class="{ 'geo-active-btn': geoStatus === 'granted' }"
+            @click="userLocation ? clearUserLocation() : requestUserLocation()"
+            :disabled="geoStatus === 'loading'"
+            :title="userLocation ? 'Ubicación activa (clic para desactivar)' : 'Calcular distancia a cada cine'"
+          >
+            <span class="material-symbols-outlined sm">
+              {{ geoStatus === 'granted' ? 'my_location' : 'location_searching' }}
+            </span>
+            <span class="hide-mobile">
+              {{ geoStatus === 'loading' ? 'Ubicando...' : (geoStatus === 'granted' ? 'Ubicación activa' : 'Mi ubicación') }}
+            </span>
+          </button>
 
           <button
             type="button"
@@ -1101,6 +1255,36 @@ const formatStatusDate = (isoStr) => {
 
         <!-- MAIN CONTENT COLUMN -->
         <div class="main-content-column">
+          <!-- GEOLOCATION PROMPT BANNER -->
+          <div
+            v-if="!userLocation && !geoPromptDismissed && geoStatus !== 'denied' && geoStatus !== 'unsupported'"
+            class="geo-prompt-banner"
+          >
+            <div class="geo-prompt-info">
+              <span class="material-symbols-outlined geo-prompt-icon">near_me</span>
+              <span class="geo-prompt-text">
+                ¿Querés saber a cuántos kilómetros estás de cada cine? Compartí tu ubicación para mostrar la distancia.
+              </span>
+            </div>
+            <div class="geo-prompt-actions">
+              <button
+                type="button"
+                class="md-btn md-btn-filled md-btn-sm"
+                :disabled="geoStatus === 'loading'"
+                @click="requestUserLocation"
+              >
+                {{ geoStatus === 'loading' ? 'Obteniendo...' : 'Compartir ubicación' }}
+              </button>
+              <button
+                type="button"
+                class="md-btn md-btn-text md-btn-sm"
+                @click="dismissGeoPrompt"
+              >
+                Ahora no
+              </button>
+            </div>
+          </div>
+
           <!-- TOP TOOLBAR: Date chips + Mobile Filters button -->
           <div class="content-toolbar">
             <button
@@ -1247,9 +1431,19 @@ const formatStatusDate = (isoStr) => {
                       <div style="font-weight: 700; font-size: 0.98rem;">
                         {{ complex.complexName }}
                       </div>
-                      <div style="font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); display: flex; align-items: center; gap: 3px;">
-                        <span class="material-symbols-outlined sm" style="font-size: 14px;">location_on</span>
-                        {{ complex.province }} • {{ complex.locationDetail }}
+                      <div style="font-size: 0.76rem; color: var(--md-sys-color-on-surface-variant); display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                        <span style="display: inline-flex; align-items: center; gap: 3px;">
+                          <span class="material-symbols-outlined sm" style="font-size: 14px;">location_on</span>
+                          {{ complex.province }} • {{ complex.locationDetail }}
+                        </span>
+                        <span
+                          v-if="complex.distanceKm !== null"
+                          class="distance-pill"
+                          title="Distancia aproximada en línea recta desde tu ubicación"
+                        >
+                          <span class="material-symbols-outlined" style="font-size: 13px;">near_me</span>
+                          {{ formatDistanceKm(complex.distanceKm) }}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -1365,11 +1559,19 @@ const formatStatusDate = (isoStr) => {
                     </div>
                   </td>
                   <td>
-                    <div style="display: flex; align-items: center; gap: 8px;">
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                       <span :class="['md-badge xs', getChainBadgeClass(item.complex.chainId)]">
                         {{ item.complex.chainName }}
                       </span>
                       <span style="font-weight: 500;">{{ item.complex.complexName }}</span>
+                      <span
+                        v-if="item.complex.distanceKm !== null"
+                        class="distance-pill"
+                        title="Distancia aproximada en línea recta desde tu ubicación"
+                      >
+                        <span class="material-symbols-outlined" style="font-size: 13px;">near_me</span>
+                        {{ formatDistanceKm(item.complex.distanceKm) }}
+                      </span>
                     </div>
                   </td>
                   <td>{{ item.complex.province }}</td>

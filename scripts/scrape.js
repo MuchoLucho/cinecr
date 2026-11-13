@@ -199,6 +199,36 @@ const CHAIN_WEBSITES = {
   citicinemas: 'https://www.citicinemascr.com'
 };
 
+export const CINEMA_COORDINATES = {
+  'bistro-hermosa': { lat: 10.5673, lng: -85.6696 },
+  'ccm-plaza-mayor': { lat: 9.9448, lng: -84.1178 },
+  'ccm-san-ramon': { lat: 10.0777, lng: -84.4694 },
+  'ccm-san-carlos': { lat: 10.3331, lng: -84.4347 },
+  'cmk-2204': { lat: 10.0044, lng: -84.2117 },
+  'cmk-770': { lat: 9.9443, lng: -84.1509 },
+  'cmk-773': { lat: 9.9172, lng: -84.0466 },
+  'cmk-2210': { lat: 9.9939, lng: -84.1326 },
+  'cpl-lincoln': { lat: 9.9628, lng: -84.0554 },
+  'cpl-multicentro': { lat: 9.8996, lng: -84.0677 },
+  'cpl-paseo-flores': { lat: 9.9850, lng: -84.1114 },
+  'cpl-paseo-metropoli': { lat: 9.8670, lng: -83.9426 },
+  'cpl-terramall': { lat: 9.9020, lng: -83.9965 },
+  'cpl-terrazas-lindora': { lat: 9.9569, lng: -84.1966 },
+  'citicinemas-grecia': { lat: 10.0786, lng: -84.3170 },
+  'magaly-california': { lat: 9.9331, lng: -84.0679 },
+  'studio-santa-ana': { lat: 9.9358, lng: -84.1900 },
+  'multicines-liberia': { lat: 10.6182, lng: -85.4368 },
+  'paseodelviento-tilaran': { lat: 10.4706, lng: -84.9691 },
+  'nova-escazu': { lat: 9.9390, lng: -84.1426 },
+  'nova-curridabat': { lat: 9.9081, lng: -84.0175 },
+  'nova-alajuela': { lat: 10.0111, lng: -84.2063 },
+  'nova-limon': { lat: 9.9879, lng: -83.0968 },
+  'nova-tamarindo': { lat: 10.3087, lng: -85.8311 },
+  'sanpedro-mall': { lat: 9.9339, lng: -84.0566 },
+  'pacific-paso-canoas': { lat: 8.5381, lng: -82.8391 },
+  'sunset-jaco': { lat: 9.6175, lng: -84.6310 }
+};
+
 function getRatingBadgeClass(ratingStr) {
   if (!ratingStr) return 'badge-green';
   const r = (ratingStr || '').toUpperCase();
@@ -342,7 +372,13 @@ export function mergeDatasets(...datasets) {
         }
       }
       if (validGroups.length > 0) {
-        validTheaters.push({ ...t, groups: validGroups });
+        const coords = CINEMA_COORDINATES[t.complexId];
+        validTheaters.push({
+          ...t,
+          lat: t.lat ?? coords?.lat ?? null,
+          lng: t.lng ?? coords?.lng ?? null,
+          groups: validGroups
+        });
       }
     }
     if (validTheaters.length > 0) {
