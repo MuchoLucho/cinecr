@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-13T01:03:12.014Z",
+  "lastRun": "2026-11-13T01:07:18.351Z",
   "chains": {
     "cinemark": {
       "id": "cinemark",
@@ -96,6 +96,14 @@
       "lastSuccess": "2026-11-13T01:01:48.503Z",
       "moviesCount": 12,
       "showtimesCount": 120
+    },
+    "paseodelviento": {
+      "id": "paseodelviento",
+      "name": "Paseo del Viento",
+      "status": "healthy",
+      "lastSuccess": "2026-11-13T01:05:49.667Z",
+      "moviesCount": 7,
+      "showtimesCount": 14
     }
   }
 }

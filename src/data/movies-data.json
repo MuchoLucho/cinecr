@@ -1229,7 +1229,7 @@
     "id": "113609",
     "title": "Clayface",
     "originalTitle": "Clayface",
-    "studio": "Cinemark / Cinépolis / Studio Cinemas / Multicines",
+    "studio": "Cinemark / Cinépolis / Studio Cinemas / Multicines / Paseo del Viento",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "7.4",
@@ -1734,6 +1734,29 @@
               {
                 "date": "2026-11-18",
                 "time": "18:10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:25"
               }
             ]
           }
@@ -3769,7 +3792,7 @@
     "normalizedKey": "coyotevsacme",
     "title": "Coyote VS. ACME",
     "originalTitle": "Coyote VS. ACME",
-    "studio": "Cinépolis",
+    "studio": "Cinépolis / Paseo del Viento",
     "rating": "TP",
     "ratingBadgeClass": "badge-green",
     "score": "8.2",
@@ -3833,6 +3856,29 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "16:30"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -3840,7 +3886,7 @@
     "id": "113989",
     "title": "Ebenezer fantasmas de Navidad",
     "originalTitle": "Ebenezer fantasmas de Navidad ",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema / Multicines",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema / Multicines / Paseo del Viento",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -7691,6 +7737,43 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:20"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:25"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "14:15"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
@@ -7741,7 +7824,7 @@
     "id": "112951",
     "title": "El Corazon de la Bestia",
     "originalTitle": "El Corazon de la Bestia",
-    "studio": "Cinemark / Cinépolis / Cinema San Pedro / Multicines",
+    "studio": "Cinemark / Cinépolis / Cinema San Pedro / Multicines / Paseo del Viento",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
     "score": "7.5",
@@ -8062,6 +8145,33 @@
               {
                 "date": "2026-11-18",
                 "time": "13:30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:30"
               }
             ]
           }
@@ -8496,7 +8606,7 @@
     "id": "113899",
     "title": "El Gato con Sombrero",
     "originalTitle": "El Gato con Sombrero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Bistro Cinema / Multicines",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Bistro Cinema / Multicines / Paseo del Viento",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
     "score": "7.4",
@@ -11181,6 +11291,43 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "14:15"
+              }
+            ]
+          },
+          {
+            "format": "3D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "16:20"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "gatosombrero"
@@ -11927,7 +12074,7 @@
     "id": "113646",
     "title": "Godzilla Minus Zero",
     "originalTitle": "Godzilla Minus Zero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema / Multicines",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema / Multicines / Paseo del Viento",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "7.8",
@@ -14439,6 +14586,33 @@
               {
                 "date": "2026-11-18",
                 "time": "20:30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "16:15"
               }
             ]
           }
@@ -18318,7 +18492,7 @@
     "id": "114001",
     "title": "Yo soy Rocky",
     "originalTitle": "Yo soy Rocky",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Multicines",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Multicines / Paseo del Viento",
     "rating": "TPA",
     "ratingBadgeClass": "badge-green",
     "score": "8.8",
@@ -20038,6 +20212,39 @@
               },
               {
                 "date": "2026-11-18",
+                "time": "20:20"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:20"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
                 "time": "20:20"
               }
             ]

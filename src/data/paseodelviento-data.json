@@ -1,0 +1,335 @@
+[
+  {
+    "id": "paseodelviento-clayface",
+    "title": "Clayface",
+    "originalTitle": "Clayface",
+    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
+    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
+    "rating": "M18",
+    "duration": "1h 49m",
+    "score": "7.4",
+    "director": "James Watkins",
+    "genres": [
+      "Terror",
+      "Suspense",
+      "Ciencia ficción"
+    ],
+    "theaters": [
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:25"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paseodelviento-coyotevsacme",
+    "title": "Coyote VS. ACME",
+    "originalTitle": "Coyote VS. ACME",
+    "synopsis": "Luego de que los productos Acme le fallan demasiadas veces en su tenaz búsqueda del Correcaminos, Wile E. Coyote decide contratar a un abogado especializado en vallas publicitarias para demandar a Acme Corporation.",
+    "poster": "https://image.tmdb.org/t/p/w500/e4P8CIoffzsyjTm9e6U87Mng2CU.jpg",
+    "rating": "TP",
+    "duration": "1h 43m",
+    "score": "8.2",
+    "director": "Dave Green",
+    "genres": [
+      "Comedia",
+      "Aventura",
+      "Familia",
+      "Animación"
+    ],
+    "theaters": [
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "16:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paseodelviento-ebenezer",
+    "title": "Ebenezer",
+    "originalTitle": "Ebenezer",
+    "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
+    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
+    "rating": "M12",
+    "duration": "1h 55m",
+    "score": "8.0",
+    "director": "Ti West",
+    "genres": [
+      "Fantasía",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:20"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:25"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "14:15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paseodelviento-corazonbestia",
+    "title": "El corazón de la bestia",
+    "originalTitle": "El corazón de la bestia",
+    "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
+    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
+    "rating": "TP",
+    "duration": "1h 41m",
+    "score": "7.5",
+    "director": "David Ayer",
+    "genres": [
+      "Aventura",
+      "Suspense"
+    ],
+    "theaters": [
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paseodelviento-gatosombrero",
+    "title": "El gato con sombrero",
+    "originalTitle": "El gato con sombrero",
+    "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
+    "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
+    "rating": "TP",
+    "duration": "1h 48m",
+    "score": "7.4",
+    "director": "Erica Rivinoja, Alessandro Carloni",
+    "genres": [
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "16:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "14:15"
+              }
+            ]
+          },
+          {
+            "format": "3D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "16:20"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paseodelviento-godzillaminuszero",
+    "title": "Godzilla Minus Zero",
+    "originalTitle": "Godzilla Minus Zero",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
+    "rating": "M12",
+    "duration": "2h 15m",
+    "score": "7.8",
+    "director": "山崎貴",
+    "genres": [
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
+    ],
+    "theaters": [
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "16:15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paseodelviento-yosoyrocky",
+    "title": "Yo soy Rocky",
+    "originalTitle": "Yo soy Rocky",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
+    "rating": "M12",
+    "duration": "2h 8m",
+    "score": "8.8",
+    "director": "Peter Farrelly",
+    "genres": [
+      "Drama",
+      "Historia"
+    ],
+    "theaters": [
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:20"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:20"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

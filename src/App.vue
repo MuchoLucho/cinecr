@@ -191,7 +191,8 @@ const chains = [
   { id: 'pacific', name: 'Pacific Cinemas' },
   { id: 'sunset', name: 'Sunset Cinema' },
   { id: 'bistro', name: 'Bistro Cinema' },
-  { id: 'multicines', name: 'Multicines' }
+  { id: 'multicines', name: 'Multicines' },
+  { id: 'paseodelviento', name: 'Paseo del Viento' }
 ];
 
 const CHAIN_WEBSITES = {
@@ -206,7 +207,8 @@ const CHAIN_WEBSITES = {
   pacific: 'https://pacificcinemas.com/cartelera.php',
   sunset: 'https://sunsetcinemajaco.com/cartelera/',
   bistro: 'https://bistrocinemahermosa.com',
-  multicines: 'https://www.compraenlineaml.net/Cartelera.aspx?complejo=450'
+  multicines: 'https://www.compraenlineaml.net/Cartelera.aspx?complejo=450',
+  paseodelviento: 'https://paseodelvientocinema.com/Cartelera.aspx?complejo=460'
 };
 
 const getCinemaWebsite = (complex) => {
@@ -544,6 +546,7 @@ const getChainBadgeClass = (chainId) => {
   if (chainId === 'sunset') return 'badge-amber';
   if (chainId === 'bistro') return 'badge-pink';
   if (chainId === 'multicines') return 'badge-cyan';
+  if (chainId === 'paseodelviento') return 'badge-green';
   return 'badge-red';
 };
 
