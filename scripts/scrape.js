@@ -171,6 +171,23 @@ function normalizeTitleKey(str) {
     .replace(/[^a-z0-9]/g, '');
 }
 
+export function getSortTitle(title) {
+  if (!title || typeof title !== 'string') return '';
+  let clean = title.replace(/^[\s¿¡"'\«“\(\[]+/, '').trim();
+  clean = clean.replace(/^(el|la|los|las|un|una|unos|unas|the|a|an)\s+/i, '').trim();
+  return clean || title;
+}
+
+export function compareMovieTitles(a, b) {
+  const titleA = typeof a === 'string' ? a : (a?.title || '');
+  const titleB = typeof b === 'string' ? b : (b?.title || '');
+  const keyA = getSortTitle(titleA);
+  const keyB = getSortTitle(titleB);
+  const cmp = keyA.localeCompare(keyB, 'es', { sensitivity: 'base' });
+  if (cmp !== 0) return cmp;
+  return titleA.localeCompare(titleB, 'es');
+}
+
 const CHAIN_WEBSITES = {
   cinemark: 'https://www.cinemarkca.com/costa-rica',
   cinepolis: 'https://cinepolis.co.cr',
@@ -333,7 +350,7 @@ export function mergeDatasets(...datasets) {
     }
   }
 
-  activeMovies.sort((a, b) => a.title.localeCompare(b.title));
+  activeMovies.sort(compareMovieTitles);
   return activeMovies;
 }
 

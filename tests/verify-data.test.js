@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { compareMovieTitles, getSortTitle } from '../scripts/scrape.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dataFile = path.resolve(__dirname, '../src/data/movies-data.json');
@@ -10,6 +11,16 @@ assert.ok(fs.existsSync(dataFile), 'movies-data.json should exist');
 
 const movies = JSON.parse(fs.readFileSync(dataFile, 'utf-8'));
 assert.ok(Array.isArray(movies) && movies.length > 0, 'Movies list should not be empty');
+
+// Verify alphabetical sorting omitting leading articles
+for (let i = 1; i < movies.length; i++) {
+  const prev = movies[i - 1];
+  const curr = movies[i];
+  assert.ok(
+    compareMovieTitles(prev, curr) <= 0,
+    `movies-data.json not sorted alphabetically (ignoring articles): "${prev.title}" (${getSortTitle(prev.title)}) should precede or match "${curr.title}" (${getSortTitle(curr.title)})`
+  );
+}
 
 const chainsFound = new Set();
 let totalShowtimes = 0;

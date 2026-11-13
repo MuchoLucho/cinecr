@@ -459,6 +459,23 @@ const getAgeRatingLabel = (tier) => {
   return 'Todas';
 };
 
+const getSortTitle = (title) => {
+  if (!title || typeof title !== 'string') return '';
+  let clean = title.replace(/^[\s¿¡"'\«“\(\[]+/, '').trim();
+  clean = clean.replace(/^(el|la|los|las|un|una|unos|unas|the|a|an)\s+/i, '').trim();
+  return clean || title;
+};
+
+const compareMovieTitles = (a, b) => {
+  const titleA = typeof a === 'string' ? a : (a?.title || '');
+  const titleB = typeof b === 'string' ? b : (b?.title || '');
+  const keyA = getSortTitle(titleA);
+  const keyB = getSortTitle(titleB);
+  const cmp = keyA.localeCompare(keyB, 'es', { sensitivity: 'base' });
+  if (cmp !== 0) return cmp;
+  return titleA.localeCompare(titleB, 'es');
+};
+
 const movies = ref(moviesData.map(m => {
   const genres = cleanGenres(m.genres);
   const genre = genres[0] || 'Película';
@@ -477,7 +494,7 @@ const movies = ref(moviesData.map(m => {
     minAge: ageInfo.minAge,
     poster: m.poster || generatePosterSvg(m.title, genre, color)
   };
-}));
+}).sort(compareMovieTitles));
 
 // Real provinces where active theaters exist
 const provinces = computed(() => {
@@ -573,7 +590,8 @@ const filteredMovies = computed(() => {
         groupedTheaters
       };
     })
-    .filter(movie => movie.groupedTheaters.length > 0);
+    .filter(movie => movie.groupedTheaters.length > 0)
+    .sort(compareMovieTitles);
 });
 
 // Closed by default

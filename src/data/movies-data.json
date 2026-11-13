@@ -973,6 +973,47 @@
     ]
   },
   {
+    "id": "magaly-angelmimesa",
+    "title": "Un ángel en mi mesa",
+    "originalTitle": "Un ángel en mi mesa",
+    "synopsis": "Adaptación de la autobiografía de la escritora Janet Frame. Nacida en una familia pobre y muy numerosa, desde muy pequeña se sintió diferente a los demás niños. Aunque estudió para maestra, fue considerada una persona anormal y, por tanto, fue encerrada en una institución para enfermos mentales durante ocho años. Alcanzó el éxito cuando empezó a escribir libros",
+    "poster": "https://image.tmdb.org/t/p/w500/17RKVQcxoXhw9qR8VY7SXk5ZLS3.jpg",
+    "rating": "M15",
+    "duration": "2h 38m",
+    "score": "7.0",
+    "director": "Jane Campion",
+    "genres": [
+      "Drama",
+      "Historia"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "13:00",
+                "date": "2026-11-14"
+              }
+            ]
+          }
+        ],
+        "website": "https://www.cinemagaly.com"
+      }
+    ],
+    "ratingBadgeClass": "badge-orange",
+    "normalizedKey": "angelmimesa"
+  },
+  {
     "id": "magaly-caballosalvajenueve",
     "title": "Caballo Salvaje Nueve",
     "originalTitle": "Caballo Salvaje Nueve",
@@ -1021,6 +1062,48 @@
     ],
     "ratingBadgeClass": "badge-orange",
     "normalizedKey": "caballosalvajenueve"
+  },
+  {
+    "id": "magaly-capitan",
+    "title": "El capitán",
+    "originalTitle": "El capitán",
+    "synopsis": "Desesperado, hambriento, aterido de hipotermia y huido de su pelotón, el soldado raso Willi Herold encuentra un uniforme de capitán y decide cambiar su identidad. A partir de entonces actúa como un alto rango en una misión secreta encomendada por el mismísimo Führer. Su suplantación le conducirá a los placeres y los infiernos de su nueva personalidad proactiva, hasta formar un grupo de soldados perdidos que actuarán a sus órdenes sembrando el horror entre la población inocente, actuando con impunidad en su viaje a la degradación moral, el mesianismo nazi y la perversión de la barbarie",
+    "poster": "https://image.tmdb.org/t/p/w500/pcQkdpyXxYBJbDrB8P6rE880Ul3.jpg",
+    "rating": "TP+12",
+    "duration": "1h 58m",
+    "score": "7.2",
+    "director": "Robert Schwentke",
+    "genres": [
+      "Bélica",
+      "Drama",
+      "Historia"
+    ],
+    "theaters": [
+      {
+        "chainId": "magaly",
+        "chainName": "Cine Magaly",
+        "complexId": "magaly-california",
+        "complexName": "Cine Magaly",
+        "province": "San José",
+        "city": "San José",
+        "address": "Barrio La California, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "18:00",
+                "date": "2026-11-13"
+              }
+            ]
+          }
+        ],
+        "website": "https://www.cinemagaly.com"
+      }
+    ],
+    "ratingBadgeClass": "badge-amber",
+    "normalizedKey": "capitan"
   },
   {
     "id": "ccm-95",
@@ -3453,6 +3536,366 @@
         ]
       }
     ]
+  },
+  {
+    "id": "112951",
+    "title": "El Corazon de la Bestia",
+    "originalTitle": "El Corazon de la Bestia",
+    "studio": "Cinemark / Cinépolis / Cinema San Pedro / Multicines / Paseo del Viento",
+    "rating": "Todo publico",
+    "ratingBadgeClass": "badge-green",
+    "score": "7.5",
+    "duration": "1h 41m",
+    "director": "David Ayer",
+    "genres": [
+      "Aventura",
+      "Suspenso"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
+    "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
+    "theaters": [
+      {
+        "complexId": "cmk-2204",
+        "chainId": "cinemark",
+        "chainName": "Cinemark",
+        "complexName": "City Mall Alajuela",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Radial",
+        "website": "https://www.cinemarkca.com/costa-rica",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:25",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cmk-770",
+        "chainId": "cinemark",
+        "chainName": "Cinemark",
+        "complexName": "Multiplaza Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Multiplaza",
+        "website": "https://www.cinemarkca.com/costa-rica",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:05",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:05",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "12:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:05",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:05",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:05",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terramall",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis TerraMall",
+        "province": "Cartago",
+        "locationDetail": "Tres Ríos, TerraMall",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:40",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:40",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terrazas-lindora",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Terrazas Lindora VIP",
+        "province": "San José",
+        "locationDetail": "Santa Ana, Terrazas Lindora",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "21:20",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "15:30",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "13:20",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:30",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "17:45",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ],
+        "website": "https://cinemasanpedro.com"
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "paseodelviento",
+        "chainName": "Paseo del Viento",
+        "complexId": "paseodelviento-tilaran",
+        "complexName": "Cinema Paseo del Viento",
+        "province": "Guanacaste",
+        "city": "Tilarán",
+        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
+        "locationDetail": "Tilarán",
+        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:30"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedKey": "corazonbestia"
   },
   {
     "id": "cpl-coyotevsacme",
@@ -6942,408 +7385,6 @@
     "normalizedKey": "ebenezerfantasmasnavidad"
   },
   {
-    "id": "magaly-capitan",
-    "title": "El capitán",
-    "originalTitle": "El capitán",
-    "synopsis": "Desesperado, hambriento, aterido de hipotermia y huido de su pelotón, el soldado raso Willi Herold encuentra un uniforme de capitán y decide cambiar su identidad. A partir de entonces actúa como un alto rango en una misión secreta encomendada por el mismísimo Führer. Su suplantación le conducirá a los placeres y los infiernos de su nueva personalidad proactiva, hasta formar un grupo de soldados perdidos que actuarán a sus órdenes sembrando el horror entre la población inocente, actuando con impunidad en su viaje a la degradación moral, el mesianismo nazi y la perversión de la barbarie",
-    "poster": "https://image.tmdb.org/t/p/w500/pcQkdpyXxYBJbDrB8P6rE880Ul3.jpg",
-    "rating": "TP+12",
-    "duration": "1h 58m",
-    "score": "7.2",
-    "director": "Robert Schwentke",
-    "genres": [
-      "Bélica",
-      "Drama",
-      "Historia"
-    ],
-    "theaters": [
-      {
-        "chainId": "magaly",
-        "chainName": "Cine Magaly",
-        "complexId": "magaly-california",
-        "complexName": "Cine Magaly",
-        "province": "San José",
-        "city": "San José",
-        "address": "Barrio La California, San José",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "18:00",
-                "date": "2026-11-13"
-              }
-            ]
-          }
-        ],
-        "website": "https://www.cinemagaly.com"
-      }
-    ],
-    "ratingBadgeClass": "badge-amber",
-    "normalizedKey": "capitan"
-  },
-  {
-    "id": "112951",
-    "title": "El Corazon de la Bestia",
-    "originalTitle": "El Corazon de la Bestia",
-    "studio": "Cinemark / Cinépolis / Cinema San Pedro / Multicines / Paseo del Viento",
-    "rating": "Todo publico",
-    "ratingBadgeClass": "badge-green",
-    "score": "7.5",
-    "duration": "1h 41m",
-    "director": "David Ayer",
-    "genres": [
-      "Aventura",
-      "Suspenso"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
-    "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
-    "theaters": [
-      {
-        "complexId": "cmk-2204",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "City Mall Alajuela",
-        "province": "Alajuela",
-        "locationDetail": "Alajuela, Radial",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "18:25",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-770",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Multiplaza Escazú",
-        "province": "San José",
-        "locationDetail": "Escazú, Multiplaza",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:05",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:05",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "12:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "12:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:05",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:05",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:05",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-terramall",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis TerraMall",
-        "province": "Cartago",
-        "locationDetail": "Tres Ríos, TerraMall",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:40",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:40",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:40",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:40",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-terrazas-lindora",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Terrazas Lindora VIP",
-        "province": "San José",
-        "locationDetail": "Santa Ana, Terrazas Lindora",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "VIP",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "21:20",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:20",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "chainId": "sanpedro",
-        "chainName": "Cinema San Pedro",
-        "complexId": "sanpedro-mall",
-        "complexName": "Cinema San Pedro (Mall San Pedro)",
-        "province": "San José",
-        "city": "Montes de Oca",
-        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "15:30",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "13:20",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "13:20",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "15:30",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "17:45",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ],
-        "website": "https://cinemasanpedro.com"
-      },
-      {
-        "chainId": "multicines",
-        "chainName": "Multicines",
-        "complexId": "multicines-liberia",
-        "complexName": "Multicines Plaza Liberia",
-        "province": "Guanacaste",
-        "city": "Liberia",
-        "address": "Mall Centro Plaza Liberia, Guanacaste",
-        "locationDetail": "Plaza Liberia",
-        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "date": "2026-11-12",
-                "time": "13:30"
-              },
-              {
-                "date": "2026-11-13",
-                "time": "13:30"
-              },
-              {
-                "date": "2026-11-14",
-                "time": "11:00"
-              },
-              {
-                "date": "2026-11-15",
-                "time": "11:00"
-              },
-              {
-                "date": "2026-11-16",
-                "time": "13:30"
-              },
-              {
-                "date": "2026-11-17",
-                "time": "13:30"
-              },
-              {
-                "date": "2026-11-18",
-                "time": "13:30"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "chainId": "paseodelviento",
-        "chainName": "Paseo del Viento",
-        "complexId": "paseodelviento-tilaran",
-        "complexName": "Cinema Paseo del Viento",
-        "province": "Guanacaste",
-        "city": "Tilarán",
-        "address": "Del Costado Norte del Parque central de Tilarán, 125 mts oeste. Guanacaste, Tilarán",
-        "locationDetail": "Tilarán",
-        "website": "https://paseodelvientocinema.com/Cartelera.aspx?complejo=460",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "date": "2026-11-12",
-                "time": "18:30"
-              },
-              {
-                "date": "2026-11-13",
-                "time": "18:30"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "normalizedKey": "corazonbestia"
-  },
-  {
     "id": "113798",
     "title": "El Engendro",
     "originalTitle": "El Engendro",
@@ -7764,6 +7805,72 @@
       }
     ],
     "normalizedKey": "engendro"
+  },
+  {
+    "id": "citicinemas-entregaallimite",
+    "title": "Entrega al Limite",
+    "originalTitle": "Entrega al Limite",
+    "synopsis": "Hank es un mensajero encargado de transportar un órgano que puede salvarle la vida a un joven receptor. Pero la misión se vuelve una carrera contra el tiempo cuando un despiadado jefe del crimen hará lo que sea necesario para quedarse con él.",
+    "poster": "https://image.tmdb.org/t/p/w500/gxrGVQdFmc3xxVn6UyY31ZjqM0s.jpg",
+    "rating": "TP",
+    "duration": "1h 37m",
+    "score": "8.2",
+    "director": "Scott Waugh",
+    "genres": [
+      "Acción",
+      "Comedia",
+      "Suspenso"
+    ],
+    "theaters": [
+      {
+        "chainId": "citicinemas",
+        "chainName": "CitiCinemas",
+        "complexId": "citicinemas-grecia",
+        "complexName": "CitiCinemas Plaza Grecia",
+        "province": "Alajuela",
+        "city": "Grecia",
+        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:00",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ],
+        "website": "https://www.citicinemascr.com"
+      }
+    ],
+    "ratingBadgeClass": "badge-green",
+    "normalizedKey": "entregaallimite"
   },
   {
     "id": "113899",
@@ -9990,576 +10097,6 @@
       }
     ],
     "normalizedKey": "gatosombrero"
-  },
-  {
-    "id": "114100",
-    "title": "El vientre del diablo",
-    "originalTitle": "El vientre del diablo",
-    "studio": "Cinemark / Cinépolis / Cinema San Pedro",
-    "rating": "M-15",
-    "ratingBadgeClass": "badge-orange",
-    "score": "1.0",
-    "duration": "N/A",
-    "director": "Doğukan Mısır",
-    "genres": [
-      "Terror"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/wYRD4yrCXlaBjAAaY20PW0wZ551.jpg",
-    "synopsis": "Cuando una joven regresa a su pueblo natal para cuidara su madre enferma, comienza a sufrir aterradoras visiones quedesentierran un oscuro pacto de brujería familiar del pasado, el cual reclama su vida como el precio final de una vieja venganza.",
-    "theaters": [
-      {
-        "complexId": "cmk-2204",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "City Mall Alajuela",
-        "province": "Alajuela",
-        "locationDetail": "Alajuela, Radial",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "14:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "11:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "11:05",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "15:05",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "15:05",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "15:05",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-773",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Multiplaza Curridabat",
-        "province": "San José",
-        "locationDetail": "Curridabat, Multiplaza del Este",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "19:40",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "19:05",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:55",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:25",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-770",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Multiplaza Escazú",
-        "province": "San José",
-        "locationDetail": "Escazú, Multiplaza",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:20",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:20",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:20",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cmk-2210",
-        "chainId": "cinemark",
-        "chainName": "Cinemark",
-        "complexName": "Playground Oxígeno",
-        "province": "Heredia",
-        "locationDetail": "San Francisco de Heredia",
-        "website": "https://www.cinemarkca.com/costa-rica",
-        "groups": [
-          {
-            "format": "VIP",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:05",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:45",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-18"
-              }
-            ]
-          },
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:00",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-lincoln",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Lincoln",
-        "province": "San José",
-        "locationDetail": "Moravia, Plaza Lincoln",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "22:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "22:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "22:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "22:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "22:15",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-multicentro",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Multicentro",
-        "province": "San José",
-        "locationDetail": "Desamparados, Multicentro",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:10",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:10",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:10",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:10",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:10",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:10",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:20",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-paseo-flores",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Paseo De Las Flores",
-        "province": "Heredia",
-        "locationDetail": "Heredia, Paseo de las Flores",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "21:35",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:35",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "17:30",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-paseo-metropoli",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis Paseo Metrópoli",
-        "province": "Cartago",
-        "locationDetail": "Cartago, Paseo Metrópoli",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "19:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "19:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "19:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "19:15",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "19:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "19:15",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "19:15",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "21:15",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "complexId": "cpl-terramall",
-        "chainId": "cinepolis",
-        "chainName": "Cinépolis",
-        "complexName": "Cinépolis TerraMall",
-        "province": "Cartago",
-        "locationDetail": "Tres Ríos, TerraMall",
-        "website": "https://cinepolis.co.cr",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "18:50",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "18:50",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:50",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:50",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:50",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "18:50",
-                "date": "2026-11-18"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "chainId": "sanpedro",
-        "chainName": "Cinema San Pedro",
-        "complexId": "sanpedro-mall",
-        "complexName": "Cinema San Pedro (Mall San Pedro)",
-        "province": "San José",
-        "city": "Montes de Oca",
-        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "18:50",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "18:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:30",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "18:50",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "18:50",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ],
-        "website": "https://cinemasanpedro.com"
-      }
-    ],
-    "normalizedKey": "vientrediablo"
-  },
-  {
-    "id": "citicinemas-entregaallimite",
-    "title": "Entrega al Limite",
-    "originalTitle": "Entrega al Limite",
-    "synopsis": "Hank es un mensajero encargado de transportar un órgano que puede salvarle la vida a un joven receptor. Pero la misión se vuelve una carrera contra el tiempo cuando un despiadado jefe del crimen hará lo que sea necesario para quedarse con él.",
-    "poster": "https://image.tmdb.org/t/p/w500/gxrGVQdFmc3xxVn6UyY31ZjqM0s.jpg",
-    "rating": "TP",
-    "duration": "1h 37m",
-    "score": "8.2",
-    "director": "Scott Waugh",
-    "genres": [
-      "Acción",
-      "Comedia",
-      "Suspenso"
-    ],
-    "theaters": [
-      {
-        "chainId": "citicinemas",
-        "chainName": "CitiCinemas",
-        "complexId": "citicinemas-grecia",
-        "complexName": "CitiCinemas Plaza Grecia",
-        "province": "Alajuela",
-        "city": "Grecia",
-        "address": "Plaza El Ingenio (Plaza Grecia), Ruta 118, Grecia, Alajuela",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "DOB",
-            "times": [
-              {
-                "time": "20:00",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-16"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-17"
-              },
-              {
-                "time": "20:00",
-                "date": "2026-11-18"
-              }
-            ]
-          }
-        ],
-        "website": "https://www.citicinemascr.com"
-      }
-    ],
-    "ratingBadgeClass": "badge-green",
-    "normalizedKey": "entregaallimite"
   },
   {
     "id": "113646",
@@ -13887,64 +13424,6 @@
     "normalizedKey": "hungergames6amanecer"
   },
   {
-    "id": "nova-ho00001963",
-    "normalizedKey": "odisea",
-    "title": "LA ODISEA",
-    "originalTitle": "LA ODISEA",
-    "studio": "Nova Cinemas",
-    "rating": "+12",
-    "ratingBadgeClass": "badge-amber",
-    "score": "8.0",
-    "duration": "2h 53m",
-    "director": "Christopher Nolan",
-    "genres": [
-      "Aventura",
-      "Acción",
-      "Fantasía"
-    ],
-    "poster": "https://image.tmdb.org/t/p/w500/sRxbUe5FB25Gde0e2FnwwSckpXb.jpg",
-    "synopsis": "Odiseo, el legendario rey de Ítaca, emprende un largo y peligroso viaje de regreso a casa tras la guerra de Troya. A lo largo de su travesía, se ve obligado a enfrentarse a los caprichos de los dioses, a monstruos mitológicos y a pruebas que ponen a prueba su astucia y su humanidad hasta el límite.",
-    "theaters": [
-      {
-        "complexId": "nova-escazu",
-        "chainId": "nova",
-        "chainName": "Nova Cinemas",
-        "complexName": "Nova Cinemas Avenida Escazú",
-        "province": "San José",
-        "locationDetail": "Escazú, Avenida Escazú",
-        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
-        "groups": [
-          {
-            "format": "IMAX",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "20:50",
-                "date": "2026-11-12"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-13"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-14"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-15"
-              },
-              {
-                "time": "20:50",
-                "date": "2026-11-17"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "magaly-inmortales",
     "title": "Los inmortales",
     "originalTitle": "Los inmortales",
@@ -14142,6 +13621,64 @@
       }
     ],
     "normalizedKey": "madresiniestra"
+  },
+  {
+    "id": "nova-ho00001963",
+    "normalizedKey": "odisea",
+    "title": "LA ODISEA",
+    "originalTitle": "LA ODISEA",
+    "studio": "Nova Cinemas",
+    "rating": "+12",
+    "ratingBadgeClass": "badge-amber",
+    "score": "8.0",
+    "duration": "2h 53m",
+    "director": "Christopher Nolan",
+    "genres": [
+      "Aventura",
+      "Acción",
+      "Fantasía"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/sRxbUe5FB25Gde0e2FnwwSckpXb.jpg",
+    "synopsis": "Odiseo, el legendario rey de Ítaca, emprende un largo y peligroso viaje de regreso a casa tras la guerra de Troya. A lo largo de su travesía, se ve obligado a enfrentarse a los caprichos de los dioses, a monstruos mitológicos y a pruebas que ponen a prueba su astucia y su humanidad hasta el límite.",
+    "theaters": [
+      {
+        "complexId": "nova-escazu",
+        "chainId": "nova",
+        "chainName": "Nova Cinemas",
+        "complexName": "Nova Cinemas Avenida Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Avenida Escazú",
+        "website": "https://www.novacinemas.cr/cartelera/avenida-escazu/",
+        "groups": [
+          {
+            "format": "IMAX",
+            "language": "SUB",
+            "times": [
+              {
+                "time": "20:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "sunset-operacionplumasalrescate",
@@ -14695,47 +14232,6 @@
     ]
   },
   {
-    "id": "magaly-angelmimesa",
-    "title": "Un ángel en mi mesa",
-    "originalTitle": "Un ángel en mi mesa",
-    "synopsis": "Adaptación de la autobiografía de la escritora Janet Frame. Nacida en una familia pobre y muy numerosa, desde muy pequeña se sintió diferente a los demás niños. Aunque estudió para maestra, fue considerada una persona anormal y, por tanto, fue encerrada en una institución para enfermos mentales durante ocho años. Alcanzó el éxito cuando empezó a escribir libros",
-    "poster": "https://image.tmdb.org/t/p/w500/17RKVQcxoXhw9qR8VY7SXk5ZLS3.jpg",
-    "rating": "M15",
-    "duration": "2h 38m",
-    "score": "7.0",
-    "director": "Jane Campion",
-    "genres": [
-      "Drama",
-      "Historia"
-    ],
-    "theaters": [
-      {
-        "chainId": "magaly",
-        "chainName": "Cine Magaly",
-        "complexId": "magaly-california",
-        "complexName": "Cine Magaly",
-        "province": "San José",
-        "city": "San José",
-        "address": "Barrio La California, San José",
-        "groups": [
-          {
-            "format": "2D",
-            "language": "SUB",
-            "times": [
-              {
-                "time": "13:00",
-                "date": "2026-11-14"
-              }
-            ]
-          }
-        ],
-        "website": "https://www.cinemagaly.com"
-      }
-    ],
-    "ratingBadgeClass": "badge-orange",
-    "normalizedKey": "angelmimesa"
-  },
-  {
     "id": "113995",
     "title": "Vida con proposito",
     "originalTitle": "Vida con proposito",
@@ -15228,6 +14724,510 @@
       }
     ],
     "normalizedKey": "vidaproposito"
+  },
+  {
+    "id": "114100",
+    "title": "El vientre del diablo",
+    "originalTitle": "El vientre del diablo",
+    "studio": "Cinemark / Cinépolis / Cinema San Pedro",
+    "rating": "M-15",
+    "ratingBadgeClass": "badge-orange",
+    "score": "1.0",
+    "duration": "N/A",
+    "director": "Doğukan Mısır",
+    "genres": [
+      "Terror"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w500/wYRD4yrCXlaBjAAaY20PW0wZ551.jpg",
+    "synopsis": "Cuando una joven regresa a su pueblo natal para cuidara su madre enferma, comienza a sufrir aterradoras visiones quedesentierran un oscuro pacto de brujería familiar del pasado, el cual reclama su vida como el precio final de una vieja venganza.",
+    "theaters": [
+      {
+        "complexId": "cmk-2204",
+        "chainId": "cinemark",
+        "chainName": "Cinemark",
+        "complexName": "City Mall Alajuela",
+        "province": "Alajuela",
+        "locationDetail": "Alajuela, Radial",
+        "website": "https://www.cinemarkca.com/costa-rica",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "14:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "11:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "11:05",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "15:05",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "15:05",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "15:05",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cmk-773",
+        "chainId": "cinemark",
+        "chainName": "Cinemark",
+        "complexName": "Multiplaza Curridabat",
+        "province": "San José",
+        "locationDetail": "Curridabat, Multiplaza del Este",
+        "website": "https://www.cinemarkca.com/costa-rica",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "19:40",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:05",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:55",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:25",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cmk-770",
+        "chainId": "cinemark",
+        "chainName": "Cinemark",
+        "complexName": "Multiplaza Escazú",
+        "province": "San José",
+        "locationDetail": "Escazú, Multiplaza",
+        "website": "https://www.cinemarkca.com/costa-rica",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:20",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:20",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cmk-2210",
+        "chainId": "cinemark",
+        "chainName": "Cinemark",
+        "complexName": "Playground Oxígeno",
+        "province": "Heredia",
+        "locationDetail": "San Francisco de Heredia",
+        "website": "https://www.cinemarkca.com/costa-rica",
+        "groups": [
+          {
+            "format": "VIP",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:05",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:45",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-18"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:00",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:00",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-lincoln",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Lincoln",
+        "province": "San José",
+        "locationDetail": "Moravia, Plaza Lincoln",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "22:00",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "22:00",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "22:15",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-multicentro",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Multicentro",
+        "province": "San José",
+        "locationDetail": "Desamparados, Multicentro",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "20:10",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:10",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:10",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:10",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:10",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:10",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:20",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-flores",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo De Las Flores",
+        "province": "Heredia",
+        "locationDetail": "Heredia, Paseo de las Flores",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "21:35",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:35",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "17:30",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-paseo-metropoli",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis Paseo Metrópoli",
+        "province": "Cartago",
+        "locationDetail": "Cartago, Paseo Metrópoli",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "19:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "19:15",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "21:15",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "complexId": "cpl-terramall",
+        "chainId": "cinepolis",
+        "chainName": "Cinépolis",
+        "complexName": "Cinépolis TerraMall",
+        "province": "Cartago",
+        "locationDetail": "Tres Ríos, TerraMall",
+        "website": "https://cinepolis.co.cr",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-12"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-18"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "sanpedro",
+        "chainName": "Cinema San Pedro",
+        "complexId": "sanpedro-mall",
+        "complexName": "Cinema San Pedro (Mall San Pedro)",
+        "province": "San José",
+        "city": "Montes de Oca",
+        "address": "Condominio Mall San Pedro, pisos 3 y 5, San Pedro de Montes de Oca, San José",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "time": "18:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-13"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-14"
+              },
+              {
+                "time": "18:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "20:30",
+                "date": "2026-11-15"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-16"
+              },
+              {
+                "time": "18:50",
+                "date": "2026-11-17"
+              },
+              {
+                "time": "20:50",
+                "date": "2026-11-17"
+              }
+            ]
+          }
+        ],
+        "website": "https://cinemasanpedro.com"
+      }
+    ],
+    "normalizedKey": "vientrediablo"
   },
   {
     "id": "113816",

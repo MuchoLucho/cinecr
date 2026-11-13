@@ -38,6 +38,9 @@ This document defines the architecture, design principles, conventions, and oper
 ### Rule 2.6: 100% Spanish for the End User
 - All user-facing UI elements, labels, buttons, filters, tooltips, dialogs, dates, and copy **must always be in Spanish** (`es-CR`). Never use English labels or abbreviations for final users (e.g. use *"Última sincronización"* instead of *"Last sync"*).
 
+### Rule 2.7: Alphabetical Movie Sorting Omits Leading Articles
+- In the "Por Película" view and `movies-data.json`, movies are sorted alphabetically ignoring leading articles in Spanish (*El, La, Los, Las, Un, Una, Unos, Unas*) and English (*The, A, An*). E.g., *"El Corazón de la Bestia"* sorts under **C**, *"Un ángel en mi mesa"* sorts under **A**, and *"The Batman"* sorts under **B**.
+
 ---
 
 ## 3. Scraper & Data Rules
