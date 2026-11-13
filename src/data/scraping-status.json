@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-13T01:07:18.351Z",
+  "lastRun": "2026-11-13T01:30:05.801Z",
   "chains": {
     "cinemark": {
       "id": "cinemark",
@@ -63,7 +63,7 @@
       "status": "healthy",
       "lastSuccess": "2026-11-13T00:48:08.844Z",
       "moviesCount": 7,
-      "showtimesCount": 588
+      "showtimesCount": 84
     },
     "pacific": {
       "id": "pacific",

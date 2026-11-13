@@ -154,13 +154,18 @@ const availableDates = computed(() => {
   const options = [];
 
   const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
+  const currentMonthIdx = m - 1;
 
   sorted.forEach(dStr => {
     const parts = dStr.split('-');
     const dt = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
 
+    const isDifferentMonth = dt.getMonth() !== currentMonthIdx;
+    const monthSuffix = isDifferentMonth ? ` ${monthNames[dt.getMonth()]}` : '';
+
     let value = dStr;
-    let label = `${dayNames[dt.getDay()]} ${dt.getDate()}`;
+    let label = `${dayNames[dt.getDay()]} ${dt.getDate()}${monthSuffix}`;
 
     if (dStr === now.date) {
       value = 'today';
@@ -584,9 +589,13 @@ const getFormatIcon = (format) => {
 const formatSessionDate = (dateStr) => {
   if (!dateStr) return '';
   const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
   const parts = dateStr.split('-');
   const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-  return `${dayNames[d.getDay()]} ${d.getDate()}`;
+  const now = getNowCR();
+  const currentMonthIdx = parseInt(now.date.split('-')[1], 10) - 1;
+  const monthSuffix = d.getMonth() !== currentMonthIdx ? ` ${monthNames[d.getMonth()]}` : '';
+  return `${dayNames[d.getDay()]} ${d.getDate()}${monthSuffix}`;
 };
 
 const statusChainsList = computed(() => {

@@ -279,6 +279,19 @@ export function mergeDatasets(...datasets) {
       if (!t.website) {
         t.website = CHAIN_WEBSITES[t.chainId] || 'https://cinecr.pages.dev';
       }
+      for (const g of t.groups || []) {
+        const uniqueTimes = [];
+        const seen = new Set();
+        for (const tm of g.times || []) {
+          const k = `${tm.date}_${tm.time}`;
+          if (!seen.has(k)) {
+            seen.add(k);
+            uniqueTimes.push(tm);
+          }
+        }
+        uniqueTimes.sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
+        g.times = uniqueTimes;
+      }
     }
   }
 

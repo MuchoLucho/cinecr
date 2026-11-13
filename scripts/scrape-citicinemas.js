@@ -103,8 +103,15 @@ export async function scrapeCitiCinemas() {
       const title = titleMatch[1].replace(/<[^>]+>/g, '').trim();
       if (!title) continue;
 
+      // CitiCinemas repeats 7 <li> elements (one per day). The active one for this tab is marked class="today".
+      let targetHtml = mb;
+      const todayLiMatch = mb.match(/<li\b[^>]*class="[^"]*today[^"]*"[^>]*>([\s\S]*?)<\/li>/i);
+      if (todayLiMatch) {
+        targetHtml = todayLiMatch[1];
+      }
+
       const timeRegex = /<span class="time[^"]*">\s*([\d:]+\s*(?:AM|PM))\s*<\/span>\s*<span class="threeD[^"]*">\s*([^<]+)\s*<\/span>/gi;
-      const timeMatches = [...mb.matchAll(timeRegex)];
+      const timeMatches = [...targetHtml.matchAll(timeRegex)];
 
       const key = normalizeTitleKey(title);
       if (!moviesMap.has(key)) {
@@ -134,12 +141,15 @@ export async function scrapeCitiCinemas() {
           timeStr = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
         }
 
-        moviesMap.get(key).sessions.push({
-          date: dateStr,
-          time: timeStr,
-          format,
-          language
-        });
+        const sessions = moviesMap.get(key).sessions;
+        if (!sessions.some(s => s.date === dateStr && s.time === timeStr && s.format === format && s.language === language)) {
+          sessions.push({
+            date: dateStr,
+            time: timeStr,
+            format,
+            language
+          });
+        }
       }
     }
   }
@@ -159,10 +169,13 @@ export async function scrapeCitiCinemas() {
           times: []
         });
       }
-      groupMap.get(groupKey).times.push({
-        time: s.time,
-        date: s.date
-      });
+      const grp = groupMap.get(groupKey);
+      if (!grp.times.some(t => t.date === s.date && t.time === s.time)) {
+        grp.times.push({
+          time: s.time,
+          date: s.date
+        });
+      }
     }
 
     const groups = Array.from(groupMap.values()).map(g => {
