@@ -1,0 +1,192 @@
+[
+  {
+    "id": "bistro-godzillaminuszero",
+    "title": "Godzilla Minus Zero",
+    "originalTitle": "Godzilla Minus Zero",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
+    "rating": "M12",
+    "duration": "2h 15m",
+    "score": "7.8",
+    "director": "山崎貴",
+    "genres": [
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
+    ],
+    "theaters": [
+      {
+        "chainId": "bistro",
+        "chainName": "Bistro Cinema",
+        "complexId": "bistro-hermosa",
+        "complexName": "Bistro Cinema Hermosa",
+        "province": "Guanacaste",
+        "city": "Playa Hermosa",
+        "address": "Hermosa Heights Local #10, Playa Hermosa, Carrillo, Guanacaste",
+        "locationDetail": "Hermosa Heights, Playa Hermosa",
+        "website": "https://api.whatsapp.com/send?phone=50683400195&text=Fuente%3A%20website.%20Hola%20Bistro%2C%20quiero%20reservar",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:15"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:15"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:15"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:15"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bistro-ebenizerfantasmasnavidad",
+    "title": "Ebenizer: Los fantasmas de Navidad",
+    "originalTitle": "Ebenizer: Los fantasmas de Navidad",
+    "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
+    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
+    "rating": "M12",
+    "duration": "1h 55m",
+    "score": "8.0",
+    "director": "Ti West",
+    "genres": [
+      "Fantasía",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "bistro",
+        "chainName": "Bistro Cinema",
+        "complexId": "bistro-hermosa",
+        "complexName": "Bistro Cinema Hermosa",
+        "province": "Guanacaste",
+        "city": "Playa Hermosa",
+        "address": "Hermosa Heights Local #10, Playa Hermosa, Carrillo, Guanacaste",
+        "locationDetail": "Hermosa Heights, Playa Hermosa",
+        "website": "https://api.whatsapp.com/send?phone=50683400195&text=Fuente%3A%20website.%20Hola%20Bistro%2C%20quiero%20reservar",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "17:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "17:30"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "17:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "17:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "17:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bistro-gatosombrero",
+    "title": "El Gato con Sombrero",
+    "originalTitle": "El Gato con Sombrero",
+    "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
+    "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
+    "rating": "TP",
+    "duration": "1h 48m",
+    "score": "7.4",
+    "director": "Erica Rivinoja, Alessandro Carloni",
+    "genres": [
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "bistro",
+        "chainName": "Bistro Cinema",
+        "complexId": "bistro-hermosa",
+        "complexName": "Bistro Cinema Hermosa",
+        "province": "Guanacaste",
+        "city": "Playa Hermosa",
+        "address": "Hermosa Heights Local #10, Playa Hermosa, Carrillo, Guanacaste",
+        "locationDetail": "Hermosa Heights, Playa Hermosa",
+        "website": "https://api.whatsapp.com/send?phone=50683400195&text=Fuente%3A%20website.%20Hola%20Bistro%2C%20quiero%20reservar",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:00"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:00"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

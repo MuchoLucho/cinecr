@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-13T00:49:08.735Z",
+  "lastRun": "2026-11-13T00:54:27.785Z",
   "chains": {
     "cinemark": {
       "id": "cinemark",
@@ -80,6 +80,14 @@
       "lastSuccess": "2026-11-13T00:48:10.016Z",
       "moviesCount": 5,
       "showtimesCount": 51
+    },
+    "bistro": {
+      "id": "bistro",
+      "name": "Bistro Cinema",
+      "status": "healthy",
+      "lastSuccess": "2026-11-13T00:52:16.187Z",
+      "moviesCount": 3,
+      "showtimesCount": 15
     }
   }
 }

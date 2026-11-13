@@ -3746,7 +3746,7 @@
     "id": "113989",
     "title": "Ebenezer fantasmas de Navidad",
     "originalTitle": "Ebenezer fantasmas de Navidad ",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -7463,6 +7463,51 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "bistro",
+        "chainName": "Bistro Cinema",
+        "complexId": "bistro-hermosa",
+        "complexName": "Bistro Cinema Hermosa",
+        "province": "Guanacaste",
+        "city": "Playa Hermosa",
+        "address": "Hermosa Heights Local #10, Playa Hermosa, Carrillo, Guanacaste",
+        "locationDetail": "Hermosa Heights, Playa Hermosa",
+        "website": "https://api.whatsapp.com/send?phone=50683400195&text=Fuente%3A%20website.%20Hola%20Bistro%2C%20quiero%20reservar",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "17:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "17:30"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "17:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "17:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "17:30"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
@@ -8174,7 +8219,7 @@
     "id": "113899",
     "title": "El Gato con Sombrero",
     "originalTitle": "El Gato con Sombrero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Bistro Cinema",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
     "score": "7.4",
@@ -10723,6 +10768,51 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "bistro",
+        "chainName": "Bistro Cinema",
+        "complexId": "bistro-hermosa",
+        "complexName": "Bistro Cinema Hermosa",
+        "province": "Guanacaste",
+        "city": "Playa Hermosa",
+        "address": "Hermosa Heights Local #10, Playa Hermosa, Carrillo, Guanacaste",
+        "locationDetail": "Hermosa Heights, Playa Hermosa",
+        "website": "https://api.whatsapp.com/send?phone=50683400195&text=Fuente%3A%20website.%20Hola%20Bistro%2C%20quiero%20reservar",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:00"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:00"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "gatosombrero"
@@ -11469,7 +11559,7 @@
     "id": "113646",
     "title": "Godzilla Minus Zero",
     "originalTitle": "Godzilla Minus Zero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "7.8",
@@ -13837,6 +13927,51 @@
               {
                 "date": "2026-11-15",
                 "time": "15:25"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "bistro",
+        "chainName": "Bistro Cinema",
+        "complexId": "bistro-hermosa",
+        "complexName": "Bistro Cinema Hermosa",
+        "province": "Guanacaste",
+        "city": "Playa Hermosa",
+        "address": "Hermosa Heights Local #10, Playa Hermosa, Carrillo, Guanacaste",
+        "locationDetail": "Hermosa Heights, Playa Hermosa",
+        "website": "https://api.whatsapp.com/send?phone=50683400195&text=Fuente%3A%20website.%20Hola%20Bistro%2C%20quiero%20reservar",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:15"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:15"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:15"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:15"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:15"
               }
             ]
           }

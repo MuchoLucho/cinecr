@@ -29,7 +29,9 @@ export const TITLE_ALIASES = {
   'ping pong el triunfo': 'Ping Pong: The Triumph',
   'shrek 25 aniversario': 'Shrek',
   'avengers: doomday': 'Avengers: Doomsday',
-  'avengers doomday': 'Avengers: Doomsday'
+  'avengers doomday': 'Avengers: Doomsday',
+  'ebenizer: los fantasmas de navidad': 'Ebenezer',
+  'ebenizer': 'Ebenezer'
 };
 
 function normalizeText(str) {
