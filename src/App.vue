@@ -154,14 +154,13 @@ const availableDates = computed(() => {
   const options = [];
 
   const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
-  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
 
   sorted.forEach(dStr => {
     const parts = dStr.split('-');
     const dt = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
 
     let value = dStr;
-    let label = `${dayNames[dt.getDay()]} ${dt.getDate()} ${monthNames[dt.getMonth()]}`;
+    let label = `${dayNames[dt.getDay()]} ${dt.getDate()}`;
 
     if (dStr === now.date) {
       value = 'today';
