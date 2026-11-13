@@ -190,7 +190,8 @@ const chains = [
   { id: 'citicinemas', name: 'CitiCinemas' },
   { id: 'pacific', name: 'Pacific Cinemas' },
   { id: 'sunset', name: 'Sunset Cinema' },
-  { id: 'bistro', name: 'Bistro Cinema' }
+  { id: 'bistro', name: 'Bistro Cinema' },
+  { id: 'multicines', name: 'Multicines' }
 ];
 
 const CHAIN_WEBSITES = {
@@ -204,7 +205,8 @@ const CHAIN_WEBSITES = {
   citicinemas: 'https://www.citicinemascr.com',
   pacific: 'https://pacificcinemas.com/cartelera.php',
   sunset: 'https://sunsetcinemajaco.com/cartelera/',
-  bistro: 'https://bistrocinemahermosa.com'
+  bistro: 'https://bistrocinemahermosa.com',
+  multicines: 'https://www.compraenlineaml.net/Cartelera.aspx?complejo=450'
 };
 
 const getCinemaWebsite = (complex) => {
@@ -541,6 +543,7 @@ const getChainBadgeClass = (chainId) => {
   if (chainId === 'pacific') return 'badge-blue';
   if (chainId === 'sunset') return 'badge-amber';
   if (chainId === 'bistro') return 'badge-pink';
+  if (chainId === 'multicines') return 'badge-cyan';
   return 'badge-red';
 };
 

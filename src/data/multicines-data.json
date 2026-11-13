@@ -1,0 +1,941 @@
+[
+  {
+    "id": "multicines-clayface",
+    "title": "Clayface",
+    "originalTitle": "Clayface",
+    "synopsis": "Para mantener su relevancia como actor de películas clase B, Matt Hagen se inyecta una sustancia solo para descubrir que puede remodelar su rostro y su forma.",
+    "poster": "https://image.tmdb.org/t/p/w500/avCm6vJzdIz9SCIZJ2CuBupGWDQ.jpg",
+    "rating": "M18",
+    "duration": "1h 49m",
+    "score": "7.4",
+    "director": "James Watkins",
+    "genres": [
+      "Terror",
+      "Suspense",
+      "Ciencia ficción"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "18:15"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "18:15"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "18:10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-comorobarbanco",
+    "title": "Cómo Robar Un Banco",
+    "originalTitle": "How to Rob a Bank",
+    "synopsis": "Una banda de ladrones expertos en redes sociales transmite en vivo sus audaces robos bancarios, sin darse cuenta de que la fama viral que están ganando los ha puesto en la mira de un veterano agente del FBI y una brillante ingeniera de software. A pesar de que este dúo fuera de lo común los sigue cada vez más de cerca, la organización criminal lleva sus límites al extremo, arriesgándolo todo por sus ideales y por el golpe más ambicioso de sus vidas hasta ahora.",
+    "poster": "https://image.tmdb.org/t/p/w500/iHqjtNxzLmfWei4poUdckHmsBBz.jpg",
+    "rating": "M15",
+    "duration": "2h 2m",
+    "score": "6.9",
+    "director": "David Leitch",
+    "genres": [
+      "Acción",
+      "Crimen",
+      "Suspense"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "17:40"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-ebenezer",
+    "title": "Ebenezer",
+    "originalTitle": "Ebenezer",
+    "synopsis": "Una emocionante historia de fantasmas ambientada en el Londres de Dickens, que sigue el viaje sobrenatural de un hombre para enfrentar su pasado, presente y futuro mientras lucha por una segunda oportunidad de redención.",
+    "poster": "https://image.tmdb.org/t/p/w500/743rqTOaOxUCUVut7fyaf94MuMk.jpg",
+    "rating": "M12",
+    "duration": "1h 55m",
+    "score": "8.0",
+    "director": "Ti West",
+    "genres": [
+      "Fantasía",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:20"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "17:45"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-bosquesalvaje",
+    "title": "El Bosque Salvaje",
+    "originalTitle": "Wildwood",
+    "synopsis": "Después de que su hermano bebé es secuestrado por una parvada de cuervos, la decidida adolescente Prue McKeel y su compañero Curtis Mehlberg inician una desesperada misión de rescate hacia el Bosque Impasable, un bosque encantado oculto justo más allá de Portland, Oregón.",
+    "poster": "https://image.tmdb.org/t/p/w500/3AxfnEViGaVspgifEag5au5bVJc.jpg",
+    "rating": "TP",
+    "duration": "2h 12m",
+    "score": "8.5",
+    "director": "Travis Knight",
+    "genres": [
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Drama"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:30"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-corazonbestia",
+    "title": "El Corazón De La Bestia",
+    "originalTitle": "Heart of the Beast",
+    "synopsis": "Tras un terrible accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate, Odin, quedan varados en lo profundo de la naturaleza salvaje de Alaska. Juntos, se ven obligados a librar una brutal lucha por la supervivencia contra los elementos.",
+    "poster": "https://image.tmdb.org/t/p/w500/kVDHPDggier9ciMc8Xglinq1jWv.jpg",
+    "rating": "M12",
+    "duration": "1h 41m",
+    "score": "7.5",
+    "director": "David Ayer",
+    "genres": [
+      "Aventura",
+      "Suspense"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-gatosombrero",
+    "title": "El Gato Con Sombrero",
+    "originalTitle": "The Cat in the Hat",
+    "synopsis": "Un astuto gato lleva el caos con sus travesuras a la vida de un par de hermanos que lidian con su mudanza a una nueva ciudad.",
+    "poster": "https://image.tmdb.org/t/p/w500/5rS3PbnARmbbL3LiLhEX3Tr0l6k.jpg",
+    "rating": "TP",
+    "duration": "1h 48m",
+    "score": "7.4",
+    "director": "Erica Rivinoja, Alessandro Carloni",
+    "genres": [
+      "Animación",
+      "Fantasía",
+      "Aventura",
+      "Familia",
+      "Comedia"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "18:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "18:00"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-engendro",
+    "title": "Engendro",
+    "originalTitle": "Yön lapsi",
+    "synopsis": "Ansiosos por formar una familia, Saga y su marido, Jon, se mudan a la casa aislada en lo profundo del bosque finlandés donde Saga pasó gran parte de su infancia. Pero en cuanto nace su bebé, a pesar de las palabras tranquilizadoras de todos a su alrededor, Saga sabe que algo anda terriblemente mal. Mientras su matrimonio se resquebraja, solo Saga sospecha la inquietante verdad sobre su hijo recién nacido.",
+    "poster": "https://image.tmdb.org/t/p/w500/cVQFWGIt5PNw3p7AcQOq2Eg39G.jpg",
+    "rating": "M18",
+    "duration": "1h 32m",
+    "score": "5.9",
+    "director": "Hanna Bergholm",
+    "genres": [
+      "Terror"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:20"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-godzillaminuszero",
+    "title": "Godzilla Minus Zero",
+    "originalTitle": "Godzilla Minus Zero",
+    "synopsis": "La guerra dejó a Japón en la ruina, y Godzilla lo sumió en una situación aún peor. Han pasado dos años desde entonces, y el país ha librado una lucha ardua por recuperarse y finalmente retomar su vida cotidiana. Justo cuando la humanidad lograba aferrarse a una paz duramente conquistada, una nueva amenaza irrumpe, aplastando la esperanza en un instante.",
+    "poster": "https://image.tmdb.org/t/p/w500/8VKjocpP0EiUiUzTPWwz7TV2kWP.jpg",
+    "rating": "M15",
+    "duration": "2h 15m",
+    "score": "7.8",
+    "director": "山崎貴",
+    "genres": [
+      "Ciencia ficción",
+      "Terror",
+      "Acción"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-juegoshambreamanecer",
+    "title": "Los Juegos Del Hambre: Amanecer",
+    "originalTitle": "The Hunger Games: Sunrise on the Reapin",
+    "synopsis": "Ambientada décadas antes de los eventos liderados por Katniss y Peeta, la historia sigue a Haymitch Abernathy, el enigmático ganador del 50° Torneo de Los juegos del hambre, en una versión más brutal y decisiva de la competencia. La película también mostrará la primera aparición televisiva de Caesar Flickerman, cuya cobertura transformará para siempre la forma en que Panem vive los Juegos.",
+    "poster": "https://image.tmdb.org/t/p/w500/wccR1cuM6ef2SoNpt7v3TADYE16.jpg",
+    "rating": "M12",
+    "duration": "2h 39m",
+    "score": null,
+    "director": "Francis Lawrence",
+    "genres": [
+      "Ciencia ficción",
+      "Acción",
+      "Aventura"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-18",
+                "time": "20:10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-madresiniestra",
+    "title": "Madre Siniestra",
+    "originalTitle": "Other Mommy",
+    "synopsis": "Bela, una niña de 8 años que vive en un hogar con problemas matrimoniales, enfrenta a una entidad siniestra que sale de su clóset. La presencia, a quien llama “Otra Mamá”, se vuelve cada vez más amenazante para ella y su familia.",
+    "poster": "https://image.tmdb.org/t/p/w500/5yUwsjgWlYCIF5ck1NaUr5zEGg7.jpg",
+    "rating": "M18",
+    "duration": "1h 33m",
+    "score": "6.1",
+    "director": "Rob Savage",
+    "genres": [
+      "Terror"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:50"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:50"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "18:10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-operacionplumasalrescate",
+    "title": "Operación: Plumas Al Rescate",
+    "originalTitle": "Out of the Nest",
+    "synopsis": "Arthur «la Cabra», un joven repartidor, no desea otra cosa que convertirse en el mejor barbero de Castilia. Cuando las crías de la familia real son secuestradas, recae sobre Arthur la misión de rescatarlas y salvar el reino; pero, antes, deberá descubrir su propio pasado.",
+    "poster": "https://image.tmdb.org/t/p/w500/uFT1paiVGPTwRD90qTCxUa6iZ2e.jpg",
+    "rating": "TP",
+    "duration": "1h 25m",
+    "score": "7.8",
+    "director": "Arturo Hernandez",
+    "genres": [
+      "Animación",
+      "Familia",
+      "Fantasía",
+      "Aventura"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:00"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multicines-yosoyrocky",
+    "title": "Yo Soy Rocky",
+    "originalTitle": "I Play Rocky",
+    "synopsis": "Un actor desconocido, sin dinero ni contactos, tenía una sola convicción: no solo escribiría Rocky, sino que él sería Rocky Balboa. Rechazado una y otra vez por los estudios, Sylvester Stallone lo apostó todo por sí mismo y se negó a ceder el papel, incluso cuando le ofrecieron una fortuna por hacerlo.",
+    "poster": "https://image.tmdb.org/t/p/w500/6ItqVHcsb2swkE7ajS6EVCH2mpd.jpg",
+    "rating": "M12",
+    "duration": "2h 8m",
+    "score": "8.8",
+    "director": "Peter Farrelly",
+    "genres": [
+      "Drama",
+      "Historia"
+    ],
+    "theaters": [
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:20"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:20"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-13T00:54:27.785Z",
+  "lastRun": "2026-11-13T01:03:12.014Z",
   "chains": {
     "cinemark": {
       "id": "cinemark",
@@ -88,6 +88,14 @@
       "lastSuccess": "2026-11-13T00:52:16.187Z",
       "moviesCount": 3,
       "showtimesCount": 15
+    },
+    "multicines": {
+      "id": "multicines",
+      "name": "Multicines",
+      "status": "healthy",
+      "lastSuccess": "2026-11-13T01:01:48.503Z",
+      "moviesCount": 12,
+      "showtimesCount": 120
     }
   }
 }

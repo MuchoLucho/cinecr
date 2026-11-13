@@ -1229,7 +1229,7 @@
     "id": "113609",
     "title": "Clayface",
     "originalTitle": "Clayface",
-    "studio": "Cinemark / Cinépolis / Studio Cinemas",
+    "studio": "Cinemark / Cinépolis / Studio Cinemas / Multicines",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "7.4",
@@ -1691,6 +1691,53 @@
           }
         ],
         "website": "https://www.studiocinemascr.com"
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "18:15"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "18:15"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "18:10"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "clayface"
@@ -1699,7 +1746,7 @@
     "id": "113516",
     "title": "Como robar un banco",
     "originalTitle": "Como robar un banco",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Multicines",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "6.9",
@@ -3628,6 +3675,53 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "17:40"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "comorobarbanco"
@@ -3746,7 +3840,7 @@
     "id": "113989",
     "title": "Ebenezer fantasmas de Navidad",
     "originalTitle": "Ebenezer fantasmas de Navidad ",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema / Multicines",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.0",
@@ -7508,6 +7602,95 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:20"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "17:45"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:30"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "ebenezerfantasmasnavidad"
@@ -7558,7 +7741,7 @@
     "id": "112951",
     "title": "El Corazon de la Bestia",
     "originalTitle": "El Corazon de la Bestia",
-    "studio": "Cinemark / Cinépolis / Cinema San Pedro",
+    "studio": "Cinemark / Cinépolis / Cinema San Pedro / Multicines",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
     "score": "7.5",
@@ -7836,6 +8019,53 @@
           }
         ],
         "website": "https://cinemasanpedro.com"
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:30"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "corazonbestia"
@@ -7844,7 +8074,7 @@
     "id": "113798",
     "title": "El Engendro",
     "originalTitle": "El Engendro",
-    "studio": "Cinemark / Cinépolis",
+    "studio": "Cinemark / Cinépolis / Multicines",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "5.6",
@@ -8211,6 +8441,53 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:20"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "engendro"
@@ -8219,7 +8496,7 @@
     "id": "113899",
     "title": "El Gato con Sombrero",
     "originalTitle": "El Gato con Sombrero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Bistro Cinema",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Bistro Cinema / Multicines",
     "rating": "Todo publico",
     "ratingBadgeClass": "badge-green",
     "score": "7.4",
@@ -10813,6 +11090,97 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "18:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "18:00"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:30"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "gatosombrero"
@@ -11559,7 +11927,7 @@
     "id": "113646",
     "title": "Godzilla Minus Zero",
     "originalTitle": "Godzilla Minus Zero",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Bistro Cinema / Multicines",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "7.8",
@@ -13976,6 +14344,105 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-12",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "17:50"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "17:40"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:30"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "godzillaminuszero"
@@ -14036,7 +14503,7 @@
     "id": "113840",
     "title": "Hunger Games 6 Amanecer",
     "originalTitle": "Hunger Games 6 Amanecer ",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / Pacific Cinemas",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cinema San Pedro / Studio Cinemas / Pacific Cinemas / Multicines",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": null,
@@ -15095,6 +15562,29 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-18",
+                "time": "20:10"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "hungergames6amanecer"
@@ -15204,7 +15694,7 @@
     "id": "112854",
     "title": "Madre Siniestra",
     "originalTitle": "Madre Siniestra",
-    "studio": "Cinemark",
+    "studio": "Cinemark / Multicines",
     "rating": "M-15",
     "ratingBadgeClass": "badge-orange",
     "score": "6.1",
@@ -15305,6 +15795,53 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:50"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:50"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "18:10"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "18:10"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "madresiniestra"
@@ -15368,10 +15905,58 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:10"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:00"
+              }
+            ]
+          }
+        ]
       }
     ],
     "ratingBadgeClass": "badge-green",
-    "normalizedKey": "operacionplumasalrescate"
+    "normalizedKey": "operacionplumasalrescate",
+    "studio": "Sunset Cinema / Multicines"
   },
   {
     "id": "112657",
@@ -16351,7 +16936,7 @@
     "id": "113816",
     "title": "Wildwood El Bosque Salvaje",
     "originalTitle": "Wildwood El Bosque Salvaje",
-    "studio": "Cinemark / Cinépolis / Nova Cinemas / Cine Magaly / Studio Cinemas / CitiCinemas / Pacific Cinemas",
+    "studio": "Cinemark / Cinépolis / Nova Cinemas / Cine Magaly / Studio Cinemas / CitiCinemas / Pacific Cinemas / Multicines",
     "rating": "M-12",
     "ratingBadgeClass": "badge-green",
     "score": "8.5",
@@ -17644,6 +18229,87 @@
             ]
           }
         ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-13",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "11:00"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "13:00"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "15:30"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "15:30"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "15:40"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "15:30"
+              }
+            ]
+          }
+        ]
       }
     ],
     "normalizedKey": "wildwoodbosquesalvaje"
@@ -17652,7 +18318,7 @@
     "id": "114001",
     "title": "Yo soy Rocky",
     "originalTitle": "Yo soy Rocky",
-    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema",
+    "studio": "Cinemark / Cinépolis / CCM Cinemas / Nova Cinemas / Cine Magaly / Cinema San Pedro / Studio Cinemas / CitiCinemas / Pacific Cinemas / Sunset Cinema / Multicines",
     "rating": "TPA",
     "ratingBadgeClass": "badge-green",
     "score": "8.8",
@@ -19312,6 +19978,67 @@
               {
                 "date": "2026-11-17",
                 "time": "20:25"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chainId": "multicines",
+        "chainName": "Multicines",
+        "complexId": "multicines-liberia",
+        "complexName": "Multicines Plaza Liberia",
+        "province": "Guanacaste",
+        "city": "Liberia",
+        "address": "Mall Centro Plaza Liberia, Guanacaste",
+        "locationDetail": "Plaza Liberia",
+        "website": "https://www.compraenlineaml.net/Cartelera.aspx?complejo=450",
+        "groups": [
+          {
+            "format": "2D",
+            "language": "DOB",
+            "times": [
+              {
+                "date": "2026-11-13",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "13:10"
+              },
+              {
+                "date": "2026-11-15",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-17",
+                "time": "20:20"
+              }
+            ]
+          },
+          {
+            "format": "2D",
+            "language": "SUB",
+            "times": [
+              {
+                "date": "2026-11-12",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-14",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-16",
+                "time": "20:20"
+              },
+              {
+                "date": "2026-11-18",
+                "time": "20:20"
               }
             ]
           }
